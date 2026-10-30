@@ -1,0 +1,129 @@
+@use '../utils' as *;
+/*----------------------------------------*/
+/*  2.1 animetion
+/*----------------------------------------*/
+
+@keyframes bar-anim {
+	0%, 100% {
+	  -webkit-clip-path: inset(-2px 0);
+	  clip-path: inset(-2px 0);
+	}
+	42% {
+	  -webkit-clip-path: inset(-2px 0 -2px 100%);
+	  clip-path: inset(-2px 0 -2px 100%);
+	}
+	43% {
+	  -webkit-clip-path: inset(-2px 100% -2px 0);
+	  clip-path: inset(-2px 100% -2px 0);
+	}
+}
+
+@include keyframes(borderanimate2){
+    0% {
+        transform: translate(-50%, -50%) scale(.8);
+    }
+	60%{
+		opacity: 1;
+	}
+      100% {
+        transform: translate(-50%, -50%) scale(2.5);
+        opacity: 0;
+      }
+}
+
+// td up down animtaion
+@include keyframes(tpleftright){
+	0% { 
+		@include transform(translateX(0));
+	}
+    100% {
+		@include transform(translateX(-20px));
+	}
+}
+.tpleftright {
+    -webkit-animation: tpleftright 1s infinite alternate;
+    animation: tpleftright 1s infinite alternate;
+}
+
+// td swing animtaion
+@include keyframes(tpswing){
+	0% { 
+		@include transform(rotate(6deg));
+	}
+    100% { 
+		@include transform(rotate(-6deg));
+	}
+}
+.tpswing{
+	-moz-animation: tpswing 1s ease-in-out 1s forwards infinite alternate;
+	-webkit-animation: tpswing 1s ease-in-out 1s forwards infinite alternate;
+	animation: tpswing 1s ease-in-out 1s forwards infinite alternate;
+	transform-origin: left center;
+}
+// td up down animtaion
+@include keyframes(tpupdown){
+	0% { 
+		@include transform(translateY(0));
+	}
+    100% { 
+		@include transform(translateY(-20px));
+	}
+}
+.tpupdown{
+	-moz-animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
+	-webkit-animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
+	animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
+}
+
+@include keyframes(tdshake){
+	10% {
+			transform: translateY(-10px);
+	}
+	50% {
+			transform: skew(15deg);
+	}
+	80% {
+			transform: rotate(10deg);
+	}
+	100% {
+			transform: translate(0);
+	}
+}
+// hero text animation
+@include keyframes(hero-text){
+	0% {
+        width: 0;
+    }
+
+    100% {
+		width: 100%;
+    }
+}
+//   treeMove
+@keyframes treeMove {
+	0% {
+		-webkit-transform: rotate(0deg) translateX(0);
+		transform: rotate(0deg) translateX(0);
+	}
+	75% {
+		-webkit-transform: rotate(5deg) translateX(10px);
+		transform: rotate(5deg) translateX(10px);
+	}
+	50% {
+		-webkit-transform: rotate(10deg) translateX(20px);
+		transform: rotate(10deg) translateX(20px);
+	}
+	100% {
+		-webkit-transform: rotate(0deg) translateX(0);
+	transform: rotate(0deg) translateX(0);
+}
+}
+.tree-move{
+	animation-name: treeMove;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}

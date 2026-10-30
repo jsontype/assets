@@ -1,0 +1,195 @@
+/* Why 1 ---------------------------------- */
+.img-box1 {
+    position: relative;
+    text-align: right;
+    padding: 50px 33px 0 0;
+    .img1 {
+        display: inline-block;
+    }
+    .shape1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .discount_style1 {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    &:hover {
+        .shape1,
+        .discount_style1 {
+            animation: pluse1 2s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes pluse1 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.feature-box {
+    &-wrap {
+        margin-bottom: 33px;
+        border-bottom: 1px solid $body-color;
+    }
+    display: flex;
+    gap: 15px;
+    margin-bottom: 33px;
+    &_icon {
+        width: 78px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+    }
+    &_title {
+        color: $white-color;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+    &_text {
+        color: $white-color;
+        margin-bottom: -0.5em;
+        max-width: 375px;
+    }
+}
+
+.video-btn {
+    .play-btn {
+        --icon-size: 50px;
+        font-size: 14px;
+        margin-right: 15px;
+        > i {
+            background-color: $theme-color;
+            color: $white-color;
+        }
+        &:after,
+        &:before {
+            background-color: $theme-color;
+        }
+    }
+    .btn-text {
+        color: $white-color;
+        border-bottom: 1px solid;
+        transition: 0.3s ease-in-out;
+    }
+    &:hover {
+        .btn-text {
+            color: $theme-color;
+        }
+        .play-btn {
+            > i {
+                background-color: $white-color;
+                color: $theme-color;
+            }
+            &:after,
+            &:before {
+                background-color: $white-color;
+            }
+        }
+    }
+}
+
+.discount_style1 {
+    height: 123px;
+    width: 112px;
+    text-align: center;
+    padding: 60px 14px 60px 0;
+    .percentage {
+        color: $white-color;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    .small-text {
+        font-weight: 500;
+        line-height: 0.5;
+        font-size: 0.6em;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: left;
+        margin-left: -5px;
+        .text {
+            font-size: 0.6em;
+            font-weight: 400;
+        }
+    }
+}
+
+@include sm {
+    .img-box1 {
+        .discount_style1 {
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+@include xs {
+    .feature-box {
+        flex-wrap: wrap;
+    }
+}
+
+/* Why 2 ---------------------------------- */
+.progress {
+    position: relative;
+    height: 6px;
+    background-color: $white-color;
+    overflow: visible;
+    border-radius: 99px;
+}
+.progress-bar {
+    background-color: $theme-color;
+    border-radius: inherit;
+    position: relative;
+    overflow: visible;
+}
+.skill-feature {
+    &-wrap {
+        position: relative;
+        padding: 50px 50px 50px 0;
+        z-index: 2;
+        background-color: $title-color;
+        &:before {
+            content: "";
+            height: 100%;
+            width: calc(100% + 130px);
+            background-color: $title-color;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            clip-path: polygon(80px 0%, 100% 0, 100% 100%, 0% 100%);
+            z-index: -1;
+        }
+    }
+    margin-bottom: 35px;
+    &.style2 {
+        margin-bottom: 25px;
+    }
+    &:last-child {
+        margin-bottom: 0 !important;
+    }
+    &_title,
+    .progress-value {
+        font-family: $title-font;
+        margin-top: -0.3em;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 12px;
+        color: $white-color;
+    }
+    .progress-value {
+        margin-bottom: 0;
+        position: absolute;
+        top: -35px;
+        right: 0;
+    }
+}

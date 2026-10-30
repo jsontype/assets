@@ -1,0 +1,35 @@
+@use '../utils' as *;
+/*----------------------------------------*/
+/*  2.8 pagenation
+/*----------------------------------------*/
+
+.#{$theme-prifix}-pagenation{
+    & nav{
+        & ul{
+            & li{
+                list-style: none;
+                display: inline-block;
+                margin-right: 5px;
+                & a{
+                    height: 44px;
+                    width: 44px;
+                    display: inline-block;
+                    border: 1px solid #e4e4e4;
+                    text-align: center;
+                    line-height: 44px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #000;
+                    &:hover{
+                        background: var(--td-theme-primary);
+                        color: var(--td-common-white);
+                    }
+                    &.active{
+                        background: var(--td-theme-primary);
+                        color: var(--td-common-white);
+                    }
+                }
+            }
+        }
+    }
+}

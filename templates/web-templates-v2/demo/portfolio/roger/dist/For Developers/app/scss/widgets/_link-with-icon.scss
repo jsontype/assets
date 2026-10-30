@@ -1,0 +1,27 @@
+/* WIDGET: LINK WITH ICON
+-------------------------------------------- */
+
+.ptf-link-with-icon {
+	display: inline-flex;
+	align-items: center;
+	color: var(--ptf-color-1);
+
+	svg {
+		height: 1em;
+		font-size: px2rem(18px);
+		color: var(--ptf-color-accent);
+	}
+
+	&--right svg {
+		margin-left: px2rem(20px);
+	}
+
+	&--left svg {
+		margin-right: px2rem(20px);
+	}
+
+	&:hover {
+		transform: translateY(-2px);
+	}
+
+}

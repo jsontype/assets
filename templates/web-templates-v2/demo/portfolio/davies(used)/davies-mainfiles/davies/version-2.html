@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Davies - Personal Portfolio HTML Template</title>
+    <meta name="author" content="themesflat.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description"
+        content="Davies - Personal Portfolio is a sleek and modern HTML template designed for developers, designers, freelancers, and professionals who want to showcase their work online. Fully responsive, SEO-friendly, and easy to customize, it helps you create a strong personal brand and impress potential clients or employers.">
+
+    <!-- font -->
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/icon/icomoon/style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.svg">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/logo/favicon.svg">
+</head>
+
+<body class="counter-scroll">
+    <canvas class="cursor-trail d-none d-xl-block" id="trail"></canvas>
+
+
+    <!-- Scroll Top -->
+    <button id="goTop">
+        <span class="border-progress"></span>
+        <span class="ic-wrap">
+            <span class="icon icon-arrow-caret-right"></span>
+        </span>
+    </button>
+    <!-- /Scroll Top -->
+
+    <!-- Preload -->
+    <div class="preloader overflow-hidden">
+        <div class="site-name"><span>DAVIES</span></div>
+        <div class="preloader-gutters">
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /Preload -->
+
+    <main id="wrapper">
+        <!-- Header -->
+        <header class="tf-header style-2">
+            <div class="header-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-1">
+                            <a href="index.html" class="logo-site">
+                                <i class="icon icon-davies-logo"></i>
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-2 ms-xl-auto d-none d-md-block">
+                            <ul class="tf-list vertical">
+                                <li> <a href="#workScroll" class="link text-caption">WORKS</a></li>
+                                <li> <a href="#serviceScroll" class="link text-caption">SERVICES</a></li>
+                                <li> <a href="#aboutScroll" class="link text-caption">ABOUT</a></li>
+                                <li> <a href="#contactScroll" class="link text-caption">CONTACT</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3 col-md-2 d-none d-sm-block ms-auto ms-xl-0">
+                            <div class="header-contact">
+                                <a href="mailto:davies@gmail.com" class="link text-caption">DAVIES@GMAIL.COM</a>
+                                <p class="text-caption text-utc">
+                                    <i class="icon icon-globe"></i>
+                                    CUPERTINO, CA
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-2 d-flex justify-content-end align-items-start d-md-none">
+                            <button type="button" class="btn-mobile-menu open-mb-menu text-caption text-white link">
+                                <i class="icon icon-menu"></i>
+                                MENU
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /Header -->
+        <!-- Hero Banner -->
+        <div class="section-hero-v2 flat-spacing">
+            <div class="overlay"></div>
+            <div class="bg-video">
+                <video class="" muted="" autoplay="" loop="" playsinline="">
+                    <source src="assets/images/video/wave-bg.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <div class="image-wrap">
+                    <div class="img-item image-1">
+                        <img class="effectFade fadeDown" loading="lazy" width="400" height="600" src="assets/images/section/davies-main.jpg"
+                            alt="Image">
+                        <div class="image-child">
+                            <img class="effectFade fadeZoom" loading="lazy" width="1296" height="279" src="assets/images/item/davies-stroke.svg"
+                                alt="Image">
+                        </div>
+                    </div>
+                    <div class="img-item-2">
+                        <img class="effectFade fadeZoom" loading="lazy" width="1296" height="279" src="assets/images/item/davies-fill.svg"
+                            alt="Image">
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul class="tf-list text-caption letter-space--1 fw-medium scroll-fadeUp2">
+                        <li><a href="#" class="link effectFade view-visible">WEB-DESIGNER</a></li>
+                        <li class="effectFade view-visible" data-delay="0.1">/</li>
+                        <li><a href="#" class="link effectFade view-visible" data-delay="0.2">BLOGGER</a></li>
+                        <li class="effectFade view-visible" data-delay="0.3">/</li>
+                        <li><a href="#" class="link effectFade view-visible" data-delay="0.4">TREND ANALYST</a></li>
+                    </ul>
+                    <div class="effectFade fadeUp no-div view-visible" data-delay="0.1">
+                        <a href="#contactScroll" class="tf-btn style-2 style-fill-white animate-btn animate-dark">
+                            <span class="text-caption letter-space--1 fw-medium">START A PROJECT</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Hero Banner -->
+        <!-- Select Work -->
+        <section class="section-selected-work-v2 flat-spacing stack-element" id="workScroll">
+            <div class="s-header d-block overflow-hidden">
+                <div class="infiniteSlide infiniteSlide_select_work" data-clone="5">
+                    <!-- clone 1 -->
+                    <p class="text-display-1 letter-space--3 fw-semibold">
+                        Selected Work
+                    </p>
+                    <div class="icon-app">
+                        <img loading="lazy" width="120" height="120" src="assets/images/item/global.svg" alt="Image">
+                    </div>
+                    <!-- clone 2 -->
+                    <p class="text-display-1 letter-space--3 fw-semibold">
+                        Selected Work
+                    </p>
+                    <div class="icon-app">
+                        <img loading="lazy" width="120" height="120" src="assets/images/item/global.svg" alt="Image">
+                    </div>
+                    <!-- clone 3 -->
+                    <p class="text-display-1 letter-space--3 fw-semibold">
+                        Selected Work
+                    </p>
+                    <div class="icon-app">
+                        <img loading="lazy" width="120" height="120" src="assets/images/item/global.svg" alt="Image">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="work-list stack-element-main position-relative">
+                    <div class="element">
+                        <a href="#" class="wg-work effectFade fadeUp no-div">
+                            <div class="work-image">
+                                <video class="" muted="" autoplay="" loop="" playsinline="">
+                                    <source src="assets/images/video/nexbot.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="work-content">
+                                <div class="work_top">
+                                    <h5 class="letter-space--2">Nexbot_</h5>
+                                    <ul class="tf-list vertical text-end">
+                                        <li class="text-white-64">Industry</li>
+                                        <li class="effectFade fadeUp">Artificial Intelligence</li>
+                                        <li class="effectFade fadeUp">Web3</li>
+                                    </ul>
+                                </div>
+                                <div class="work_bottom">
+                                    <ul class="tf-list vertical">
+                                        <li class="text-white-64">Services</li>
+                                        <li class="effectFade fadeUp">Branding</li>
+                                    </ul>
+                                    <h5 class="letter-space--2">
+                                        2025
+                                    </h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a href="#" class="wg-work">
+                            <div class="work-image">
+                                <img loading="lazy" width="1296" height="648" src="assets/images/section/work-5.jpg" alt="Image">
+                            </div>
+                            <div class="work-content">
+                                <div class="work_top">
+                                    <h5 class="letter-space--2">Landa_</h5>
+                                    <ul class="tf-list vertical text-end">
+                                        <li class="text-white-64">Industry</li>
+                                        <li class="effectFade fadeUp">SAAS</li>
+                                        <li class="effectFade fadeUp">Productivity</li>
+                                    </ul>
+                                </div>
+                                <div class="work_bottom">
+                                    <ul class="tf-list vertical">
+                                        <li class="text-white-64">Services</li>
+                                        <li class="effectFade fadeUp">Website Design</li>
+                                        <li class="effectFade fadeUp">Visual Identity</li>
+                                        <li class="effectFade fadeUp">Framer Development</li>
+                                    </ul>
+                                    <h5 class="letter-space--2">
+                                        2025
+                                    </h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a href="#" class="wg-work">
+                            <div class="work-image">
+                                <img loading="lazy" width="1296" height="648" src="assets/images/section/work-6.jpg" alt="Image">
+                            </div>
+                            <div class="work-content">
+                                <div class="work_top">
+                                    <h5 class="letter-space--2">Brandon_</h5>
+                                    <ul class="tf-list vertical text-end">
+                                        <li class="text-white-64">Industry</li>
+                                        <li class="effectFade fadeUp">Portfolio</li>
+                                        <li class="effectFade fadeUp">Photography</li>
+                                    </ul>
+                                </div>
+                                <div class="work_bottom">
+                                    <ul class="tf-list vertical">
+                                        <li class="text-white-64">Services</li>
+                                        <li class="effectFade fadeUp">Website Design</li>
+                                        <li class="effectFade fadeUp">Visual Identity</li>
+                                        <li class="effectFade fadeUp">Framer Development</li>
+                                    </ul>
+                                    <h5 class="letter-space--2">
+                                        2025
+                                    </h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#contactScroll" class="tf-btn style-2">
+                        + YOUR PROJECT
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- /Select Work -->
+        <!-- About Me -->
+        <section class="section-about-me-v2 flat-spacing" id="aboutScroll">
+            <div class="container">
+                <div class="about-main flat-spacing-bottom">
+                    <div class="davies-video">
+                        <video class="video" muted="" autoplay="" loop="" playsinline="">
+                            <source src="assets/images/video/davies-video.mp4" type="video/mp4">
+                        </video>
+                        <div class="overlay mark"></div>
+                        <div class="overlay bg-effect">
+                            <img loading="lazy" width="1296" height="729" src="assets/images/item/dither-effect.svg" alt="Image">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="top text-display-1 fw-semibold letter-space--3">
+                            <p class="effectFade fadeUp">About</p>
+                            <p class="effectFade fadeUp" data-delay="0.1">Davies<span class="text-primary">_</span></p>
+                        </div>
+                        <h5 class="text-color-change letter-space--2 fw-normal">
+                            I’m a designer and no-code developer creating bold, functional, and award-winning digital experiences that help brands
+                            connect with their audience.
+                        </h5>
+                    </div>
+                </div>
+                <div class="br-line d-flex flat-spacing-bottom"></div>
+                <div class="award-main">
+                    <div class="left">
+                        <div class="badget animate-box">
+                            <img loading="lazy" width="156" height="156" src="assets/images/item/badge-design.png" alt="Image">
+                        </div>
+                    </div>
+                    <ul class="experience-list overflow-hidden">
+                        <li>Work Experience</li>
+                        <li class="effectFade fadeRight">
+                            <p class="exp_name">Independent Product Designer</p>
+                            <p class="exp_year">2025</p>
+                        </li>
+                        <li class="effectFade fadeRight">
+                            <p class="exp_name">Senior UX Designer at CloudForge</p>
+                            <p class="exp_year">2024 - 2025</p>
+                        </li>
+                        <li class="effectFade fadeRight">
+                            <p class="exp_name">Product Designer at Orbit Systems</p>
+                            <p class="exp_year">2022 - 2024</p>
+                        </li>
+                        <li class="effectFade fadeRight">
+                            <p class="exp_name">UI/UX Designer at PixelHaus</p>
+                            <p class="exp_year">2021 - 2022</p>
+                        </li>
+                        <li class="effectFade fadeRight">
+                            <p class="exp_name">Junior Designer at Brightline Studio</p>
+                            <p class="exp_year">2020 - 2021</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- About Me -->
+        <!-- Tech Stack -->
+        <section class="section-tech-stack-v2 flat-spacing">
+            <div class="container">
+                <div class="s-header d-block">
+                    <h2 class="text-display-2 letter-space--3 text-center effectFade fadeUp">Tech Stack</h2>
+                </div>
+                <div class="tf-grid-layout lg-col-3">
+                    <div class="wg-tech-v2" data-us-project="lHlDvoJDIXCxxXVqTNOC?update=0.8924711990022087">
+                        <div class="tech-content">
+                            <h5 class="tech-name letter-space--2">Figma</h5>
+                            <p class="tech-desc letter-space--1">
+                                Collaborative design tool for <br>
+                                creating, prototyping, and refining <br>
+                                modern interfaces.
+                            </p>
+                            <div class="ic-img">
+                                <img loading="lazy" width="33" height="48" src="assets/images/item/figma.svg" alt="Image Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wg-tech-v2" data-us-project="lHlDvoJDIXCxxXVqTNOC?update=0.8924711990022087">
+                        <div class="tech-content">
+                            <h5 class="tech-name letter-space--2">Framer</h5>
+                            <p class="tech-desc letter-space--1">
+                                No-code platform for <br>
+                                building high-fidelity, interactive <br>
+                                websites with ease.
+                            </p>
+                            <div class="ic-img">
+                                <img loading="lazy" width="32" height="48" src="assets/images/item/framer.svg" alt="Image Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wg-tech-v2" data-us-project="lHlDvoJDIXCxxXVqTNOC?update=0.8924711990022087">
+                        <div class="tech-content">
+                            <h5 class="tech-name letter-space--2">Webflow</h5>
+                            <p class="tech-desc letter-space--1">
+                                Visual development tool for <br>
+                                designing, building, and launching <br>
+                                responsive websites.
+                            </p>
+                            <div class="ic-img">
+                                <img loading="lazy" width="77" height="48" src="assets/images/item/webflow.svg" alt="Image Icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Tech Stack -->
+        <!-- Service -->
+        <section class="section-service-v2 flat-spacing" id="serviceScroll">
+            <div class="container">
+                <div class="br-line d-flex"></div>
+                <div class="service-accordion-main" id="service-accordion-main">
+                    <div class="service-accordion_item effectFade fadeUp no-div" role="presentation">
+                        <div class="accordion-action" data-bs-target="#service-1" role="button" data-bs-toggle="collapse" aria-controls="service-1"
+                            aria-expanded="true">
+                            <h5 class="text-display-1 letter-space--3">Branding</h5>
+                        </div>
+                        <div id="service-1" class="collapse show" data-bs-parent="#service-accordion-main">
+                            <div class="accordion-content">
+                                <div class="image-left">
+                                    <img width="860" height="373" src="assets/images/section/service-4.jpg" alt="Image">
+                                </div>
+                                <div class="content-right">
+                                    <p class="number-order text-display-1 fw-medium letter-space--3 text-white-32">
+                                        01
+                                    </p>
+                                    <ul class="tf-list vertical gap-12 text-body-1">
+                                        <li><span class="text-primary">//</span> Brand Strategy</li>
+                                        <li><span class="text-primary">//</span> Visual Identity Design</li>
+                                        <li><span class="text-primary">//</span> Logo & Typography</li>
+                                        <li><span class="text-primary">//</span> Color Palette Creation</li>
+                                        <li><span class="text-primary">//</span> Brand Guidelines</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-accordion_item effectFade fadeUp no-div" role="presentation">
+                        <div class="accordion-action collapsed" data-bs-target="#service-2" role="button" data-bs-toggle="collapse"
+                            aria-controls="service-2" aria-expanded="true">
+                            <h5 class="text-display-1 letter-space--3">Web Design</h5>
+                        </div>
+                        <div id="service-2" class="collapse" data-bs-parent="#service-accordion-main">
+                            <div class="accordion-content">
+                                <div class="image-left">
+                                    <img width="860" height="373" src="assets/images/section/service-5.jpg" alt="Image">
+                                </div>
+                                <div class="content-right">
+                                    <p class="number-order text-display-1 fw-medium letter-space--3 text-white-32">
+                                        02
+                                    </p>
+                                    <ul class="tf-list vertical gap-12 text-body-1">
+                                        <li><span class="text-primary">//</span> Brand Strategy</li>
+                                        <li><span class="text-primary">//</span> Visual Identity Design</li>
+                                        <li><span class="text-primary">//</span> Logo & Typography</li>
+                                        <li><span class="text-primary">//</span> Color Palette Creation</li>
+                                        <li><span class="text-primary">//</span> Brand Guidelines</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-accordion_item effectFade fadeUp no-div" role="presentation">
+                        <div class="accordion-action collapsed" data-bs-target="#service-3" role="button" data-bs-toggle="collapse"
+                            aria-controls="service-3" aria-expanded="true">
+                            <h5 class="text-display-1 letter-space--3">No-Code Sites</h5>
+                        </div>
+                        <div id="service-3" class="collapse" data-bs-parent="#service-accordion-main">
+                            <div class="accordion-content">
+                                <div class="image-left">
+                                    <img width="860" height="373" src="assets/images/section/service-6.jpg" alt="Image">
+                                </div>
+                                <div class="content-right">
+                                    <p class="number-order text-display-1 fw-medium letter-space--3 text-white-32">
+                                        03
+                                    </p>
+                                    <ul class="tf-list vertical gap-12 text-body-1">
+                                        <li><span class="text-primary">//</span> Brand Strategy</li>
+                                        <li><span class="text-primary">//</span> Visual Identity Design</li>
+                                        <li><span class="text-primary">//</span> Logo & Typography</li>
+                                        <li><span class="text-primary">//</span> Color Palette Creation</li>
+                                        <li><span class="text-primary">//</span> Brand Guidelines</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Service -->
+        <!-- Brand -->
+        <div class="section-brand flat-spacing bg-surface">
+            <div class="container">
+                <h6 class="mini-title text-caption text-black-64">
+                    BRANDS AND PARTNERS
+                </h6>
+                <div class="brand-list type-line-2">
+                    <a href="#" class="img-brand">
+                        <img loading="lazy" width="76" height="48" src="assets/images/brand/brandv2-1.svg" alt="Brand">
+                    </a>
+                    <a href="#" class="img-brand">
+                        <img loading="lazy" width="125" height="24" src="assets/images/brand/brandv2-2.svg" alt="Brand">
+                    </a>
+                    <a href="#" class="img-brand">
+                        <img loading="lazy" width="57" height="48" src="assets/images/brand/brandv2-3.svg" alt="Brand">
+                    </a>
+                    <a href="#" class="img-brand">
+                        <img loading="lazy" width="142" height="36" src="assets/images/brand/brandv2-4.svg" alt="Brand">
+                    </a>
+                    <a href="#" class="img-brand">
+                        <img loading="lazy" width="84" height="48" src="assets/images/brand/brandv2-5.svg" alt="Brand">
+                    </a>
+                    <a href="#" class="img-brand">
+                        <img loading="lazy" width="140" height="36" src="assets/images/brand/brandv2-6.svg" alt="Brand">
+                    </a>
+                    <a href="#" class="img-brand">
+                        <img loading="lazy" width="48" height="48" src="assets/images/brand/brandv2-7.svg" alt="Brand">
+                    </a>
+                    <a href="#" class="img-brand">
+                        <img loading="lazy" width="138" height="24" src="assets/images/brand/brandv2-8.svg" alt="Brand">
+                    </a>
+                    <a href="#" class="img-brand">
+                        <img loading="lazy" width="63" height="48" src="assets/images/brand/brandv2-9.svg" alt="Brand">
+                    </a>
+                    <a href="#" class="img-brand">
+                        <img loading="lazy" width="133" height="24" src="assets/images/brand/brandv2-10.svg" alt="Brand">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /Brand -->
+        <!-- Award -->
+        <section class="section-award flat-spacing bg-surface">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 ms-auto">
+                        <div class="col-right">
+                            <h6 class="mini-title text-caption text-black-64">
+                                AWARDS
+                            </h6>
+                            <h5 class="fw-normal letter-space--2 text-black">
+                                Since 2020, my work has been honored by leading design platforms around the world. Each award represents a
+                                project
+                                where creativity, precision, and impact came together.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="col-left">
+                            <p class="desc text-black-64 mini-title">
+                                157 industry awards. <br>
+                                Bold ideas. Flawless execution.
+                            </p>
+                            <div dir="ltr" class="swiper tf-swiper swiper-t2" data-preview="3" data-tablet="3" data-mobile="3" data-mobile-sm="3"
+                                data-loop="true" data-auto="true" data-delay="1000" data-speed="1000" data-direction="vertical" data-space="4">
+                                <div class="swiper-wrapper">
+                                    <!-- item 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="award-item h4 letter-space--2">
+                                            Behance
+                                            <span class="text-body-1 letter-space--1">x28</span>
+                                        </div>
+                                    </div>
+                                    <!-- item 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="award-item h4 letter-space--2">
+                                            Awwwards
+                                            <span class="text-body-1 letter-space--1">x41</span>
+                                        </div>
+                                    </div>
+                                    <!-- item 3 -->
+                                    <div class="swiper-slide">
+                                        <div class="award-item h4 letter-space--2">
+                                            CSS Design Awards
+                                            <span class="text-body-1 letter-space--1">x67</span>
+                                        </div>
+                                    </div>
+                                    <!-- item 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="award-item h4 letter-space--2">
+                                            Behance
+                                            <span class="text-body-1 letter-space--1">x28</span>
+                                        </div>
+                                    </div>
+                                    <!-- item 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="award-item h4 letter-space--2">
+                                            Awwwards
+                                            <span class="text-body-1 letter-space--1">x41</span>
+                                        </div>
+                                    </div>
+                                    <!-- item 3 -->
+                                    <div class="swiper-slide">
+                                        <div class="award-item h4 letter-space--2">
+                                            CSS Design Awards
+                                            <span class="text-body-1 letter-space--1">x67</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-flip-image flat-spacing">
+                <div class="container">
+                    <div class="flip-image-list gsap-anime-2">
+                        <div class="flip-image">
+                            <img loading="lazy" width="325" height="325" src="assets/images/section/award-1.jpg" alt="Image">
+                        </div>
+                        <div class="flip-image">
+                            <img loading="lazy" width="325" height="325" src="assets/images/section/award-2.jpg" alt="Image">
+
+                        </div>
+                        <div class="flip-image">
+                            <img loading="lazy" width="325" height="325" src="assets/images/section/award-3.jpg" alt="Image">
+                        </div>
+                        <div class="flip-image">
+                            <img loading="lazy" width="325" height="325" src="assets/images/section/award-4.jpg" alt="Image">
+
+                        </div>
+                        <div class="flip-image">
+                            <img loading="lazy" width="325" height="325" src="assets/images/section/award-5.jpg" alt="Image">
+
+                        </div>
+                        <div class="flip-image">
+                            <img loading="lazy" width="325" height="325" src="assets/images/section/award-6.jpg" alt="Image">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Award -->
+        <!-- Testimonial -->
+        <section class="section-testimonial flat-spacing tf-btn-swiper-main">
+            <h6 class="mini-title text-caption text-white-64 text-center">
+                TRUSTED BY FOUNDED
+            </h6>
+            <div dir="ltr" class="swiper tf-swiper swiper-testimonial" data-preview="2.15" data-tablet="2.2" data-mobile-sm="1.5" data-mobile="1.2"
+                data-loop="true" data-center="true" data-space-lg="40" data-space-md="30" data-space="15" data-init="1">
+                <div class="swiper-wrapper">
+                    <!-- item 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-v01">
+                            <div class="tes-author">
+                                <div class="author_image">
+                                    <img loading="lazy" width="437" height="328" src="assets/images/section/tes-v2-1.jpg" alt="Image">
+                                </div>
+                                <div class="author_info">
+                                    <h6 class="info__name text-body-1 letter-space--1">Liam Carter</h6>
+                                    <p class="info__duty">Founder, Arcadia Tech</p>
+                                </div>
+                            </div>
+                            <div class="br-line"></div>
+                            <p class="tes-text text-body-1">
+                                “Working with Davies was seamless. He nailed our vision and delivered a modern, functional website that feels
+                                distinctly
+                                ours.”
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-v01">
+                            <div class="tes-author">
+                                <div class="author_image">
+                                    <img loading="lazy" width="437" height="328" src="assets/images/section/tes-v2-2.jpg" alt="Image">
+                                </div>
+                                <div class="author_info">
+                                    <h6 class="info__name text-body-1 letter-space--1">Liam Carter</h6>
+                                    <p class="info__duty">Founder, Arcadia Tech</p>
+                                </div>
+                            </div>
+                            <div class="br-line"></div>
+                            <p class="tes-text text-body-1">
+                                “Working with Davies was seamless. He nailed our vision and delivered a modern, functional website that feels
+                                distinctly
+                                ours.”
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-v01">
+                            <div class="tes-author">
+                                <div class="author_image">
+                                    <img loading="lazy" width="437" height="328" src="assets/images/section/tes-v2-3.jpg" alt="Image">
+                                </div>
+                                <div class="author_info">
+                                    <h6 class="info__name text-body-1 letter-space--1">Liam Carter</h6>
+                                    <p class="info__duty">Founder, Arcadia Tech</p>
+                                </div>
+                            </div>
+                            <div class="br-line"></div>
+                            <p class="tes-text text-body-1">
+                                “Working with Davies was seamless. He nailed our vision and delivered a modern, functional website that feels
+                                distinctly
+                                ours.”
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-v01">
+                            <div class="tes-author">
+                                <div class="author_image">
+                                    <img loading="lazy" width="437" height="328" src="assets/images/section/tes-v2-1.jpg" alt="Image">
+                                </div>
+                                <div class="author_info">
+                                    <h6 class="info__name text-body-1 letter-space--1">Liam Carter</h6>
+                                    <p class="info__duty">Founder, Arcadia Tech</p>
+                                </div>
+                            </div>
+                            <div class="br-line"></div>
+                            <p class="tes-text text-body-1">
+                                “Working with Davies was seamless. He nailed our vision and delivered a modern, functional website that feels
+                                distinctly
+                                ours.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-btn-slider">
+                    <div class="lh-1 nav-prev-swiper">
+                        <i class="fs-8 icon icon-arrow-caret-left"></i>
+                    </div>
+                    <div class="sw-dot-default tf-sw-pagination"></div>
+                    <div class="lh-1 nav-next-swiper">
+                        <i class="fs-8 icon icon-arrow-caret-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="indicator-wrap flat-spacing">
+                <div class="bg-img">
+                    <img loading="lazy" width="1440" height="800" src="assets/images/item/gird-net.png" alt="Image">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="wg-indicator mb-md-0">
+                                <p class="indicate-title text-body-1 letter-space--1">
+                                    <span class="text-primary">//</span> Projects Delivered
+                                </p>
+                                <p class="indicate-counter wg-counter text-display-1 fw-medium">
+                                    <span class="odometer" data-number="40">10</span> <span class="text-primary">+</span>
+                                </p>
+                                <p class="indicate-sub">
+                                    Creative work that drive <br>
+                                    real results
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="wg-indicator mb-md-0">
+                                <p class="indicate-title text-body-1 letter-space--1">
+                                    <span class="text-primary">//</span> Clients Satisfaction
+                                </p>
+                                <p class="indicate-counter wg-counter text-display-1 fw-medium">
+                                    <span class="odometer" data-number="96">10</span> <span class="text-primary">%</span>
+                                </p>
+                                <p class="indicate-sub">
+                                    I mostly focus on <br>
+                                    exceeding expectations
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="wg-indicator mb-0">
+                                <p class="indicate-title text-body-1 letter-space--1">
+                                    <span class="text-primary">//</span> Years of Experience
+                                </p>
+                                <p class="indicate-counter wg-counter text-display-1 fw-medium">
+                                    <span class="odometer" data-number="10">1</span> <span class="text-primary">+</span>
+                                </p>
+                                <p class="indicate-sub">
+                                    Mastering the art of animation <br>
+                                    content and design
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Testimonial -->
+        <!-- Pricing -->
+        <section class="section-pricing type-2 flat-spacing flat-animate-tab">
+            <div class="s-header d-block overflow-hidden">
+                <div class="infiniteSlide infiniteSlide_select_work" data-clone="5">
+                    <!-- clone 1 -->
+                    <p class="text-display-1 letter-space--3 fw-semibold">
+                        Pricing Plan
+                    </p>
+                    <div class="icon-app">
+                        <img loading="lazy" width="120" height="120" src="assets/images/item/global.svg" alt="Image">
+                    </div>
+                    <!-- clone 2 -->
+                    <p class="text-display-1 letter-space--3 fw-semibold">
+                        Pricing Plan
+                    </p>
+                    <div class="icon-app">
+                        <img loading="lazy" width="120" height="120" src="assets/images/item/global.svg" alt="Image">
+                    </div>
+                    <!-- clone 3 -->
+                    <p class="text-display-1 letter-space--3 fw-semibold">
+                        Pricing Plan
+                    </p>
+                    <div class="icon-app">
+                        <img loading="lazy" width="120" height="120" src="assets/images/item/global.svg" alt="Image">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="pricing-tab_btn" role="tablist">
+                    <li class="nav-tab-item" role="presentation">
+                        <a href="#monthly" data-bs-toggle="tab" class="tf-btn-tab active">
+                            <span class="dot-active"></span>
+                            Monthly
+                        </a>
+                    </li>
+                    <li class="nav-tab-item" role="presentation">
+                        <a href="#annual" data-bs-toggle="tab" class="tf-btn-tab">
+                            <span class="dot-active"></span>
+                            <span>
+                                Annualy - <span class="text-primary">Save 20%</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active show" id="monthly" role="tabpanel">
+                        <div class="tf-grid-layout md-col-2 lg-col-3">
+                            <div class="wg-plan">
+                                <div class="br-line"></div>
+                                <div class="plan-name letter-space--1 fw-medium">Basic</div>
+                                <h4 class="plan-price">
+                                    $640 <span class="text-body-2 fw-normal text-white-64">/month</span>
+                                </h4>
+                                <p class="plan-desc text-white-64 letter-space--1">
+                                    Perfect for early-stage teams or startups ready to launch their first online presence.
+                                </p>
+                                <a href="#contactScroll" class="btn-action tf-btn style-2 style-troke w-100">
+                                    <span class="text-caption fw-medium">CHOOSE THIS PLAN</span>
+                                </a>
+                                <ul class="benefit-list tf-list vertical">
+                                    <li class="benefit_title letter-space--1 text-white-64">What’s included:</li>
+                                    <li><span>//</span> Custom website design</li>
+                                    <li><span>//</span> Responsive layouts</li>
+                                    <li><span>//</span> Basic SEO setup</li>
+                                    <li><span>//</span> Tool integrations</li>
+                                    <li><span>//</span> Ongoing support</li>
+                                </ul>
+                            </div>
+                            <div class="wg-plan style-2 type-2">
+                                <!-- <div class="bg-img bg-img_1 d-xl-block"></div> -->
+                                <div class="bg-img bg-img_2">
+                                    <img loading="lazy" width="416" height="625" src="assets/images/item/bg-6.png" alt="Image">
+                                </div>
+                                <div class="br-line bg-primary"></div>
+                                <div class="plan-name letter-space--1 fw-medium">Pro</div>
+                                <h4 class="plan-price">
+                                    <span><span class="text-primary">$</span>1,280</span>
+                                    <span class="text-body-2 fw-normal text-white-64">/month</span>
+                                </h4>
+                                <p class="plan-desc text-white-64 letter-space--1">
+                                    Ideal for growing brands that require added features and enhanced creative flexibility.
+                                </p>
+                                <a href="#contactScroll" class="btn-action tf-btn style-2 style-fill w-100 animate-btn animate-dark">
+                                    <span class="text-caption fw-medium">CHOOSE THIS PLAN</span>
+                                </a>
+                                <ul class="benefit-list tf-list vertical">
+                                    <li class="benefit_title letter-space--1 text-white-64">What’s included:</li>
+                                    <li><span class="text-primary">//</span> Advanced web design</li>
+                                    <li><span class="text-primary">//</span> Interactive elements</li>
+                                    <li><span class="text-primary">//</span> Full SEO services</li>
+                                    <li><span class="text-primary">//</span> E-commerce setup</li>
+                                    <li><span class="text-primary">//</span> Monthly reports</li>
+                                </ul>
+                            </div>
+                            <div class="wg-plan style-2 type-3">
+                                <div class="bg-img bg-img_1"></div>
+                                <div class="br-line bg-white"></div>
+                                <div class="plan-name letter-space--1 fw-medium">Max</div>
+                                <h4 class="plan-price">
+                                    $2,560 <span class="text-body-2 fw-normal text-white-64">/month</span>
+                                </h4>
+                                <p class="plan-desc text-white-64 letter-space--1">
+                                    Designed for established companies seeking a completely bespoke digital solution.
+                                </p>
+                                <a href="#contactScroll" class="btn-action tf-btn style-2 style-fill-white w-100 animate-btn animate-dark">
+                                    <span class="text-caption fw-medium">CHOOSE THIS PLAN</span>
+                                </a>
+                                <ul class="benefit-list tf-list vertical">
+                                    <li class="benefit_title letter-space--1 text-white-64">What’s included:</li>
+                                    <li><span>//</span> Complete branding</li>
+                                    <li><span>//</span> Premium visuals</li>
+                                    <li><span>//</span> Enterprise systems</li>
+                                    <li><span>//</span> Dedicated manager</li>
+                                    <li><span>//</span> Priority support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="annual" role="tabpanel">
+                        <div class="tf-grid-layout md-col-2 lg-col-3">
+                            <div class="wg-plan">
+                                <div class="br-line"></div>
+                                <div class="plan-name letter-space--1 fw-medium">Basic</div>
+                                <h4 class="plan-price">
+                                    $6,400 <span class="text-body-2 fw-normal text-white-64">/annual</span>
+                                </h4>
+                                <p class="plan-desc text-white-64 letter-space--1">
+                                    Perfect for early-stage teams or startups ready to launch their first online presence.
+                                </p>
+                                <a href="#contactScroll" class="btn-action tf-btn style-2 style-troke w-100">
+                                    <span class="text-caption fw-medium">CHOOSE THIS PLAN</span>
+                                </a>
+                                <ul class="benefit-list tf-list vertical">
+                                    <li class="benefit_title letter-space--1 text-white-64">What’s included:</li>
+                                    <li><span>//</span> Custom website design</li>
+                                    <li><span>//</span> Responsive layouts</li>
+                                    <li><span>//</span> Basic SEO setup</li>
+                                    <li><span>//</span> Tool integrations</li>
+                                    <li><span>//</span> Ongoing support</li>
+                                </ul>
+                            </div>
+                            <div class="wg-plan style-2 type-2">
+                                <!-- <div class="bg-img bg-img_1 d-xl-block"></div> -->
+                                <div class="bg-img bg-img_2">
+                                    <img loading="lazy" width="416" height="625" src="assets/images/item/bg-6.png" alt="Image">
+                                </div>
+                                <div class="br-line bg-primary"></div>
+                                <div class="plan-name letter-space--1 fw-medium">Pro</div>
+                                <h4 class="plan-price">
+                                    <span><span class="text-primary">$</span>12,800</span>
+                                    <span class="text-body-2 fw-normal text-white-64">/annual</span>
+                                </h4>
+                                <p class="plan-desc text-white-64 letter-space--1">
+                                    Ideal for growing brands that require added features and enhanced creative flexibility.
+                                </p>
+                                <a href="#contactScroll" class="btn-action tf-btn style-2 style-fill w-100 animate-btn animate-dark">
+                                    <span class="text-caption fw-medium">CHOOSE THIS PLAN</span>
+                                </a>
+                                <ul class="benefit-list tf-list vertical">
+                                    <li class="benefit_title letter-space--1 text-white-64">What’s included:</li>
+                                    <li><span class="text-primary">//</span> Advanced web design</li>
+                                    <li><span class="text-primary">//</span> Interactive elements</li>
+                                    <li><span class="text-primary">//</span> Full SEO services</li>
+                                    <li><span class="text-primary">//</span> E-commerce setup</li>
+                                    <li><span class="text-primary">//</span> Monthly reports</li>
+                                </ul>
+                            </div>
+                            <div class="wg-plan style-2 type-3">
+                                <div class="bg-img bg-img_1"></div>
+                                <div class="br-line bg-white"></div>
+                                <div class="plan-name letter-space--1 fw-medium">Max</div>
+                                <h4 class="plan-price">
+                                    $25,600 <span class="text-body-2 fw-normal text-white-64">/annual</span>
+                                </h4>
+                                <p class="plan-desc text-white-64 letter-space--1">
+                                    Designed for established companies seeking a completely bespoke digital solution.
+                                </p>
+                                <a href="#contactScroll" class="btn-action tf-btn style-2 style-fill-white w-100 animate-btn animate-dark">
+                                    <span class="text-caption fw-medium">CHOOSE THIS PLAN</span>
+                                </a>
+                                <ul class="benefit-list tf-list vertical">
+                                    <li class="benefit_title letter-space--1 text-white-64">What’s included:</li>
+                                    <li><span>//</span> Complete branding</li>
+                                    <li><span>//</span> Premium visuals</li>
+                                    <li><span>//</span> Enterprise systems</li>
+                                    <li><span>//</span> Dedicated manager</li>
+                                    <li><span>//</span> Priority support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Pricing -->
+        <!-- Faq -->
+        <section class="section-faq type-2 flat-spacing bg-surface">
+            <div class="container">
+                <div class="s-header d-block">
+                    <h2 class="title text-display-2 letter-space--3 text-center text-black effectFade fadeUp">
+                        <span class="text">
+                            Frequently
+                            <span class="icon"><img loading="lazy" width="80" height="80" src="assets/images/item/global-2.svg" alt="Image"></span>
+                        </span> <br>
+                        asked questions
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="accordion-faq_list" id="accordion-faq_list">
+                            <div class="accordion-faq_item cl-line-2" role="presentation">
+                                <div class="accordion-action text-body-1 letter-space--1 fw-medium collapsed" data-bs-target="#faq-1" role="button"
+                                    data-bs-toggle="collapse" aria-controls="faq-1" aria-expanded="true">
+                                    <span class="accordion-order text-black-64">01</span>
+                                    <p class="accordion-text text-black">How long does a project usually take?</p>
+                                    <div class="ic-wrap d-flex">
+                                        <i class="icon icon-arrow-caret-down fs-10 text-black"></i>
+                                    </div>
+                                </div>
+                                <div id="faq-1" class="collapse " data-bs-parent="#accordion-faq_list">
+                                    <p class="accordion-content text-black-64">
+                                        Most projects are completed within 4–8 weeks, depending on complexity, revisions, and scope. I’ll
+                                        always
+                                        provide a clear timeline before starting.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-faq_item cl-line-2" role="presentation">
+                                <div class="accordion-action text-body-1 letter-space--1 fw-medium" data-bs-target="#faq-2" role="button"
+                                    data-bs-toggle="collapse" aria-controls="faq-2" aria-expanded="false">
+                                    <span class="accordion-order text-black-64">02</span>
+                                    <p class="accordion-text text-black">Do you work with international clients?</p>
+                                    <div class="ic-wrap d-flex">
+                                        <i class="icon icon-arrow-caret-down fs-10 text-black"></i>
+                                    </div>
+                                </div>
+                                <div id="faq-2" class="collapse show" data-bs-parent="#accordion-faq_list">
+                                    <p class="accordion-content text-black-64">
+                                        Yes, I collaborate with clients worldwide using online meetings, project management tools, and shared
+                                        design
+                                        platforms to ensure smooth communication.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-faq_item cl-line-2" role="presentation">
+                                <div class="accordion-action text-body-1 letter-space--1 fw-medium collapsed" data-bs-target="#faq-3" role="button"
+                                    data-bs-toggle="collapse" aria-controls="faq-3" aria-expanded="false">
+                                    <span class="accordion-order text-black-64">03</span>
+                                    <p class="accordion-text text-black">Can you help with both design and development?</p>
+                                    <div class="ic-wrap d-flex">
+                                        <i class="icon icon-arrow-caret-down fs-10 text-black"></i>
+                                    </div>
+                                </div>
+                                <div id="faq-3" class="collapse" data-bs-parent="#accordion-faq_list">
+                                    <p class="accordion-content text-black-64">
+                                        Absolutely. I handle branding, UI/UX design, and no-code or coded development to deliver a complete
+                                        end-to-end
+                                        solution.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-faq_item cl-line-2" role="presentation">
+                                <div class="accordion-action text-body-1 letter-space--1 fw-medium collapsed" data-bs-target="#faq-4" role="button"
+                                    data-bs-toggle="collapse" aria-controls="faq-4" aria-expanded="false">
+                                    <span class="accordion-order text-black-64">04</span>
+                                    <p class="accordion-text text-black">What’s your payment process?</p>
+                                    <div class="ic-wrap d-flex">
+                                        <i class="icon icon-arrow-caret-down fs-10 text-black"></i>
+                                    </div>
+                                </div>
+                                <div id="faq-4" class="collapse" data-bs-parent="#accordion-faq_list">
+                                    <p class="accordion-content text-black-64">
+                                        I typically require a 50% deposit to begin work, with the remaining balance due upon project
+                                        completion and
+                                        approval.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-faq_item cl-line-2" role="presentation">
+                                <div class="accordion-action text-body-1 letter-space--1 fw-medium collapsed" data-bs-target="#faq-5" role="button"
+                                    data-bs-toggle="collapse" aria-controls="faq-5" aria-expanded="false">
+                                    <span class="accordion-order text-black-64">05</span>
+                                    <p class="accordion-text text-black">Do you provide ongoing support after launch?</p>
+                                    <div class="ic-wrap d-flex">
+                                        <i class="icon icon-arrow-caret-down fs-10 text-black"></i>
+                                    </div>
+                                </div>
+                                <div id="faq-5" class="collapse" data-bs-parent="#accordion-faq_list">
+                                    <p class="accordion-content text-black-64">
+                                        Yes. I offer maintenance, updates, and performance monitoring packages to keep your website or product
+                                        running
+                                        smoothly long-term.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Faq -->
+        <!-- CTA -->
+        <section class="section-cta flat-spacing" id="contactScroll">
+            <div class="s-header d-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2 offset-lg-2 col-lg-2">
+                            <div class="col-left">
+                                <a href="index.html" class="logo-custom">
+                                    <div class="logo-site-sv">
+                                        <svg width="34" height="41" viewBox="0 0 34 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.21094 0.400391C15.9908 0.392629 21.8983 0.597548 27.1426 5.65918C35.1922 13.4293 35.2468 26.7035 27.5312 34.7549C22.0053 40.1145 16.6295 40.3989 9.48535 40.4004L0.75 40.3945L0.751953 0.407227L9.21094 0.400391ZM21.5244 6.83496C16.6613 3.86011 10.4273 4.54391 4.91113 4.55664L17.2607 22.3262C19.5017 25.5466 21.7744 28.9254 24.0615 32.0889C24.847 31.468 25.7087 30.3488 26.2646 29.5088C28.7144 25.5207 29.444 20.7119 28.2871 16.1777C27.305 12.2252 25.0035 8.9637 21.5244 6.83496Z"
+                                                fill="#07C42C" />
+                                        </svg>
+                                    </div>
+                                    <span class="line-vertical left"></span>
+                                    <span class="line-vertical right"></span>
+                                    <span class="line-horizontal top"></span>
+                                    <span class="line-horizontal bottom"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-10 col-lg-6">
+                            <h2 class="text-display-2 letter-space--3 text-end effectFade fadeUp">
+                                Let’s start <br>
+                                creating together
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <form class="form-cta">
+                            <div class="form-content">
+                                <div class="tf-grid-layout sm-col-2">
+                                    <fieldset class="tf-field">
+                                        <input class="tf-input" type="text" placeholder required>
+                                        <label class="tf-lable">Name <span class="text-primary">*</span></label>
+                                    </fieldset>
+                                    <fieldset class="tf-field">
+                                        <input class="tf-input" type="email" placeholder required>
+                                        <label class="tf-lable">Email <span class="text-primary">*</span></label>
+                                    </fieldset>
+                                </div>
+                                <div class="tf-grid-layout sm-col-2">
+                                    <div class="nc-wrap">
+                                        <p class="select-label fs-14 text-white-64 d-sm-none">Select an option <span class="text-primary">*</span></p>
+                                        <div class="nice-select">
+                                            <span class="current letter-space--1">You are interested in</span>
+                                            <ul class="list">
+                                                <li class="option disabled">
+                                                    -- Select an option --
+                                                </li>
+                                                <li class="option">
+                                                    Web Development
+                                                </li>
+                                                <li class="option">
+                                                    UI/UX Design
+                                                </li>
+                                                <li class="option">
+                                                    Digital Marketing
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="nc-wrap">
+                                        <p class="select-label fs-14 text-white-64 d-sm-none">Select your budget <span class="text-primary">*</span>
+                                        </p>
+                                        <div class="nice-select">
+                                            <span class="current letter-space--1">Budget in USD</span>
+                                            <ul class="list">
+                                                <li class="option disabled">
+                                                    -- Select your budget --
+                                                </li>
+                                                <li class="option">
+                                                    $0 – $100
+                                                </li>
+                                                <li class="option">
+                                                    $100 – $500
+                                                </li>
+                                                <li class="option">
+                                                    $500 – $1,000
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <fieldset class="tf-field">
+                                    <input class="tf-input" type="text" placeholder required>
+                                    <label class="tf-lable">Project details</label>
+                                </fieldset>
+                            </div>
+                            <div class="form-action">
+                                <button type="submit" class="tf-btn">
+                                    <span class="text-caption">SUBMIT MESSAGE</span>
+                                </button>
+                                <p class="text-body-1">
+                                    say hello - <a href="#" class="text-primary">davies@gmail.com</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /CTA -->
+        <!-- Footer -->
+        <footer class="tf-footer style-2">
+            <div class="container">
+                <div class="br-line"></div>
+            </div>
+            <div class="container">
+                <div class="footer-inner text-caption letter-space--1 fw-medium">
+                    <a href="#workScroll" class="link">WORKS</a>
+                    <a href="#serviceScroll" class="link">SERVICES</a>
+                    <a href="#aboutScroll" class="link">ABOUT</a>
+                    <a href="#" class="action-go-top tf-link-icon link">
+                        BACK TO TOP
+                        <i class="icon icon-arrow-long-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="img-agency scroll-fadeZoom">
+                        <img class="effectFade fadeZoom" loading="lazy" width="1293" height="269" src="assets/images/logo/agency.png" alt="Image">
+                    </div>
+                    <div class="bottom text-caption letter-space--1 fw-medium">
+                        <p class="text-nocopy">
+                            © DAVIES'S PERSONAL PORTFOLIO
+                        </p>
+                        <p class="">
+                            CUPERTINO → <span class="clock"></span>
+                        </p>
+                        <div class="right">
+                            <a href="#" class="tf-link-icon link">
+                                TWITTER (X)
+                            </a>
+                            <a href="#" class="tf-link-icon link">
+                                DRIBBBLE
+                            </a>
+                            <a href="#" class="tf-link-icon link">
+                                LINKEDIN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+    </main>
+    <!-- Mobile Menu -->
+    <div class="offcanvas-menu">
+        <div class="offcanvas-content">
+            <div class="container h-100">
+                <div class="offcanvas-content_wrapin">
+                    <div class="canvas_head">
+                        <a href="index.html" class="logo-site">
+                            <i class="icon icon-davies-logo"></i>
+                        </a>
+                        <div class="btn-mobile-menu close-mb-menu text-caption link">
+                            <i class="icon icon-close"></i>
+                            CLOSE
+                        </div>
+                    </div>
+                    <div class="canvas_center">
+                        <ul class="nav-ul-mb">
+                            <li>
+                                <div class="item close-mb-menu">
+                                    <a href="#workScroll" class="mb-menu-link text-display-1">
+                                        <span class="text">Works</span>
+                                        <div class="infiniteSlide_text_main">
+                                            <div class="infiniteSlide infiniteSlide_text" data-clone="5">
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Works
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Works
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Works
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item close-mb-menu">
+                                    <a href="#aboutScroll" class="mb-menu-link text-display-1">
+                                        <span class="text">About</span>
+                                        <div class="infiniteSlide_text_main">
+                                            <div class="infiniteSlide infiniteSlide_text" data-clone="5">
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View About
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View About
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View About
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item close-mb-menu">
+                                    <a href="#serviceScroll" class="mb-menu-link text-display-1">
+                                        <span class="text">Services</span>
+                                        <div class="infiniteSlide_text_main">
+                                            <div class="infiniteSlide infiniteSlide_text" data-clone="5">
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Services
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Services
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Services
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item close-mb-menu">
+                                    <a href="#contactScroll" class="mb-menu-link text-display-1">
+                                        <span class="text">Contact</span>
+                                        <div class="infiniteSlide_text_main">
+                                            <div class="infiniteSlide infiniteSlide_text" data-clone="5">
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Contact
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Contact
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Contact
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="canvas_foot">
+                        <div class="left">
+                            <a href="mailto:davies@gmail.com" class="link text-caption">DAVIES@GMAIL.COM</a>
+                            <p class="text-caption">
+                                CUP <span class="clock"></span>
+                            </p>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="tf-link-icon text-caption link">
+                                <i class="icon icon-arrow-top-right"></i>
+                                TWITTER (X)
+                            </a>
+                            <a href="#" class="tf-link-icon text-caption link">
+                                <i class="icon icon-arrow-top-right"></i>
+                                DRIBBBLE
+                            </a>
+                            <a href="#" class="tf-link-icon text-caption link">
+                                <i class="icon icon-arrow-top-right"></i>
+                                LINKEDIN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Mobile Menu -->
+    <!-- Javascript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
+
+    <script src="assets/js/infinityslide.js"></script>
+    <script src="assets/js/ScrollSmooth.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/gsapAnimation.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/unicornStudio.umd.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        UnicornStudio.init();
+    </script>
+</body>
+
+</html>

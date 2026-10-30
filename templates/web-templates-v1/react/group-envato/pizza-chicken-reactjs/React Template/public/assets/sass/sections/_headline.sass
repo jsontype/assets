@@ -1,0 +1,78 @@
+/*******************************************************/
+/******************* ## Headline Text *******************/
+/*******************************************************/        
+.marquee-inner
+    display: flex
+    &.left
+        animation: marquee_left 20s linear infinite
+    &.right
+        animation: marquee_right 20s linear infinite
+        
+/* Headline style */
+.marquee-wrap
+    display: flex
+    line-height: 1
+    overflow: hidden
+    font-size: 130px
+    color: transparent
+    white-space: nowrap
+    align-items: center
+    text-transform: uppercase
+    font-family: $heading-font
+    -webkit-text-stroke-width: 1.5px
+    -webkit-text-stroke-color: rgba(14, 19, 23, 0.1)
+    +res-bl(xxl)
+        font-size: 100px
+    +res-bl(lg)
+        font-size: 80px
+    +res-bl(sm)
+        font-size: 60px
+    .marquee-item
+        display: flex
+        align-items: center
+        +gapLR(margin, 35px)
+        +res-bl(xxl)
+            +gapLR(margin, 15px)
+        +res-bl(sm)
+            +gapLR(margin, 6px)
+        i
+            font-size: 0.35em
+            transition: 0.5s
+            -webkit-text-stroke-width: 2.5px
+            &:hover
+                color: $primary-color
+                -webkit-text-stroke-color: $primary-color
+                &:before
+                    content: "\f102"
+            
+    &.style-two
+        opacity: 0.04
+        color: $heading-color
+        -webkit-text-stroke-width: 0
+        +res-ab(xxl)
+            font-size: 450px
+            
+    &.white-text
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.1)
+        .marquee-item
+            i
+                &:not(:hover)
+                    -webkit-text-stroke-color: rgba(255, 255, 255, 0.1)
+
+/* Hero Shapes */
+.headline-shapes
+    .shape
+        z-index: 2
+        max-width: 7%
+        position: absolute
+        &.one
+            top: 80%
+            left: 8%
+        &.two
+            top: 75%
+            right: 10%
+            filter: drop-shadow(0px 10px 60px rgba(236, 61, 8, 0.5))
+        &.three
+            right: 0
+            bottom: 0
+            max-width: 20%

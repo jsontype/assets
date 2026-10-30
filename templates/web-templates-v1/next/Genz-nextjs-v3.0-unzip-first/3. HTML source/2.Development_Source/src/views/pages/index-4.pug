@@ -1,0 +1,23 @@
+extends ../layouts/master.pug
+
+block title
+    title Genz - Personal Blog  HTML Template
+
+block header
+    include ../components/header-small.pug
+
+block content
+    include ../sections/homepage4/banner.pug
+    .cover-home3
+        .container
+            .row
+                .col-xl-1
+                .col-xl-10.col-lg-12
+                    include ../sections/homepage4/featured-news.pug
+                    include ../sections/homepage1/popular_tags.pug
+                    include ../sections/homepage4/posts.pug
+                    include ../sections/homepage4/banner-bottom.pug
+                    include ../sections/homepage3/sidebar_bottom.pug
+                    include ../sections/homepage3/partners.pug
+
+    block scripts-custom

@@ -1,0 +1,802 @@
+/* Marquee Area ---------------------------------- */
+.marquee-slider1 {
+    margin: 0 -50px 0px;
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.marquee-card {
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+    a {
+        font-size: 56px;
+        font-weight: 700;
+        font-family: $title-font;
+        color: $title-color;
+        display: inline-block;
+        line-height: 0.75em;
+        margin-left: 30px;
+        padding-bottom: 10px;
+        position: relative;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+
+    @include lg {
+        a {
+            font-size: 50px;
+        }
+    }
+
+    @include sm {
+        .marquee-icon {
+            width: 24px;
+            margin-top: -10px;
+        }
+
+        a {
+            font-size: 40px;
+        }
+    }
+
+    @include xs {
+        a {
+            font-size: 30px;
+        }
+    }
+}
+
+/* Marquee Area 2---------------------------------- */
+.marquee-wrap2 {
+    rotate: 4deg;
+    margin: 10px -20px;
+    position: relative;
+    z-index: 1;
+
+    &.bg-gradient {
+        &:after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to left, $theme-color, $theme-color);
+        }
+    }
+
+    @include hd {
+        margin: 68px -20px;
+    }
+
+    @include xxl {
+        margin: 40px -20px;
+    }
+
+    @include xl {
+        margin: 30px -20px;
+    }
+
+    @include lg {
+        margin: 30px -10px;
+    }
+
+    @include md {
+        margin: 20px -10px;
+    }
+
+    @include sm {
+        margin: 15px -10px;
+    }
+}
+
+.marquee-slider2 {
+    position: relative;
+    margin: 0 -50px 0px;
+    z-index: 2;
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.marquee-card.style2 {
+    margin-bottom: -0.1em;
+    display: flex;
+
+    a {
+        font-size: 56px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: inherit;
+        margin-left: 60px;
+        padding-bottom: 0;
+        line-height: 0.8em;
+        position: relative;
+
+        @include xs {
+            font-size: 24px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: $white-color;
+            border-radius: 50%;
+            top: 50%;
+            left: -45px;
+            transform: translate(0, -50%);
+        }
+    }
+}
+
+/* Marquee Area 3---------------------------------- */
+.marquee-wrap3 {
+    position: relative;
+    z-index: 3;
+    rotate: -7deg;
+    margin: -147px -64px 121px;
+
+    @include hd {
+        margin: -130px -20px 130px;
+    }
+
+    @include xxl {
+        margin: -78px -20px 78px;
+    }
+
+    @include xl {
+        margin: -65px -20px 65px;
+    }
+
+    @include lg {
+        margin: 0 -10px 70px; 
+    }
+
+    @include md {
+        margin: 0 -10px 70px;
+    }
+
+    @include xs {
+        margin: 0 -10px 22px;
+        rotate: -3deg;
+    }
+}
+
+/* Marquee Area 4---------------------------------- */
+.marquee-slider4 {
+    margin: 0 -50px 0px;
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.marquee-card4 {
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+    .marquee-icon {
+        .masking-src {
+            background: linear-gradient(90deg, $theme-color 0%, $theme-color 100%);
+        }
+    }
+
+    a {
+        font-size: 56px;
+        font-weight: 700;
+        font-family: $title-font;
+        display: inline-block;
+        line-height: 0.77em;
+        margin-left: 30px;
+        padding-bottom: 10px;
+        position: relative;
+        color: transparent;
+        -webkit-text-stroke: 1px $body-color;
+
+        &:hover {
+            background: linear-gradient(90deg, $theme-color 0%, $theme-color 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-stroke: 1px transparent;
+        }
+    }
+
+    @include lg {
+        a {
+            font-size: 50px;
+        }
+    }
+
+    @include sm {
+        .marquee-icon {
+            width: 24px;
+            margin-top: -10px;
+        }
+
+        a {
+            font-size: 40px;
+        }
+    }
+
+    @include xs {
+        a {
+            font-size: 30px;
+        }
+    }
+}
+
+/* Marquee Area 5---------------------------------- */
+.marquee-wrap5 {
+    border-radius: 0 0 20px 20px;
+    padding: 46px 0 36px;
+}
+
+.marquee-slider5 {
+    margin: 0 -50px 0px;
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.marquee-card5 {
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+    .marquee-icon {
+        .masking-src {
+            background: $white-color;
+            mix-blend-mode: normal;
+        }
+    }
+
+    a {
+        font-size: 56px;
+        font-weight: 700;
+        font-family: $title-font;
+        display: inline-block;
+        line-height: 0.77em;
+        margin-left: 30px;
+        padding-bottom: 10px;
+        position: relative;
+        color: transparent;
+        -webkit-text-stroke: 1px $white-color;
+
+        &:hover {
+            color: $white-color;
+        }
+    }
+
+    @include lg {
+        a {
+            font-size: 50px;
+        }
+    }
+
+    @include sm {
+        .marquee-icon {
+            width: 24px;
+            margin-top: -10px;
+        }
+
+        a {
+            font-size: 40px;
+        }
+    }
+
+    @include xs {
+        a {
+            font-size: 30px;
+        }
+    }
+}
+
+/* Marquee Area 6---------------------------------- */
+.marquee-slider6 {
+    margin: 0 -50px 0px;
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.marquee-wrap6 {
+    margin-bottom: -0.32em;
+}
+
+.marquee-card6 {
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+    a {
+        font-size: 120px;
+        font-weight: 700;
+        font-family: $title-font;
+        text-transform: uppercase;
+        display: inline-block;
+        line-height: 0.77em;
+        margin-left: 48px;
+        padding-bottom: 0;
+        position: relative;
+        color: transparent;
+        -webkit-text-stroke: 1px $title-color;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: linear-gradient(117.81deg, $theme-color 13.95%, $theme-color 77.47%);
+            bottom: 3px;
+            left: -24px;
+        }
+
+        &:hover {
+            color: $title-color;
+        }
+    }
+
+    @include ml {
+        a {
+            font-size: 100px;
+        }
+    }
+
+    @include xl {
+        a {
+            font-size: 90px;
+        }
+    }
+
+    @include lg {
+        a {
+            font-size: 70px;
+        }
+    }
+
+    @include md {
+        a {
+            font-size: 60px;
+        }
+    }
+
+    @include sm {
+        a {
+            font-size: 50px;
+            margin-top: 1px;
+        }
+    }
+
+    @include xs {
+        a {
+            font-size: 40px;
+        }
+    }
+}
+
+/* Marquee Area 7---------------------------------- */
+.marquee-slider7 {
+    margin: 0 -50px 0px;
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.marquee-card7 {
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+    .marquee-icon {
+        .masking-src {
+            background: linear-gradient(180deg, $theme-color 0%, $theme-color 50%);
+        }
+    }
+
+    a {
+        font-size: 56px;
+        font-weight: 700;
+        font-family: $title-font;
+        display: inline-block;
+        line-height: 0.77em;
+        margin-left: 30px;
+        padding-bottom: 10px;
+        position: relative;
+        color: transparent;
+        background: linear-gradient(180deg, $theme-color 0%, $theme-color 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    @include lg {
+        a {
+            font-size: 50px;
+        }
+    }
+
+    @include sm {
+        .marquee-icon {
+            width: 24px;
+            margin-top: -10px;
+        }
+
+        a {
+            font-size: 40px;
+        }
+    }
+
+    @include xs {
+        a {
+            font-size: 30px;
+        }
+    }
+}
+
+/* Marquee Area 8---------------------------------- */
+.marquee-slider8 {
+    margin: 0 -50px 0px;
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.marquee-card8 {
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+    a {
+        font-size: 84px;
+        font-weight: 700;
+        font-family: $title-font;
+        display: inline-block;
+        line-height: 0.77em;
+        margin-left: 40px;
+        padding-bottom: 15px;
+        position: relative;
+        color: $title-color;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+
+    @include xxl {
+        a {
+            font-size: 70px;
+        }
+    }
+
+    @include ml {
+        a {
+            padding-bottom: 12px;
+            font-size: 64px;
+        }
+    }
+
+    @include xl {
+        a {
+            padding-bottom: 10px;
+            font-size: 58px;
+        }
+    }
+
+    @include lg {
+        a {
+            font-size: 50px;
+            padding-bottom: 2px;
+        }
+    }
+
+    @include sm {
+        .marquee-icon {
+            width: 50px;
+        }
+
+        a {
+            font-size: 40px;
+            padding-bottom: 0;
+        }
+    }
+
+    @include xs {
+        a {
+            font-size: 30px;
+        }
+    }
+}
+
+/* Marquee Area 2---------------------------------- */
+.marquee-area2 {
+    margin: 0 40px;
+    border-radius: 24px;
+    padding: 404px 0;
+
+    @include lg {
+        padding: 120px 0;
+        margin: 0 20px;
+    }
+
+}
+
+.marquee {
+    position: relative;
+    --duration: 120s;
+    --gap: 35px;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+
+    &.marquee-extra.style2 {
+        top: 73%;
+    }
+
+    &.style2 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: rotate(-10deg);
+        z-index: -1;
+
+        .marquee-group .item {
+            font-family: $title-font;
+            font-weight: 600;
+            font-size: 80px;
+            line-height: 66px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    &:first-child {
+        --duration: 100s;
+    }
+
+    &:last-child {
+        --duration: 80s;
+    }
+
+    &.marquee--reverse {
+        .marquee-group {
+            --gap: 35px;
+            animation-direction: reverse;
+        }
+    }
+
+    .marquee-group {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: distribute;
+        justify-content: flex-start;
+        gap: 56px;
+        animation: scroll var(--duration) linear infinite;
+
+        &.style3 {
+            .item {
+                font-weight: 600;
+                font-size: 120px;
+                line-height: 120px;
+
+                @include lg {
+                    font-size: 70px;
+                    line-height: 70px;
+                }
+
+                @include sm {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+
+
+            }
+        }
+
+        &.style4 {
+            .item {
+                a {
+                    font-family: $body-font;
+                    display: inline-block;
+                    position: relative;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: $title-color;
+                    font-size: 56px;
+                    font-weight: 600;
+                    color: transparent;
+                    line-height: 96px;
+                    transition: all 0.3s ease-in-out;
+
+                    &::before {
+                        overflow: hidden;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        color: $white-color;
+                        white-space: nowrap;
+                        content: attr(data-hover);
+                        transition: all 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.87);
+                    }
+
+
+
+                    &:hover {
+                        color: $title-color;
+                        -webkit-text-stroke-color: $title-color;
+
+                        &::before {
+                            width: 100%;
+                            color: $title-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.style5 {
+            .item {
+                &::before {
+                    display: none;
+                }
+
+                a {
+                    font-family: $title-font2;
+                    display: inline-block;
+                    position: relative;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: $title-color;
+                    font-size: 84px;
+                    font-weight: 600;
+                    color: transparent;
+                    line-height: 100px;
+                    transition: all 0.3s ease-in-out;
+
+                    &::before {
+                        overflow: hidden;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        color: $white-color;
+                        white-space: nowrap;
+                        content: attr(data-hover);
+                        transition: all 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.87);
+                    }
+
+
+
+                    &:hover {
+                        color: $title-color;
+                        -webkit-text-stroke-color: $title-color;
+
+                        &::before {
+                            width: 100%;
+                            color: $title-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.style6 {
+          .item {
+            font-family: $title-font;
+                font-weight: 600; 
+                font-size: 120px;
+                line-height: 130px;
+                color: $title-color;
+
+                @include lg {
+                    font-size: 70px;
+                    line-height: 80px;
+                }
+
+                @include sm {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+
+
+            }
+        }
+
+
+        .img {
+            margin: 20px;
+        }
+
+        .item {
+            position: relative;
+            font-family: $title-font;
+            font-weight: 600;
+            font-size: 56px;
+            line-height: 66px;
+            color: #FFFFFF;
+            display: inline-block;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            z-index: 2;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: -28px;
+                width: 8px;
+                height: 8px;
+                background-color: $white-color;
+                transform: translateX(-50%);
+            }
+
+            span {
+                margin: 0px;
+            }
+
+            img {
+                margin: 0;
+                border-radius: 150px;
+                margin-right: 35px;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+/*******************************************************/
+/****************** ## Category Area *******************/
+/*******************************************************/
+.food-category-item
+    display: flex
+    align-items: center
+    padding: 25px 50px 25px 70px
+    border: 1px solid $border-color
+    +res-bl(xxl)
+        padding: 15px 25px 15px 45px
+    +res-bl(xs)
+        padding: 10px 15px 10px 35px
+    .image
+        max-width: 100px
+        margin-right: 25px
+        position: relative
+        +res-bl(xxl)
+            max-width: 80px
+            margin-right: 15px
+        +res-bl(xs)
+            max-width: 60px
+        .pizza-badge
+            +size(40px)
+            +poLT(-20px, 0)
+            text-align: center
+            color: $heading-color
+            background-size: cover
+            background-repeat: no-repeat
+            font-family: $heading-font
+            line-height: 42px
+            +res-bl(xs)
+                +size(30px)
+                font-size: 13px
+                line-height: 32px
+    h3
+        margin-bottom: 0
+        +res-bl(xxl)
+            font-size: 25px
+        +res-bl(xs)
+            font-size: 20px
+            
+.food-category-active            
+    .slick-track
+        display: flex
+        border-top: 1px solid $border-color
+        border-bottom: 1px solid $border-color
+        .food-category-item
+            display: flex
+            height: auto
+            border-width: 0 1px 0 0
+            
+/* Food Category Two */
+.fc-two-active
+    +gapLR(margin, -15px)
+    .fc-two-item
+        +gapLR(margin, 15px)
+        img
+            display: inline-block
+    .slick-dots
+        margin-top: 20px
+
+.fc-two-item
+    padding: 30px
+    text-align: center
+    margin-bottom: 30px
+    background: $lighter-color
+    border: 1px solid $border-color
+    .icon
+        margin-bottom: 25px
+    .btn
+        color: black
+        border: none
+        font-weight: 500
+        background: white
+        padding: 3px 15px
+        border-radius: 0
+    &.style-two
+        display: flex
+        flex-direction: column
+        padding: 30px 15px 15px
+        background: transparent
+        height: calc(100% - 30px)
+        .icon
+            margin-bottom: 15px
+        h5
+            font-size: 22px
+            margin-top: auto

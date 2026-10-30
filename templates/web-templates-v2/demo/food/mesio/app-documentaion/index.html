@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Y Systems — Y Systems 메모</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="header-text">
+        Mesio - Food Delivery App Documentation by George_FX v1.0
+      </h3>
+      <h1 class="title">같은 문장을 모든 템플릿에 반복하지 않도록, 폴더마다 문장을 나눴습니다.</h1>
+      <!-- Details -->
+      <div class="details">
+        <div class="details__left">
+          <span class="details__left-text">Created: 16/07/2025</span>
+          <span class="details__left-text">By: George_FX</span>
+          <span class="details__left-text">
+            Email:
+            <a href="#" class="details__left-link">kul.giorgi@gmail.com</a>
+          </span>
+        </div>
+        <div class="details__right">
+          <p class="details__right-text">
+            Thank you for purchasing my theme. If you have any questions that
+            are beyond the scope of this help file, please feel free to email
+            via my user page contact form
+            <a href="http://themeforest.net/user/George_FX">here</a>
+            . Thanks so much!
+          </p>
+        </div>
+      </div>
+      <!-- Description -->
+      <p class="description">
+        Before setting up the project, you should have a basic understanding of
+        the following: Html, Css, Javascript, React, Node.js, npm for more
+        information about the above topics, you can visit the following links:
+        <a href="https://www.w3schools.com/html/">HTML</a>
+        <a href="https://www.w3schools.com/css/">CSS</a>
+        <a href="https://www.w3schools.com/js/">Javascript</a>
+        <a href="https://reactjs.org/">React</a>
+        <a href="https://nodejs.org/en/">Node.js</a>
+        <a href="https://www.npmjs.com/">npm</a>
+      </p>
+      <!-- Steps -->
+      <h2 class="steps__title">
+        You need to follow the following steps to install the theme:
+      </h2>
+      <!-- List -->
+      <ol class="steps__list">
+        <!-- 1. Folder structure -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">1.</span>
+          <a href="#structure" class="steps__list-item-text">
+            Folder structure
+          </a>
+        </li>
+        <!-- 2. Install environment -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">2.</span>
+          <a href="#environment" class="steps__list-item-text">
+            Install environment
+          </a>
+        </li>
+        <!-- 3. Install dependencies -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">3.</span>
+          <a href="#dependencies" class="steps__list-item-text">
+            Install dependencies
+          </a>
+        </li>
+        <!-- 4. Run the project -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">4.</span>
+          <a href="#run-project" class="steps__list-item-text">
+            Run the project
+          </a>
+        </li>
+        <!-- 5. Build the project -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">5.</span>
+          <a href="#build-project" class="steps__list-item-text">
+            Build the project
+          </a>
+        </li>
+        <!-- 6. Deploy the project -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">6.</span>
+          <a href="#deploy-project" class="steps__list-item-text">
+            Deploy the project
+          </a>
+        </li>
+        <!-- 7. API Usage -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">7.</span>
+          <a href="#api-usage" class="steps__list-item-text">API Usage</a>
+        </li>
+        <!-- 8. Support and Dependencies -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">8.</span>
+          <a href="#support" class="steps__list-item-text">
+            Support and Dependencies
+          </a>
+        </li>
+      </ol>
+
+      <!-- 1. Folder structure -->
+      <section class="steps__section" id="structure">
+        <h3 class="steps__sub-title">
+          <strong>1. Folder structure</strong>
+        </h3>
+        <ul class="structure__list">
+          <li class="structure__list-item">
+            <strong>assets:</strong>
+            Contains static files such as images, icons, and fonts.
+          </li>
+          <li class="structure__list-item">
+            <strong>components:</strong>
+            Contains reusable UI components.
+          </li>
+          <li class="structure__list-item">
+            <strong>config:</strong>
+            Contains configuration files.
+          </li>
+          <li class="structure__list-item">
+            <strong>scss:</strong>
+            Contains SCSS files for styling.
+          </li>
+          <li class="structure__list-item">
+            <strong>constants:</strong>
+            Contains constant values used throughout the application.
+          </li>
+          <li class="structure__list-item">
+            <strong>hooks:</strong>
+            Contains custom React hooks.
+          </li>
+          <li class="structure__list-item">
+            <strong>items:</strong>
+            Contains specific items or modules related to the application.
+          </li>
+          <li class="structure__list-item">
+            <strong>screens:</strong>
+            Contains screen components for different views or pages.
+          </li>
+          <li class="structure__list-item">
+            <strong>stores:</strong>
+            Contains Zustand stores for state management.
+          </li>
+          <li class="structure__list-item">
+            <strong>types:</strong>
+            Contains TypeScript type definitions.
+          </li>
+          <li class="structure__list-item">
+            <strong>utils:</strong>
+            Contains utility functions and helpers.
+          </li>
+        </ul>
+      </section>
+
+      <!-- 2. Install environment -->
+      <section class="steps__section" id="environment">
+        <h3 class="steps__sub-title">
+          <strong>2. Install environment</strong>
+        </h3>
+        <p class="steps__section-description">
+          Your computer should have Node.js and npm installed to manage the
+          dependencies. You can download Node.js (which includes npm) from the
+          following link:
+          <a href="https://nodejs.org/en/">Node.js</a>
+        </p>
+        <img src="assets/download-node.png" class="steps__section-image" />
+      </section>
+
+      <!-- 3. Install dependencies -->
+      <section class="steps__section" id="dependencies">
+        <h3 class="steps__sub-title">
+          <strong>3. Install dependencies</strong>
+        </h3>
+        <p class="steps__section-description">
+          To install the project dependencies, run the following command in the
+          project directory:
+          <code>npm install</code>
+        </p>
+        <img src="assets/npm-install.png" class="steps__section-image" />
+      </section>
+
+      <!-- 4. Run the project -->
+      <section class="steps__section" id="run-project">
+        <h3 class="steps__sub-title">
+          <strong>4. Run the project</strong>
+        </h3>
+        <p class="steps__section-description">
+          To run the project, use the following command:
+          <code>npm run dev</code>
+        </p>
+        <img src="assets/npm-run-dev.png" class="steps__section-image" />
+      </section>
+
+      <!-- 5. Build the project -->
+      <section class="steps__section" id="build-project">
+        <h3 class="steps__sub-title">
+          <strong>5. Build the project</strong>
+        </h3>
+        <p class="steps__section-description">
+          To build the project, run the following command:
+          <code>npm run build</code>
+        </p>
+        <img src="assets/npm-run-build.png" class="steps__section-image" />
+      </section>
+
+      <!-- 6. Deploy the project -->
+      <section class="steps__section" id="deploy-project">
+        <h3 class="steps__sub-title">
+          <strong>6. Deploy the project</strong>
+        </h3>
+        <p class="steps__section-description">
+          After running the build command, the build folder will be ready for
+          deployment. Move all the files from the build folder to your server.
+        </p>
+        <img src="assets/build-result.png" class="steps__section-image" />
+      </section>
+
+      <!-- 7. API Usage -->
+      <section class="steps__section" id="api-usage">
+        <h3 class="steps__sub-title">
+          <strong>7. API Usage</strong>
+        </h3>
+        <ul class="api__list">
+          <li class="api__list-item">
+            <a href="https://george-fx.github.io/mesio-api/dishes.json">
+              dishes.json
+            </a>
+          </li>
+          <li class="api__list-item">
+            <a href="https://george-fx.github.io/mesio-api/promocodes.json">
+              promocodes.json
+            </a>
+          </li>
+          <li class="api__list-item">
+            <a href="https://george-fx.github.io/mesio-api/reviews.json">
+              reviews.json
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 8. Support and Dependencies -->
+      <section class="steps__section" id="support">
+        <h3 class="steps__sub-title">
+          <strong>8. Support and Dependencies</strong>
+        </h3>
+        <p class="steps__section-description">
+          If you have any questions or need support, please contact me via
+          email:
+          <a href="mailto:kul.giorgi@gmail.com">kul.giorgi@gmail.com</a>
+          <br />
+          The project uses the following dependencies:
+        </p>
+        <ul class="api__list">
+          <li class="api__list-item">
+            <a href="https://zustand-demo.pmnd.rs/">
+              Zustand (state management)
+            </a>
+          </li>
+          <li class="api__list-item">
+            <a href="https://www.npmjs.com/package/sass">sass</a>
+          </li>
+          <li class="api__list-item">
+            <a href="https://tanstack.com/">TanStack (React Query)</a>
+          </li>
+          <li class="api__list-item">
+            <a href="https://axios-http.com/">axios (HTTP client)</a>
+          </li>
+          <li class="api__list-item">
+            <a href="https://motion.dev/">
+              Motion (animations and transitions)
+            </a>
+          </li>
+          <li class="api__list-item">
+            <a href="https://www.npmjs.com/package/react-spinners">
+              React Spinners (loading indicators)
+            </a>
+          </li>
+          <li class="api__list-item">
+            <a href="https://swiperjs.com/">Swiper (carousel and slider)</a>
+          </li>
+        </ul>
+        <p class="steps__section-description">
+          The project uses the following font:
+        </p>
+        <ul class="font__list">
+          <li class="font__list-item">
+            <a href="https://fonts.google.com/specimen/Roboto">Roboto</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

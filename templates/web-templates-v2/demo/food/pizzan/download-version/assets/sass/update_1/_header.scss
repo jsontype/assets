@@ -1,0 +1,44 @@
+
+
+/* Header 4 ---------------------------------- */
+.header-layout4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .main-menu {
+        > ul {
+            > li {
+                > a {
+                    color: $white-color;
+                    &:after {
+                        color: $white-color;
+                    }
+                    &:hover {
+                        color: $theme-color;
+                        &:after {
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .icon-btn {
+        background-color: transparent;
+        color: $white-color;
+    }
+    .sticky-wrapper.sticky {
+        background-color: var(--title-color);
+    }
+}
+
+@include xl {
+    .header-layout4 {
+        .header-button {
+            .th-btn {
+                display: none;
+            }
+        }
+    }
+}

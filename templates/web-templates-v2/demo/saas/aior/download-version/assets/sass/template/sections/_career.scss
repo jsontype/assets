@@ -1,0 +1,172 @@
+/* Contact Page ---------------------------------- */
+
+/* ------------------case studies --------------------*/
+.case-study {
+    position: relative;
+    z-index: 2;
+
+    .box-img {
+        position: relative;
+        z-index: 2;
+
+        img {
+            width: 100%;
+            border-radius: 24px;
+        }
+    }
+
+    .tags {
+        position: absolute;
+        top: 32px;
+        left: 32px;
+
+        @include vxs {
+            left: 10px;
+        }
+
+        span {
+            padding: 8.5px 16px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+            border-radius: 48px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: $title-color;
+
+            @media(max-width: 340px) {
+                font-size: 16px;
+                padding: 8px 10px;
+            }
+
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .box-content {
+        mask-image: url("../img/case-studies/case-shape.png");
+        mask-repeat: no-repeat;
+        mask-size: 100% 100%;
+        background-color: #F4F7FF;
+        padding: 32px 50px 32px 32px;
+        margin-top: -120px;
+        position: relative;
+        z-index: 2;
+        border-radius: 24px;
+
+        @include vxs {
+            margin-top: -30px;
+            mask-size: cover;
+            padding: 32px 32px 32px 32px;
+        }
+    }
+
+    .date {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        color: #06050B;
+        margin-bottom: 32px;
+
+
+        .icon {
+            width: 56px;
+            height: 56px;
+            line-height: 56px;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            background: $theme-color;
+            color: $white-color;
+            font-size: 24px;
+            margin-right: 18px;
+        }
+
+    }
+
+    .box-title {
+        font-size: 32px;
+        line-height: 44px;
+
+        @include lg {
+            font-size: 24px;
+            line-height: 34px;
+        }
+    }
+
+    .box-text {
+        margin-bottom: 30px;
+    }
+
+    &.style2 {
+        display: flex;
+        gap: 72px;
+        align-items: center;
+        justify-content: space-between;
+
+        @include lg {
+            gap: 30px;
+        }
+
+        @include md {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .box-img {
+            min-width: 536px;
+
+            @include lg {
+                min-width: 460px;
+            }
+
+            @include md {
+                min-width: 100%;
+            }
+        }
+
+        .date {
+            margin-bottom: 15px;
+
+            .icon {
+                background: linear-gradient(309.43deg, #A378FF 9.12%, #1C4EFF 100%);
+
+            }
+        }
+
+        .box-content2 {
+            max-width: 570px;
+        }
+
+        .box-title {
+            margin-bottom: 0;
+        }
+
+        .box-text {
+            margin-bottom: 38px;
+        }
+    }
+
+    &_wrapp {
+        &:nth-child(even) {
+            .case-study.style2 {
+                flex-direction: row-reverse;
+
+                @include md {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    .th-btn {
+        @include vxs {
+            padding: 18px 20px;
+        }
+    }
+}
+
+.case-text {
+    max-width: 703px;
+}

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Carrental - Creative NextJS Car Booking Template</title>
+
+    <!-- Styles -->
+    <link href="assets/css/collection.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,500%7CLato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Scripts -->
+    <script src="assets/js/other.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </head>
+
+  <body data-spy="scroll" data-target=".sidebar" data-offset="200">
+    <!-- Sidebar -->
+    <aside class="sidebar sidebar-boxed sidebar-dark">
+      <ul class="nav sidenav dropable">
+        <li>
+          <a href="#getting_started" title="Setup Development Envrionment"
+            >Setup Development</a
+          >
+        </li>
+        <li><a href="#introduction" title="Introduction">Folder structure</a></li>
+        <li><a href="#documenter_cover">Pages and Components</a></li>
+        <li><a href="#dependencies" title="Dependencies">Dependencies</a></li>
+        <li><a href="#fonts_used" title="Fonts">Fonts</a></li>
+        <li><a href="#icons" title="Fonts">Icons</a></li>
+        <li><a href="#deploy" title="Credits">Deploy</a></li>
+        <li><a href="#credits" title="Credits">Credits</a></li>
+      </ul>
+    </aside>
+    <!-- END Sidebar -->
+
+    <header class="site-header navbar-transparent">
+      <!-- Banner -->
+      <div class="banner auto-size" style="background-color: #fafafa">
+        <div class="container-fluid">
+          <h1><strong>Carrental - Documentation</strong></h1>
+          <ul>
+            <li>Template: Carrental</li>
+            <li>Created: September 01, 2023</li>
+            <li>Version: 1.0.</li>
+            <li>Author: <a target="_blank" href="https://themeforest.net/user/themeton">Themeton</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- END Banner -->
+    </header>
+
+    <main class="container-fluid">
+      <!-- Main content -->
+      <article class="main-content" role="main">
+        <section id="getting_started">
+          <div class="page-header">
+            <h3>Setup Development Environment</h3>
+          </div>
+          <p>
+            In order to kickstart the development of your web app with Carrental,
+            the very first thing you need to do is to setup a react development
+            environment.
+          </p>
+          <p>Following tools are needed to setup a react dev environment:</p>
+          <ul>
+            <li><b>Node JS</b></li>
+            <p>
+              NodeJS works as a node package manager behind the scene. It is
+              recommended to download and install the latest version of Node JS
+              from its official site
+              <a href="http://nodejs.org/" target="_blank">http://nodejs.org/</a>
+            </p>
+          </ul>
+        </section>
+        <section id="introduction">
+          <div class="page-header">
+            <h3>Getting Started</h3>
+          </div>
+          <strong>For npm:</strong> <br />
+          <p>
+            Open vscode terminal <br />
+            Then run : <code class="language-markup">npm install</code> <br />
+            Then run : <code class="language-markup">npm run dev</code> <br />
+            Now in the browser go <a href="localhost:3000">localhost:3000</a>
+          </p>
+          <strong>In case of using yarn:</strong>
+          <p>
+            Open vscode terminal <br />
+            Then run : <code class="language-markup">yarn install</code> <br />
+            Then run : <code class="language-markup">yarn dev</code> <br />
+            Now in the browser go <a href="localhost:3000">localhost:3000</a>
+          </p>
+        </section>
+        <section id="folderstructures">
+          <div class="page-header">
+            <h3>Folder structure</h3>
+          </div>
+          <pre>
+├── app                                       --Nextjs 13 App directory;
+│   ├── about
+│   │   └── page.js
+│   ├── blog
+│   │   └── page.js
+│   ├── cars
+│   │   ├── page.js
+│   │   └── single
+│   │       └── page.js
+│   ├── components                            --Component Files & Folder; 
+│   │   ├── button-apple.tsx
+│   │   ├── button-googleplay.tsx
+│   │   ├── carCarousel.tsx
+│   │   ├── galley-cars.tsx
+│   │   ├── navbar.js
+│   │   └── pagination.tsx
+│   ├── contact
+│   │   └── page.js
+│   ├── favicon.ico
+│   ├── footer-sub.tsx
+│   ├── footer.tsx
+│   ├── gallery
+│   │   └── page.js
+│   ├── globals.css
+│   ├── header.tsx
+│   ├── hot-deals
+│   │   └── page.js
+│   ├── layout.tsx
+│   ├── login
+│   │   └── page.js
+│   ├── navbar.tsx
+│   ├── not-found.js
+│   ├── page.tsx
+│   ├── posts
+│   │   └── page.js
+│   ├── providers.tsx
+│   └── sections                              -- global section components;
+│       ├── advantages.js
+│       ├── call-to-action.js
+│       ├── car-card.js
+│       ├── carlist.js
+│       ├── carousel.js
+│       ├── filter.js
+│       ├── gallery.js
+│       ├── hero.js
+│       ├── hotdeals.js
+│       ├── how-it-works.js
+│       ├── mobile.js
+│       ├── page-title.js
+│       ├── search.js
+│       ├── section-title.js
+│       ├── servicebar.js
+│       ├── sidebar-filter.js
+│       ├── sidebar.js
+│       ├── team.js
+│       ├── testimonials.js
+│       └── what-we-are.js
+├── next.config.js
+├── package.json                              -- npm config: dependencies list
+├── postcss.config.js
+├── public
+│   ├── images ...                            --image resources;
+├── tailwind.config.js
+└── tsconfig.json</pre>
+          <p>Help: Forther details can be found here official documentation <a href="https://nextjs.org/docs/app" target="_blank">app directory</a>.</p>
+        </section>
+
+        <section id="documenter_cover">
+          <div class="page-header">
+            <h3>Pages and Components Info</h3>
+          </div>
+
+          <div id="documenter_buttons"></div>
+          <ul>
+            <li>Home (<b>/layout.tsx</b>)</li>
+            <li>About (<b>/app/about/page.js</b>)</li>
+            <li>Hot deals (<b>/app/hot-deals/page.js</b>)</li>
+            <li>Cars (<b>/app/cars/page.js</b>)</li>
+            <li>Cars Single (<b>/app/cars/single/page.js</b>)</li>
+            <li>Gallery (<b>/app/gallery/page.js</b>)</li>
+            <li>Contact (<b>/app/contact/page.js</b>)</li>
+            <li>Blog (<b>/app/blog/page.js</b>)</li>
+            <li>Login (<b>/app/login/page.js</b>)</li>
+          </ul>
+          <h6 style="margin-top: 20px"><strong>Common Components:</strong></h6>
+          <ul>
+            <li>Header (<b>/app/header.js</b>)</li>
+            <li>Top bar (<b>/app/navbar.js</b>)</li>
+            <li>Footer (<b>/app/footer.js</b>)</li>
+            <li>Sub Footer (<b>/app/footer-sub.js</b>)</li>
+            <li>Global/reusable sections (<b>/app/sections/**</b>)</li>
+            <li>AppStore Button (<b>/app/components/button-apple.js</b>)</li>
+            <li>PlayStore Button (<b>/app/components/button-playstore.js</b>)</li>
+          </ul>
+        </section>
+
+        <section id="dependencies">
+          <div class="page-header">
+            <h3>Dependencies</h3>
+          </div>
+          <p>
+            Here are the <strong>dependencies</strong> list which being used in
+            the Carrental React Template:
+          </p>
+          <pre class="line-numbers">
+<code class="language-markup"> 
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.19",
+    "@chakra-ui/next-js": "^2.1.4",
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@types/node": "20.4.0",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.8",
+    "framer-motion": "^10.12.18",
+    "next": "13.4.8",
+    "postcss": "8.4.24",
+    "react": "18.2.0",
+    "react-countup": "^6.4.2",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.1.6"
+  }</code>
+                    </pre>
+        </section>
+
+        <section id="fonts_used">
+          <div class="page-header">
+            <h3>Fonts</h3>
+          </div>
+          <p>
+            By default, the template loads
+            <a
+              href="https://fonts.google.com/specimen/Source+Sans+3" target="_blank"
+              >Source Sans 3</a
+            >
+            and
+            <a href="https://fonts.google.com/specimen/Alegreya" target="_blank"
+              >Alegreya</a
+            >
+            font from Google Web Font Services, you can change the font with the
+            one that suits you best.
+          </p>
+          <p>
+            You will find the font declaration code in the &quot;<strong
+              >/sections/section-title.js</strong>. You can replicate this declaration on any file and use your custom font on your page.
+          </p>
+          <pre class="line-numbers">
+<code class="language-css">
+  import { Alegreya } from "next/font/google"
+
+const headingFont = Alegreya({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--alegreya-font',
+  display: 'swap',
+})
+</code>
+                    </pre>
+        </section>
+        <section id="icons">
+          <div class="page-header">
+            <h3>Icons</h3>
+          </div>
+          <p>
+            We use
+            <a href="https://react-icons.github.io/react-icons">React Icons</a> package for icons. For detailed instruction and usage, please go to <a href="https://react-icons.github.io/react-icons">React Icons</a> site.
+          </p>
+        </section>
+        <section id="deploy">
+          <div class="page-header">
+            <h3>Deploy</h3>
+          </div>
+          <p>
+            For deploy first run the command
+            <code class="language-markup">npm run build</code> or
+            <code class="language-markup">yarn build</code> <br />
+            Now you will get build folder. <br />
+            Using an FTP Client (such as Filezilla), you will
+            need to upload all of the contents of the 'build' folder to your
+            server.
+          </p>
+        </section>
+        <section id="credits">
+          <div class="page-header">
+            <h3>Credits</h3>
+          </div>
+          <strong>Images</strong><br />
+          <a href="https://www.freepik.com/" target="_blank">Freepick</a><br />
+          <a href="https://unsplash.com/" target="_blank">Unsplash</a><br />
+          <a href="https://react-icons.github.io/react-icons" target="_blank">React Icons</a><br />
+
+          <div class="height-15"></div>
+
+          <strong>Packages</strong><br />
+
+          <a href="https://www.npmjs.com/package/react" target="_blank">React</a
+          ><br />
+          <a href="https://www.npmjs.com/package/react-dom" target="_blank"
+            >React-dom</a
+          ><br />
+          <a
+            href="https://www.npmjs.com/package/next"
+            target="_blank"
+            >Next</a
+          ><br />
+          <a href="https://www.npmjs.com/package/tailwindcss" target="_blank"
+            >Tailwind CSS</a
+          ><br />
+          <a
+            href="https://www.npmjs.com/package/typescript"
+            target="_blank"
+            >TypeScript</a
+          ><br />
+          <a href="https://www.npmjs.com/package/framer-motion" target="_blank"
+            >Framer Motion</a
+          ><br />
+          <a href="https://www.npmjs.com/package/node-sass" target="_blank"
+            >node-sass</a
+          ><br />
+          <a href="https://chakra-ui.com/" target="_blank"
+            >Chakra UI</a
+          ><br />
+          <a
+            href="https://www.npmjs.com/package/postcss"
+            target="_blank"
+            >postcss</a
+          ><br />
+          <a href="https://www.npmjs.com/package/react-slick" target="_blank"
+            >React Slick</a
+          ><br />
+          <a href="https://www.npmjs.com/package/slick-carousel" target="_blank"
+            >Slick Carousel</a
+          ><br />
+          <a href="https://www.npmjs.com/package/react-countup" target="_blank"
+            >React Countup</a
+          ><br />
+        </section>
+
+      </article>
+      <!-- END Main content -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container-fluid">
+        <a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <p>
+              Copyright &copy; All right reserved by
+              <a href="https://themeforest.net/user/Themeton" target="_new"
+                >Themeton</a
+              >
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <ul class="footer-menu">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Footer -->
+  </body>
+</html>

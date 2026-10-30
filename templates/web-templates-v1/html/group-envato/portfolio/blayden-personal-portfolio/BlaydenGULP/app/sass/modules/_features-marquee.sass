@@ -1,0 +1,140 @@
+.items
+  max-width: 100%
+  overflow: hidden
+
+.items--gsap
+  color: #fff
+
+.items--gsap .items__container
+  translate: calc(-100% + 100vw) !important
+
+.items__caption
+  max-width: calc(100vw / 24 * 12)
+  padding: 0 1.5rem
+
+.items__container
+  position: relative
+  display: flex
+  width: max-content
+  will-change: transform
+
+.items .item
+  margin-right: 2rem
+  +MQ(M)
+    margin-right: 3rem
+  +MQ(XXXL)
+    margin-right: 5rem
+
+.item
+  position: relative
+  width: 45vw
+  height: auto
+  background-color: var(--base)
+  border-radius: 20px
+  overflow: hidden
+  color: var(--t-bright)
+  display: flex
+  align-items: center
+  gap: 20px
+  animation: animateZ 1s infinite
+  &.item-regular
+    width: auto
+    border-radius: 0
+    gap: 0
+    background-color: transparent
+    color: var(--t-bright)
+    animation: animateZ 1s infinite
+  &.icon
+    border: 1px solid var(--stroke-elements)
+    justify-content: center
+    svg,
+    img
+      display: block
+      height: 70px
+      width: auto
+  &.image
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    img
+      display: block
+      width: 100%
+      height: auto
+  +MQ(M)
+    &.icon
+      svg,
+      img
+        height: 120px
+  +MQ(L)
+    width: 30vw
+  +MQ(XL)
+    width: 25vw
+  +MQ(XXXL)
+    width: 20vw
+    &.icon
+      svg,
+      img
+        height: 140px
+
+.item__text
+  margin-right: 2rem
+  &.text-with-gliph
+    margin-right: 0
+    &::after
+      content: "/"
+      display: inline
+      padding-left: 2rem
+  +MQ(M)
+    margin-right: 3rem
+    &.text-with-gliph
+      &::after
+        padding-left: 3rem
+  +MQ(XXXL)
+    margin-right: 5rem
+    &.text-with-gliph
+      &::after
+        padding-left: 5rem
+
+.item__image
+  flex-shrink: 0
+  width: 4rem
+  height: 4rem
+  +MQ(M)
+    width: 7rem
+    height: 7rem
+  +MQ(XXL)
+    width: 8rem
+    height: 8rem
+  +MQ(XXXL)
+    width: 11rem
+    height: 11rem
+
+.item__image img,
+.item__image video
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.item__text
+  font: normal 300 4.6rem var(--_font-accent)
+  color: var(--t-bright)
+  +MQ(M)
+    font-size: 8rem
+  +MQ(XL)
+    font-size: 9rem
+  +MQ(XXL)
+    font-size: 10rem
+  +MQ(XXXL)
+    font-size: 14rem
+
+@keyframes toLeft
+  to
+    transform: translateX(calc(-50%))
+
+@keyframes toRight
+  to
+    transform: translateX(0)
+
+@keyframes animateZ
+  to
+    transform: translateZ(1px)

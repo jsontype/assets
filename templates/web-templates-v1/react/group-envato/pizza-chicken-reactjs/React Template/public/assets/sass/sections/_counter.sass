@@ -1,0 +1,97 @@
+/*******************************************************/
+/******************* ## Counter Area *******************/
+/*******************************************************/
+.counter-item
+    margin-bottom: 30px
+    &.style-two .count-text
+        font-size: 48px
+    &.style-three
+        display: flex
+        margin-bottom: 20px
+        padding: 28px 35px 22px
+        background: $lighter-color
+        border: 1px solid rgba(14, 19, 23, 0.05)
+        +res-bl(xs)
+            +gapLR(padding, 25px)
+        .icon
+            flex: none
+            font-size: 40px
+            color: $primary-color
+            +circle(white, 70px)
+            margin-right: 20px
+        .count-text
+            margin-bottom: -5px
+    &.style-four
+        background: $lighter-color
+        padding: 45px 50px 30px
+        margin-bottom: 0
+        .count-text
+            font-size: 75px
+        .wave
+            margin-top: 10px
+            margin-bottom: 22px
+        &.text-white
+            .count-text
+                color: white
+        &.bgc-primary
+            background-color: $primary-color
+        &.bgc-secondary
+            background-color: $secondary-color
+        
+.counter-area-four
+    display: flex
+    min-height: 690px
+    align-items: flex-end
+
+.count-text
+    @extend %h2
+    display: block
+    line-height: 1
+    &.plus:after
+        content: '+'
+    &.k-plus:after
+        content: 'k+'
+    &.m-plus:after
+        content: 'm+'
+        
+.chef-content-part
+    max-width: 435px
+    +res-ab(xl)
+        +gapLR(margin, auto)
+    .section-title h2
+        margin-bottom: -5px
+    .social-style-one a:not(:hover)
+        background: $lighter-color
+    
+
+/* Circle Counter */
+.history-progress
+    display: flex
+    margin-top: 30px
+    position: relative
+    align-items: center
+    canvas
+        margin-right: 30px
+    .counting
+        width: 120px
+        +poLT(0, 50%)
+        line-height: 1
+        font-size: 35px
+        @extend %heading
+        text-align: center
+        transform: translateY(-50%)
+    h3
+        margin-bottom: 0
+        +res-bl(xs)
+            font-size: 28px
+            line-height: 1.4
+    
+    &.style-two
+        display: block
+        text-align: center
+        canvas
+            margin-right: 0
+            margin-bottom: 12px
+        .counting
+            top: 60px
+            width: 100%

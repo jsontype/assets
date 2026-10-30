@@ -1,0 +1,14 @@
+{
+  "[html]": {
+    // устанавливаем форматирование по умолчанию для html
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    // устанавливаем форматирование по умолчанию для css
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // устанавливаем линии в 80 символов
+  "editor.rulers": [80],
+  // устанавливаем размер шрифта
+  "window.zoomLevel": 0.1
+}

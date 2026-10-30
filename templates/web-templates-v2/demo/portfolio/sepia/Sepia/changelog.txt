@@ -1,0 +1,253 @@
+/////////////////////////////////////////////////////
+
+Sepia - Photography Portfolio HTML Website Template
+
+Changelog
+
+/////////////////////////////////////////////////////
+
+
+======================
+Updating information:
+======================
+
+Explanation: Because of the nature of the HTML, it is not possible to use dynamic features to update the template automatically. 
+All code changes and updates must be made manually!
+
+IMPORTANT!: Before you proceed to update, make sure that you have made copies of all the template files, 
+in case something goes wrong then you can restore the previous version.
+
+The best way to uptate the template is to use some file comparison software to compare the differences between the old and new template versions (I recommend “WinMerge”: http://winmerge.org/). Then make the necessary changes. I know this may be time consuming, but unfortunately there is no easier solution.
+
+More info in documentation!
+
+
+
+-------------------------
+v2.2 – 12 September 2024
+-------------------------
+
+- Fixed: Overlay issue on gallery carousel.
+- Improved: Menu behavior on mobile devices.
+
+
+Changed template files:
+
+theme.js
+theme.css
+
+
+
+
+------------------------
+v2.1 – 13 February 2023
+------------------------
+
+- Updated: Video URL in "home-intro-video-full-screen.html" page.
+- Updated: "jQuery" to the latest version.
+
+
+
+----------------------
+v2.0 – 17 April 2022
+----------------------
+
+- Fixed: Slideshow animation issue.
+- Removed: File "animate.css".
+
+
+
+----------------------
+v1.9 – 04 August 2021
+----------------------
+
+- Updated: "jQuery" to the latest version.
+- Updated: "Fontawesome" to the latest version (free version).
+- Updated: "YTPlayer" to the latest version.
+- Updated: "jQuery Easing Plugin" to the latest version.
+
+
+-------------------------
+v1.8 – 11 September 2020
+-------------------------
+
+- Updated: "Fontawesome" to the latest version (free version).
+- Updated: "lightGallery" to the latest version.
+- Updated: "YTPlayer" to the latest version.
+- Updated: "Animate.css" to the latest version.
+
+
+---------------------------
+v1.7.1 – 20 September 2019
+---------------------------
+
+- Fixed: Portfolio carousel item overlay issue if dark style enabled.
+
+
+---------------------
+v1.7 – 31 july 2019
+---------------------
+
+- Fixed: Portfolio carousel hover issue.
+
+
+Changed template files:
+
+- assets/css/theme.css
+
+
+
+---------------------
+v1.6 – 30 july 2018
+---------------------
+
+- New: 7 Color skins.
+- New: Round style.
+- New: RTL (right to left) compatibility.
+- New: Keyboard navigation (left/right arrow) support for Owl Carousel.
+- Changed: A way how to enable the dark style (more info in documentations).
+- Fixed: Owl Carousel mousewheel scrolling issue.
+- Fixed: Password protected page full screen issue.
+- Fixed: Callery single sidebar issue.
+- Fixed: Minor CSS/HTML/JS improvements.
+- Updated: "lightGallery" plugin to the latest version.
+- Updated: "YTPlayer" plugin to the latest version.
+- Updated: "Animate.css" library to the latest version.
+
+
+Changed template files:
+
+- assets/js/theme.js
+- assets/css/theme.css
+- assets/css/helper.css
+- assets/css/dark-style.css
+- All .HTML files
+
+
+New files:
+
+round-style.css
+assets/css/theme-rtl.css
+assets/css/helper-rtl.css
+assets/vendor/bootstrap/css/bootstrap-rtl/bootstrap-rtl.css
+assets/vendor/bootstrap/css/bootstrap-rtl/bootstrap-rtl.min.css
+assets/css/color-skins/skin-red.css
+assets/css/color-skins/skin-green.css
+assets/css/color-skins/skin-blue.css
+assets/css/color-skins/skin-orange.css
+assets/css/color-skins/skin-purple.css
+assets/css/color-skins/skin-pink.css
+assets/css/color-skins/skin-brown.css
+
+
+
+
+---------------------
+v1.5 – 10 May 2018
+---------------------
+
+- Fixed: Missing Linkedin and blog comments icons.
+- Updated: "Owl Carousel" to the latest version.
+- Updated: "YTPlayer" to the latest version.
+- Updated: "lightGallery" to the latest version.
+- Updated: "Isotope" to the latest version.
+- Improved: Documentation ("Updating" section).
+
+
+Changed template files:
+
+- theme.css
+- All .html files
+
+
+
+---------------------
+v1.4 – 22 March 2018
+---------------------
+
+- Fixed: Missing instagram and albums filter icon.
+- Updated: "YTPlayer" to the latest version.
+- Updated: "lightGallery" to the latest version.
+- Updated: "imagesLoaded" to the latest version.
+- Updated: "Isotope" to the latest version.
+- Updated: "animate.min.css" to the latest version.
+- Improved: Documentation.
+- Improved: Minor CSS improvements.
+
+
+Changed template files:
+
+- theme.css
+- All .html files
+
+
+
+-----------------------
+v1.3.1 – 21 March 2018
+-----------------------
+
+- Fixed: Album grid item info issue if framed style enabled.
+
+
+Changed template files:
+
+- theme.css
+
+
+
+---------------------
+v1.3 – 20 March 2018
+---------------------
+
+- Added: Video support for gallery single carousel.
+- Fixed: Full screen slideshow issue on smaller screens.
+- Fixed: Album grid item framed style issue.
+- Updated: "Fontawesome" to the latest version (free version).
+- Updated: "Owl Carousel" to the latest version.
+- Changed: Broken Owl Carousel link in "theme.js" and .html files.
+- Minor CSS improvements.
+
+
+Changed template files:
+
+- theme.css
+- theme.js
+- All .html files
+
+
+
+------------------------
+v1.2 – 9 September 2017
+------------------------
+
+- Fixed: Page header element fade out issue.
+- Fixed: Page header parallax issue.
+- Fixed: Filter issue on IOS devices.
+- Improved: Documentation (added uptading section).
+
+
+Changed template files:
+
+- theme.js
+
+
+
+----------------------
+v1.1 – 29 August 2017
+----------------------
+
+- Improved: Headings.
+- Minor CSS improvements.
+
+
+Changed template files:
+
+- theme.css
+
+
+
+--------------------
+v1.0 – 28 June 2017
+--------------------
+
+Initial Release.

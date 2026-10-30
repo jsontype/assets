@@ -1,0 +1,39 @@
+mixin ptf_button(object)
+
+	//- Default
+	- object = object || {}
+	- object.tag = object.tag || 'a'
+	- object.style = object.style || 'primary'
+	- object.title = object.title || ''
+	- object.link = object.link || ''
+	- object.target = object.target || '_self'
+	- object.block = object.block || 'disable'
+
+	//- Element Class
+	- elClass = 'ptf-btn'
+	- elClass += ' ptf-btn--' + object.style
+
+	if object.block == 'enable'
+
+		- elClass += ' ptf-btn--block'
+
+	//Button
+	if object.tag == 'button'
+
+		button(class=elClass)
+
+			span.ptf-btn__text #{object.title}
+
+			span.ptf-btn__icon
+
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="currentColor" d="M3.29.372v1.5h9.443L.291 14.314l1.057 1.058L13.791 2.929v9.443h1.5v-12h-12Z"/></svg>
+
+	else
+
+		a(class=elClass, href=object.link, target=object.target)
+
+			span.ptf-btn__text #{object.title}
+
+			span.ptf-btn__icon
+
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="currentColor" d="M3.29.372v1.5h9.443L.291 14.314l1.057 1.058L13.791 2.929v9.443h1.5v-12h-12Z"/></svg>

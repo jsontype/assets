@@ -1,0 +1,25 @@
+:root {
+    --thm-primary-color: #cde58d;
+    --thm-primary-color-rgb: 205, 229, 141;
+    --thm-secondary-color: #000000;
+    --thm-secondary-color-rgb: 0, 0, 0;
+
+    --thm-body-font-color: #b1b5b8;
+    --thm-body-font-size: 16px;
+    --thm-body-line-height: 26px;
+    --thm-body-font-weight: 400;
+
+    --thm-heading-font-color: #ffffff;
+    --thm-white: #ffffff;
+    --thm-black: #0f1316;
+
+    --thm-black-bg: #0f1316;
+    --thm-black-bg-2: #1e2226;
+
+    --thm-border-color: #272c30;
+}
+
+
+.body-bg-3 {
+    background-color: #0f1316;
+}

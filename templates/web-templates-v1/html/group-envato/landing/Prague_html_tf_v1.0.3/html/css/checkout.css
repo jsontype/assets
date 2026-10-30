@@ -1,0 +1,145 @@
+@media screen and (min-width: 768px) {
+
+    .flex-menu {
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+
+}
+
+
+.max-width-100 {
+    max-width: 100% !important;
+}
+
+.countr {
+    display: block;
+}
+
+.woocommerce form .form-row select{
+    width: 100% !important;
+    padding: 15px;
+    background-color: #f2f2f2;
+    color: rgba(17, 17, 17, 0.5);
+    border: none;
+    outline: none;
+}
+
+.width-100 {
+    width: 100% !important;
+    min-width: 100%;
+}
+
+
+
+input {
+    width: 100% !important;
+}
+
+.name {
+    width: 95% !important;
+}
+
+.last {
+    margin-left: 5% !important;
+    width: 95% !important;
+}
+
+.marg-left-10 {
+    width: 40% !important;
+    line-height: 2 !important;
+    margin-left: 5% !important;
+}
+
+.flex-checkox {
+    display: flex;
+}
+
+.width-checkbox {
+    margin-right: 0% !important;
+    margin-left: -1% !important;
+    padding-left: 0% !important;
+    display: block;
+    width: 5% !important;
+}
+
+.width-50 {
+    width: 48% !important;
+}
+
+
+.text-right {
+   text-align: right !important;
+}
+
+.width-unset {
+    width: unset !important;
+}
+
+@media screen and (max-width: 1199px) {
+    .width-50 {
+        width: 39% !important;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .width-30 {
+     
+        width: 100% !important;
+    }
+
+    .width-50 {
+        width: 90% !important;
+        margin-left: 5% !important;
+    }
+
+    input {
+        width: 100% !important;
+    }
+    
+    .name {
+        width: 95% !important;
+    }
+
+    .marg-left-10 {
+        width: 100% !important;
+    }
+    
+    .last {
+        margin-left: 5% !important;
+        width: 95% !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+.name {
+width: 100% !important;
+}
+
+.last {
+width: 100% !important;
+margin-left: 0% !important;
+}
+
+.width-50 {
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+
+.text-right {
+    text-align: center !important;
+ }
+
+ .width-unset {
+    width: 100% !important;
+}
+
+.marg-left-10 {
+    margin-left: 0% !important;
+}
+
+}

@@ -1,0 +1,68 @@
+@mixin clearfix {
+
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+	content: $content;
+	position: $pos;
+	display: $display;
+}
+
+@mixin input-placeholder {
+	&.placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}
+
+@mixin selection {
+	::-moz-selection {
+		@content;
+	}
+
+	::selection {
+		@content;
+	}
+}
+
+@mixin gap($gap) {
+	height: px2rem($gap);
+
+	&--sm {
+
+		@include media-breakpoint-down(md) {
+			height: px2rem($gap);
+		}
+
+	}
+
+	&--md {
+
+		@include media-breakpoint-down(lg) {
+			height: px2rem($gap);
+		}
+
+	}
+
+}

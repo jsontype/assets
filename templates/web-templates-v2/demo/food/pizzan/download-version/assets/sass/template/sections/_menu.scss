@@ -1,0 +1,298 @@
+/* Menu 1 ---------------------------------- */
+.menu-card {
+    text-align: center;
+    &_img {
+        margin-bottom: -120px;
+        position: relative;
+        z-index: 3;
+    }
+    &_content {
+        background-color: $white-color;
+        box-shadow: 0px 6px 15px rgba(1, 15, 28, 0.04);
+        border-radius: 20px;
+        padding: 125px 10px 30px 10px;
+        position: relative;
+        z-index: 2;
+        &:before {
+            content: '';
+            height: 0;
+            width: 100%;
+            background-color: $theme-color;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: inherit;
+            transition: 0.4s ease-in-out;
+            z-index: -1;
+        }
+    }
+    &_title {
+        transition: 0.1s ease-in-out;
+        a {
+            &:hover {
+                color: $gray-color;
+            }
+        }
+    }
+    &_text {
+        transition: 0.4s ease-in-out;
+        max-width: 230px;
+        margin: 0 auto 20px auto;
+    }
+    &:hover {
+        .menu-card {
+            &_content {
+                &:before {
+                    height: 100%;
+                }
+            }
+            &_title,
+            &_text {
+                color: $white-color;
+            }
+        }
+        .th-btn {
+            background-color: $white-color;
+            color: $title-color;
+            transition-delay: 0s, 0s;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                color: $white-color;
+                background-color: $title-color;
+            }
+        }
+    }
+}
+
+@include xs {
+    .menu-card {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+/* Menu 2 ---------------------------------- */
+.board-wrap {
+    .row {
+        --bs-gutter-x: 40px;
+        --bs-gutter-y: 40px;
+    }
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.menu-board {
+    border: 1px dashed $gray-color;
+    border-radius: 10px;
+    padding: 40px;
+    &_title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: -0.22em;
+        color: $white-color;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        gap: 15px;
+        &:before,
+        &:after {
+            content: '';
+            height: 2px;
+            width: 100%;
+            background-color: $theme-color;
+            display: inline-block;
+        }
+    }
+}
+
+.board-list {
+    margin-bottom: 25px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    &_title,
+    &_price {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+    &_title {
+        color: $title-color;
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        white-space: nowrap;
+        &:after {
+            content: '';
+            width: 100%;
+            border-bottom: 2px dashed $title-color;
+            display: inline-block;
+            position: relative;
+            top: -6px;
+        }
+    }
+    &_price {
+        color: $theme-color;
+    }
+    &_info {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px 15px;
+    }
+    &_text {
+        color: $body-color;
+        font-size: 14px;
+        margin-bottom: -0.55em;
+    }
+}
+
+.menu-board {
+    .board-list {
+        &_title {
+            color: $white-color;
+            &:after {
+                border-bottom: 2px dashed $gray-color;
+            }
+        }
+        &_text {
+            color: $gray-color;
+        }
+    }
+}
+
+@include xs {
+    .board-wrap {
+        padding: 40px 15px;
+    }
+    .menu-board {
+        padding: 40px 20px;
+        &_title {
+            font-size: 26px;
+        }
+    }
+    .board-list {
+        &_title, 
+        &_price {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .menu-board {
+        &_title {
+            font-size: 22px;
+        }
+    }
+    .board-list {
+        &_title, 
+        &_price {
+            font-size: 16px;
+        }
+        &_title {
+            white-space: initial;
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Menu 2 style2 ---------------------------------- */
+.board-wrap2 {
+    background-color: $smoke-color2;
+    padding: 40px;
+    border-radius: 10px;
+}
+.menu-list {
+    &-img {
+        margin-left: 31px;
+        &.left {
+            margin-left: unset;
+            margin-right: 31px;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    &_title {
+        font-size: 30px;
+        margin-top: -0.24em;
+        max-width: fit-content;
+        position: relative;
+        &:after {
+            content: '';
+            height: 2px;
+            width: 146px;
+            background-color: $theme-color;
+            position: absolute;
+            bottom: 10px;
+            left: calc(100% + 10px);
+        }
+    }
+}
+
+.menu-list-divider {
+    margin: 40px 0;
+    display: block;
+    text-align: center;
+    position: relative;
+    background-color: inherit;
+    z-index: 2;
+    img {
+        padding: 0 18px;
+        background-color: inherit;
+    }
+    &:after {
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: $theme-color;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+@include xl {
+    .menu-list {
+        &-img {
+            margin-left: 0;
+            &.left {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@include xl {
+    .menu-list {
+        &-img {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@include xs {
+    .board-wrap2 {
+        padding: 20px;
+    }
+    .menu-list {
+        &-img {
+            margin-bottom: 30px;
+        }
+        &-divider {
+            margin: 30px 0;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .menu-list_title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,108 @@
+/*******************************************************/
+/****************** ## Booking Table ******************/
+/*******************************************************/
+.booking-table-wrap
+    padding: 60px 80px
+    +res-bl(xl)
+        +gapLR(padding, 50px)
+    +res-bl(ms)
+        +gapLR(padding, 20px)
+
+.contact--number
+    display: flex
+    max-width: 210px
+    align-items: center
+    .icon
+        flex: none
+        color: white
+        margin-right: 15px
+        +circle($primary-color, 50px)
+    .number
+        font-family: $heading-font
+        .title
+            color: white
+            display: block
+            font-size: 18px
+        > a
+            font-size: 27px
+            color: $secondary-color
+
+.booking-table-form
+    padding: 55px 50px 60px
+    background-size: cover
+    background-repeat: no-repeat
+    background-color: $secondary-color
+    margin-bottom: -110px
+    +res-bt(lg, xl)
+        +gapLR(padding, 30px)
+    +res-bl(ms)
+        +gapLR(padding, 30px)
+    +res-bl(xs)
+        +gapLR(padding, 20px)
+    p
+        margin-top: -10px
+        color: $heading-color
+        +res-ab(xs)
+            font-size: 18px
+            
+.booking-form
+    label
+        font-size: 13px
+        +poRT(20px, 12px)
+        color: $heading-color
+    input,
+    select,
+    textarea,
+    .nice-select,
+    .form-control
+        padding: 12px 20px
+        border-width: 2px
+        color: $heading-color
+        font-family: $base-font
+        &:hover
+            border-color: white
+        &:focus
+            border-color: white
+            background-color: transparent
+    .nice-select
+        line-height: 24px
+        .list
+            width: 100%
+            border-radius: 0
+        &:after
+            right: 20px
+            height: 9px
+            width: 8px
+            margin-top: -6px
+            border-color: $heading-color
+    .theme-btn
+        border: 1px solid $primary-color
+        
+.booking-table-content.style-two
+    .video-play
+        margin: 10px
+        position: relative
+        &:before
+            content: ""
+            +absmiddle()
+            +size(calc(100% + 20px))
+            border: 1px solid white
+            border-radius: 50%
+        +res-ab(md)
+            +size(85px)
+            font-size: 20px
+            line-height: 85px
+    hr
+        opacity: 1
+        margin-bottom: 0
+        max-width: 200px
+        background: white
+        
+.booking-table-content.style-three
+    max-width: 410px
+    .contact--number
+        .number
+            .title
+                color: $base-color
+            > a
+                color: $heading-color

@@ -1,0 +1,72 @@
+.mt-70.mb-50
+    h2.color-linear.mb-10.wow.animate__animated.animate__fadeInUp
+        | Featured Articles
+    p.text-lg.color-gray-500.wow.animate__animated.animate__fadeInUp
+        | Discover the most outstanding articles in all topics
+
+    .row.mt-70
+        -
+            const articleLists = [
+                {
+                    image: 'assets/imgs/page/homepage3/news1.png',
+                    title: 'Aenean Auctor Wisi Et Urna Aliquam Erat',
+                    link: 'single-sidebar.html',
+                    type: 'video',
+                    delay: '.0s'
+                },
+                {
+                    image: 'assets/imgs/page/homepage3/news2.png',
+                    title: 'The Best Cities to Travel Alone in the USA',
+                    link: 'single-sidebar.html',
+                    type: 'image',
+                    delay: '.1s'
+                },
+                {
+                    image: 'assets/imgs/page/homepage3/news3.png',
+                    title: 'Rodrigues Island: When I Found a Paradise',
+                    link: 'single-sidebar.html',
+                    type: 'audio',
+                    delay: '.2s'
+                },
+                {
+                    image: 'assets/imgs/page/homepage3/news4.png',
+                    title: '5 five places must visit in turkey to relax',
+                    link: 'single-sidebar.html',
+                    type: 'image',
+                    delay: '.0s'
+                },
+                {
+                    image: 'assets/imgs/page/homepage3/news5.png',
+                    title: 'Enjoy My Favourite Molten Chocolate Cake',
+                    link: 'single-sidebar.html',
+                    type: 'video',
+                    delay: '.1s'
+                },
+                {
+                    image: 'assets/imgs/page/homepage3/news6.png',
+                    title: 'North Dakota Learns From Norway',
+                    link: 'single-sidebar.html',
+                    type: 'audio',
+                    delay: '.2s'
+                }
+            ]
+        each post in articleLists
+            .col-lg-4
+                .card-style-1.hover-up.mb-30.wow.animate__animated.animate__fadeIn(data-wow-delay= post.delay)
+                    .card-image
+                        if (post.type == 'image')
+                            a.post-type.post-image(href='blog-archive.html')
+                        else if (post.type == 'audio')
+                            a.post-type.post-audio(href='blog-archive.html')
+                        else
+                            a.post-type(href='blog-archive.html')
+                        a.link-post(href= post.link)
+                            img(src= post.image, alt="Genz")
+                            .card-info.card-bg-2
+                                .info-bottom.mb-15
+                                    h4.color-white.mb-15= post.title
+                                    .box-author
+                                        img(src="assets/imgs/page/homepage3/author.jpg", alt="Genz")
+                                        .author-info
+                                            h6.mr-15.color-gray-700 Thomson
+                                            span.color-gray-700.text-sm 25 April 2022

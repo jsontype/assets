@@ -1,0 +1,261 @@
+/* PAGE: BLOG
+-------------------------------------------- */
+
+/* STYLE: MASONRY
+-------------------------------------------- */
+
+.ptf-post--masonry {
+
+	.ptf-post-thumbnail {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		border-radius: px2rem(15px);
+		backface-visibility: hidden;
+
+		&__link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+
+		img {
+			width: 100%;
+			transition: all var(--ptf-transition-duration) var(--ptf-transition-easing);
+		}
+
+	}
+
+	.ptf-post-thumbnail + .ptf-post-content {
+		padding-top: px2rem(40px);
+	}
+
+	.ptf-post-title {
+		font-size: px2rem(25px);
+		line-height: 1.4;
+
+		svg {
+			height: 1em;
+			margin-left: .9em;
+			color: var(--ptf-color-accent);
+			opacity: 0;
+			transition: inherit;
+			transform: translateX(10px);
+		}
+
+		a:hover svg {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+	}
+
+	.ptf-post-meta {
+		margin-bottom: px2rem(13px);
+		transition: color var(--ptf-transition-duration) var(--ptf-transition-easing);
+
+		span + span::before {
+			content: '/';
+			margin-right: px2rem(5px);
+			margin-left: px2rem(8px);
+		}
+
+	}
+
+	&:hover {
+
+		.ptf-post-meta {
+			color: var(--ptf-color-1);
+		}
+
+		.ptf-post-thumbnail img {
+			transform: scale(1.1);
+		}
+
+	}
+
+}
+
+/* STYLE: SINGLE POST
+-------------------------------------------- */
+
+.ptf-post--single {
+	padding: px2rem(150px) 0 px2rem(180px);
+
+	.ptf-post-meta {
+		margin-bottom: px2rem(90px);
+		color: var(--ptf-color-accent);
+	}
+
+	.ptf-post-excerpt  {
+		margin-bottom: px2rem(90px);
+		font-size: px2rem(50px);
+		font-weight: 600;
+		line-height: 1.3;
+		color: var(--ptf-color-1);
+	}
+
+	.ptf-post-footer {
+		margin-top: px2rem(90px);
+
+		.ptf-post-tags,
+		.ptf-post-share {
+			display: flex;
+			align-items: center;
+			color: var(--ptf-color-1);
+
+			h6 {
+				margin-right: px2rem(6px);
+			}
+
+		}
+
+		.ptf-post-share {
+
+			.ptf-social-icon + .ptf-social-icon {
+				margin-left: px2rem(20px);
+			}
+
+		}
+
+		.ptf-post-tags + .ptf-post-share {
+			margin-top: px2rem(35px);
+		}
+
+	}
+
+}
+
+/* RELATED POSTS
+-------------------------------------------- */
+
+.ptf-related-posts {
+	padding-top: px2rem(150px);
+	border-top: 1px solid var(--ptf-color-5);
+}
+
+/* COMMENTS
+-------------------------------------------- */
+
+.ptf-page-comments {
+	padding-bottom: px2rem(280px);
+	margin-top: px2rem(180px);
+
+	&__title {
+		margin-bottom: px2rem(110px);
+	}
+
+	.ptf-comments,
+	.ptf-comments ul.children {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+
+		li.ptf-comment-item {
+			padding: px2rem(30px) 0;
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+		}
+
+	}
+
+	.ptf-comments ul.children {
+		margin-top: px2rem(60px);
+
+		@include media-breakpoint-down(md) {
+			margin-left: 0;
+		}
+
+		li.ptf-comment-item:last-child {
+			padding-bottom: 0;
+		}
+
+	}
+
+	&__form {
+		margin-top: px2rem(110px);
+
+		.ptf-page-comments__title {
+			margin-bottom: px2rem(70px);
+		}
+
+	}
+
+}
+
+/* COMMENT ITEM
+-------------------------------------------- */
+
+.ptf-comment-item__inner {
+	display: flex;
+
+	.ptf-comment-avatar {
+		margin-right: px2rem(35px);
+		flex-shrink: 0;
+
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+
+		img {
+			max-width: px2rem(80px);
+			border-radius: 50%;
+			border-radius: px2rem(10px);
+		}
+
+	}
+
+	.ptf-comment-content {
+		width: 100%;
+		padding-top: px2rem(20px);
+		border-top: 1px solid var(--ptf-color-5);
+		flex-basis: 100%;
+	}
+
+	.ptf-comment-header {
+		display: flex;
+		align-items: center;
+		color: var(--ptf-color-1);
+	}
+
+	.ptf-comment-name {
+		margin: 0;
+		margin-right: px2rem(3px);
+		color: var(--ptf-color-accent);
+	}
+
+	.ptf-comment-metas {
+		text-transform: uppercase;
+	}
+
+	.ptf-comment-metas::before {
+		content: '/';
+		margin-right: px2rem(6px);
+		margin-left: px2rem(6px);
+	}
+
+	.ptf-comment-text {
+		margin-top: px2rem(16px);
+	}
+
+	.ptf-comment-reply {
+		display: inline-flex;
+		padding: px2rem(5px) px2rem(25px);
+		margin-top: px2rem(20px);
+		font-size: px2rem(12px);
+		line-height: 1.2;
+		color: var(--ptf-color-3);
+		background-color: var(--ptf-color-accent);
+	}
+
+}

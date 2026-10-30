@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bone - Creative Agency Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png?v=2">
+    <script src="../../template/js/assets/jquery.js"></script>
+  </head>
+  <body>
+    <!-- Wrapper-->
+    <div id="wrapper" class="container-fluid">
+      <!-- Header-->
+      <header>
+        <div class="container">
+          <!-- Branding--><a href="../../template/index.html" class="brand"><img src="../../template/images/logo-black.svg" class="dark-brand"><img src="../../template/images/logo-white.svg" class="light-brand"></a>
+          <!-- Menu-->
+          <ul class="navbar-classic">
+            <li><a href="../pages/get-started.html">Quick start</a></li>
+            <li><a href="../pages/template-structure.html">Template Structure</a></li>
+            <li> <a href="../pages/cheatsheet.html">Cheatsheet</a></li>
+            <li><a>Components <span class="caret"></span></a>
+              <ul class="dropdown">
+                <li><a href="../pages/tera-slider.html">Tera Slider</a></li>
+                <li><a href="../pages/tera-lightbox.html">Tera Lightbox</a></li>
+                <li><a href="../pages/portfolio.html">The portfolio</a></li>
+                <li><a href="../pages/hero.html">The hero</a></li>
+                <li><a href="../pages/contact-form.html">PHP Contactform</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="hero content gray vbottom">
+        <div class="container vbottom">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Hero section</h1>
+              <p>This page will explain the hero section.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="medium content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">   
+              <h3>HTML Structure</h3>
+              <p>For any hero grid you add, the HTML will look something like this:</p>
+              <pre>&lt;section class="hero vcenter"&gt;
+  // The background
+  &lt;div class="bg" style="background-image: url(path/to/image);"&gt;&lt;/div&gt;
+  // The centered container, using vcenter, or vbottom on the hero above
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-md-6"&gt; 
+        &lt;h1&gt; The title &lt;/h1&gt;
+        &lt;p&gt; The description &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;   
+&lt;/section&gt;      </pre>
+              <h3>Dark hero</h3>
+              <p>To make use of a dark hero with light text, simply add a class named ".dark" to the ".hero" class. Becoming &lt;section class="hero dark"&gt;</p>
+              <h3>Faded background</h3>
+              <p>When you have a background image that will make the text hard to read, it's often good to add the ".faded" class to the background, like this: <br><strong>&lt;div class="bg faded" style="background-image: url(path/to/image);"&gt;&lt;/div&gt;</strong> <br>This will fade your background and the text will be more readable. </p>
+              <h3>Centered text</h3>
+              <p>You can use the ".text-center" class from Bootstrap to have the text centered inside the hero. This class can be added to the .container.</p>
+              <h3>Fullscreen hero</h3>
+              <p>To have a fullscreen hero, add the ".fs" class to the hero section. Like this: <br> <strong>&lt;section class="hero fs"&gt;</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="../../template/js/assets/bootstrap.js"></script>
+      <script src="../../template/js/assets/imagesloaded.pkgd.min.js"></script>
+      <script src="../../template/js/assets/validation.js"></script>
+      <script src="../../template/js/assets/masonry.pkgd.min.js"></script>
+      <script src="../../template/modules/tera-slider/tera-slider.js"></script>
+      <script src="../../template/modules/tera-lightbox/tera-lightbox.js"></script>
+      <script src="../../template/js/assets/animsition.js"></script>
+      <script src="../../template/js/functions.js"></script>
+    </div>
+  </body>
+</html>

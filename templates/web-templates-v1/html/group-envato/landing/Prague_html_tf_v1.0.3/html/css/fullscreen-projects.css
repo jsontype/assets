@@ -1,0 +1,137 @@
+.grid-sizer,
+.grid-item {
+     width: calc(100% / 4 );
+     padding: 0%;
+     margin: 0%;
+     float: left;
+    }
+    
+.black-fixed {
+    background-color: black;
+    position: static !important;
+}
+
+
+body {
+    background-color: black;
+}
+
+@media screen and (max-width: 991px) {
+.grid-sizer,
+.grid-item {
+        width: calc(100% / 3 );
+    
+    }
+}
+
+@media screen and (max-width: 768px) {
+.grid-sizer,
+.grid-item {
+        width: calc(100% / 2 );
+    
+    }
+}
+
+@media screen and (max-width: 480px) {
+.grid-sizer,
+.grid-item {
+        width: calc(100% / 1 );
+    
+    }
+}
+
+.img-wrapp img{
+    position: relative;
+}
+.img-wrapp .tg-item-media-content{
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapp a:hover {
+    color: inherit;
+    cursor: pointer;
+    
+}
+
+.img-wrapp .tg-item-media-content .tg-center-holder .tg-center-inner{
+    display: block;
+
+}
+
+h3 a {
+    font-size: 18px;
+    margin: 0;
+    font-size: 22px;
+    line-height: 40px;
+    color: #222222 !important;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+    text-transform: lowercase;
+}
+
+
+.tg-item-term {
+    font-size: 18px;
+    color: #999999;
+    font-family: Roboto, sans-serif;
+    font-weight: 320;
+}
+
+.img-wrapp .tg-item-media-content {
+    visibility: hidden;
+}
+
+.grid-item .img-wrapp .tg-item-media-content {
+    transition: 700ms all;
+    opacity: 0;
+}
+
+.grid-item .img-wrapp:hover .tg-item-media-content  {
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+.grid-item .img-wrapp .tg-item-media-content .tg-center-holder .tg-center-inner .tg-item-title a:hover {
+    color: rgb(88, 87, 87) !important;
+    transition: 300ms;
+}
+
+@media screen and (max-width: 1024px) {
+    h3 a {
+        line-height: 0% !important;
+        margin-top: 0% !important;
+        padding-bottom: 0% !important;
+        font-size: 20px;
+    }
+
+    .tg-item-term {
+        line-height: 0% !important;
+        margin-top: -0% !important;
+        padding-bottom: 0% !important;
+        font-size: 14px;
+    }
+
+   
+}
+
+@media screen and (max-width: 768px) {
+    
+  h3 a {
+      font-size: 32px;
+  } 
+
+  .tg-item-term {
+    font-size: 15px;
+   
+}
+}

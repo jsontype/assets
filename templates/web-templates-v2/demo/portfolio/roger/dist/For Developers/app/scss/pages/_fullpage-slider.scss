@@ -1,0 +1,118 @@
+/* PAGE: FULLPAGE SLIDER
+-------------------------------------------- */
+
+.ptf-fullpage-slider {
+	height: 100vh;
+
+	// section
+	.ptf-section {
+		display: flex;
+		flex-direction: column;
+		background-color: var(--ptf-color-3);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		flex: 1 1 auto;
+		flex-wrap: wrap;
+
+		&__vertical-align {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+			flex-direction: column;
+			flex: 0 0 auto;
+		}
+
+		&__content {
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			min-height: 100%;
+			padding-top: px2rem(220px);
+			padding-bottom: px2rem(120px);
+			z-index: 2;
+			flex: 1 1 auto;
+		}
+
+		// ken burn effect
+		.ptf-section__ken-burn-background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			pointer-events: none;
+			z-index: -1;
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				transition: transform 2.5s var(--ptf-transition-easing);
+				transform: scale(1.5);
+				will-change: transform;
+				object-fit: cover;
+			}
+
+		}
+
+		&.active .ptf-section__ken-burn-background img {
+			transition: transform 5s var(--ptf-transition-easing);
+			transform: scale(1);
+		}
+
+	}
+
+	&-nav {
+		position: fixed;
+		top: 50%;
+		right: px2rem(55px);
+		padding: 0;
+		margin: 0;
+		color: var(--ptf-color-1);
+		text-align: center;
+		list-style-type: none;
+		transform: translate(0, -50%);
+		z-index: z('slider-nav');
+
+		@media (max-width: 1600px) {
+			display: none;
+		}
+
+		@media (max-height: 700px) {
+			display: none;
+		}
+
+		li {
+			line-height: 0;
+
+			a:not(.prev):not(.next) {
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				cursor: pointer;
+				background-color: currentColor;
+				border-radius: 50%;
+
+				&.active {
+					background-color: var(--ptf-color-accent);
+				}
+
+			}
+
+			& + li {
+				margin-top: px2rem(30px);
+			}
+
+		}
+
+	}
+
+}

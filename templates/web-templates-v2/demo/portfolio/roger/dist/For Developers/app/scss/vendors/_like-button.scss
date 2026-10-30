@@ -1,0 +1,44 @@
+
+.ptf-like-button {
+	display: inline-flex;
+	text-align: center;
+	flex-direction: column;
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: px2rem(120px);
+		height: px2rem(120px);
+		font-size: px2rem(40px);
+		color: var(--ptf-color-1);
+		background-color: #F04E4E;
+		border-radius: 50%;
+
+		svg {
+			height: 1em;
+		}
+
+		&:not(.liked):hover {
+			color: var(--ptf-color-1);
+			background-color: #F04E4E;
+
+			svg {
+				animation: ptf_heartbeat 2s linear infinite;
+			}
+
+		}
+
+	}
+
+	&__counter {
+		margin: px2rem(25px) 0 0;
+		color: var(--ptf-color-1);
+		visibility: hidden;
+	}
+
+	.liked + .ptf-like-button__counter {
+		visibility: visible;
+	}
+
+}

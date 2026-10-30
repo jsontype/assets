@@ -1,0 +1,53 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: $title-color;
+
+  .th-btn {
+    padding: 15px 20px;
+    border-radius: 0;
+    font-size: 14px;
+  }
+}
+
+.preloader-inner {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1;
+
+  img {
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  background: $theme-color;
+  box-sizing: border-box;
+  animation: flipX 1s linear infinite;
+}
+
+@keyframes flipX {
+  0% {
+    transform: perspective(200px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(200px) rotateX(-180deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(200px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+    

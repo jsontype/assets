@@ -1,0 +1,35 @@
+include ../../mixins/_global-mixins.pug
+
+.ptf-section__vertical-align
+
+	.ptf-section__content
+
+		.container
+
+			.row(style='--bs-gutter-y: 30px;')
+
+				.col-lg-8.col-sm-8
+
+					+ptf_animation_block
+
+						span.has-color-white UX Design Studio
+
+						.ptf-gap-30
+
+						h1 #[span.has-color-accent Howdey,] #[br]I’m Roger.
+
+						.ptf-gap-15-vh.ptf-gap-70--sm
+
+						span.divider
+
+				.col-lg-4.col-sm-4.text-sm-end
+
+					.ptf-gap-70
+
+					+ptf_animation_block({
+						delay: '100ms'
+					})
+
+						+ptf_video_button({
+							url: 'https://vimeo.com/367945766'
+						})

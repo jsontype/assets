@@ -1,0 +1,22 @@
+{
+    "title": "Explore new <br><span class=\"mil-accent\">design</span> in urbanism",
+    "subtitle": "Dolor sit amet consectetur",
+    "button": {
+        "link": "/projects",
+        "label": "Look More"
+    },
+    "items": [
+        {
+            "image": "/img/photo/5.jpg",
+            "alt": "image"
+        },
+        {
+            "image": "/img/photo/6.jpg",
+            "alt": "image"
+        },
+        {
+            "image": "/img/covers/1.jpg",
+            "alt": "image"
+        }
+    ]
+}

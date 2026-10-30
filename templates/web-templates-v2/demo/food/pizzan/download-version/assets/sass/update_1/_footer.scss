@@ -1,0 +1,53 @@
+.footer-layout4 {
+    --body-color: #fff;
+    .footer-widget {
+        a:hover {
+            --theme-color: #FF9D2D;
+        }
+    }
+    .widget_title {
+        color: $white-color;
+        --theme-color: #FF9D2D;
+    }
+    .copyright-wrap {
+        background-color: $theme-color;
+        a:hover {
+            color: $title-color;
+        }
+    }
+}
+.th-widget-about .about-logo {
+    margin-top: -25px;
+}
+.newsletter-wrap2 {
+    background-color: $theme-color;
+    border-radius: 20px;
+    padding: 70px 20px;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    overflow: hidden;
+    .newsletter-form {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+    }
+    .th-btn {
+        min-width: 180px;
+        background-color: $title-color;
+        &:before {
+            background-color: $white-color;
+        }
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+@include md {
+    .footer-layout4 {
+        .copyright-wrap {
+            text-align: center;
+        }
+    }
+}

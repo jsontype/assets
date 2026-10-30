@@ -1,0 +1,135 @@
+
+
+/** faq-section **/
+
+.faq-section{
+  position: relative;
+  padding: 0px 30px;
+}
+
+.faq-section .outer-container{
+  position: relative;
+  padding: 171px 90px 197px 90px;
+  background: #F1F1F1;
+  border-radius: 50px;
+}
+
+.faq-section .content-box{
+  position: relative;
+  display: block;
+}
+
+.faq-section .content-box h2{
+  font-size: 82px;
+  line-height: 92px;
+  font-family: var(--text-font);
+  font-weight: 500;
+  margin-bottom: 54px;
+  max-width: 520px;
+}
+
+.faq-section .content-box p{
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 54px;
+}
+
+.faq-section .content-box .theme-btn-three{
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 27px;
+  font-family: var(--title-font);
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: var(--secondary-color);
+  border-radius: 30px;
+  padding: 14px 47px;
+}
+
+.faq-section .content-box a:hover{
+
+}
+
+.faq-section .accordion-box{
+  border-top: 1px solid #C4C4C4;
+}
+
+.accordion-box .block .acc-content {
+  position: relative;
+  display: none;
+  padding-bottom: 36px;
+}
+
+.accordion-box .block .acc-content.current {
+  display: block;
+}
+
+.accordion-box .block{
+  position: relative;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.accordion-box .accordion .acc-btn{
+  position: relative;
+  padding: 38px 80px 42px 0px;
+  cursor: pointer;
+}
+
+.accordion-box .accordion .acc-btn h3{
+  font-size: 32px;
+  line-height: 38px;
+  font-family: var(--text-font);
+  font-weight: 500;
+}
+
+.accordion-box .accordion .acc-btn .icon-box{
+  position: absolute;
+  display: inline-block;
+  top: 50px;
+  right: 15px;
+  font-size: 10px;
+}
+
+.accordion-box .accordion .acc-btn.active .icon-box{
+  transform: rotate(180deg);
+}
+
+.accordion-box .accordion .acc-content p{
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.faq-section .shape{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 705px;
+  height: 467px;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

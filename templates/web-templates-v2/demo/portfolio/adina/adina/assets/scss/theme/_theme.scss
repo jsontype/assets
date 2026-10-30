@@ -1,0 +1,302 @@
+@use '../utils' as *;
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Adina - Business & Finance html Template
+    Author: Theme_Dox
+    Support: basictheme400@gmail.com
+    Description: Adina - Business & Finance html Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+	-----------------
+    01. THEME CSS
+	-----------------
+		1.1 Common Classes
+		1.2 Default Spacing
+		1.3 Theme Default
+
+	-----------------
+    02. COMPONENTS css
+	-----------------
+		2.1 animetion
+		2.2 bg-stylees
+		2.3 backtotop
+		2.4 breadcrumb
+		2.5 buttons 
+		2.6 nice select
+		2.7 offcanvas
+		2.8 pagenation
+		2.9 preloader
+		2.10 Section Title
+
+	---------------------------------
+	03. BLOG CSS
+	---------------------------------
+		3.1 Blog css
+		3.2 Postbox css
+
+	---------------------------------
+	04. FOOTER CSS
+	---------------------------------
+		4.1 Footer Style 1
+
+
+	-----------------
+    05. HEADER CSS
+	-----------------
+		5.1 Header Style 1
+
+    ---------------------------------
+	06. MENU CSS
+	---------------------------------
+		6.1 menu css
+		6.2 Mobile css
+
+	---------------------------------
+	07. PAGES CSS
+	---------------------------------
+		7.1 about css
+		7.2 award css
+		7.3 brands css
+		7.4 business css
+		7.5 chose css
+		7.6 contact css
+		7.7 counter
+		7.8 cta css
+		7.9 error css start
+		7.10 expreance css
+		7.11 faq css
+		7.12 hero css
+		7.13 history css
+		7.14 map css
+		7.15 panel css
+		7.16 portfolio css
+		7.17 pricing css
+		7.18 service css
+		7.19 subscribe css
+		7.20 team-details css
+		7.21 team css
+		7.22 testimonial css
+		7.23 video css
+		7.24 work css
+
+**********************************************/
+
+@import url($font-url);
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*---------------------------------
+	typography css start 
+---------------------------------*/
+body {
+	font-family: var(--td-ff-manrope);
+	font-size: 16px;
+	font-weight: normal;
+	color: var(--td-theme-primary);
+	background: var(--td-common-white);
+	line-height: 1.6;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--td-theme-primary);
+	font-weight: 800;
+	font-family: var(--td-ff-manrope);
+	line-height: 1.12;
+}
+
+h1 {
+	font-size: 80px;
+}
+  
+h2 {
+font-size: 50px;
+}
+
+h3 {
+font-size: 30px;
+}
+
+h4 {
+font-size: 24px;
+}
+
+h5 {
+font-size: 20px;
+}
+
+h6 {
+font-size: 16px;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	margin-bottom: 15px;
+	font-weight: 400;
+	line-height: 1.12;
+}
+
+a,
+button,
+p,
+input,
+select,
+textarea,
+li,
+.transition-3{
+	@extend %td-transition-common;
+}
+
+a:not([href]):not([class]), 
+a:not([href]):not([class]):hover {
+	color: inherit;
+	text-decoration: none;
+}
+.m-img{
+	max-width: 100%;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus{
+	text-decoration: none;
+	color: inherit;
+}
+a:hover{
+	color: inherit;
+	text-decoration: none;
+}
+a,
+button {
+	color: inherit;
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+button:focus{
+    outline: 0; 
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.border-bottom{
+	border-bottom: 1px solid#d3d3d3!important;
+}
+.border-bottom-2{
+	border-bottom: 1px solid var(--td-theme-primary);
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
+textarea{
+	outline: none;
+	background-color: #fff;
+	height: 56px;
+	width: 100%;
+	line-height: 56px;
+	font-size: 14px;
+	color: var(--td-theme-primary);
+	padding-left: 26px;
+	padding-right: 26px;
+	border: 1px solid #E0E2E3;
+
+	@include placeholder{
+		color: #95999D;
+	}
+
+}
+textarea{
+	line-height: 1.4;
+	padding-top: 18px;
+	padding-bottom: 17px;
+}
+input[type="color"] {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: none;
+	border: 0;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	border-radius: 50%;
+}
+
+*::-moz-selection {
+	background: var(--td-theme-primary);
+	color: var(--td-common-white);
+	text-shadow: none;
+}
+::-moz-selection {
+	background: var(--td-theme-primary);
+	color: var(--td-common-white);
+	text-shadow: none;
+}
+::selection {
+	background: var(--td-theme-primary);
+	color: var(--td-common-white);
+	text-shadow: none;
+}
+
+
+*::-moz-placeholder {
+	color: var(--td-grey-1);
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: var(--td-grey-1);
+	font-size: 14px;
+	opacity: 1;
+}
+@media (min-width: 1400px) {
+	.container-1730 {
+		max-width: 1730px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container-1750 {
+		max-width: 1750px;
+	}
+}
+@media (min-width: 1400px) {
+	.container-1670 {
+		max-width: 1670px;
+	}
+}

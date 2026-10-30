@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "image": "/img/icons/4.svg",
+            "title": "Creativity",
+            "text": "The high creativity in our work staff, that makes us the best in finding solutions with great ideas for our clients."
+        },
+        {
+            "image": "img/icons/9.svg",
+            "title": "Technology",
+            "text": "Our experts design, develop and search for the best and newest tools to achieve the objectives of each project."
+        },
+        {
+            "image": "img/icons/5.svg",
+            "title": "Sustainability",
+            "text": "The challenge of the future is coexistence with the environment, our strategy in each project is to achieve that goal."
+        }
+    ]
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Davies - Personal Portfolio HTML Template</title>
+    <meta name="author" content="themesflat.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description"
+        content="Davies - Personal Portfolio is a sleek and modern HTML template designed for developers, designers, freelancers, and professionals who want to showcase their work online. Fully responsive, SEO-friendly, and easy to customize, it helps you create a strong personal brand and impress potential clients or employers.">
+
+    <!-- font -->
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/icon/icomoon/style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.svg">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/logo/favicon.svg">
+</head>
+
+<body class="counter-scroll">
+    <canvas class="cursor-trail d-none d-xl-block" id="trail"></canvas>
+
+    <!-- Scroll Top -->
+    <button id="goTop">
+        <span class="border-progress"></span>
+        <span class="ic-wrap">
+            <span class="icon icon-arrow-caret-right"></span>
+        </span>
+    </button>
+    <!-- /Scroll Top -->
+
+    <main id="wrapper">
+        <!-- Header -->
+        <header class="tf-header m-0">
+            <div class="header-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-1">
+                            <a href="index.html" class="logo-site">
+                                <i class="icon icon-davies-logo"></i>
+                            </a>
+                        </div>
+                        <div class="col-7 d-none d-md-block">
+                            <div class="box-navigation">
+                                <ul class="nav-menu-main">
+                                    <li class="menu-item"><a href="index.html" class="item-link link text-caption"><span>01 /</span>HOME</a></li>
+                                    <li class="menu-item has-child">
+                                        <a href="#" class="item-link link text-caption"><span>02 /</span>BLOG</a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu-item"><a href="blog-standard.html" class="item-link link text-caption">BLOG
+                                                    STANDARD</a></li>
+                                            <li class="sub-menu-item"><a href="blog-two-columns.html" class="item-link link text-caption">BLOG GRID
+                                                    2</a></li>
+                                            <li class="sub-menu-item"><a href="blog-three-columns.html" class="item-link link text-caption">BLOG GRID
+                                                    3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a href="index.html" class="item-link link text-caption"><span>03
+                                                /</span>ABOUT</a></li>
+                                    <li class="menu-item"><a href="index.html" class="item-link link text-caption"><span>04
+                                                /</span>CONTACT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-2 d-none d-sm-block">
+                            <div class="header-contact">
+                                <a href="mailto:davies@gmail.com" class="link text-caption">DAVIES@GMAIL.COM</a>
+                                <p class="text-caption">
+                                    CUP <span class="clock"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-2 d-flex justify-content-end align-items-start">
+                            <a href="#mobileMenu" data-bs-toggle="offcanvas" class="btn-mobile-menu text-caption link d-md-none">
+                                <i class="icon icon-menu"></i>
+                                MENU
+                            </a>
+                            <a href="index.html" class="tf-btn d-none d-md-flex">
+                                <span class="text-caption">
+                                    CONTACT
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /Header -->
+        <!-- 404 -->
+        <section class="section-404 flat-spacing">
+            <div class="container text-center">
+                <h1 class="title text-dispaly-1 effectFade fadeZoom">404 Page Not Found</h1>
+                <p class="desc text-body-1 text-white-64 effectFade fadeZoom">
+                    Sorry, we couldn't find the page you where looking for. <br>
+                    We suggest that you return to homepage.
+                </p>
+                <div class="effectFade fadeZoom">
+                    <a href="index.html" class="tf-btn">
+                        <span class="text-body-2 fw-semibold">HOME PAGE</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- /404 -->
+        <!-- Footer -->
+        <footer class="tf-footer">
+            <div class="container">
+                <div class="br-line"></div>
+            </div>
+            <div class="footer-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="title text-has-dot text-caption fw-medium mb-md-0">
+                                <span class="br-dot"></span>
+                                WORKING GLOBALLY
+                            </p>
+                        </div>
+                        <div class="col-6 col-sm-2 col-md-1">
+                            <p class="footer-heading text-caption fw-medium text-white-64">
+                                SITEMAP
+                            </p>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <ul class="footer-menu-list mb-sm-0">
+                                <li><a href="index.html" class="link letter-space--2 h5">About</a></li>
+                                <li><a href="index.html" class="link letter-space--2 h5">Contact</a></li>
+                                <li><a href="index.html" class="link letter-space--2 h5">Service</a></li>
+                                <li><a href="blog-standard.html" class="link letter-space--2 h5">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-2 col-md-1">
+                            <p class="footer-heading text-caption fw-medium text-white-64">
+                                SOCIALS
+                            </p>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <ul class="footer-menu-list mb-0">
+                                <li><a href="#" class="link letter-space--2 h5">Twitter (X)</a></li>
+                                <li><a href="#" class="link letter-space--2 h5">Dribbble</a></li>
+                                <li><a href="#" class="link letter-space--2 h5">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="img-agency">
+                        <img class="effectFade fadeZoom" loading="lazy" width="1293" height="269" src="assets/images/logo/agency.png" alt="Image">
+                    </div>
+                    <div class="bottom">
+                        <p class="text-nocopy text-caption fw-medium letter-space--1">
+                            © DAVIES'S PERSONAL PORTFOLIO
+                        </p>
+
+                        <a href="#" class="action-go-top tf-link-icon link text-caption fw-medium letter-space--1">
+                            BACK TO TOP
+                            <i class="icon icon-arrow-long-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+    </main>
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-bottom offcanvas-menu" id="mobileMenu">
+        <div class="offcanvas-content">
+            <div class="container h-100">
+                <div class="offcanvas-content_wrapin">
+                    <div class="canvas_head">
+                        <a href="index.html" class="logo-site">
+                            <i class="icon icon-davies-logo"></i>
+                        </a>
+                        <a href="#" data-bs-dismiss="offcanvas" class="btn-mobile-menu text-caption link">
+                            <i class="icon icon-close"></i>
+                            CLOSE
+                        </a>
+                    </div>
+                    <div class="canvas_center">
+                        <ul class="nav-ul-mb">
+                            <li>
+                                <div class="item">
+                                    <a href="index.html" class="mb-menu-link text-display-1">
+                                        <span class="text">Home</span>
+                                        <div class="infiniteSlide_text_main">
+                                            <div class="infiniteSlide infiniteSlide_text" data-clone="5">
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Home
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Home
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Home
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="has-sub-menu">
+                                        <a href="#dropdown-menu-1" class="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
+                                            aria-expanded="false" aria-controls="dropdown-menu-1">
+                                            <span class="text">Blog</span>
+                                            <div class="infiniteSlide_text_main">
+                                                <div class="infiniteSlide infiniteSlide_text" data-clone="5">
+                                                    <p class="text-body-2 letter-space--1">
+                                                        <span class="text-primary">//</span> View Blog
+                                                    </p>
+                                                    <p class="text-body-2 letter-space--1">
+                                                        <span class="text-primary">//</span> View Blog
+                                                    </p>
+                                                    <p class="text-body-2 letter-space--1">
+                                                        <span class="text-primary">//</span> View Blog
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div id="dropdown-menu-1" class="collapse">
+                                            <ul class="sub-nav-menu">
+                                                <li><a href="blog-standard.html" class="sub-nav-link">Blog Standard</a></li>
+                                                <li><a href="blog-two-columns.html" class="sub-nav-link">Blog Grid 2</a></li>
+                                                <li><a href="blog-three-columns.html" class="sub-nav-link">Blog Grid 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <a href="index.html" class="mb-menu-link text-display-1">
+                                        <span class="text">About</span>
+                                        <div class="infiniteSlide_text_main">
+                                            <div class="infiniteSlide infiniteSlide_text" data-clone="5">
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View About
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View About
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View About
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <a href="index.html" class="mb-menu-link text-display-1">
+                                        <span class="text">Contact</span>
+                                        <div class="infiniteSlide_text_main">
+                                            <div class="infiniteSlide infiniteSlide_text" data-clone="5">
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Contact
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Contact
+                                                </p>
+                                                <p class="text-body-2 letter-space--1">
+                                                    <span class="text-primary">//</span> View Contact
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="canvas_foot">
+                        <div class="left">
+                            <a href="mailto:davies@gmail.com" class="link text-caption">DAVIES@GMAIL.COM</a>
+                            <p class="text-caption">
+                                CUP <span class="clock"></span>
+                            </p>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="tf-link-icon text-caption link">
+                                <i class="icon icon-arrow-top-right"></i>
+                                TWITTER (X)
+                            </a>
+                            <a href="#" class="tf-link-icon text-caption link">
+                                <i class="icon icon-arrow-top-right"></i>
+                                DRIBBBLE
+                            </a>
+                            <a href="#" class="tf-link-icon text-caption link">
+                                <i class="icon icon-arrow-top-right"></i>
+                                LINKEDIN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Mobile Menu -->
+    <!-- Javascript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
+
+    <script src="assets/js/infinityslide.js"></script>
+    <script src="assets/js/ScrollSmooth.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/gsapAnimation.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

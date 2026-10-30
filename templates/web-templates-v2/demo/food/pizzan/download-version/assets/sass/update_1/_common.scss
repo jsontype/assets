@@ -1,0 +1,311 @@
+/*--------------- About Coffee -----------------*/
+@media (min-width: 1400px) {
+    .img-box4 {
+        .img1 {
+            margin-left: -37px;
+        }
+    }
+}
+.img-box4 {
+    position: relative;
+    z-index: 2;
+    .shape1 {
+        position: absolute;
+        bottom: 0;
+        left: -170px;
+        z-index: -1;
+        animation: jumpAni 6s linear infinite;
+    }
+}
+.checklist {
+    &.style3 {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        li {
+            margin-bottom: 0;
+            background-color: $smoke-color2;
+            border: 1px solid $border-color;
+            border-radius: 20px;
+            padding: 23px;
+            padding-left: 54px;
+            font-size: 18px;
+            &:before {
+                left: 23px;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@include xl {
+    .checklist.style3 li {
+        font-size: 16px;
+    }
+}
+
+@include lg {
+    .img-box4 {
+        text-align: center;
+        .shape1 {
+            left: -30px;
+        }
+    }
+}
+
+@include sm {
+    .checklist.style3 li {
+        padding: 20px;
+        padding-left: 50px;
+        &:before {
+            left: 20px;
+        }
+    }
+}
+
+@include xs {
+    .checklist.style3 {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        ul {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+        }
+    }
+}
+
+/*--------------- Coffee Menu -----------------*/
+.menu-grid {
+    &-wrap {
+        padding: 80px 20px;
+        border-right: 2px solid rgba($color: #77524A, $alpha: 0.5);
+        &:last-child {
+            border: none !important;
+        }
+    }
+    text-align: center;
+    .box-title {
+        color: $white-color;
+        font-weight: 600;
+    }
+    &_img {
+        margin-bottom: 20px;
+    }
+    &_text {
+        color: $gray-color;
+        max-width: 400px;
+        margin: 0 auto -0.5em auto;
+    }
+}
+
+@include md {
+    .menu-grid {
+        &-wrap {
+            padding: 60px 20px;
+            border-right: none;
+            border-bottom: 2px solid rgba($color: #77524A, $alpha: 0.5);
+        }
+    }
+}
+
+@include sm {
+    .menu-grid {
+        &-wrap {
+            padding: 60px 0;
+        }
+    }
+}
+
+/*--------------- Product Style2 -----------------*/
+.product-style2 {
+    background-color: $smoke-color2;
+    border-radius: 20px;
+    padding: 30px;
+    .product-title {
+        font-size: 22px;
+        margin-bottom: 3px;
+        a {
+            color: inherit;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    .product-content {
+        padding: 15px 20px;
+        border-radius: 10px;
+        background-color: $white-color;
+        position: relative;
+    }
+    .product-img {
+        margin: 0 auto 30px auto;
+        max-width: 200px;
+    }
+    .product-meta {
+        font-size: 14px;
+        color: $theme-color;
+        i {
+            margin-right: 6px;
+        }
+    }
+    .price {
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+        color: $theme-color2;
+        margin-top: 8px;
+        del {
+            margin-left: 10px;
+            color: $gray-color;
+        }
+    }
+    .th-btn {
+        padding: 11px 18px;
+        min-width: auto;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    .simple-icon {
+        color: $theme-color;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
+
+@include md {
+    .product-style2 {
+        .price {
+            font-size: 20px;
+        }
+        .th-btn {
+            padding: 9px 14px;
+            font-size: 13px;
+        }
+    }
+}
+
+@include vxs {
+    .product-style2 {
+        border-radius: 15px;
+        padding: 20px;
+        .product-img {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*--------------- Booking -----------------*/
+.booking-sec-area {
+    background-color: $white-color;
+    border-radius: 20px;
+    overflow: hidden;
+    .shape-mockup {
+        z-index: 2;
+    }
+}
+
+.booking-form2 {
+    padding: 50px;
+    .sec-title {
+        margin-bottom: 30px;
+    }
+    .form-control {
+        background-color: $smoke-color2;
+    }
+}
+
+.availability-card {
+    text-align: center;
+    height: 100%;
+    background-color: $theme-color;
+    padding: 90px 50px;
+    .card-title {
+        color: $white-color;
+        margin-bottom: 10px;
+    }
+    &_label {
+        color: $white-color;
+        border-bottom: 1px dashed rgba($color: #fff, $alpha: 0.5);
+        padding-bottom: 5px;
+        margin-bottom: 7px;
+        margin-top: 20px;
+    }
+    &_info {
+        color: $white-color;
+        text-transform: capitalize;
+        margin-bottom: 0px;
+    }
+}
+
+@include xs {
+    .availability-card {
+        padding: 50px 20px;
+    }
+    .booking-form2 {
+        padding: 50px 20px;
+    }
+}
+
+/*--------------- Booking -----------------*/
+.discount_style3 {
+    position: absolute;
+    top: $space;
+    right: 36.5%;
+    margin-top: -30px;
+    text-align: center;
+    padding: 55px 40px 50px 15px;
+    height: 242px;
+    width: 234px;
+    .percentage {
+        font-size: 40px;
+        font-weight: bold;
+        color: $white-color;
+        margin-bottom: 0;
+    }
+    .small-text1,
+    .small-text2 {
+        font-family: $title-font;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $white-color;
+        margin-bottom: 0;
+        line-height: 1.1;
+    }
+}
+
+.discount-sec3 {
+    position: relative;
+    background-position: bottom right;
+    &:hover {
+        .discount_style3 {
+            animation: pluse1 2s ease-in-out infinite;
+        }
+    }
+}
+
+@include lg {
+    .discount-sec3 {
+        background-position: bottom -100px right -300px;
+    }
+    .discount_style3 {
+        right: 25%;
+    }
+}
+
+@include md {
+    .discount-sec3 {
+        background-position: bottom right 48%;
+        background-size: 150%;
+    }
+    .discount_style3 {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 35px auto 0 auto;
+    }
+}

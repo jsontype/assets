@@ -1,0 +1,296 @@
+
+//- Page Options
+- HtmlClass = 'no-js'
+- SiteName = 'Roger'
+- PageTitle = 'Modern & Creative CV/Resume HTML5 Template' // page title
+- Sections = [ 'Home', 'About', 'Portfolio', 'Experience', 'Testimonials', 'Blog', 'Contact' ];
+
+//- Options
+- Preloader = 'show' // show / hide
+
+//- Body Class
+- BodyClass = Preloader == 'show' ? ' animsition' : ''
+
+include mixins/_global-mixins.pug
+
+doctype html
+html(lang='en', class=HtmlClass)
+	head
+		meta(charset='utf-8')
+
+		//- Head
+		include html/_head.pug
+
+	body(class=BodyClass)
+
+		//- Header
+		include template-parts/header/_header.pug
+
+		//- Main
+		+site_main
+
+			section.min-vh-100.ptf-page-hero-title.jarallax
+
+				img(src='assets/img/attachment-11.jpg', alt='', class='jarallax-img', loading='lazy')
+
+				.ptf-gap-150
+
+				.container
+
+					.row
+
+						.col-md-8.offset-md-2
+
+							span.has-color-white Photography
+
+							.ptf-gap-30
+
+							h1 Given void great you’re good appear also fifth.
+
+				.ptf-gap-150
+
+			section
+
+				.container
+
+					article.ptf-post.ptf-post--single
+
+						.ptf-post-meta
+
+							.row
+
+								.col-md-8.offset-md-2
+
+									span Admin on Jule 3, 2022
+
+						.ptf-post-excerpt
+
+							.row
+
+								.col-md-8.offset-md-2
+
+									p The best combination of color palette is shown in the pictures.
+
+						.ptf-post-content
+
+							.row
+
+								.col-md-8.offset-md-2
+
+									p This response is important for our ability to learn from mistakes, but it alsogives rise to self-criticism, because it is part of the threat-protection system. In other words, what keeps us safe can go too far, and keep us too safe. In fact it can trigger self-censoring.
+
+									p One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes.
+
+									.ptf-gap-90
+
+								.col-md-12
+
+									.row(style='--bs-gutter-y: 50px; --bs-gutter-x: 50px;')
+
+											.col-md-12
+
+												+ptf_animation_block({
+													delay: '200ms'
+												})
+
+													a(href='assets/img/attachment-12.jpg', data-fancybox)
+
+														img(src='assets/img/attachment-12.jpg', alt='', loading='lazy')
+
+											.col-md-6
+
+												+ptf_animation_block
+
+													a(href='assets/img/attachment-13.jpg', data-fancybox)
+
+														img(src='assets/img/attachment-13.jpg', alt='', loading='lazy')
+
+											.col-md-6
+
+												+ptf_animation_block({
+													delay: '100ms'
+												})
+
+													a(href='assets/img/attachment-14.jpg', data-fancybox)
+
+														img(src='assets/img/attachment-14.jpg', alt='', loading='lazy')
+
+								.col-md-8.offset-md-2
+
+									.ptf-gap-90
+
+									h2 Defaulting to Mindfulness
+
+									.ptf-gap-40
+
+									p Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up, looked at, tasted, smelled, and shaken. Everything was interesting to her. She knew nothing. I knew everything…been there, done that. She was in the moment, I was in the past. She was mindful. I was mindless.
+
+									.ptf-gap-90
+
+									.ptf-pullquote
+
+										.ptf-pullquote__text Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.
+
+										.ptf-pullquote__meta
+
+											h5.ptf-pullquote__name Paul Inc.
+
+											.ptf-pullquote__function Envato author
+
+									.ptf-gap-90
+
+									p Both of these assumptions, of course, could be entirely false. Self-censoring is firmly rooted in our experiences with mistakes in the past and not the present. The brain messages arising from those experiences can be deceptive.
+
+						.ptf-post-footer
+
+							.row
+
+								.col-md-8.offset-md-2
+
+									.ptf-post-tags
+
+										h6 Tags:
+
+										div #[a(href='#') Follow], #[a(href='#') Like], #[a(href='#') Typography]
+
+									.ptf-post-share
+
+										h6 Share:
+
+										a(href='#', class='ptf-social-icon') #[i.lnir-facebook-filled]
+										a(href='#', class='ptf-social-icon') #[i.lnir-twitter-original]
+										a(href='#', class='ptf-social-icon') #[i.lnir-pinterest]
+										a(href='#', class='ptf-social-icon') #[i.lnir-linkedin-original]
+
+					.ptf-related-posts
+
+						.row
+
+							.col-md-8.offset-md-2
+
+								h2 Related posts
+
+						.ptf-gap-70
+
+						.row(style='--bs-gutter-y: 25px; --bs-gutter-y: 40px;')
+
+							.col-md-4
+
+								+ptf_blog_post({
+									thumbnail: 'assets/img/blog/blog-1.jpg',
+									title: 'Portrait in the city',
+									category: 'Personal',
+									date: '11 June, 2020',
+									link: 'single-post.html'
+								})
+
+							.col-md-4
+
+								+ptf_blog_post({
+									thumbnail: 'assets/img/blog/blog-2.jpg',
+									title: 'Personal laptop',
+									category: 'Travel',
+									date: '12 June, 2020',
+									link: 'single-post.html'
+								})
+
+							.col-md-4
+
+								+ptf_blog_post({
+									thumbnail: 'assets/img/blog/blog-3.jpg',
+									title: 'Women working',
+									category: 'Personal',
+									date: '13 June, 2020',
+									link: 'single-post.html'
+								})
+
+			.ptf-page-comments
+
+				.container
+
+					.row
+
+						.col-md-8.offset-md-2
+
+							.ptf-page-comments__list
+
+								h2.ptf-page-comments__title Comments
+
+								ul.ptf-comments
+
+									li.ptf-comment-item
+
+										.ptf-comment-item__inner
+
+											a(href='#', class='ptf-comment-avatar')
+
+												img(src='assets/img/root/avatar-1.jpg', alt='', loading='lazy')
+
+											.ptf-comment-content
+
+												.ptf-comment-header
+
+													h6.ptf-comment-name Roger
+
+													.ptf-comment-metas Jul 03, 2021 at 15 hours ago
+
+												.ptf-comment-text
+
+													p Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up.
+
+												a(href='#', class='ptf-comment-reply') Reply
+
+										ul.children
+
+											li.ptf-comment-item
+
+												.ptf-comment-item__inner
+
+													a(href='#', class='ptf-comment-avatar')
+
+														img(src='assets/img/root/avatar-2.jpg', alt='', loading='lazy')
+
+													.ptf-comment-content
+
+														.ptf-comment-header
+
+															h6.ptf-comment-name Samuel
+
+															.ptf-comment-metas Jul 03, 2021 at 15 hours ago
+
+														.ptf-comment-text
+
+															p Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up.
+
+														a(href='#', class='ptf-comment-reply') Reply
+
+							.ptf-page-comments__form
+
+								h4.ptf-page-comments__title Add comment
+
+								form
+
+									.ptf-form-row.two-col
+
+										.ptf-form-group
+
+											input(type='text', id='name', class='ptf-form-control', name='name', required='required')
+											label(for='name', class='ptf-form-label') Name *
+
+										.ptf-form-group
+
+											input(type='email', id='email', class='ptf-form-control', name='email', required='required')
+											label(for='email', class='ptf-form-label') Email *
+
+									.ptf-form-group
+
+										textarea(name='comment', id='comment', class='ptf-form-control', rows='4')
+										label(for='comment', class='ptf-form-label') Comment
+
+									+ptf_button({
+										tag: 'button',
+										title: 'Post a comment'
+									})
+
+		//- Scripts
+		include html/_scripts.pug

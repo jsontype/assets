@@ -1,0 +1,110 @@
+.brand-image {
+    text-align: center;
+    
+    img {
+           filter: grayscale(100%) brightness(35%) contrast(100%);
+           @include transition;
+    }
+
+    &:hover {
+        img {
+            filter: none;
+        }
+    }
+}
+
+.brand-slider-2 {
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 25px;
+    text-align: center;
+}
+
+.brand-image-4 {
+    text-align: center;
+    background-color: #121511;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.brand-item-3 {
+    @include flex;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    @include breakpoint (max-xxl) {
+         flex-wrap: wrap;
+         gap: 30px;
+         margin-top: 30px;
+    }
+
+   .brand-image-3 {
+   
+      img {
+        transition: 0.3s;
+        filter: grayscale(100%) brightness(35%) contrast(100%);
+
+        @include breakpoint (max-lg) {
+            width: 70px;
+        }
+
+        @include breakpoint (max-md) {
+            width: 55px;
+        }
+      }
+
+      &:hover {
+        img {
+          filter: none;
+          animation: zoomIn 0.5s linear;
+        }
+      }
+   }
+}
+
+.brand-section-3 {
+   .line-slider {
+      margin-top: 55px;
+
+      @include breakpoint (max-xxl) {
+        margin-top: 30px;
+      }
+   }
+
+   .content {
+        h6 {
+            text-transform: uppercase;
+        }
+   }
+}
+
+.brand-box {
+    border: 1px solid rgba(112, 106, 106, 0.24);
+    background: $bg-color;
+    padding: 25px 60px;
+
+    @include breakpoint (max-xl) {
+        padding: 25px 30px;
+    }
+
+    .brand-image-5 {
+        img {
+            transform: scale(1.1);
+            @include transition;
+
+            @include breakpoint (max-xxs) {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+
+    &:hover {
+
+        .brand-image-5 {
+
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

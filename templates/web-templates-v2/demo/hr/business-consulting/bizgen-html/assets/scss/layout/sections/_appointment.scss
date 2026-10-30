@@ -1,0 +1,125 @@
+/*----------------------------------------*/
+/*   Appointment Section                  */
+/*----------------------------------------*/
+
+
+.rts-appointment-wrapper {
+    .rts-appointment-content-area {
+        margin-right: 100px;
+
+        @include mq(max-lg) {
+            margin-right: 0;
+        }
+
+        .rts-section-title {
+            .title {
+                line-height: 50px;
+                margin-bottom: 25px !important;
+
+                @include mq(max-sm) {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+            }
+        }
+
+        .appointment-item-wrapper {
+            margin-top: 45px;
+
+            .single-item {
+                @include flex-center;
+                gap: 25px;
+
+                @include mq(max-sm) {
+                    flex-wrap: wrap;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+
+                .icon {
+                    @include flex;
+                    min-width: 90px;
+                    height: 90px;
+                    background: var(--color-primary);
+                    border-radius: 100px;
+                }
+
+                .content {
+                    .title {
+                        font-size: 22px;
+                        margin-bottom: 10px;
+                    }
+
+                    .desc {
+                        max-width: 295px;
+                    }
+                }
+            }
+        }
+    }
+
+    .rts-appointment-form-area {
+        background: var(--color-white);
+        padding: 50px;
+        border-radius: 30px;
+        box-shadow: 0px 4px 0px var(--color-primary);
+
+        @include mq(max-sm) {
+            padding: 30px;
+        }
+
+        .title {
+            font-size: 30px;
+            margin-bottom: 35px;
+
+            @include mq(max-sm) {
+                font-size: 25px;
+            }
+        }
+
+        .contact-form {
+            .single-input-wrapper {
+                margin-bottom: 20px;
+
+                .gcf {
+                    --bs-gutter-x: 20px;
+                    --bs-gutter-y: 20px;
+                }
+
+                .single-input {
+                    input {
+                        width: 100%;
+                        padding: 20px;
+                        border: 1px solid #E3E3E4;
+                        border-radius: 7px;
+
+                        &:focus {
+                            border-color: var(--color-primary);
+                        }
+                    }
+                }
+            }
+
+            .single-input-textarea {
+                textarea {
+                    padding: 20px;
+                    border: 1px solid #E3E3E4;
+                    border-radius: 7px;
+                    height: 120px;
+                    width: 100%;
+
+                    &:focus {
+                        border-color: var(--color-primary);
+                    }
+                }
+            }
+
+            .rts-btn {
+                margin-top: 30px;
+                border-radius: 100px;
+            }
+        }
+    }
+}

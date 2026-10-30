@@ -1,0 +1,46 @@
+// VARIABLES
+$smooth_font: true;
+$base_font_size: 14px;
+
+:root {
+	--ptf-color-accent: #D8FA08;
+
+	// Colors
+	--ptf-color-1: #FFF;
+	--ptf-color-2: #000;
+	--ptf-color-3: #0A0513;
+	--ptf-color-4: #939393;
+	--ptf-color-5: rgba(255,255,255, .3);
+	--ptf-color-6: rgba(0,0,0, .15);
+
+	// Fonts
+	--ptf-primary-font: Poppins;
+	--ptf-secondary-font: Didot;
+
+	// Transition
+	--ptf-transition-duration: 300ms;
+	--ptf-transition-easing: ease;
+}
+
+// BREAKPOINTS
+$breakpoints: (
+	'small': 576px,
+	'medium': 768px,
+	'large': 992px,
+	'xlarge': 1200px,
+	'xxlarge': 1400px,
+	'xxxlarge': 1500px
+);
+
+// Z-INDEXES
+$z-indexes: (
+	'default': 1,
+	'fixed-footer': 20,
+	'slider-nav': 25,
+	'header': 30,
+	'site-overlay': 35,
+	'offcanvas-menu': 40,
+	'navbar': 50,
+	'custom-cursor': 100,
+	'preloader-spinner': 120
+);

@@ -1,0 +1,38 @@
+mixin ptf_timeline_slider_item(object)
+
+	//- Default
+	- object = object || {}
+	- object.image = object.image || ''
+	- object.year = object.year || ''
+	- object.title = object.title || ''
+	- object.text = object.text || ''
+
+	//- Element Class
+	- elClass = 'ptf-timeline-item'
+
+	//Timeline Slider Item
+	div(class=elClass)
+
+		.row(style='--bs-gutter-y: 30px;')
+
+			.col-sm-12.col-md-3
+
+				if object.image != ''
+
+					img(src=object.image, alt='', class='ptf-timeline-item__image')
+
+			.col-sm-12.col-md-5
+
+				if object.year != ''
+
+					span.ptf-timeline-item__year #{object.year}
+
+				if object.title != ''
+
+					h4.ptf-timeline-item__title !{object.title}
+
+			.col-sm-12.col-md-4
+
+				if object.text != ''
+
+					p.ptf-timeline-item__text #{object.text}

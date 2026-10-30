@@ -1,0 +1,30 @@
+.text-center.mt-50.pb-50
+    h2.color-linear.d-inline-block Register
+.box-form-login.pb-50
+    .form-login.bg-gray-850.border-gray-800.text-start
+        form(action="#")
+            .form-group
+                input.form-control.bg-gray-850.border-gray-800(type="text", placeholder='Full name')
+            .form-group
+                input.form-control.bg-gray-850.border-gray-800(type="text", placeholder='Email')
+            .form-group
+                input.form-control.bg-gray-850.border-gray-800(type="text", placeholder='User name')
+            .form-group.position-relative
+                input.form-control.bg-gray-850.border-gray-800.password(type="password", placeholder='Password')
+                span.viewpass
+            .form-group.position-relative
+                input.form-control.bg-gray-850.border-gray-800.password(type="password", placeholder='Confirm password')
+                span.viewpass
+            .form-group
+                input.btn.btn-linear.color-gray-850.hover-up(type="submit", value='Create an account')
+            .form-group.mb-0
+                span
+                    | Already have an account?
+                a.color-linear(href='page-login.html')
+                    |  Sign In
+    .box-line
+        span.bg-gray-900
+            | Or, sign up with your email
+    .box-login-gmail.bg-gray-850.border-gray-800.hover-up
+        a.btn.btn-login-gmail.color-gray-500(href='#')
+            | Sign up with Google

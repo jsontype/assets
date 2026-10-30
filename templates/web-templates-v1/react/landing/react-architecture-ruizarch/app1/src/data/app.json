@@ -1,0 +1,194 @@
+{
+    "settings": {
+        "siteName": "Ruizarch",
+        "siteDescription": "Architecture React Next.JS Template",
+        "formspreeURL": "https://formspree.io/f/your_api_key",
+        "mailchimp": {
+            "url": "",
+            "key": ""
+        },
+        "perPage": 6
+    },
+    "header": {
+        "logo": {
+            "image": "/img/logo/logo-light.png",
+            "alt": "Logo"
+        },
+        "menu": [
+            {
+                "label": "Home",
+                "link": "/",
+                "children": [
+                    {
+                        "label": "Homepage 1",
+                        "link": "/"
+                    },
+                    {
+                        "label": "Homepage 2",
+                        "link": "/home-2"
+                    },
+                    {
+                        "label": "Homepage 3",
+                        "link": "/home-3"
+                    }
+                ]
+            },
+            {
+                "label": "Services",
+                "link": "/services",
+                "children": [
+                    {
+                        "label": "Services List",
+                        "link": "/services"
+                    },
+                    {
+                        "label": "Single Service",
+                        "link": "/services/service-1"
+                    }
+                ]
+            },
+            {
+                "label": "Projects",
+                "link": "/projects",
+                "children": [
+                    {
+                        "label": "Projects Grid",
+                        "link": "/projects"
+                    },
+                    {
+                        "label": "Single Project",
+                        "link": "/projects/project-1"
+                    }
+                ]
+            },
+            {
+                "label": "Blog",
+                "link": "/blog",
+                "children": [
+                    {
+                        "label": "Blog list",
+                        "link": "/blog"
+                    },
+                    {
+                        "label": "Publication",
+                        "link": "/blog/the-infrastructure-that-powers-the-world"
+                    }
+                ]
+            },
+            {
+                "label": "Contact Us",
+                "link": "/contact",
+                "children": 0
+            },
+            {
+                "label": "Other",
+                "link": "/team",
+                "children": [
+                    {
+                        "label": "About",
+                        "link": "/about"
+                    },
+                    {
+                        "label": "Team",
+                        "link": "/team"
+                    },
+                    {
+                        "label": "Team Member",
+                        "link": "/team/team-01"
+                    },
+                    {
+                        "label": "Coming Soon",
+                        "link": "/coming-soon"
+                    },
+                    {
+                        "label": "404",
+                        "link": "/404"
+                    }
+                ]
+            }
+        ]
+    },
+    "footer": {
+        "logo": {
+            "image": "/img/logo/logo-light.png",
+            "alt": "Logo"
+        },
+        "copy": "© 2023 Ruizarch. All rights reserved.",
+        "menu": [
+            {
+                "label": "About",
+                "link": "/about"
+            },
+            {
+                "label": "Services",
+                "link": "/services"
+            },
+            {
+                "label": "Projects",
+                "link": "/projects"
+            },
+            {
+                "label": "Blog",
+                "link": "/blog"
+            },
+            {
+                "label": "Contact",
+                "link": "/contact"
+            }
+        ]
+    },
+    "social": [
+        {
+            "link": "https://facebook.com",
+            "title": "Facebook"
+        },
+        {
+            "link": "https://twitter.com",
+            "title": "Twitter"
+        },
+        {
+            "link": "https://instagram.com",
+            "title": "Instagram"
+        },
+        {
+            "link": "https://youtube.com",
+            "title": "Youtube"
+        }
+    ],
+    "projects": {
+        "categories": [
+            {
+                "name": "Architecture",
+                "slug": "architecture"
+            },
+            {
+                "name": "Interior",
+                "slug": "interior"
+            },
+            {
+                "name": "Decor",
+                "slug": "decor"
+            }
+        ]
+    },
+    "team": {
+        "categories": [
+            {
+                "name": "Executive",
+                "slug": "executive"
+            },
+            {
+                "name": "Data centers",
+                "slug": "data-centers"
+            },
+            {
+                "name": "Education",
+                "slug": "education"
+            },
+            {
+                "name": "Workplace",
+                "slug": "workplace"
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+@include lg {
+    .hero-slider-4 {
+        padding-top: 80px;
+    }    
+}
+@include md {
+    .hero-slider-4 {
+        padding-top: 50px;
+    }
+}
+
+@include xs {
+    .hero-slider-4 {
+        padding-top: 70px;
+    }
+}

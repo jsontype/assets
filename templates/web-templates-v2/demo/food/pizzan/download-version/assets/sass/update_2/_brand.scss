@@ -1,0 +1,75 @@
+/* Brand 1 ---------------------------------- */
+.brand-box {
+    height: 80px; 
+    overflow: hidden;
+    margin: 0 15px;
+    position: relative;
+    text-align: center;
+    img {
+        margin: 0 auto;
+        transition: all 0.7s ease-in-out;
+        position: absolute;
+        inset: 0;
+        &.original {
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.7s ease-in-out;
+            transform: translateY(-100%);
+        }
+
+        &.gray {
+            transition: all 0.7s ease-in-out;
+            transform: translateY(0%);
+            filter: grayscale(100%);
+        }
+    }
+    &.style-white {
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+    &:hover {
+        img {
+            &.original {
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.7s ease-in-out;
+                transform: translateY(0%);
+            }
+            &.gray {
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.7s ease-in-out;
+                transform: translateY(-100%);
+            }
+        }
+    }
+}
+
+.brand-title {
+    position: relative;
+    font-weight: 500;
+    color: $body-color;
+    text-align: center;
+    margin-bottom: 33px;
+    margin-top: -0.4em;
+    z-index: -2;
+    .text {
+        padding: 0 35px;
+        background-color: $white-color;
+        @include sm {
+            padding: 0 15px;
+        }
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #D9D9D9;
+        z-index: -1;
+    }
+}

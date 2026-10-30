@@ -1,0 +1,69 @@
+/*----------------------------------------*/
+/*   breadcrumb                           */
+/*----------------------------------------*/
+
+
+.rts-breadcrumb-area{
+    .rts-breadcrumb-content-wrapper{
+        height: 440px;
+        @include flex-center;
+        justify-content: space-between;
+
+        @include mq(max-lg){
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        @include mq(max-sm){
+            height: 350px;
+            padding: 25px 0;
+        }
+
+        .breadcrumb-conntent-area {
+            .title {
+                font-size: 70px;
+                color: var(--color-white);
+                line-height: 1;
+                margin-bottom: 10px;
+
+                @include mq(max-lg){
+                    font-size: 50px;
+                }
+
+                @include mq(max-sm){
+                    font-size: 40px;
+                }
+                
+            }
+            .desc {
+                color: var(--color-white);
+                max-width: 600px;
+            }
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            li {
+                a {
+                    color: var(--color-white);
+                    font-size: 16px;
+                    font-weight: var(--f-bold);
+                    text-transform: uppercase;
+                    line-height: 1;
+                }
+                .circle {
+                    display: inline-block;
+                    width: 5px;
+                    height: 5px;
+                    background: var(--color-white);
+                    border-radius: 100px;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+}

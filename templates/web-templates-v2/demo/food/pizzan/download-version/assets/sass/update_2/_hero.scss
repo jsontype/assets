@@ -1,0 +1,38 @@
+.hero-6 {
+    background-color: $smoke-color2;
+}
+
+.hero-6,
+.hero-7 {
+    overflow: hidden;
+    &#slider-phone {
+        .ls-wrapper {
+            &:has(h1) {
+                width: 100% !important;
+                text-align: center !important;
+                left: 0 !important;
+            }
+        }
+        h1 {
+            white-space: nowrap !important;
+            text-align: center !important;
+            width: 100% !important;
+        }
+    }
+}
+
+.hero-7 {
+    .ls-wrapper {
+        &:has(svg) {
+            height: 100% !important;
+            width: 100% !important;
+            left: 0 !important;
+            top: 0 !important;
+            * {
+                height: 100% !important;
+                width: 100% !important;
+                left: 0 !important;
+            }
+        }
+    }
+}

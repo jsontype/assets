@@ -1,0 +1,91 @@
+/*******************************************************/
+/**************** ## Call To Action Area ****************/
+/*******************************************************/
+.cta-content
+    &:before
+        content: ''
+        +poLT(0)
+        +size(50vw, 100%)
+        background-color: $primary-color
+        background-image: url(../images/background/cta-dot-bg.png)
+        background-repeat: no-repeat
+        background-size: cover
+        z-index: -1
+        +res-bl(lg)
+            width: 100%
+    .cta-badge
+        +absmiddle()
+        +size(180px)
+        background-repeat: no-repeat
+        background-size: cover
+        +flexcenter(center)
+        text-align: center
+        +res-bl(lg)
+            right: 5%
+            left: auto
+            transform: translate(0, -50%)
+        +res-bl(md)
+            +size(130px)
+            transform: translate(0)
+        +res-bl(xs)
+            +size(100px)
+        span
+            @extend %h3
+            font-size: 35px
+            +res-bl(md)
+                font-size: 25px
+            +res-bl(xs)
+                font-size: 20px
+    .theme-btn.style-two
+        border: 1px solid $secondary-color
+.cta-bg
+    +poRT(0)
+    +size(50vw, 100%)
+    background-repeat: no-repeat
+    background-size: cover
+    z-index: -1
+    +res-bl(lg)
+        display: none
+        
+/* CTA Area Two */
+.cta-content-two
+    max-width: 380px
+    
+.cta-two-image
+    position: relative
+    max-width: max-content
+    z-index: 1
+    .badge
+        max-width: 44%
+        +poRT(25px, -25px)
+    &:before
+        content: ''
+        +size(100%)
+        +absmiddle()
+        z-index: -1
+        border-radius: 50%
+        filter: blur(35px)
+        background: $primary-color
+    
+.cta-content-list
+    width: 350px
+    +res-ab(xl)
+        margin-left: auto
+        
+.cta-two-shapes
+    .shape
+        z-index: -1
+        max-width: 15%
+        position: absolute
+        &.one
+            top: 10%
+            left: 3%
+        &.two
+            left: 3%
+            bottom: 10%
+        &.three
+            top: 10%
+            right: 3%
+        &.four
+            right: 3%
+            bottom: 10%

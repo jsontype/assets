@@ -1,0 +1,184 @@
+a {
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+img.mfp-img {
+  box-shadow: 0 0 8px rgb(0 0 0 / 60%);
+  position: absolute;
+  max-height: 392px;
+  padding: 0 !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mfp-img-container .mfp-content {
+  max-width: 400px !important;
+}
+.mfp-img-container .mfp-close {
+  top: -110px;
+  right: -24px;
+}
+.news_popup_informations .image {
+  width: 100% !important;
+}
+.news_popup_informations .details {
+  width: 100% !important;
+  padding: 0 !important;
+}
+.news_popup_informations .details .category a {
+  text-decoration: none !important;
+  color: #7d7789 !important;
+  font-size: 16px !important;
+  font-family: "Josefin Sans" !important;
+  display: inline-block !important;
+  margin-bottom: 3px !important;
+  font-weight: unset !important;
+}
+.news_popup_informations .details .title a:hover {
+  color: unset !important;
+}
+.news_popup_informations .details .title a {
+  font-size: unset !important;
+}
+@media (max-width: 768px) {
+  .news_popup_informations .details .title a {
+    font-size: 22px !important;
+  }
+}
+
+.modalCloseSvg {
+  width: 50px;
+  height: 50px;
+}
+@media (max-width: 768px) {
+  .modalCloseSvg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.aali_tm_testimonials .swiper {
+  margin: 70px 0px 0px 0px;
+  list-style-type: none;
+}
+.aali_tm_testimonials .swiper .swiper-slide {
+  margin: 0px;
+}
+.aali_tm_testimonials .swiper .swiper-slide .text {
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+.aali_tm_testimonials .swiper .swiper-slide .text p {
+  font-size: 30px;
+  color: #fff;
+  font-style: italic;
+  line-height: 1.6;
+}
+.aali_tm_testimonials .swiper .swiper-slide .name {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 55px;
+
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.aali_tm_testimonials .swiper .swiper-slide .name:before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.48);
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.aali_tm_testimonials .swiper .swiper-slide .name h3 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.2px;
+}
+.aali_tm_testimonials .swiper .swiper-slide .name h3 span {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 1400px) {
+  .aali_tm_testimonials .swiper .swiper-slide .text p {
+    font-size: 23px;
+  }
+  .aali_tm_testimonials .swiper .swiper-slide .text {
+    font-size: 30px;
+  }
+  .aali_tm_testimonials .swiper {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .aali_tm_modalbox .box_inner {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .aali_tm_modalbox .main_details {
+    display: block;
+  }
+  .aali_tm_modalbox .main_details .textbox {
+    width: 100%;
+    padding-right: 0;
+  }
+  .aali_tm_modalbox .main_details .detailbox > ul {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+  }
+  .aali_tm_modalbox .main_details .detailbox > ul > li {
+    margin: 0;
+    width: unset;
+    padding: 0;
+    padding-right: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aali_tm_modalbox .box_inner {
+    width: 80% !important;
+  }
+}
+
+.aali_tm_modalbox .main_details .detailbox .share {
+  top: 0px;
+}
+.aali_tm_portfolio .portfolio_list .share .svg {
+  position: unset;
+  z-index: unset;
+  visibility: unset;
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  color: unset;
+  margin-top: 0;
+  transform: unset;
+}
+.aali_tm_portfolio .portfolio_list .share li {
+  padding: 0;
+  width: unset !important;
+}

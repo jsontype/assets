@@ -1,0 +1,58 @@
+.menu
+ 
+.menu__list
+  position: relative
+  +MQ(XL)
+    height: 4rem
+  +MQ(XXL)
+    height: 5rem
+
+.menu__item
+  display: inline-flex
+
+.menu__link
+  width: 4rem
+  height: 4rem
+  border-radius: var(--_radius-s)
+  color: var(--t-bright)
+  white-space: nowrap
+  font-size: 1.8rem
+  transition: all 0.3s ease-in-out
+  &.active
+    color: var(--t-opp-bright)
+    background-color: var(--neutral-bright)
+  +MQ(XL)
+    width: auto
+    height: 4rem
+    padding: 0 2rem
+    font: normal var(--font-weight-medium) 1.6rem/4rem var(--_font-default)
+    color: var(--t-medium)
+    i
+      display: none
+    &:hover
+      color: var(--t-bright)
+      .menu__caption
+        color: var(--t-bright)
+    &.active
+      color: var(--t-bright)
+      background-color: transparent
+      .menu__caption
+        color: var(--t-bright)
+        background-size: 0 1px, 100% 1px
+  +MQ(XXL)
+    height: 5rem
+    line-height: 5rem
+    padding: 0 2.5rem
+  +MQ(XXXL)
+    font-size: 1.8rem
+
+.menu__caption
+  display: none
+  +MQ(XL)
+    display: inline-flex
+    text-decoration: none
+    background: linear-gradient(to right, rgba(0,0,0, 0.0), rgba(0,0,0, 0.0)), linear-gradient(to right, var(--t-bright), var(--t-bright))
+    background-size: 100% 1px, 0 1px
+    background-position: 100% 100%, 0 100%
+    background-repeat: no-repeat
+    transition: background-size 300ms, color 300ms

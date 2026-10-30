@@ -1,0 +1,79 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 7.24 work css
+/*----------------------------------------*/
+.#{$theme-prifix}-work{
+    $self : &;
+    &-progress{
+        padding-right: 70px;
+        @media #{$sm,$xs} {
+          padding-right: 0;
+        }
+        &-title{
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: var(--td-theme-primary);
+        margin-bottom: 8px;
+        }
+        &-inner{
+          background: var(--td-common-line);
+          width: 100%;
+          height: 2px;
+          position: relative;
+        }
+        &-bar{
+          overflow: visible;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 2px;
+          text-align: center;
+          white-space: nowrap;
+          background-color: var(--td-theme-primary);
+          transition:  0.6s ease;
+          position: relative;
+        }
+        &-counter{
+          letter-spacing: 0px;
+          color: var(--td-theme-primary);
+          font-weight: 600;
+          font-size: 16px;
+          position: absolute;
+          top: -24px;
+          right: 0;
+        }
+    }
+    &-content{
+      @media #{$xl,$lg,$md,$sm,$xs} {
+        padding-left: 0;
+      }
+    }
+    &-thumb{
+      @media #{$xl,$lg,$md,$sm,$xs} {
+        padding-right: 0;
+      }
+      & img{
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-area{
+      &-border{
+        position: relative;
+        border-top: 1px solid var(--td-theme-primary);
+        border-bottom: 1px solid var(--td-theme-primary);
+        &::before{
+          position: absolute;
+          content: "";
+          width: .2px;
+          height: 100%;
+          background: var(--td-theme-primary);
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+}

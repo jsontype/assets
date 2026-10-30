@@ -1,0 +1,324 @@
+.gt-contact-wrapper-6 {
+
+    .gt-contact-image {
+        margin-left: -206px;
+        position: relative;
+        z-index: 9;
+        transform: translateX(-100%);
+        animation: slideInLeft 1.5s ease-out forwards;
+
+        @include breakpoint (max-xxxl) {
+            margin-left: 0;
+            max-width: initial;
+        }
+
+        img {
+            @include imgw;
+        }
+
+        .blur-shape {
+            position: absolute;
+            left: -4%;
+            top: 6%;
+            z-index: -1;
+
+            img {
+                width: initial;
+                height: initial;
+            }
+
+            @include breakpoint (max-xxxl) {
+                display: none;
+            }
+        }
+    }
+
+    .gt-contact-content {
+        padding: 0px 0px 120px;
+
+        @include breakpoint (max-lg) {
+            padding: 0px 0px 0;
+        }
+
+        .gt-comment-form-wrap {
+            background-color: $bg-color;
+            padding: 30px;
+            position: relative;
+            border: 1px solid rgba(255, 8, 8, .2);
+            margin-top: 30px;
+            }
+
+            .form-clt {
+                span {
+                    color: $white;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+
+                input,textarea {
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    border: 1px solid rgba(255, 255, 255, 0.15);
+                    background: rgba(255, 255, 255, 0.05);
+                    padding: 16px 20px;
+                    font-weight: 400;
+                    color: $text-color;
+
+                    &::placeholder {
+                        color: $text-color;
+                    }
+
+                }
+
+                textarea {
+                    padding-bottom: 100px;
+                    resize: none;
+                }
+            }
+        }
+ }
+
+  .gt-contact-us-wrapper {
+
+    .gt-comment-form-wrap {
+        padding: 30px;
+        background-color: $bg-color-2;
+         border-radius: 10px;
+
+        h4 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .form-clt {
+            span {
+                color: $white;
+                display: inline-block;
+                margin-bottom: 5px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            input,textarea {
+                width: 100%;
+                outline: none;
+                border: none;
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                background: rgba(255, 255, 255, 0.05);
+                padding: 12px 20px;
+                font-weight: 400;
+                color: $text-color;
+                border-radius: 10px;
+
+                &::placeholder {
+                    color: $text-color;
+                }
+
+            }
+
+            textarea {
+                padding-bottom: 70px;
+                resize: none;
+            }
+        } 
+    }
+
+    .gt-contact-bg {
+        position: relative;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        .gt-contact-content {
+            padding: 40px;
+            position: relative;
+
+            @include breakpoint (max-xl) {
+                padding: 30px;
+            }
+
+            h3 {
+                font-size: 32px;
+                color: $white;
+                margin-bottom: 10px;
+
+                @include breakpoint (max-xl) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                border-bottom: 1.2px solid rgba(191, 191, 191, 0.24);
+                padding-bottom: 24px;
+                margin-bottom: 24px;
+                color: $white;
+            }
+
+            .gt-contact-item {
+                @include flex;
+                gap: 12px;
+                margin-bottom: 24px;
+
+                .gt-icon {
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    text-align: center;
+                    border: 1.2px solid rgba(191, 191, 191, 0.24);
+                    color: $theme-color;
+                    font-size: 24px;
+                }
+
+                .gt-list {
+                    li {
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-family: $body-font;
+                        color: $white;
+
+                        @include breakpoint (max-xl) {
+                            font-size: 14px;
+                        }
+
+                        span {
+                            color: $white;
+                        }
+
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .gt-bg-image {
+        img {
+            @include imgw;
+            border-bottom-left-radius: 10px;
+             border-bottom-right-radius: 10px;
+             border-top-left-radius: 0;
+        }
+    }
+ }
+
+ .gt-map-items {
+    
+    .googpemap {
+
+        iframe {
+            width: 100%;
+            height: 478px;
+            border-radius: 10px;
+
+            @include breakpoint (max-sm){
+                height: 300px;
+            }
+        }
+    }
+}
+
+.gt-contacts-wrapper {
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    @include flex;
+    justify-content: space-between;
+
+    @include breakpoint (max-xl) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .gt-contact-item {
+        @include flex;
+        gap: 12px;
+        
+        .gt-icon {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border: 1.2px solid rgba(191, 191, 191, 0.24);
+            color: $theme-color;
+            font-size: 24px;
+        }
+
+        .gt-list {
+            li {
+                font-size: 16px;
+                font-weight: 700;
+                font-family: $heading-font;
+                color: $white;
+
+                @include breakpoint (max-xl) {
+                    font-size: 14px;
+                }
+
+                span {
+                    color: $white;
+                }
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.gt-contacts-wrapper {
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    @include flex;
+    justify-content: space-between;
+
+    @include breakpoint (max-xl) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .gt-contact-item {
+        @include flex;
+        gap: 12px;
+        
+        .gt-icon {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border: 1.2px solid rgba(191, 191, 191, 0.24);
+            color: $theme-color;
+            font-size: 24px;
+        }
+
+        .gt-list {
+            li {
+                font-size: 16px;
+                font-weight: 700;
+                font-family: $heading-font;
+                color: $white;
+
+                @include breakpoint (max-xl) {
+                    font-size: 14px;
+                }
+
+                span {
+                    color: $white;
+                }
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

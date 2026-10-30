@@ -1,0 +1,16 @@
+mixin ptf_animation_block(object)
+
+	//- Default
+	- object = object || {}
+
+	- object.name = object.name || 'fadeIn'
+	- object.delay = object.delay || '0s'
+	- object.duration = object.duration || '1000ms'
+
+	//- Element Class
+	- elClass = 'ptf-animate-element'
+
+	//Animated Block
+	div(class=elClass, data-animation-name=object.name, style='animation-delay:' + object.delay + '; animation-duration:' + object.duration + ';')
+
+		block

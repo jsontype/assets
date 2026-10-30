@@ -1,0 +1,17 @@
+extends ../layouts/master.pug
+block variables
+    - var PageTitle = 'Login'
+block title
+    title Register - Personal Blog  HTML Template
+
+block header
+    include ../components/header-small.pug
+
+block content
+    .cover-home3
+        .container
+            .row
+                .col-xl-10.col-lg-12.m-auto
+                    include ../sections/signup/signup_sec1.pug
+
+    block scripts-custom

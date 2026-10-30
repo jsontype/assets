@@ -1,0 +1,66 @@
+.row.mt-70
+    .col-lg-8
+        h2.color-linear.d-inline-block.mb-10 Recent posts
+        p.text-lg.color-gray-500 Don't miss the latest trends
+        .box-list-posts.mt-70
+            -
+                const postLists = [
+                    {
+                        image: 'assets/imgs/page/homepage1/img-news-1.jpg',
+                        title: 'Helpful Tips for Working from Home as a Freelancer',
+                        description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                        link: 'single-sidebar.html',
+                        tag: 'Working Tips'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/img-news-2.jpg',
+                        title: 'Helpful Tips for Working from Home as a Freelancer',
+                        description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                        link: 'single-sidebar.html',
+                        tag: 'Working Tips'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/img-news-3.jpg',
+                        title: 'Helpful Tips for Working from Home as a Freelancer',
+                        description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                        link: 'single-sidebar.html',
+                        tag: 'Working Tips'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/img-news-4.jpg',
+                        title: 'Helpful Tips for Working from Home as a Freelancer',
+                        description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                        link: 'single-sidebar.html',
+                        tag: 'Working Tips'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/img-news-5.jpg',
+                        title: 'Helpful Tips for Working from Home as a Freelancer',
+                        description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                        link: 'single-sidebar.html',
+                        tag: 'Working Tips'
+                    }
+                ]
+            each post in postLists
+                .card-list-posts.wow.animate__animated.animate__fadeIn
+                    .card-image.hover-up
+                        a(href= post.link)
+                            img(src= post.image, alt="Genz")
+                    .card-info
+                        a.btn.btn-tag.bg-gray-800.hover-up(href='blog-archive.html')= post.tag
+                        a(href= post.link)
+                            h4.mt-15.mb-20.color-white= post.title
+                        p.color-gray-500= post.description
+                        .row.mt-20
+                            .col-7
+                                a.color-gray-700.text-sm.mr-15(href="blog-archive.html") # Travel
+                                a.color-gray-700.text-sm(href="blog-archive.html") # Lifestyle
+                            .col-5.text-end
+                                span.color-gray-700.text-sm.timeread 3 mins read
+        include ../../elements/pagination.pug
+    .col-lg-4
+        include ../../components/sidebar.pug

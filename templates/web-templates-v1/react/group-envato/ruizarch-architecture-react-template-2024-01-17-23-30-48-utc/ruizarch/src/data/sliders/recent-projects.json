@@ -1,0 +1,38 @@
+{
+    "title": "What We Have Done",
+    "subtitle": "Recent Projects",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "avatar": {
+        "image": "/img/faces/1.jpg",
+        "name": "Joe French",
+        "subname": "Project Agent"
+    },
+    "links": [
+        {
+            "title": "Morphological Thinking",
+            "link": "/services/service-1"
+        },
+        {
+            "title": "Creative Architectural",
+            "link": "/services/service-2"
+        },
+        {
+            "title": "Planning Designs",
+            "link": "/services/service-3"
+        }
+    ],
+    "items": [
+        {
+            "image": "/img/photo/7.jpg",
+            "alt": "image"
+        },
+        {
+            "image": "/img/covers/1.jpg",
+            "alt": "image"
+        },
+        {
+            "image": "/img/photo/8.jpg",
+            "alt": "image"
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+/*******************************************************/
+/****************** ## History Area ********************/
+/*******************************************************/
+.history-wrapper
+    padding-top: 80px
+    +container(1070px)
+    position: relative
+    &:before
+        content: ''
+        +poLT(50%, 0)
+        +size(1px, 100%)
+        background: #F4F1EA
+        +res-bl(lg)
+            left: 0
+    &:after
+        color: white
+        +poLB(50%, 0)
+        content: '\f107'
+        font-weight: 300
+        transform: translate(-50%)
+        +circle($primary-color, 20px)
+        font-family: "Font Awesome 5 Pro"
+        +res-bl(lg)
+                left: 0
+    > .row
+        &:before
+            content: ''
+            +size(15px)
+            +poLT(50%, 0)
+            border-radius: 50%
+            transform: translate(-50%)
+            background: $primary-color
+            +res-bl(lg)
+                left: 0
+
+.history-item-wrap
+    position: relative
+    margin-bottom: 100px
+    +res-bl(lg)
+        padding-left: 50px
+    +res-bl(sm)
+        padding-left: 30px
+    &:before
+        +poRT(0)
+        content: ''
+        transition: 0.5s
+        border-right: 20px solid #F4F1EA
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
+        +res-bl(lg)
+            left: 0
+            border-right-color: transparent
+            border-left: 20px solid #F4F1EA
+    &:hover:before
+        border-right-color: $primary-color
+        +res-bl(lg)
+            border-left-color: $primary-color
+            border-right-color: transparent
+    &.history-right
+        +res-ab(lg)
+            margin-top: 150px
+        &:before
+            left: 0
+            border-right-color: transparent
+            border-left: 20px solid #F4F1EA
+        .history-item
+            margin-left: auto
+        &:hover:before
+            border-left-color: $primary-color
+.history-item
+    max-width: 410px
+    .image
+        margin-bottom: 35px
+    .content
+        .year
+            line-height: 1
+            font-size: 48px
+            display: block
+            margin-bottom: 10px
+            color: $primary-color
+            font-family: $heading-font
+            

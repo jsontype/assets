@@ -1,0 +1,26 @@
+.text-center.mt-50.pb-50
+    h2.color-linear.d-inline-block Welcome back !
+.box-form-login.pb-50
+    .form-login.bg-gray-850.border-gray-800.text-start
+        form(action="#")
+            .form-group
+                input.form-control.bg-gray-850.border-gray-800(type="text", placeholder='User name')
+            .form-group.position-relative
+                input.form-control.bg-gray-850.border-gray-800.password(type="password", placeholder='Password')
+                span.viewpass
+            .form-group
+                a.color-white.link(href='#')
+                    | Forgot password?
+            .form-group
+                input.btn.btn-linear.color-gray-850.hover-up(type="submit", value='Log me in')
+            .form-group.mb-0
+                span
+                    | Don’t have an account?
+                a.color-linear(href='page-signup.html')
+                    |  Sign Up
+    .box-line
+        span.bg-gray-900
+            | Or, sign in with your email
+    .box-login-gmail.bg-gray-850.border-gray-800.hover-up
+        a.btn.btn-login-gmail.color-gray-500(href='#')
+            | Sign in with Google

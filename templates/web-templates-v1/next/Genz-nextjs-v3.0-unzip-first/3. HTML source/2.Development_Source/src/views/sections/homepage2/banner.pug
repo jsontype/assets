@@ -1,0 +1,81 @@
+.banner.banner-home2
+    .text-center
+        h6.color-gray-600 Welcome to our blog
+        h1.color-white
+            | Being
+            span.color-linear
+                |  Unique
+            |
+            | is better
+            br.d-none.d-lg-block
+            | than being
+            |
+            span.color-linear
+                | Erfect
+    .text-center.mt-50
+        ul.list-tags-col-5.mb-50.text-center
+            -
+                const tagLists2 = [
+                    {
+                        image: 'assets/imgs/page/homepage1/tag1.png',
+                        title: 'Travel',
+                        link: 'blog-archive.html',
+                        delay: '0s'
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/tag2.png',
+                        title: ' Culture',
+                        link: 'blog-archive.html',
+                        delay: '0.1s'
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/tag3.png',
+                        title: 'Lifestyle',
+                        link: 'blog-archive.html',
+                        delay: '0.2s'
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/tag4.png',
+                        title: 'Fashion',
+                        link: 'blog-archive.html',
+                        delay: '0.3s'
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/tag5.png',
+                        title: 'Food',
+                        link: 'blog-archive.html',
+                        delay: '0.4s'
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/tag7.png',
+                        title: 'Animal',
+                        link: 'blog-archive.html',
+                        delay: '0.0s'
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/tag8.png',
+                        title: 'Minimal',
+                        link: 'blog-archive.html',
+                        delay: '0.1s'
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/tag9.png',
+                        title: 'Interior',
+                        link: 'blog-archive.html',
+                        delay: '0.2s'
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/tag10.png',
+                        title: 'Plant',
+                        link: 'blog-archive.html',
+                        delay: '0.3s'
+                    }
+                ]
+            each tag in tagLists2
+                li
+                    .card-style-2.hover-up.hover-neon.wow.animate__animated.animate__fadeInUp(data-wow-delay= tag.delay)
+                        .card-image
+                            a(href= tag.link)
+                                img(src= tag.image, alt="Genz")
+                        .card-info
+                            a.color-gray-500(href= tag.link)= tag.title

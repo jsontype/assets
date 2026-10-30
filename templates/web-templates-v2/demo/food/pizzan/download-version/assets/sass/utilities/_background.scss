@@ -1,0 +1,64 @@
+@each $bgcolorMap, $value in $bgcolorMap {
+  .bg-#{$bgcolorMap} {
+    background-color: #{$value} !important;
+  }
+}
+
+.bg-smoke2 {
+  background-color: #F8F8F8;
+}
+
+.gr-bg1 {
+  background-image: linear-gradient(255.4deg, rgba(146, 184, 253, 0.15) 5.09%, $smoke-color 63%);
+}
+.gr-bg2 {
+  background-image: linear-gradient(270deg, #EDF2FB 0%, #FFFFFF 100%);
+}
+
+.background-image,
+[data-bg-src] {
+  @include background-content(no-repeat, cover, center center);
+}
+
+.bg-fluid {
+  @include background-content(no-repeat, 100% 100%, center center);
+}
+
+.bg-auto {
+  background-size: auto auto;
+}
+
+.bg-bottom-right {
+  background-size: auto;
+  background-position: bottom right;
+}
+.bg-top-right {
+  background-size: auto;
+  background-position: top right;
+}
+
+.bg-top-center {
+  background-size: auto;
+  background-position: top center;
+}
+
+.bg-top-left {
+  background-size: auto;
+  background-position: top left;
+}
+
+.bg-repeat {
+  background-size: auto;
+  background-repeat: repeat;
+}
+.bg-contain-repeat {
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center left;
+}
+
+@include lg {
+  .bg-contain-repeat {
+    background-position: bottom left;
+  }
+}

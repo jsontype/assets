@@ -1,0 +1,68 @@
+.popup
+  +position(fixed, 0 null null 0)
+  width: 100%
+  min-width: 360px
+  height: 100%
+  overflow-y: auto
+  background-color: rgba($black, 0.3)
+  z-index: 10
+
+.popup__container
+  position: relative
+  padding: 3.4rem 3.4rem
+  +MQ(M)
+    position: absolute
+    left: 0
+    +center(y)
+    width: 100%
+    padding: 0
+
+.popup__content
+  position: relative
+  width: 100%
+  height: auto
+  background-color: rgba($white, 0.05)
+  backdrop-filter: blur(20px)
+  +shadow(5)
+  padding: 3.4rem
+  border-top: 1px solid rgba($white, 0.07)
+  border-bottom: 1px solid rgba($white, 0.07)
+  z-index: 1
+  +MQ(M)
+    max-width: 510px
+    padding: 3.4rem 3.4rem
+    margin: 0 auto
+  +MQ(XL)
+    padding: 6rem
+    max-width: 640px
+  +MQ(XXL)
+    padding: 8rem
+    max-width: 700px
+
+.popup-close
+  +position(absolute, 0 0 null null)
+  width: 4rem
+  height: 4rem
+  background-color: transparent
+  font-size: 1.6rem
+  text-align: center
+  line-height: 4rem
+  color: $text-light
+  .no-touch &:hover
+    color: $text-light-mute
+
+@supports (backdrop-filter: blur(20px))
+  .popup__content
+    background-color: rgba($white, 0.05)
+    backdrop-filter: blur(20px)
+@supports not (backdrop-filter: blur(20px))
+  .popup__content
+    background-color: $base-color
+    border: 1px solid rgba($white, 0.05)
+
+.popup-title
+  position: relative
+  margin-bottom: 4.2rem
+
+.mfp-bg
+  background: $black

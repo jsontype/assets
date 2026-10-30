@@ -1,0 +1,208 @@
+/* Team 1 ---------------------------------- */
+.team-card {
+    position: relative;
+    text-align: center;
+    .team-img {
+        overflow: hidden;
+        border-radius: 999px;
+        width: 238px;
+        margin: 0 auto -114px auto;
+        padding: 10px;
+        position: relative;
+        z-index: 3;
+        &:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: 1px solid $theme-color;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: inherit;
+        }
+        img {
+            width: 100%;
+            transition: 0.4s ease-in-out;
+            border-radius: inherit;
+        }
+    }
+    .team-title {
+        margin-bottom: 4px;
+        font-weight: 600;
+        transition: 0.1s ease-in-out;
+        a {
+            &:hover {
+                color: $smoke-color2;
+            }
+        }
+    }
+    .team-desig {
+        display: block;
+        padding-bottom: 13px;
+        margin-bottom: 20px;
+        transition: 0.4s ease-in-out;
+        border-bottom: 1px solid $border-color;
+    }
+    .team-content {
+        border-radius: 20px;
+        background-color: $white-color;
+        text-align: center;
+        padding: 142px 30px 30px 30px;
+        box-shadow: 0px 6px 15px rgba(1, 15, 28, 0.06);
+        position: relative;
+        z-index: 2;
+        &:after,
+        &:before {
+            content: '';
+            width: 100%;
+            height: 0;
+            background-color: $theme-color;
+            position: absolute;
+            bottom: 0; 
+            left: 0;
+            transition: 0.4s ease-in-out;
+            z-index: -1;
+            border-radius: inherit;
+        }
+        &:after {
+            z-index: -2;
+        }
+        &:before {
+            bottom: unset;
+            height: 44px;
+            top: -1px;
+            max-width: calc(100% - 48px);
+            left: 24px;
+            background-color: $white-color;
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+            border-radius: 0;
+        }
+    }
+    .th-social {
+        a {
+            background-color: transparent;
+            border: 1px solid $gray-color;
+            color: $body-color;
+        }
+    }
+    &:hover {
+        .team-content {
+            &:after {
+                height: 100%;
+            }
+        }
+        .team-title {
+            color: $white-color;
+        }
+        .team-desig {
+            color: $white-color;
+            border-color: $white-color;
+        }
+        .th-social {
+            a {
+                border-color: $white-color;
+                color: $white-color;
+                &:hover {
+                    background-color: $white-color;
+                    border-color: $white-color;
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+@include xs {
+    .team-card {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Team Details ---------------------------------- */
+.about-card {
+    padding-left: 16px;
+    &_img {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    &_title {
+        margin-top: -0.2em;
+        margin-bottom: 14px;
+    }
+    &_text {
+        margin-bottom: 25px;
+    }
+    .th-social {
+        a {
+            background-color: transparent;
+            color: $body-color;
+            border: 1px solid;
+            &:hover {
+                background-color: $theme-color;
+                border-color: $theme-color;
+                color: $white-color;
+            }
+            &:not(:last-child) {
+                margin-right: 3px;
+            }
+        }
+    }
+}
+
+.info-table {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .table-col {
+        width: 38.5%;
+        &:first-child {
+            width: 23%;
+        }
+        &:not(:last-child) {
+            border-right: 1px solid $gray-color
+        }
+    }
+    .th, .td {
+        padding: 12px 15px;
+        text-align: center;
+    }
+    .th {
+        background-color: $border-color;
+        color: $title-color;
+        font-weight: 500;
+    }
+    .td {
+        background-color: $smoke-color;
+        margin-bottom: 0;
+    }
+}
+
+.social-box {
+    margin-top: 25px;
+    &_title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+}
+
+@include lg {
+    .about-card {
+        padding-left: 0;
+        margin-top: 35px;
+    }
+}
+
+@include xs {
+    .info-table {
+        flex-direction: column;
+        .table-col {
+            width: 100% !important;
+            &:not(:last-child) {
+                border-right: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.box-list-posts.mt-40
+    .row
+        .col-lg-8
+            -
+                const postLists3 = [
+                    {
+                        image: 'assets/imgs/page/homepage4/img5.jpg',
+                        title: 'I work best when my space is filled with inspiration',
+                        description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                        link: 'single-sidebar.html'
+                    }
+                ]
+            each post in postLists3
+                .card-blog-1.card-blog-2.hover-up.wow.animate__animated.animate__fadeIn
+                    .card-image.mb-20
+                        a.post-type(href='#')
+                        a(href= post.link)
+                            img(src= post.image, alt="Genz")
+                    .card-info
+                        a(href= post.link)
+                            h4.color-white.mt-30= post.title
+                        p.mt-25.text-lg.color-gray-700= post.description
+                        .row.align-items-center.mt-45
+                            .col-7
+                                .box-author
+                                    img(src="assets/imgs/page/homepage1/author.jpg", alt="Genz")
+                                    .author-info
+                                        h6.color-gray-700 Joseph
+                                        span.color-gray-700.text-sm 25 April 2022
+                            .col-5.text-end
+                                a.readmore.color-gray-500.text-sm(href= post.link)
+                                    span Read more
+            .box-list-posts.mt-30
+                -
+                    const postLists = [
+                        {
+                            image: 'assets/imgs/page/healthy/img.png',
+                            title: 'Helpful Tips for Working from Home as a Freelancer',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: '#',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/healthy/img2.png',
+                            title: '10 Easy Ways to Be Environmentally Conscious At Home',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: '#',
+                            tag: 'Development'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/healthy/img3.png',
+                            title: 'How to Give Your Space a Parisian-Inspired Makeover',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: '#',
+                            tag: 'Lifestyle'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/healthy/img4.png',
+                            title: 'Facts About Business That Will Help You Success',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: '#',
+                            tag: 'Business'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/healthy/img5.png',
+                            title: 'The Next 60 Things To Immediately Do About Building A Plan',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: '#',
+                            tag: 'Building'
+                        }
+                    ]
+                each post in postLists
+                    .card-list-posts.wow.animate__animated.animate__fadeIn
+                        .card-image.hover-up
+                            a(href= post.link)
+                                img(src= post.image, alt="Genz")
+                        .card-info
+                            a.btn.btn-tag.bg-gray-800.hover-up(href='blog-archive.html')= post.tag
+                            a(href= post.link)
+                                h4.mt-15.mb-20.color-white= post.title
+                            p.color-gray-500= post.description
+                            .row.mt-20
+                                .col-7
+                                    a.color-gray-700.text-sm.mr-15(href="blog-archive.html") # Travel
+                                    a.color-gray-700.text-sm(href="blog-archive.html") # Lifestyle
+                                .col-5.text-end
+                                    span.color-gray-700.text-sm.timeread 3 mins read
+            include ../../elements/pagination.pug
+        .col-lg-4
+            include ../../components/sidebar-2.pug

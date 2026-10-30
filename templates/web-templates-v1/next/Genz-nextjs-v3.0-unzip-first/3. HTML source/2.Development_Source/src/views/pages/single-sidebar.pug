@@ -1,0 +1,20 @@
+extends ../layouts/master.pug
+block variables
+  - var CatTitle = 'Blog'
+  - var PageTitle = 'Digital Design That Will Help You Start Your Business'
+block title
+  title Digital Design That Will Help You Start Your Business
+
+block header
+  include ../components/header-small.pug
+
+block content
+  .cover-home3
+    .container
+      .row
+        .col-xl-1
+        .col-xl-10.col-lg-12
+          include ../elements/breadcrumb.pug
+          include ../sections/single/single-sidebar-sec1.pug
+
+  block scripts-custom

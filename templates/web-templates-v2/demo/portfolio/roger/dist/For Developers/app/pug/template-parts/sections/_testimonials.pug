@@ -1,0 +1,106 @@
+include ../../mixins/_global-mixins.pug
+
+.ptf-section__vertical-align
+
+	.ptf-section__content
+
+		//Ken Burn Effect
+		.ptf-section__ken-burn-background
+
+			img(src='assets/img/attachment-03.jpg', alt='')
+
+		.container
+
+			.row(style='--bs-gutter-y: 70px;')
+
+				.col-lg-6
+
+					+ptf_animation_block
+
+						img(src='assets/img/root/quote.png', alt='', loading='lazy')
+
+						.ptf-gap-100
+
+						h2 Creative & dedicated is things that Roger studio brings for you.
+
+				.col-lg-4.offset-lg-2
+
+					+ptf_animation_block({
+						delay: '100ms'
+					})
+
+						+ptf_testimonial_slider
+
+							+ptf_testimonial_item({
+								'text': '"If you are seeking an Interior designer that will understand exactly your needs, and someone who will utilise their creative and technical skills in parity with your taste, then Suzanne at The Jonny Studio is perfect."',
+								'name': '__Samuel',
+								'function': 'SEO'
+							})
+
+							+ptf_testimonial_item({
+								'text': '"If you are seeking an Interior designer that will understand exactly your needs, and someone who will utilise their creative and technical skills in parity with your taste, then Suzanne at The Jonny Studio is perfect."',
+								'name': '__Brian',
+								'function': 'Director'
+							})
+
+							+ptf_testimonial_item({
+								'text': '"If you are seeking an Interior designer that will understand exactly your needs, and someone who will utilise their creative and technical skills in parity with your taste, then Suzanne at The Jonny Studio is perfect."',
+								'name': '__Tony',
+								'function': 'Designer'
+							})
+
+			.ptf-gap-150
+
+			.row.justify-content-md-between(style='--bs-gutter-y: 40px;')
+
+				.col-6.col-lg-auto
+
+					+ptf_animation_block({
+						delay: '200ms'
+					})
+
+						+ptf_partner_logo({
+							image: 'assets/img/root/partner-1.png',
+							title: 'Artchive',
+							height_parent: '68',
+							height_child: '32'
+						})
+
+				.col-6.col-lg-auto
+
+					+ptf_animation_block({
+						delay: '200ms'
+					})
+
+						+ptf_partner_logo({
+							image: 'assets/img/root/partner-2.png',
+							title: 'CW',
+							height_parent: '68',
+							height_child: '68'
+						})
+
+				.col-6.col-lg-auto
+
+					+ptf_animation_block({
+						delay: '200ms'
+					})
+
+						+ptf_partner_logo({
+							image: 'assets/img/root/partner-3.png',
+							title: 'Neuton',
+							height_parent: '68',
+							height_child: '38'
+						})
+
+				.col-6.col-lg-auto
+
+					+ptf_animation_block({
+						delay: '200ms'
+					})
+
+						+ptf_partner_logo({
+							image: 'assets/img/root/partner-4.png',
+							title: 'Creative Space',
+							height_parent: '68',
+							height_child: '45'
+						})

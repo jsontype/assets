@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --extra-color: #5ac24e;
+  }
+
+@layer components{
+    .header:before{
+        @apply content-[''] absolute right-[-1px] top-0 w-[1px] h-full bg-[rgba(255,255,255,0.05)];
+    }
+    .header .logo a:before{
+        @apply content-[''] absolute left-0 top-0 w-full h-full;
+    }
+    .header .top-menu ul li:hover a{
+        @apply text-white;
+    }
+    .header .top-menu ul li:hover a .icon{
+        @apply text-white;
+    }
+    .header .top-menu ul li:hover a .link{
+        @apply translate-x-0 opacity-100 visible;
+    }
+    .header .top-menu ul li.active a{
+        @apply text-extra-color;
+    }
+    .header .top-menu ul li.active a .icon{
+        @apply text-extra-color;
+    }
+    .header .social a:hover .icon{
+        @apply text-extra-color;
+    }
+    .content{
+        @apply m-0 pb-0 px-0;
+    }
+    .content.inner-top{
+        @apply text-center;
+    }
+    .pricing-items .pricing-item .feature-list ul li.disable{
+        @apply line-through text-[rgba(153,153,153,0.5)];
+    }
+    .pricing-items .pricing-item .feature-list ul li.disable strong{
+        @apply opacity-50;
+    }
+    .pricing-items .pricing-item .feature-list ul li strong{
+        @apply my-0 mr-0 ml-[5px] py-0 px-[5px] inline-block text-[12px] text-[#181818] bg-extra-color font-light rounded-[2px] align-middle;
+    }
+    .pricing-items .pricing-item .lnks .lnk{
+        @apply float-none w-full block;
+    }
+    .pricing-items .pricing-item .lnks .lnk span{
+        @apply text-extra-color;
+    }
+    .pricing-items .pricing-item{
+        @apply pb-[90px] text-center;
+    }
+    .client-items .client-item:hover img{
+        @apply opacity-100;
+    }
+    .resume-items .resume-item:first-child:before{
+        @apply hidden;
+    }
+    .resume-items .resume-item:before{
+        @apply content-[''] absolute left-[-30px] top-0 right-[-30px] h-[1px] bg-[rgba(255,255,255,0.1)];
+    }
+    .resume-items .resume-item.active .date{
+        @apply text-extra-color;
+    }
+    .content.works .filter-menu .f_btn.active{
+        @apply text-extra-color;
+    }
+    .box-item .date{
+        @apply pt-[10px] px-0 pb-0 absolute left-[20px] bottom-[20px] w-[50px] h-[50px] text-[11px] leading-[11px] text-[#181818] text-center font-medium uppercase bg-white;
+    }
+    .box-item .date strong{
+        @apply block text-[23px] leading-[23px] text-[#181818] font-bold;
+    }
+    .box-item:hover .image img{
+        @apply scale-[1.08];
+    }
+    .box-item:hover .image .info{
+        @apply opacity-100;
+    }
+    .post-box .blog-content ul.list-style li:before{
+        @apply mt-[-2px] mx-0 mb-0 content-[''] absolute left-0 top-1/2 w-[4px] h-[4px] bg-extra-color rounded-[4px];
+    }
+    .post-box .post-comments li:after{
+        @apply content-[''] relative clear-both block;
+    }
+
+    /************************************/
+    /***********  Responsive  ***********/
+    /************************************/
+
+    /********  Large  *******/
+
+    .card-inner .card-image{
+        @apply large:right-[-16px];
+    }
+
+    /********  Big  *******/
+
+    .header{
+        @apply big:!top-0 big:!left-0 big:!w-full big:!h-[58px] big:!bg-[#181818];
+    }
+    .header.opened .top-menu{
+        @apply big:opacity-100 big:visible;
+    }
+    .header.opened .menu-btn .m-line{
+        @apply big:bg-[none];
+    }
+    .header.opened .menu-btn .m-line:before{
+        @apply big:top-0 big:bottom-auto big:rotate-[45deg];
+    }
+    .header.opened .menu-btn .m-line:after{
+        @apply big:top-auto big:bottom-0 big:rotate-[-45deg];
+    }
+    .header:before{
+        @apply big:hidden;
+    }
+    .header .logo{
+        @apply big:w-[50px] big:float-left;
+    }
+    .header .top-menu{
+        @apply big:absolute big:left-0 big:top-[58px] big:mt-0 big:w-full big:bg-[#202020] big:opacity-0 big:invisible big:transition-all big:duration-300;
+    }
+    .header .top-menu ul li{
+        @apply big:inline-block;
+    }
+    .header .top-menu ul li a{
+        @apply big:m-0;
+    }
+    .header .top-menu ul li a .icon{
+        @apply big:m-0 big:block big:w-[50px] big:h-[58px] big:leading-[56px];
+    }
+    .header .social{
+        @apply big:absolute big:left-auto big:right-[70px] big:bottom-auto big:top-0 big:w-auto;
+    }
+    .header .social a{
+        @apply big:m-0 big:inline-block;
+    }
+    .header .social a .icon{
+        @apply big:m-0 big:w-[30px] big:h-[58px] big:leading-[56px];
+    }
+    .header .menu-btn{
+        @apply big:absolute big:top-0 big:right-0 big:w-[58px] big:h-[58px] big:bg-[#202020] big:cursor-pointer;
+    }
+    .header .menu-btn .m-line{
+        @apply big:mt-[-1px] big:mr-0 big:mb-0 big:ml-[-10px] big:absolute big:left-1/2 big:top-1/2 big:w-[22px] big:bg-[#a9a9a9];
+    }
+    .header .menu-btn .m-line:before,.header .menu-btn .m-line:after{
+        @apply big:content-[''] big:absolute big:left-0 big:top-[-7px] big:w-full big:h-[2px] big:bg-[#a9a9a9] big:transition-all big:duration-300;
+    }
+    .header .menu-btn .m-line:after{
+        @apply big:top-auto big:bottom-[-7px];
+    }
+    .card-inner .card-image{
+        @apply big:relative big:top-[-30px] big:right-0 big:h-[50vh];
+    }
+    .card-inner{
+        @apply big:pl-0;
+    }
+    .contacts-items.card-box{
+        @apply big:py-[20px] big:pr-[30px] big:pl-[85px];
+    }
+    .contacts-items .icon{
+        @apply big:left-[30px];
+    }
+    .contact_form.card-box{
+        @apply big:pt-[0px] big:px-[14px] big:pb-[14px]
+    }
+    .contact_form .row{
+        @apply big:m-0;
+    }
+    .contact_form .button{
+        @apply big:my-0 big:mx-[16px];
+    }
+    .post-box.comments-form{
+        @apply big:pt-0 big:px-[2px] big:pb-[10px];
+    }
+    .post-box.comments-form .button{
+        @apply big:my-0 big:mx-[16px];
+    }
+
+    /********  Middle  *******/
+
+    .mfp-wrap.popup-box-inline{
+        @apply middle:left-[44px] middle:right-0 middle:w-auto middle:m-0 middle:py-0 middle:px-[10px];
+    }
+    .mfp-wrap.popup-box-inline .image {
+        @apply middle:px-0 middle:pt-[60px] middle:pb-[20px];
+    }
+    .mfp-wrap.popup-box-inline .desc{
+        @apply middle:p-0;
+    }
+    .mfp-wrap.popup-box .mfp-close,.mfp-wrap.popup-box-inline .mfp-close{
+        @apply middle:right-0 middle:top-[-54px];
+    }
+    .mfp-wrap.popup-box-inline .mfp-close{
+        @apply middle:right-0 middle:top-0;
+    }
+
+    /********  Small  *******/
+
+    ..header .top-menu ul li a .link{
+        @apply small:hidden;
+    }
+    .card-inner.card-started{
+        @apply small:text-center;
+    }
+    .card-inner.card-started .title{
+        @apply small:mx-0 small:mt-[0px] small:mb-[30px] small:text-[46px] small:leading-[50px];
+    }
+    .card-inner.card-started .title span{
+        @apply small:pr-0;
+    }
+    .card-inner.card-started .subtitle{
+        @apply small:m-0 small:text-[18px] small:leading-[18px];
+    }
+    .card-inner .card-wrap .title{
+        @apply small:text-center;
+    }
+    .card-inner .card-image{
+        @apply small:h-[50vh];
+    }
+    .content{
+        @apply small:pt-[50px] small:px-0 small:pb-0;
+    }
+    .content.inner-top{
+        @apply small:pt-[15px];
+    }
+    .content.inner-top .title-bg{
+        @apply small:top-[-30px] small:text-[60px] small:leading-[140px];
+    }
+    .content.inner-top .text{
+        @apply small:pt-[15px];
+    }
+    .content.inner-top .text p{
+        @apply small:mx-0 small:mt-0 small:mb-[30px] small:text-[19px];
+    }
+    .content.inner-top .text p br{
+        @apply small:hidden;
+    }
+    .content.inner-top .circle-bts a:first-child{
+        @apply small:mb-[15px] small:block;
+    }
+    .content.resume .row .col:first-child{
+        @apply small:mb-[70px];
+    }
+    .content.skills .row .col:first-child{
+        @apply small:mb-[70px];
+    }
+    .content.works .filter-menu{
+        @apply small:text-left;
+    }
+    .content.works .filter-menu .f_btn{
+        @apply small:my-0 small:mr-[15px] small:ml-0 small:h-[30px];
+    }
+    .post-box .post-comments li img{
+        @apply small:mr-[15px];
+    }
+    .post-box .post-comments li .comment-info{
+        @apply small:m-0;
+    }
+    ..post-box .post-comments li .comment-info .name{
+        @apply small:mx-0 small:mt-0 small:mb-[30px];
+    }
+    .post-box .post-comments li .comment-info .name h6 span{
+        @apply small:pt-[3px] small:m-0 small:block small:border-0;
+    }
+}

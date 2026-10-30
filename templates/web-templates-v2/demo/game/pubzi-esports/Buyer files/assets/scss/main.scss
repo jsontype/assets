@@ -1,0 +1,107 @@
+/*
+Theme Name: Eplay 
+Author: pixel-plus
+Author URI: https://themeforest.net/user/pixel-plus/portfolio
+Description: Pubzi - eSports and Gaming HTML Template
+Service Html Template 
+Version: 1.0.0
+*/
+
+/*CSS Table Of Content Ends Here*/
+
+/*
+--------------------------------------------------------------
+[Table of Contents]
+--------------------------------------------------------------
+01. Variables & Mixins
+02. Typography
+03. Buttons
+04. About 
+05. Animation 
+06. Brand 
+07. Contact
+08. Cta
+09. Faq
+10. Feature
+11. Footer
+12. Game
+13. Header
+14. Helping
+15. Hero
+16. Marquee
+17. Match
+18. Meanmenu
+19. News
+20. Preloader
+21. Pricing
+22. Section
+23. Service
+24. Team
+25. Testimonial
+--------------------------------------------------------------
+*/
+
+//>> Basic Start <<//
+
+//>> Mixins <<//
+@import "_mixins";
+//>> Variables <<//	
+@import "_variables";
+//>> Buttons <<//
+@import "_buttons";
+//>> Typography <<//
+@import "_typography";
+//>> Basic End <<//	
+
+
+//>> Template Section Style Start <<//
+
+//>> About <<//
+@import "_about";
+//>> Animation <<//
+@import "_animation";
+//>> Brand <<//
+@import "_brand";
+//>> Contact <<//
+@import "_contact";
+//>> Cta <<//
+@import "_cta";
+//>> Faq <<//
+@import "_faq";
+//>> Feature <<//
+@import "_feature";
+//>> Footer <<//
+@import "_footer";
+//>> Game <<//
+@import "_game";
+//>> Header <<//
+@import "_header";
+//>> Helping <<//
+@import "_helping";
+//>> Hero <<//
+@import "_hero";
+//>> Marquee <<//
+@import "_marquee";
+//>> _Match <<//
+@import "_match";
+//>> MeanMenu <<//
+@import "_meanmenu";
+//>> News <<//
+@import "_news";
+//>> Preloader <<//
+@import "_preloader";
+//>> _Pricing <<//
+@import "_pricing";
+//>> Section <<//
+@import "_section";
+//>> Service <<//
+@import "_service";
+//>> Team <<//
+@import "_team";
+//>> Testimonial <<//
+@import "_testimonial";
+
+
+
+//>> Template Section Style End <<//
+

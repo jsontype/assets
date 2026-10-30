@@ -1,0 +1,140 @@
+/*******************************************************/
+/***************** ## Sidebar Widgets *****************/
+/*******************************************************/
+.widget
+    &:not(:last-child)
+        margin-bottom: 45px
+        
+.widget-title
+    margin-bottom: 14px
+    
+.widget-search
+    form
+        display: flex
+        padding: 12px 25px
+        align-items: center
+        border: 1px solid $border-color
+        input
+            padding: 0
+            border: none
+            font-family: $base-font
+            background: transparent
+        button
+            flex: none
+            background: transparent
+            
+    
+.widget-category
+    ul
+        li
+            list-style: disc
+            list-style-position: inside
+            &:not(:last-child)
+                margin-bottom: 15px
+            a
+                span
+                    color: $primary-color
+                    display: inline-block
+                    transform: translateY(-10px)
+
+.price-filter-wrap
+    .price
+        display: flex
+        margin-top: 15px
+        align-items: center
+        color: $heading-color
+        span
+            margin-right: 5px
+        input
+            padding: 0
+            border: none
+            font-size: 16px
+            font-weight: 500
+            background: transparent
+        
+.ui-widget.ui-widget-content
+    height: 3px
+    border: none
+    cursor: pointer
+    background: rgba($primary-rgb, 0.1)
+.ui-widget-header
+    background: $primary-color
+.ui-slider .ui-slider-handle
+    +size(10px)
+    top: -3px
+    border: none
+    cursor: e-resize
+    border-radius: 50%
+    background: $primary-color
+            
+.widget-products
+    ul
+        li
+            display: flex
+            align-items: center
+            &:not(:last-child)
+                margin-bottom: 20px
+            .image
+                flex: none
+                max-width: 80px
+                margin-right: 25px
+            .content
+                line-height: 1
+                .ratting
+                    margin-bottom: 10px
+                    i
+                        font-size: 11px
+                        margin: 0 8px 0 0
+                        color: $primary-color
+                h6
+                    font-size: 18px
+                    margin-bottom: 10px
+
+.tag-coulds
+    display: flex
+    flex-wrap: wrap
+    margin-right: -10px
+    margin-bottom: -10px
+    a
+        padding: 0 20px
+        font-size: 14px
+        margin: 0 10px 10px 0
+        border: 1px solid $border-color
+        &:hover
+            color: white
+            background: $primary-color
+            border-color: $primary-color
+        
+.widget-banner
+    .category-banner-item
+        padding: 35px 30px
+        &:before
+            display: none
+        h3
+            +res-ab(ms)
+                font-size: 45px
+        .theme-btn
+            font-size: 16px
+            padding: 7px 30px
+        
+.widget-recent-news
+    > ul > li
+        display: flex
+        align-items: center
+        &:not(:last-child)
+            margin-bottom: 12px
+        .image
+            flex: none
+            max-width: 80px
+            margin-right: 30px
+            +res-bl(xs)
+                margin-right: 15px
+        .content
+            .date
+                font-size: 14px
+            h6
+                font-size: 18px
+                line-height: 1.45
+                margin-bottom: 5px
+                +res-bl(xs)
+                    font-size: 16px

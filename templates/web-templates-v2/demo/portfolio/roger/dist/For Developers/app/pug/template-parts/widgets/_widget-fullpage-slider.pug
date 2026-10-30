@@ -1,0 +1,54 @@
+mixin ptf_fullpage_slider(object)
+
+	//- Default
+	- object = object || {}
+	- object.loop_top = object.loop_top || ''
+	- object.loop_bottom = object.loop_bottom || ''
+	- object.speed = object.speed || '800'
+	- object.progress_bar = object.progress_bar || 'show'
+
+	//- Element Class
+	- elClass = 'ptf-fullpage-slider'
+
+	//Fullpage Slider
+	div(class=elClass, data-loop-top=object.loop_top, data-loop-bottom=object.loop_bottom, data-speed=object.speed)
+
+		block
+
+		if object.progress_bar == 'show'
+
+			//Progress Bar
+			ul.ptf-fullpage-slider-nav
+
+				li
+
+					a(href='#', class='prev')
+
+						<svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" fill="none"><path fill="currentColor" d="m.987 19.013 18.675-18-.694-.72-18.675 18 .694.72Zm16.736-18 18.675 18 .694-.72-18.675-18-.694.72Z"/></svg>
+
+				each Section in Sections
+
+					li
+
+						a(href='#' + Section, data-menuanchor=Section)
+
+				li
+
+					a(href='#', class='next')
+
+						<svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" fill="none"><path fill="currentColor" d="m36.398.987-18.675 18 .694.72 18.675-18-.694-.72Zm-16.736 18L.987.987l-.694.72 18.675 18 .694-.72Z"/></svg>
+
+mixin ptf_fullpage_slider_section(object)
+
+	//- Default
+	- object = object || {}
+	- object.anchor = object.anchor || ''
+	- object.style = object.style || ''
+
+	//- Element Class
+	- elClass = 'ptf-section pp-scrollable'
+
+	//Section
+	div(class=elClass, data-anchor=object.anchor, style=object.style)
+
+		block

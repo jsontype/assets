@@ -1,0 +1,236 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 7.10 expreance css
+/*----------------------------------------*/
+.#{$theme-prifix}-expreance{
+    $self : &;
+    &-big{
+        &-title{
+            & svg{
+                @media #{$lg} {
+                    width: 500px;
+                }
+                @media #{$md, $sm} {
+                    width: 300px;
+                    height: 400px;
+                }
+                @media #{$xs} {
+                    width: 160px;
+                    height: 330px;
+                }
+                & path{
+                    fill: var(--td-common-white);
+                    stroke: var(--td-theme-primary);
+                }
+            }
+            &-wrap{
+                display: flex;
+                align-items: flex-start;
+                & span{
+                    font-weight: 500;
+                    font-size: 48px;
+                    line-height: 1.2;
+                    color: var(--td-theme-primary);
+                    margin-top: -10px;
+                    margin-left: 70px;
+                    @media #{$lg, $md, $sm} {
+                        margin-top: 20px;
+                    }
+                    @media #{$md, $sm, $xs} {
+                        font-size: 27px;
+                    }
+                    @media #{$sm} {
+                        margin-left: 20px;
+                    }
+                    @media #{$xs} {
+                        margin-left: 10px;
+                        transform: translateY(67px);
+                    }
+                }
+            }
+        }
+    }
+    &-top{
+        margin-bottom: -200px;
+    }
+    &-main{
+        &-title{
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 1.16;
+            color: var(--td-common-white);
+            @media #{$sm, $xs} {
+                font-size: 55px;
+            }
+            @media #{$xs} {
+                font-size: 50px;
+                position: relative;
+                z-index: 1;
+            }
+            &-pre{
+                & p{
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.62;
+                    color: var(--td-common-white);
+                    opacity: 0.7;
+                    margin-top: 63px;
+                }
+            }
+        }
+    }
+    &-title{
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.25;
+        color: var(--td-common-white);
+        margin-bottom: 0;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: end;
+        @media #{$xl, $lg, $xs} {
+            font-size: 30px;
+        }
+        & span{
+            font-family: var(--tp-ff-poppins);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #6e8289;
+            margin-right: 18px;
+            @include td-transition();
+            margin-bottom: 2px;
+        }
+        &-pre{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.62;
+            color: var(--td-common-white);
+            margin-bottom: 0;
+            margin-left: 37px;
+            @include td-transition();
+            opacity: 0;
+            visibility: hidden;
+            & span{
+                color: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+    &-thumb{
+        position: absolute;
+        top: 0;
+        right: -25px;
+        left: -25px;
+        z-index: -1;
+        height: 100%;
+        @include td-transition();
+        opacity: 0;
+        visibility: hidden;
+        @media #{$sm,$xs} {
+            right: 0;
+            left: 0;
+        }
+        & img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-item{
+        padding: 27px 0px 10px 0px;
+        border-top: 1px solid #3a4247;
+        border-bottom: 1px solid #3a4247;
+        margin-top: -1px;
+        @include td-transition();
+        position: relative;
+        @media #{$xs} {
+            padding: 27px 10px 10px 10px;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #222f35;
+            top: 0;
+            left: 0;
+            transition: all .5s ease;
+        }
+        &:hover{
+            &::before{
+              height: 0;
+              top: auto;
+              bottom: 0;
+            }
+        }
+    }
+    &-btn{
+        & a{
+            color: var(--td-common-white);
+            opacity: 0.2;
+            @include td-transition();
+            position: relative;
+            z-index: 1;
+        }
+        &-wrap{
+            display: flex;
+            align-items: center;
+            & p{
+                line-height: 1.62;
+                color: var(--td-common-white);
+                margin-right: 80px;
+                margin-bottom: 0;          
+                margin-top: 14px;
+                @include td-transition();
+                opacity: 0;
+                visibility: hidden;
+                @media #{$sm} {
+                    margin-left: 20px;
+                }
+                @media #{$xs} {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    &-content{
+        &-wrap{
+            z-index: 1;
+            &:hover{
+                #{$self}{
+                    &-item{
+                        border-top: 1px solid transparent;
+                        border-bottom: 1px solid transparent;
+                    }
+                    &-thumb{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    &-title{
+                        &-pre{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                    &-btn{
+                        & a{
+                            opacity: 1;
+                        }
+                        &-wrap{
+                            & p{
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                    &-title{
+                        & span{
+                            color: var(--td-common-white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

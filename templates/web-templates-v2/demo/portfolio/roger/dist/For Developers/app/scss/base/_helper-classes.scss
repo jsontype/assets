@@ -1,0 +1,102 @@
+.has-color-accent {
+	color: var(--ptf-color-accent);
+}
+
+.has-color-white {
+	color: var(--ptf-color-1);
+}
+
+.ptf-gap-10 {
+	@include gap(10px);
+}
+
+.ptf-gap-15-vh {
+	height: 15vh;
+}
+
+.ptf-gap-20 {
+	@include gap(20px);
+}
+
+.ptf-gap-25 {
+	@include gap(25px);
+}
+
+.ptf-gap-30 {
+	@include gap(30px);
+}
+
+.ptf-gap-40 {
+	@include gap(40px);
+}
+
+.ptf-gap-50 {
+	@include gap(50px);
+}
+
+.ptf-gap-60 {
+	@include gap(60px);
+}
+
+.ptf-gap-70 {
+	@include gap(70px);
+}
+
+.ptf-gap-80 {
+	@include gap(80px);
+}
+
+.ptf-gap-90 {
+	@include gap(90px);
+}
+
+.ptf-gap-100 {
+	@include gap(100px);
+}
+
+.ptf-gap-150 {
+	@include gap(150px);
+}
+
+.ptf-gap-250 {
+	@include gap(250px);
+}
+
+.divider {
+	display: flex;
+	width: px2rem(90px);
+	height: px2rem(5px);
+	background-color: var(--ptf-color-accent);
+}
+
+.message.success {
+	color: var(--bd-success);
+}
+
+.message.danger {
+	color: var(--bd-danger);
+}
+
+.ptf-page-hero-title {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .4);
+		z-index: 1;
+	}
+
+	> * {
+		position: relative;
+		z-index: 2;
+	}
+
+}

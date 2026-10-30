@@ -1,0 +1,270 @@
+
+/** books-section **/
+
+.books-section{
+  position: relative;
+  background: #F6EFE9;
+  padding-top: 230px;
+}
+
+.books-section .title-box{
+  position: relative;
+  display: block;
+  padding: 0px 120px;
+}
+
+.books-section .title-text h2{
+  position: relative;
+  display: block;
+  font-size: 90px;
+  line-height: 111px;
+  font-family: 'Gambetta', serif;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 68px;
+  text-transform: uppercase;
+}
+
+.books-section .title-text h2 span{
+  position: relative;
+  display: block;
+  padding-left: 100px;
+}
+
+.books-section .title-text h2 span:before{
+  position: absolute;
+  content: '';
+  background-image: url(../../images/shape/shape-104.png);
+  width: 65px;
+  height: 65px;
+  left: 0px;
+  top: 23px;
+  background-repeat: no-repeat;
+}
+
+.books-section .title-box .text-box{
+  position: relative;
+  display: block;
+  padding-right: 350px;
+  padding-bottom: 170px;
+}
+
+.books-section .title-box .text-box p{
+  font-size: 28px;
+  line-height: 43px;
+  color: var(--title-color);
+  max-width: 400px;
+}
+
+.books-section .title-box .text-box a{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--title-color);
+  width: 268px;
+  height: 172px;
+  line-height: 172px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.books-section .title-box .text-box a:hover{
+
+}
+
+.books-section .title-box .text-box a:before{
+  position: absolute;
+  content: '';
+  background-image: url(../../images/shape/shape-114.png);
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.books-section .title-box .text-box .shape{
+  position: absolute;
+  right: 330px;
+  bottom: -30px;
+  width: 120px;
+  height: 106px;
+  background-repeat: no-repeat;
+}
+
+.books-section .title-box .text-box .shape-2{
+  position: absolute;
+  right: 330px;
+  bottom: -30px;
+  width: 120px;
+  height: 106px;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.books-section .inner-container{
+  border-top: solid;
+  border-width: 1px;
+  border-color: var(--secondary-color);
+}
+
+.books-section .inner-container{
+  margin: 0px 0px;
+}
+
+.books-section .inner-container .single-column{
+  padding: 0px 44px;
+  border-right: solid;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: var(--secondary-color);
+}
+
+.books-section .inner-container .single-item{
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 34px;
+}
+
+.books-section .inner-container .single-column:last-child{
+  border-right: none;
+}
+
+.books-section .inner-container .single-item .image-box{
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.books-section .inner-container .single-item .image-box img{
+  width: 100%;
+  transition: all 500ms ease;
+}
+
+.books-section .inner-container .single-item:hover .image-box img{
+  transform: scale(1.05);
+}
+
+.books-section .inner-container .single-item .lower-content{
+  position: relative;
+  display: block;
+  padding-top: 20px;
+}
+
+.books-section .inner-container .single-item .lower-content span{
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.50);
+  margin-bottom: 5px;
+}
+
+.books-section .inner-container .single-item .lower-content h3{
+  position: relative;
+  display: block;
+  font-size: 28px;
+  line-height: 40px;
+  font-family: 'Gambetta', serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.books-section .inner-container .single-item .lower-content h3 a{
+  display: inline-block;
+  color: var(--title-color);
+}
+
+.books-section .inner-container .single-item .lower-content h3 a:hover{
+
+}
+
+.books-section .portfolio-pagination{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.books-section .portfolio-pagination .pagination-list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-width: 1px;
+  border-color: var(--secondary-color);
+}
+
+.books-section .portfolio-pagination .pagination-list li a{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-family: var(--title-font);
+  color: var(--title-color);
+  border-right: solid;
+  border-width: 1px;
+  border-color: var(--secondary-color);
+  z-index: 1;
+}
+
+.books-section .portfolio-pagination .pagination-list li:last-child a{
+  border: none;
+  font-size: 12px;
+}
+
+.books-section .portfolio-pagination .pagination-list li a:hover{
+  color: #fff;
+}
+
+.books-section .portfolio-pagination .pagination-list li a:before{
+  position: absolute;
+  content: '';
+  background: var(--secondary-color);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  left: -1px;
+  top: -1px;
+  transform: scale(0,0);
+  z-index: -1;
+  transition: all 500ms ease;
+}
+
+.books-section .portfolio-pagination .pagination-list li a:hover:before{
+  transform: scale(1,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,345 @@
+/*******************************************************/
+/******************** ## About Area ********************/
+/*******************************************************/
+.about-us-content
+    max-width: 510px
+    +res-ab(xl)
+        margin-left: auto
+    .section-title h2
+        +res-bt(lg, xl)
+            font-size: 50px
+
+.why-choose-area
+    .marquee-wrap.style-two
+        position: absolute
+        z-index: -1
+        top: 55px
+    .headline-shapes
+        .shape
+            z-index: -1
+            &.one
+                left: 5%
+            &.two
+                top: 15%
+                right: 5%
+    
+.why-choose-content
+    max-width: 530px
+    
+.about-image-part
+    position: relative
+    padding-left: 12%
+    padding-top: 18%
+    &:before
+        +poLT(0)
+        content: ''
+        +size(95%)
+        z-index: -1
+        border-radius: 50%
+        border: 1px solid $primary-color
+    &:after
+        +poLT(7%, 10%)
+        content: ''
+        +size(85%)
+        z-index: -1
+        border-radius: 50%
+        border: 1px solid $primary-color
+    img
+        border-radius: 50%
+    .food-review
+        display: flex
+        align-items: center
+        +poRT(-4%, 22%)
+        padding: 9px
+        background: white
+        border-radius: 33px
+        border: 1px solid $primary-color
+        box-shadow: 0px 10px 60px rgba(35, 116, 231, 0.3)
+        +res-bl(xl)
+            right: -10px
+            top: 44%
+        +res-bl(xs)
+            display: none
+        .author
+            +size(36px)
+        .text
+            @extend %h6
+            color: $primary-color
+            flex: none
+            margin-left: 15px
+            margin-right: 12px
+            margin-bottom: -5px
+        .ratting
+            flex: none
+            padding-right: 8px
+            i
+                font-size: 14px
+    .quality-food
+        +poRB(14%, -2%)
+        +size(180px)
+        border-radius: 50%
+        background-size: cover
+        background-repeat: no-repeat
+        +res-bl(ms)
+            +size(130px)
+            right: 4%
+        .for-border
+            +size(calc(100% - 50px))
+            +poLT(25px)
+            border: 2px dashed white
+            border-radius: 50%
+            +res-bl(ms)
+                +size(calc(100% - 30px))
+                top: 15px
+                left: 15px
+        .text
+            @extend %h3
+            color: white
+            +absmiddle()
+            text-align: center
+            +res-bl(ms)
+                font-size: 20px
+    &.style-two
+        max-width: max-content
+        padding-left: 0
+        padding-top: 20px
+        &:before,
+        &:after
+            content: none
+        .quality-food
+            bottom: auto
+            top: 0
+            right: 0
+            .for-border
+                border-color: $heading-color
+            .text
+                color: $heading-color
+    &.style-three
+        max-width: 400px
+        text-align: right
+        padding-top: 55px
+        &:before,
+        &:after
+            content: none
+        img
+            border-radius: 0
+        .quality-food
+            left: 0
+            top: 0
+            
+    &.style-four
+        max-width: 600px
+        padding: 70px 12% 0 0
+        img
+            border-radius: 0
+        .quality-food
+            right: 0
+            top: 0
+        
+                
+/* Why Choose Two */
+.why-choose-two-image
+    +res-ab(lg)
+        display: flex
+        justify-content: flex-end
+        img
+            max-width: none
+            max-height: 100%
+
+.why-choose-two-content
+    padding-left: 40px
+    position: relative
+    z-index: 1
+    +res-bl(xs)
+        padding-left: 20px
+    .section-title
+        max-width: 455px
+    .service-item
+        max-width: 300px
+        margin-right: 30px
+        +res-bl(xs)
+            max-width: 270px
+    .shape
+        z-index: -1
+        position: absolute
+        &.one
+            right: 10%
+            bottom: 63%
+            max-width: 20%
+        &.two
+            top: 93%
+            left: 10%
+            max-width: 10%
+            
+/* About Shapes */
+.about-shapes
+    .shape
+        z-index: -1
+        position: absolute
+        &.one
+            left: 0
+            bottom: 14%
+            max-width: 10%
+            
+.about-bg-text
+    +poLB(0, 85px)
+    z-index: -1
+    font-size: 9.6vw
+    line-height: 1
+    color: $primary-color
+    font-family: $heading-font
+    +res-bl(lg)
+        bottom: 48%
+    +res-bl(sm)
+        bottom: 55%
+    +res-bl(ms)
+        display: none
+    
+.about-btn-author
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    .theme-btn
+        margin-top: 20px
+        margin-right: 35px
+    .author
+        display: flex
+        margin-top: 20px
+        align-items: center
+        img
+            max-width: 52px
+            border-radius: 50%
+            margin-right: 18px
+        h6
+            margin-bottom: 0
+            span
+                font-size: 14px
+                font-family: $base-font
+    .read-more
+        margin-top: 20px
+        
+.about-video
+    position: relative
+    &:before
+        +poLT(0)
+        content: ''
+        +size(100%)
+        background: rgba(14, 19, 23, 0.2)
+    .video-play
+        +size(55px)
+        +absmiddle()
+        font-size: 13px
+        line-height: 55px
+    img
+        width: 100%
+        
+.about-middle-content
+    max-width: 380px
+    +res-ab(xl)
+        margin-right: -35px
+    +res-ab(md)
+        margin-left: auto
+    h4
+        font-size: 26px
+        margin-bottom: 13px
+        
+.about-btn-customer
+    display: flex
+    align-items: start
+    .theme-btn
+        margin-right: 45px
+        +res-bl(lg)
+            margin-right: 15px
+    .customer
+        h6
+            font-size: 18px
+            +res-bl(xs)
+                font-size: 16px
+        .customer-image
+            img
+                +size(40px)
+                border-radius: 50%
+                margin-right: -15px
+                +res-bl(xs)
+                    margin-right: -25px
+                    
+/* About Four */
+.about-image-four
+    position: relative
+    .badge
+        max-width: 35%
+        +poLB(25%, 20px)
+        img
+            border-radius: 50%
+            
+    &.style-two
+        z-index: 1
+        &:before
+            content: ''
+            z-index: -1
+            +size(310px)
+            +poLT(50%, -60px)
+            border-radius: 50%
+            border: 1px solid $primary-color
+            transform: translate(-50%)
+            +res-bl(lg)
+                top: -30px
+            +res-bl(md)
+                +size(200px)
+            +res-bl(xs)
+                +size(150px)
+                
+/* Why Choose Five */
+.why-choose-five-content
+    max-width: 480px
+                
+/* Menu Page */
+.experience-year
+    +poRB(0)
+    color: white
+    padding: 45px
+    font-size: 20px
+    max-width: 300px
+    background: $primary-color
+    +res-bl(sm)
+        padding: 25px
+        font-size: 16px
+        max-width: 210px
+    +res-bl(ms)
+        right: -15px
+        bottom: -25px
+    .years
+        font-size: 5em
+        line-height: 1
+        display: block
+        font-family: $heading-font
+        +res-bl(xs)
+            font-size: 3em
+            
+/* About Five */
+.about-image-five
+    margin-left: -90px
+    +res-bl(lg)
+        margin-left: -15%
+        
+/* About Six */
+.about-six-service-part
+    +gapLR(padding, 100px)
+    +res-bl(xl)
+        +gapLR(padding, 50px)
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .headline-shapes .shape.two
+        right: 36%
+        max-width: 10%
+
+.about-six-content
+    max-width: 310px
+    +res-bl(xxl)
+        margin-left: 20px
+        margin-right: 30px
+    +res-bl(lg)
+        max-width: none
+        +gapLR(margin, 50px)
+    +res-bl(xs)
+        +gapLR(margin, 25px)

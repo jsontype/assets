@@ -1,0 +1,163 @@
+.home-dark {
+	--title-color: #fff;
+    --body-color: #E0E0E0;
+    --smoke-color: rgba(1, 15, 28, 0.06);
+    --smoke-color2: #081622;
+    --black-color: #000000;
+    --gray-color: #bdbdbd;
+    --white-color: #010F1C;
+    --light-color: #72849b;
+    --yellow-color: #ffb539;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --border-color: #e0e0e0;
+
+	background-color: $white-color;
+    .icon-btn {
+        background-color: rgba($color: #fff, $alpha: 0.2);
+    }
+    .th-btn {
+        color: $title-color;
+        &:hover {
+            color: $theme-color;
+        }
+        &.style3 {
+            &:hover {
+                &:before {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .th-menu-toggle {
+        --white-color: #fff;
+        &:hover {
+            color: $theme-color
+        }
+    }
+    .th-menu-wrapper {
+        .th-menu-area {
+            background-color: $white-color;
+        }
+        .mobile-logo {
+            background-color: $title-color;
+        }
+    }
+    .th-mobile-menu ul .th-item-has-children > a .th-mean-expand {
+        background-color: rgba($color: #fff, $alpha: 0.1);
+    }
+    .text-white {
+        color: $title-color !important;
+    }
+    .bg-title {
+        background-color: $white-color !important;
+    }
+    .slick-arrow {
+        background-color: $smoke-color2;
+        color: $title-color;
+        &:hover {
+            background-color: $theme-color;
+            color: $title-color;
+        }
+    }
+    .number-dots .slick-active button {
+        color: #fff;
+    }
+    .th-header {
+        .icon-btn {
+            border: none;
+            &:hover {
+                background-color: $title-color;
+            }
+            .badge {
+                background-color: $theme-color;
+            }
+        }
+    }
+    .badge {
+        color: $title-color;
+    }
+    .about-shape3 {
+        filter: brightness(0.25) invert(0);
+        opacity: 0.20;
+    }
+    .offer-card {
+        --white-color: #fff;
+    }
+    .tab-menu2 button.active {
+        --white-color: #fff;
+    }
+    .th-product {
+        .price {
+            font-weight: 600;
+            del {
+                font-weight: 400;
+            }
+        }
+        .actions {
+            .icon-btn {
+                background-color: $theme-color;
+                color: $title-color;
+                &:hover {
+                    background-color: $white-color;
+                }
+            }
+        }
+    }
+    .th-product.list-view {
+        border: 1px solid rgba($color: #FAF7F2, $alpha: 0.2);
+        .icon-btn {
+            &:nth-child(1), 
+            &:nth-child(3) {
+                background-color: rgba($color: #fff, $alpha: 0.2);
+                color: $title-color;
+                &:hover {
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+    .summary-content .th-social a, 
+    .product-about .th-social a {
+        color: $white-color;
+        &:hover {
+            color: $title-color;
+        }
+    }
+    .price_style1 del {
+        color: $body-color;
+    }
+    .menu-board {
+        --white-color: #fff;
+    }
+    .booking-form {
+        --white-color: #fff;
+        --title-color: #010F1C;
+        .th-btn {
+            &:not(:hover) {
+                color: $white-color;
+            }
+        }
+    }
+    .testi-box {
+        background-color: #101D29;
+    }
+    .blog-card {
+        background-color: #101D29;
+    }
+    .newsletter-form .form-control {
+        color: #4D5765;
+        --white-color: #fff;
+    }
+    .footer-wrapper .th-social a:hover {
+        color: #fff;
+    }
+    .scroll-btn {
+        i {
+            color: $title-color;
+            &:hover {
+                color: $white-color;
+            }
+        }
+    }
+}

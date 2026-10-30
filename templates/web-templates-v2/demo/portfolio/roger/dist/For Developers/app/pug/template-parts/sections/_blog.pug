@@ -1,0 +1,69 @@
+include ../../mixins/_global-mixins.pug
+
+.ptf-section__vertical-align
+
+	.ptf-section__content
+
+		.container
+
+			.row.align-items-center(style='--bs-gutter-y: 30px;')
+
+				.col-md-6
+
+					+ptf_animation_block
+
+						h2 From my Journal
+
+				.col-md-6.text-md-end
+
+					+ptf_link_with_icon({
+						title: 'View More Posts',
+						icon: '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18"><path fill="currentColor" d="M3.6 0v1.8h11.331L0 16.731 1.269 18 16.2 3.069V14.4H18V0H3.6Z"/></svg>',
+						position: 'right'
+					})
+
+			.ptf-gap-70
+
+			.row(style='--bs-gutter-y: 25px; --bs-gutter-y: 40px;')
+
+				.col-md-4
+
+					+ptf_animation_block({
+						delay: '100ms'
+					})
+
+						+ptf_blog_post({
+							thumbnail: 'assets/img/blog/blog-1.jpg',
+							title: 'Portrait in the city',
+							category: 'Personal',
+							date: '11 June, 2020',
+							link: 'single-post.html'
+						})
+
+				.col-md-4
+
+					+ptf_animation_block({
+						delay: '200ms'
+					})
+
+						+ptf_blog_post({
+							thumbnail: 'assets/img/blog/blog-2.jpg',
+							title: 'Personal laptop',
+							category: 'Travel',
+							date: '12 June, 2020',
+							link: 'single-post.html'
+						})
+
+				.col-md-4
+
+					+ptf_animation_block({
+						delay: '300ms'
+					})
+
+						+ptf_blog_post({
+							thumbnail: 'assets/img/blog/blog-3.jpg',
+							title: 'Women working',
+							category: 'Personal',
+							date: '13 June, 2020',
+							link: 'single-post.html'
+						})

@@ -1,0 +1,13 @@
+/* PARTIAL: SOCIAL IOCN
+-------------------------------------------- */
+
+.ptf-social-icon {
+	display: inline-flex;
+	font-size: px2rem(18px);
+	color: inherit;
+
+	& + .ptf-social-icon {
+		margin-left: px2rem(32px);
+	}
+
+}

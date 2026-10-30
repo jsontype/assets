@@ -1,0 +1,28 @@
+:root {
+    --thm-font: 'Inter', sans-serif;
+    --thm-font-2: 'Plus Jakarta Sans', sans-serif;
+    --thm-primary-color: #0549fe;
+    --thm-primary-color-rgb: 5, 73, 254;
+    --thm-secondary-color: #05c6fe;
+    --thm-secondary-color-rgb: 5, 198, 254;
+
+    --thm-body-font-color: #626369;
+    --thm-body-font-size: 16px;
+    --thm-body-line-height: 26px;
+    --thm-body-font-weight: 400;
+
+    --thm-heading-font-color: #101115;
+    --thm-white: #ffffff;
+    --thm-black: #101115;
+    --thm-black-bg: #101115;
+    --thm-black-bg-2: #1b1c21;
+    --thm-gray-bg: #dde5f9;
+
+    --thm-border-color: #cdd4e7;
+    --thm-border-radius: 10px;
+}
+
+
+.body-bg-2 {
+    background-color: #e6edff;
+}

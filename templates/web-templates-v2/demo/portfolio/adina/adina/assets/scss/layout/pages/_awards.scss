@@ -1,0 +1,109 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  7.2 awards css
+/*----------------------------------------*/
+
+.#{$theme-prifix}-awards{
+  &-content{
+    & span{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--td-grey-2);
+      margin-right: 100px;
+      @media #{$xs}{
+        margin-right: 20px;
+      }
+    }
+  }
+  &-btn{
+    color: #D9D9D9;
+  }
+  &-title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 131%;
+    color: var(--td-theme-primary);
+    margin-bottom: 0;
+    @media #{$xs}{
+      font-size: 22px;
+    }
+  }
+  &-wrapper{
+    padding: 40px 0 20px 0px;
+    border-bottom: 1px solid var(--td-common-line);
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 1px;
+        bottom: 0;
+        right: 0;
+        background: var(--td-theme-primary);
+        @include transition(all .4s ease);
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            right: inherit;
+            left: 0;
+        }
+        & .td-awards-thumb{
+            & img{
+                visibility: visible;
+                opacity: 1;
+                @include transform(scale(1)); 
+            }
+        }
+        & .td-awards-btn{
+            color: var(--td-theme-primary);
+        }
+    }
+  }
+  &-thumb{
+    display: inline-block;
+    position: absolute;
+    top: -34%;
+    left: 600px;
+    transform-origin: center;
+    z-index: 9999999;
+    @media #{$lg} {
+      left: 450px;
+    }
+    @media #{$md} {
+      top: -45px;
+      left: 324px;
+      width: 200px;
+    }
+    @media #{$sm} {
+      top: -14px;
+      left: 324px;
+      width: 200px;
+    }
+    @media #{$xs} {
+      top: -14px;
+      left: 156px;
+      width: 153px;
+    }
+    & img{
+      border-radius: 6px;
+      filter: drop-shadow(0px 30px 20px rgba(0,6,40,0.16));
+      visibility: hidden;
+      transform: scale(0.6);
+      opacity: 0;
+      transition: all .4s ease;
+    }
+  }
+  &-meta{
+    & span{
+        color: var(--td-grey-2);
+        display: flex;
+    }
+    & i{
+        color: var(--td-theme-primary);
+        margin-right: 14px;
+        transform: translateY(5px);
+    }
+  }
+}

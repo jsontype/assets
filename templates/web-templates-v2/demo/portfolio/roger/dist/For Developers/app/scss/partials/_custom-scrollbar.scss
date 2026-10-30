@@ -1,0 +1,14 @@
+/* PARTIAL: CUSTOM SCROLLBAR
+-------------------------------------------- */
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--ptf-color-3);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--ptf-color-accent);
+}

@@ -1,0 +1,30 @@
+header.header.sticky-bar.bg-gray-900
+	.container
+		.main-header
+			.header-logo
+				a.d-flex(href='index.html')
+					img(alt='GenZ', src='assets/imgs/template/logo.svg' class='logo-night')
+					img(alt='GenZ', src='assets/imgs/template/logo-day.svg' class='d-none logo-day')
+			.header-nav
+				include ../components/main-menu.pug
+				.burger-icon.burger-icon-white
+					span.burger-icon-top
+					span.burger-icon-mid
+					span.burger-icon-bottom
+			.header-right.text-end
+				a.btn.btn-search(href="#")
+				.form-search.p-20
+					form(action="#")
+						input.form-control(type="text", placeholder='Search')
+						input.btn-search-2(type="submit", value="")
+					.popular-keywords.text-start.mt-20
+						p.mb-10.color-white Popular tags:
+						a.color-gray-600.mr-10.font-xs(href="#") # Travel,
+						a.color-gray-600.mr-10.font-xs(href="#") # Tech,
+						a.color-gray-600.mr-10.font-xs(href="#") # Movie
+						a.color-gray-600.mr-10.font-xs(href="#") # Lifestyle
+						a.color-gray-600.mr-10.font-xs(href="#") # Sport
+				.switch-button
+					.form-check.form-switch
+						input#flexSwitchCheckChecked.form-check-input(type='checkbox', role='switch', checked='')
+				a.btn.btn-linear.d-none.d-sm-inline-block.hover-up.hover-shadow(href='page-login.html') Subscribe

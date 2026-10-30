@@ -1,0 +1,547 @@
+/* Processs card ------------------------*/
+.process-line {
+    background-color: $smoke-color !important;
+    opacity: 1;
+    margin: 0;
+
+    @include sm {
+        display: none;
+    }
+}
+
+.process-card {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    padding: 108px 0;
+
+    @include sm {
+        display: block;
+        margin: auto;
+        padding: 50px 0 0px 0;
+    }
+
+    .icon-btn {
+        display: none;
+    }
+
+    &_wrapp {
+
+        &:not(:last-child) {
+            .process-card {
+                border-right: 1px solid $smoke-color;
+
+                @include sm {
+                    border: none;
+                }
+
+                .icon-btn {
+                    position: absolute;
+                    top: 50%;
+                    right: -30px;
+                    transform: translateY(-50%);
+                    background-color: #F5F5F5;
+                    border-color: #F5F5F5;
+                    display: block;
+
+                    @include sm {
+                        position: relative;
+                        top: unset;
+                        right: 0;
+                        text-align: center;
+                        margin: 40px auto auto;
+                    }
+
+                    &:hover {
+                        background-color: $theme-color;
+                        border-color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .divided {
+        width: 2px;
+        height: 37px;
+        background: $title-color;
+        display: block;
+        margin: 24px auto;
+
+    }
+
+    .number {
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 84px;
+        line-height: 80px;
+        color: #E5E5E5;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .box-title {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .box-text {
+        font-size: 18px;
+        max-width: 286px;
+        display: block;
+        margin: auto;
+    }
+
+    &:hover {
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+.process-card2 {
+    position: relative;
+    z-index: 2;
+    border-radius: 24px;
+    padding: 32px 48px;
+       @include sm {
+        padding: 32px 28px;
+       }
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: #EDF5F3;
+        mask-image: url("../img/shape/process-shape.png");
+        mask-repeat: no-repeat;
+        mask-size: 100% 100%;
+        z-index: -1;
+        transition: all 0.4s ease;
+
+        @include vxs {
+            mask-image: none;
+        }
+    }
+
+    .number {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #06050B;
+        display: inline-block;
+        margin-bottom: 20px;
+
+    }
+
+    .box-title {
+        font-family: $title-font;
+        font-size: 32px;
+        margin-bottom: 10px;
+
+        @include sm {
+            font-size: 24px;
+        }
+    }
+
+    .box-text {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        &:before {
+            background: linear-gradient(122.43deg, $theme-color 4.09%, $theme-color2 100.57%);
+        }
+
+    }
+}
+
+.process-image {
+    min-width: 745px;
+    margin-right: -40%;
+
+    @include xxl {
+        margin-right: -10%;
+    }
+
+    @include xl {
+        min-width: 100%;
+        margin-right: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+}
+
+.process-card3 {
+    position: relative;
+    z-index: 2;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        width: 1px;
+        height: 115px;
+        background-color: $smoke-color;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .number {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: #D4D4D4;
+    }
+
+    .box-title {
+        font-size: 20px;
+        font-family: $title-font2;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .box-text {
+        max-width: 438px;
+    }
+
+    &.item-active {
+
+        &:before {
+            background: linear-gradient(309.43deg, $theme-color2 9.12%, $theme-color 100%);
+        }
+
+        .number {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 40px;
+            background: linear-gradient(309.43deg, $theme-color2 9.12%, $theme-color 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+
+}
+
+/* process card end ---------------------------*/
+.process-area {
+    position: relative;
+    margin: 0 20px;
+    border-radius: 32px;
+    background-size: 100% 100%;
+
+    @include md {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    &::before {
+        border-radius: inherit;
+    }
+}
+
+
+.process-item {
+    position: relative;
+    z-index: 9;
+    padding: 24px 24px 24px 40px;
+    border-radius: 30px;
+    background-color: $white-color;
+    box-shadow: 0px 20px 50px rgba(11, 11, 11, 0.1);
+    border-radius: 24px;
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    min-height: 550px;
+
+    @include xl {
+        gap: 30px;
+    }
+
+    @include lg {
+        flex-direction: column;
+        gap: 35px;
+        padding: 24px 24px 24px 24px;
+    }
+
+
+
+    &:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: $white-color;
+        border-radius: 24px;
+        z-index: -1;
+    }
+
+
+
+    .box-num {
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        margin-bottom: 56px;
+        display: block;
+
+        .number {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            background: #06050B;
+            border-radius: 48px;
+            font-weight: 400;
+            font-size: 16px;
+            color: $white-color;
+            margin-right: 14px;
+        }
+
+    }
+
+    .box-title {
+        font-weight: 600;
+        font-size: 40px;
+        color: #0F172B;
+
+        @include xxl {
+            font-size: 35px;
+        }
+
+        @include xl {
+            font-size: 30px;
+        }
+
+        @include xs {
+            font-size: 25px;
+        }
+
+    }
+
+    .box-text {
+        max-width: 417px;
+        margin-bottom: 50px;
+
+    }
+
+    .box-img {
+        width: 524px;
+        height: 502px;
+        border-radius: 24px;
+
+        @include lg {
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 24px;
+        }
+    }
+}
+
+.process-box {
+    display: flex;
+    gap: 16px;
+
+    @include sm {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .number {
+        min-width: 64px;
+        height: 64px;
+        line-height: 64px;
+        text-align: center;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        border-radius: 8px;
+        font-family: $title-font;
+        font-weight: 400;
+        font-size: 32px;
+        text-transform: capitalize;
+        color: #17225C;
+        display: inline-block;
+
+        @include sm {
+            max-width: 64px;
+            display: block;
+            margin: auto;
+        }
+
+    }
+
+    .box-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: #17225C;
+        margin-bottom: 5px;
+    }
+
+    .box-text {
+        margin-bottom: 0;
+    }
+}
+
+/* processSlider -----------------------------*/
+.processSlider {
+    margin: 0 -15% !important;
+
+    @media(max-width: 1699px) {
+        margin: 0 -20% !important;
+    }
+
+    @include xl {
+        margin: 0 !important;
+    }
+
+
+    .swiper-wrapper {
+        align-items: center;
+        min-height: 460px;
+
+        .swiper-slide {
+            margin-bottom: -50px;
+            transition: all 0.4s ease-in-out;
+
+            .process-block {
+                .box-img {
+
+                    &:before {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+
+                .box-content {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+
+            &.swiper-slide-active {
+                margin-bottom: 0;
+
+                .box-img {
+
+                    &:before {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+
+                .box-content {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+}
+
+.process-block {
+    position: relative;
+    z-index: 2;
+
+    .box-img {
+        position: relative;
+        z-index: 2;
+        mask-image: url("../img/process/process-shape.png");
+        mask-size: 100% 100%;
+        mask-repeat: no-repeat;
+        height: 460px;
+        transition: all 0.4s ease;
+
+        @include sm {
+            mask-image: none;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(21, 19, 36, 0.5), rgba(21, 19, 36, 0.5));
+            z-index: 1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .box-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        left: 24px;
+        bottom: 0px;
+        z-index: 2;
+        transition: all 0.4s ease-in-out;
+
+        @include sm {
+            flex-direction: column;
+            bottom: 30px;
+        }
+
+        @include xs {
+            left: 15px;
+            bottom: 15px;
+        }
+    }
+
+    .box-title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        color: $white-color;
+        margin-bottom: 20px;
+
+        @include sm {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+
+
+    }
+
+    .box-text {
+        max-width: 320px;
+        display: block;
+        margin-right: 20px;
+        margin-bottom: 0;
+
+        @media(max-width: 1699px) {
+            max-width: 280px;
+        }
+
+        @include xl {
+            max-width: 320px;
+        }
+
+        @include sm {
+            color: $white-color;
+            max-width: 100%;
+        }
+    }
+}

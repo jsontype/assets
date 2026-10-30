@@ -1,0 +1,71 @@
+/*----------------------------------------*/
+/*   BUTTON STYLES
+/*----------------------------------------*/
+
+.rts-btn{
+    display: inline-block;
+    font-size: 16px;
+    font-family: var(--font-primary);
+    font-weight: var(--f-semi-bold);
+    line-height: 26px;
+    padding: 15px 36px;
+    border-radius: 5px;
+    max-width: max-content;
+    width: max-content;
+    height: max-content;
+    @include rts-transition;
+
+    i{
+        margin-left: 8px;
+        transform: rotate(-45deg);
+        @include rts-transition;
+    }
+    
+    &.btn-primary{
+        background: var(--color-primary);
+        color: var(--color-white);
+        &:hover {
+            background: var(--color-heading);
+
+            i{
+                transform: rotate(0deg);
+            }
+        }
+    }
+    &.btn-primary-2{
+        padding: 10px 25px;
+        background: transparent;
+        color: var(--color-primary);
+        border: 1px solid #E6E6EB;
+        @include rts-transition;
+        i{
+            transform: rotate(-45deg);
+            @include rts-transition;
+        }
+
+        &:hover {
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+    }
+    &.text-btn {
+        padding: 0;
+        background: transparent;
+        color: var(--color-heading);
+        border: none;
+        @include rts-transition;
+        i{
+            margin-left: 5px;
+            transform: rotate(-45deg);
+            margin-bottom: -5px;
+            @include rts-transition;
+        }
+        &:hover {
+            background: transparent;
+            color: var(--color-primary);
+            i{
+                transform: rotate(0deg);
+            }
+        }
+    }
+}

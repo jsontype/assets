@@ -1,0 +1,241 @@
+/* Contact 1 ---------------------------------- */ 
+.quote-form {
+    padding: 40px;
+    border-top: 5px solid $theme-color;
+    background-color: $white-color;
+    box-shadow: 0px 10px 50px rgba(7, 36, 95, 0.1);
+    .form-title {
+        margin-top: -0.26em;
+        margin-bottom: 26px;
+    }
+    &.style2 {
+        padding: 30px;
+        border-top: none;
+    }
+}
+.call-btn {
+    color: $theme-color;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: $title-font;
+    display: inline-block;
+    .play-btn {
+        --icon-size: 45px;
+        font-size: 14px;
+        margin-right: 15px;
+        > i {
+            background-color: $theme-color;
+            color: $white-color;
+        }
+        &:after,
+        &:before {
+            background-color: $theme-color;
+        }
+    }
+    .fa-phone {
+        font-size: 22px;
+    }
+    .btn-title {
+        font-size: 18px;
+        margin-bottom: 2px;
+        font-weight: bold;
+    }
+    .btn-text {
+        font-size: 22px;
+    }
+    &.style2 {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    &.style3 {
+        display: flex;
+        align-items: center;
+        .btn-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: $white-color;
+            margin-bottom: 0px;
+        }
+        .btn-text {
+            font-size: 20px;
+            color: $white-color;
+        }
+        .play-btn {
+            > i {
+                background-color: $white-color;
+                color: $theme-color;
+            }
+            &:after,
+            &:before {
+                background-color: $white-color;
+            }
+        }
+    }
+    &:hover {
+        .icon-btn {
+            background-color: $title-color;
+        }
+        .play-btn {
+            > i {
+                background-color: $title-color;
+            }
+            &:after,
+            &:before {
+                background-color: $title-color;
+            }
+        }
+    }
+}
+
+@include sm {
+    .call-btn {
+        font-size: 24px;
+    }
+}
+
+@include vxs {
+    .quote-form {
+        padding: 40px 15px;
+        &.style2 {
+            padding: 30px 15px;
+        }
+    }
+}
+
+/* Contact 2 ---------------------------------- */ 
+.box-wrap1 {
+    padding: 30px 22px 30px 30px;
+    height: 100%;
+}
+
+/* Contact Page ---------------------------------- */ 
+.contact-info {
+    background-color: $white-color;
+    background-size: 100% 100%;
+    padding: 50px 15px;
+    text-align: center;
+    box-shadow: 0px -4px 30px rgba(1, 15, 28, 0.08);
+    border-radius: 10px;
+    &_title {
+        margin-bottom: 6px;
+    }
+    &_icon {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        line-height: 83px;
+        background-color: $theme-color;
+        color: $white-color;
+        text-align: center;
+        font-size: 32px;
+        border-radius: 999px;
+        margin: 0 auto 30px auto;
+        position: relative;
+        z-index: 2;
+        &:before,
+        &:after {
+            content: '';
+            @include equal-size(100%);
+            position: absolute;
+            background-color: $theme-color;
+            opacity: 0.2;
+            border-radius: inherit;
+            z-index: -2;
+            transition: 0.4s ease-in-out;
+        }
+        &:before {
+            left: -10px;
+            top: -5px;
+        }
+        &:after {
+            right: -10px;
+            top: 5px;
+        }
+    }
+    &_text {
+        display: block;
+        margin-bottom: -0.5em;
+        span,
+        a {
+            display: block;
+            max-width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a {
+            color: $body-color;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    &:hover {
+        .contact-info {
+            &_icon {
+                &:before {
+                    left: 0;
+                    top: 0;
+                }
+                &:after {
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+.contact-form {
+    background-color: $white-color;
+    padding: 50px;
+    box-shadow: 0px 6px 50px rgba(1, 15, 28, 0.05);
+    border-radius: 20px;
+    .form-title {
+        text-align: center;
+        margin: -0.24em auto 30px auto;
+    }
+    select,
+    .form-control,
+    .form-select,
+    textarea,
+    input {
+        border: none;
+    }
+}
+
+.contact-map {
+    line-height: 0.01px;
+    iframe {
+        border-radius: 20px;
+        width: 100%;
+        height: 550px;
+    }
+}
+
+@include ml {
+    .contact-map {
+        iframe {
+            height: 400px;
+        }
+    }
+}
+
+@include md {
+    .contact-form {
+        padding: 40px;
+        border-radius: 10px;
+    }
+    .contact-map {
+        iframe {
+            border-radius: 10px;
+            height: 250px;
+        }
+    }
+}
+
+@include xs {
+    .contact-form {
+        padding: 40px 20px;
+    }
+}

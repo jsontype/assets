@@ -1,0 +1,54 @@
+/* WIDGET: TIMELINE SLIDER
+-------------------------------------------- */
+
+.ptf-timeline-slider {
+	overflow: unset;
+
+
+	.ptf-swiper-pagination {
+		margin-top: px2rem(80px);
+	}
+
+	.ptf-swiper-button-prev,
+	.ptf-swiper-button-next {
+		position: absolute;
+		top: calc(50% - #{px2rem(80px)});
+		left: px2rem(-120px);
+		z-index: 2;
+
+		@media (max-width: 1919px) {
+			display: none;
+		}
+
+	}
+
+	.ptf-swiper-button-next {
+		right: px2rem(-120px);
+		left: unset;
+	}
+
+}
+
+.ptf-timeline-item {
+	padding-bottom: px2rem(45px);
+
+	& + & {
+		padding-top: px2rem(55px);
+		border-top: 1px solid var(--ptf-color-5);
+	}
+
+	&__year {
+		display: block;
+		margin-bottom: px2rem(8px);
+	}
+
+	&__title {
+		font-size: px2rem(32px);
+		line-height: 1.3;
+	}
+
+	&__text {
+		padding-right: px2rem(30px);
+	}
+
+}

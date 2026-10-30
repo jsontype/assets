@@ -1,0 +1,50 @@
+mixin ptf_blog_post(object)
+
+	//- Default
+	- object = object || {}
+	- object.thumbnail = object.thumbnail || ''
+	- object.title = object.title || ''
+	- object.date = object.date || ''
+	- object.category = object.category || ''
+	- object.link = object.link || '#'
+
+	- elClass = 'ptf-post ptf-post--masonry'
+
+	//Blog Post
+	article(class=elClass)
+
+		if object.thumbnail != ''
+
+			.ptf-post-thumbnail
+
+				img(src=object.thumbnail, alt='')
+
+				a(class='ptf-post-thumbnail__link', href=object.link)
+
+		.ptf-post-content
+
+			header.ptf-post-header
+
+				.ptf-post-meta
+
+					if object.category != ''
+
+						span
+
+							=object.category
+
+					if object.date != ''
+
+						span
+
+							=object.date
+
+				if object.title != ''
+
+					h3.ptf-post-title
+
+						a(href=object.link)
+
+							=object.title
+
+							<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none"><path fill="currentColor" d="M4.6 0v2.3h14.478L0 21.378 1.621 23 20.7 3.922V18.4H23V0H4.6Z"/></svg>

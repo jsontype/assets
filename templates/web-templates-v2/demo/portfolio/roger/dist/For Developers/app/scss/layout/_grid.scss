@@ -1,0 +1,18 @@
+/* LAYOUT: GRID
+-------------------------------------------- */
+
+@include media-breakpoint-up(xl) {
+
+	.container {
+		max-width: 1300px;
+	}
+
+}
+
+/* MAIN
+-------------------------------------------- */
+
+.ptf-main {
+	position: relative;
+	overflow: hidden;
+}

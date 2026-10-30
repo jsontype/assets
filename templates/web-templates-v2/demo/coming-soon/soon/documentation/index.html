@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Soon - Universal Coming Soon Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+        h2 { font-size: 2.4em; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Soon&rdquo; Documentation by &ldquo;Theme Starz&rdquo; v1.0.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Soon - Universal Coming Soon Template&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 16.11.2016<br>
+					By: Theme Starz<br>
+					Email: <a href="mailto:support@theme-starz.com">support@themestarz.net</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/themestarz">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		
+        <hr>
+
+        <h2 id="navigation-variants"><strong>Navigation variants</strong></h2>
+        <p>You can have two styles of navigation:</p>
+        <ul>
+            <li><strong>Regular navigation</strong> with listed links - default</li>
+            <li><strong>Navigation button only</strong> - add <code><strong>nav-btn-only</strong></code> class into <code><strong>navigation</strong></code> class in &lt;nav&gt; element</li>
+        </ul>
+        <hr>
+
+        <h2 id="owl-carousel"><strong>Owl carousel</strong></h2>
+        <p>Propper allows you to create a carousel without editing a JavaScript. All you need to is to set <strong>data-</strong> parameters. These data-attributes you can set:</p>
+        <ul>
+            <li><strong>data-owl-items</strong> - number of displayed items. Default 1</li>
+            <li><strong>data-owl-nav</strong> - display navigation arrows. Default 0</li>
+            <li><strong>data-owl-dots</strong> - display navigation dots. Default 0</li>
+            <li><strong>data-owl-center</strong> - center the slide. Default 0</li>
+            <li><strong>data-owl-loop</strong> - loop the carousel. Default 0</li>
+            <li><strong>data-owl-margin</strong> - margin between slides. Default 0</li>
+            <li><strong>data-owl-auto-width</strong> - dynamic width based on slide width. Default 0</li>
+            <li><strong>data-owl-nav-container</strong> - container for navigation. Default 0</li>
+            <li><strong>data-owl-autoplay</strong> - auto play slides. Default 0</li>
+            <li><strong>data-owl-fadeout</strong> - fade animation between slides. Default 0</li>
+        </ul>
+
+        <hr>
+
+        <h2 id="email-forms"><strong>Email forms</strong></h2>
+        <p>To set the for receiving messages, open <strong>assets/php/email.php</strong> and change <strong>email@example.com</strong> to your own.
+            Forms can have these four predefined <strong>name</strong> attributes:</p>
+        <ul>
+            <li>name</li>
+            <li>email</li>
+            <li>phone</li>
+            <li>message</li>
+        </ul>
+        <h3><strong>Inputs styling</strong></h3>
+        <p>You can choose between <strong>regular</strong> inputs style and <strong>underline</strong>. To add underline style, add <code><strong>inputs-underline</strong></code> class
+        into <strong>&lt;form&gt;</strong> element.</p>
+        <hr>
+
+        <h2 id="loading-screen"><strong>Loading screen (Pace plugin)</strong></h2>
+        <p>To enable loading screen just add <strong><code>has-loading-screen</code></strong>class into <strong><code>body</code></strong> to enable.</p>
+        <hr>
+
+        <h2 id="video"><strong>Self Hosted Video</strong></h2>
+        <p>You can play <strong>MP4, OGV and WEBM</strong> videos as a fullscreen background from your server. You just need to upload this videos and set the path
+        in <code><strong>data-vide-bg="assets/video/YOUR_VIDEO"</strong></code> without extension.</p>
+        <hr>
+
+        <h2 id="map"><strong>Map settings</strong></h2>
+        <p>To display the map, you need to have these lines at the end of your page:</p>
+<pre>
+&lt;script type="text/javascript" src="http://maps.google.com/maps/api/js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    var latitude = 34.038405; <em style="color: #7c7c7c">// latitude of the map center</em>
+    var longitude = -117.946944; <em style="color: #7c7c7c">// longitude of the map center</em>
+    var markerImage = "assets/img/map-marker-w.png"; <em style="color: #7c7c7c">// image of the marker icon</em>
+    var mapTheme = "dark"; <em style="color: #7c7c7c">// map theme. Use <strong>dark</strong> or <strong>light</strong></em>
+    google.maps.event.addDomListener(window, 'load', simpleMap(latitude, longitude, markerImage, mapTheme));
+&lt;/script&gt;
+</pre>
+        <hr>
+
+        <h2 id="count-down-timer"><strong>Count down timer</strong></h2>
+        <p>To change the date of the countdown change these <strong>data</strong> attributes:</p>
+        <ul>
+            <li>data-countdown-year</li>
+            <li>data-countdown-month - without "0". So for the July it is data-countdown-month="6"</li>
+            <li>data-countdown-day</li>
+        </ul>
+        <hr>
+
+        <h2 id="universal-classes"><strong>Universal classes</strong></h2>
+        <ul>
+            <li>opacity-90 { @include opacity(.9); }</li>
+            <li>opacity-80 { @include opacity(.8); }</li>
+            <li>opacity-70 { @include opacity(.7); }</li>
+            <li>opacity-60 { @include opacity(.6); }</li>
+            <li>opacity-50 { @include opacity(.5); }</li>
+            <li>opacity-40 { @include opacity(.4); }</li>
+            <li>opacity-30 { @include opacity(.3); }</li>
+            <li>opacity-20 { @include opacity(.2); }</li>
+            <li>opacity-19 { @include opacity(.19); }</li>
+            <li>opacity-18 { @include opacity(.18); }</li>
+            <li>opacity-17 { @include opacity(.17); }</li>
+            <li>opacity-16 { @include opacity(.16); }</li>
+            <li>opacity-15 { @include opacity(.15); }</li>
+            <li>opacity-14 { @include opacity(.14); }</li>
+            <li>opacity-13 { @include opacity(.13); }</li>
+            <li>opacity-12 { @include opacity(.12); }</li>
+            <li>opacity-11 { @include opacity(.11); }</li>
+            <li>opacity-10 { @include opacity(.1); }</li>
+            <li>opacity-9 { @include opacity(.09); }</li>
+            <li>opacity-8 { @include opacity(.08); }</li>
+            <li>opacity-7 { @include opacity(.07); }</li>
+            <li>opacity-6 { @include opacity(.06); }</li>
+            <li>opacity-5 { @include opacity(.05); }</li>
+            <li>opacity-4 { @include opacity(.04); }</li>
+            <li>opacity-3 { @include opacity(.03); }</li>
+            <li>opacity-2 { @include opacity(.02); }</li>
+            <li>opacity-1 { @include opacity(.01); }</li>
+            <li>opacity-0 { @include opacity(.00); }</li>
+            <li>width-10 { width: 10%; }</li>
+            <li>width-20 { width: 20%; }</li>
+            <li>width-25 { width: 25%; }</li>
+            <li>width-30 { width: 30%; }</li>
+            <li>width-33 { width: 33%; }</li>
+            <li>width-40 { width: 40%; }</li>
+            <li>width-50 { width: 50%; }</li>
+            <li>width-60 { width: 60%; }</li>
+            <li>width-70 { width: 70%; }</li>
+            <li>width-80 { width: 80%; }</li>
+            <li>width-90 { width: 90%; }</li>
+        </ul>
+
+
+        <br><br>
+
+
+        <p><strong>Icons used</strong></p>
+        <ul>
+            <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+        </ul>
+
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Theme Starz</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

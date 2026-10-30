@@ -1,0 +1,299 @@
+/* Health Coach - HTML Template */
+
+@media only screen and (max-width: 1200px) {
+	.page-wrapper {
+		margin-bottom: 0px !important;
+	}
+	.Appointment-form .default-form-area{
+		padding-left: 50px;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+
+	.about-text-one .btn-area{
+		width: 60%;
+	}
+	.about-us .image-box .image-2 {
+	    bottom: -70px;
+	    left: 30%;
+	}
+	.service-section{
+		margin-bottom: 0px;
+		padding-bottom: 90px;
+	}
+	.services-block-one .inner-box{
+		margin-bottom: 30px;
+	}
+	.our-history {
+		padding-bottom: 130px;
+	}
+	.our-history .image-box{
+		margin-bottom: 60px;
+	}
+	.our-history ul.nav-link{
+		margin-left: -7px;
+		top: 20px;
+		padding: 0px;
+	}
+	.our-history .image-content{
+		margin-left: 0px;
+	}
+	.choose-left-content{
+		margin-right: 0px;
+		margin-bottom: 60px;
+	}
+	.choose-right-area{
+		margin-left: 0px;
+	}
+	.choose-right-area {
+		margin-bottom: 40px;
+	}
+	.footer-top .about-colmun,
+	.footer-top .service-colmun,
+	.footer-top .schedul-colmun,
+	.footer-top .contact-colmun{
+		margin: 0px;
+	}
+	.choose-right-area img,
+	.news-block-one .inner-box img,
+	.gallery-block-one .image img,
+	.service-item-two img,
+	.news-block-two img{
+		width: 100%;
+	}
+	.service-facilities{
+		margin-left: 0px;
+	}
+	.accordion-box{
+		margin-bottom: 50px;
+	}
+	.testimonial-item-two{
+		height: 280px;
+	}
+	.shop-right-area{
+		margin-top: 50px;
+	}
+	.single-product .image-content{
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	.contact-info{
+		margin-bottom: 0px;
+		padding-bottom: 90px;
+	}
+	.contact-item-one{
+		margin-bottom: 0px;
+	}
+	.contact-area{
+		margin-left: 0px;
+	}
+	.google-map-area{
+		margin-right: 0px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.about-text-one .btn-area{
+		width: 100%;
+	}
+	.about-us .image-box .image-2 {
+	    left: 0px
+	}
+	.Appointment-form img{
+		max-width: 100%;
+	}
+	.Appointment-form .default-form-area{
+		padding-left: 0px;
+	}
+	.services-details-left{
+		margin-bottom: 50px;
+	}
+	.service-item-two img{
+		margin-bottom: 0px;
+	}
+	.service-facilities{
+		margin-bottom: 40px;
+	}
+	.service-item-two h4{
+		padding-top: 20px;
+	}
+	.cart-section .update-cart-box .update-cart{
+		float: left;
+		margin-bottom: 30px;
+	}
+	.checkout-content .additional-content{
+		margin-bottom: 40px;
+	}
+	.leave-comments{
+		margin-bottom: 60px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.about-text-one .default-video-box:before,
+	.our-history .image-box:after{
+		display: none;
+	}
+	.footer-bottom .footer-copyright{
+		float: none;
+		text-align: center;
+	}
+	.footer-bottom .footer-copyright{
+		float: none !important;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.terms-service {
+		float: none !important;
+		text-align: center;
+		margin-left: -20px;
+	}
+	.product-tab-box .tab-menu li{
+		margin-bottom: 20px;
+		width: 100%;
+		display: inline-block;
+	}
+	.comment-item-one.two{
+		margin-left: 0px;
+	}
+	.contact-area{
+		padding: 40px;
+	}
+	.header-upper .main-menu{
+		padding: 0px;
+	}
+	.filter-tabs li{
+		width: 100%;
+	}
+	.main-slider h1{
+		font-size: 50px;
+		line-height: 60px;
+	}
+	.main-slider h1 span{
+		font-size: 50px;
+		line-height: 60px;
+	}
+}
+
+@media only screen and (max-width: 625px){
+	.main-slider h1{
+		font-size: 36px;
+		line-height: 46px;
+	}
+	.main-slider h1 span{
+		font-size: 36px;
+		line-height: 46px;
+	}
+	.about-us .image-box{
+		margin-left: 0px;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.about-text-one .btn-area .link-btn{
+		margin-bottom: 20px;
+	}
+	.about-text-one .default-video-box{
+		float: none !important;
+	}
+	.our-history .image-box:before{
+		display: none;
+	}
+	.our-history .image-box img{
+		margin: 0px;
+	}
+	.shoose-item-one{
+		padding-left: 0px;
+		text-align: center;
+	}
+	.shoose-item-one .icon-box {
+	    position: relative;
+	    display: inline-block;
+	}
+	.main-slider .text{
+		font-size: 15px;
+		margin-right: 50px;
+	}
+	.category-list-area,
+	.service-list-area{
+		padding: 50px 30px 30px;
+	}
+	.shop-top-bar-lrft li{
+		margin-bottom: 10px;
+	}
+	.cart-totals tr td,
+	.cart-totals tr th{
+		min-width: 40px;
+	}
+	.cart-totals .link-btn a {
+	    padding: 15px 20px;
+	}
+	.single-product .image-content h3{
+		font-size: 25px;
+		padding-bottom: 0px;
+	}
+	.comment-item-one{
+		padding-left: 0px;
+	}
+	.comment-item-one img{
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.about-us .image-box .image-2{
+		position: relative;
+		bottom: 0px;
+	}
+	.about-text-one{
+		margin-right: 0px;
+	}
+	.comment-item-one {
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.comment-item-one .link-btn{
+		top: 110px;
+	}
+	.blog-list-area .blog-item-one{
+		padding-left: 0px;
+	}
+	.blog-list-area .blog-item-one img{
+		position: relative;
+		margin-bottom: 10px;
+	}
+	.scroll-top{
+		bottom: 140px;
+		right: 15px;
+	}
+	.call-now-area{
+		padding: 150px 20px 35px;
+	}
+	.contact-area{
+		padding: 50px 10px;
+	}
+	.main-slider h1{
+		font-size: 26px;
+		line-height: 36px;
+	}
+	.main-slider h1 span{
+		font-size: 26px;
+		line-height: 36px;
+	}
+	.page-title-area .title-text h1{
+		font-size: 40px;
+		line-height: 46px;
+	}
+	.accordion-box .block .acc-btn{
+		padding: 15px 5px;
+		font-size: 15px;
+	}
+	.ask-question-area{
+		padding: 50px 10px 40px;
+	}
+	.blog-list-area{
+		padding: 30px 20px;
+	}
+	.call-now-area .text{
+		font-size: 22px;
+	}
+}
+

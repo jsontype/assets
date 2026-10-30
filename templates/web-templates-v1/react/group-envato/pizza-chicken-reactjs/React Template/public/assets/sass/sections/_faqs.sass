@@ -1,0 +1,53 @@
+/*******************************************************/
+/******************** ## FAQs Area ********************/
+/*******************************************************/
+.accordion-item
+    border: none
+    border-radius: 0
+    background: $lighter-color
+    &:first-of-type
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+        .accordion-button
+            border-top-left-radius: 0
+            border-top-right-radius: 0
+    &:last-of-type
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+        .accordion-button
+            border-bottom-left-radius: 0
+            border-bottom-right-radius: 0
+    &:not(:last-child)
+        margin-bottom: 10px
+    .accordion-button
+        border: none
+        font-size: 20px
+        box-shadow: none
+        color: $heading-color
+        align-items: flex-start
+        padding: 15px 30px 12px
+        background: transparent
+        +res-bl(ms)
+            font-size: 16px
+            padding: 12px 20px
+        &:after
+            flex: none
+            +size(auto)
+            margin-top: -2px
+            content: "\f107"
+            text-align: center
+            transform: rotate(0deg)
+            background: transparent
+            font-family: "Font Awesome 5 Pro"
+        &.collapsed
+            &:after
+                transform: rotate(-90deg)
+    .accordion-body
+        padding: 20px 30px
+        border-top: 1px solid $border-color
+        +res-bl(ms)
+            font-size: 16px
+            +gapLR(padding, 20px)
+        p:last-child
+            margin-bottom: 0
+        

@@ -1,0 +1,33 @@
+/* VENDOR: SWIPER
+-------------------------------------------- */
+
+.swiper-pagination-bullets {
+	line-height: 0;
+	text-align: center;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 px2rem(10px);
+}
+
+.swiper-pagination-bullet {
+	width: px2rem(10px);
+	height: px2rem(10px);
+	margin: 0 px2rem(10px);
+	background-color: var(--ptf-color-1);
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: var(--ptf-color-accent);
+}
+
+.ptf-swiper-button-prev,
+.ptf-swiper-button-next {
+	color: var(--ptf-color-1);
+
+	&:hover {
+		color: var(--ptf-color-accent);
+	}
+
+}

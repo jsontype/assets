@@ -1,0 +1,252 @@
+/* Testimonial 1 ---------------------------------- */
+.testi-card {
+    background-color: $smoke-color2;
+    border-radius: 8px;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    &-slide {
+        position: relative;
+        padding-right: 55px;
+        .number-dots {
+            ul {
+                position: absolute;
+                top: 46%;
+                right: -100px;
+                transform: rotate(90deg) translateY(-50%);
+                margin-top: 0;
+            }
+            li {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+    &-img {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-left: 32px;
+        .img1 {
+            display: inline-block;
+            position: relative;
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                border: 3px dotted $theme-color;
+                opacity: 0.2;
+                border-radius: 50%;
+                pointer-events: none;
+                animation: spin 35s linear infinite;
+            }
+            &:after {
+                inset: 32px;
+                opacity: 0.3;
+            }
+        }
+        .shape1 {
+            position: absolute;
+            top: 40px;
+            left: 4%;
+            z-index: -1;
+            animation: moving 8s linear infinite;
+        }
+        .shape2 {
+            position: absolute;
+            bottom: 0;
+            left: 21%;
+            animation: jumpAni 6s linear infinite;
+        }
+        .shape3 {
+            position: absolute;
+            top: 32px;
+            right: 0;
+            animation: jumpReverseAni 6s linear infinite;
+        }
+    }
+    &_review {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        background-color: rgba($color: #FF0600, $alpha: 0.1);
+        padding: 2px 13px;
+        border-radius: 4px;
+        i {
+            font-size: 14px;
+            margin-right: 3px;
+            color: $theme-color;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &_profile {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    &_avater {
+        width: 70px;
+        border-radius: 99px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    &_name {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: 600;
+    }
+    &_desig {
+        font-size: 14px;
+        margin-bottom: -0.3em;
+        display: block;
+    }
+    &_text {
+        margin-top: -0.5em;
+        margin-bottom: 20px;
+        font-size: 18px;
+        i {
+            font-size: 28px;
+            color: $theme-color;
+            transform: translateY(4px);
+            &.fa-quote-left {
+                margin-right: 8px;
+            }
+            &.fa-quote-right {
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+@include lg {
+    .testi-card {
+        &-slide {
+            padding-right: 0;
+            .number-dots {
+                ul {
+                    position: relative;
+                    top: unset;
+                    right: unset;
+                    transform: none;
+                    margin-top: 35px;
+                }
+                li {
+                    transform: none;
+                }
+            }
+        }
+    }
+}
+
+@include xs {
+    .testi-card {
+        &_review {
+            position: relative;
+            inset: unset;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        &_text {
+            font-size: 16px;
+        }
+    }
+}
+
+@include vxs {
+    .testi-card {
+        padding: 30px;
+    }
+}
+
+/* Testimonial 2 ---------------------------------- */
+.testi-block {
+    background-color: $white-color;
+    border-radius: 8px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    text-align: left;
+    &_shape {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        animation: movingX 8s linear infinite;
+    }
+    &_review {
+        margin-bottom: 3px;
+        i {
+            font-size: 14px;
+            margin-right: 3px;
+            color: $theme-color;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &_profile {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: -0.3em;
+    }
+    &_avater {
+        width: 80px;
+        height: 80px;
+        border: 1px solid $border-color;
+        border-radius: 99px;
+        position: relative;
+        padding: 8px;
+        > img {
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
+    &_quote {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        background-color: $theme-color;
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+    }
+    &_name {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: 600;
+    }
+    &_desig {
+        font-size: 14px;
+        margin-bottom: -0.3em;
+        display: block;
+    }
+    &_text {
+        margin-bottom: -0.5em;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px dashed $border-color;
+        font-size: 18px;
+    }
+}
+
+@include xs {
+    .testi-block {
+        &_text {
+            font-size: 16px;
+        }
+    }
+}
+
+@include vxs {
+    .testi-block {
+        padding: 30px;
+    }
+}

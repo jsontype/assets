@@ -1,0 +1,98 @@
+/* Counter 1 ---------------------------------- */
+.counter-sec1 {
+    margin-top: -50px;
+    position: relative;
+    z-index: -1;
+    @include sm {
+        margin-top: -60px;
+    }
+}
+.counter-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &_icon {
+        padding-left: 24px;
+        padding-top: 20px;
+        text-align: right;
+        position: relative;
+        z-index: 2;
+        &:before {
+            content: '';
+            @include equal-size(60px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: #fff, $alpha: 0.15);
+            border-radius: 99px;
+            z-index: -1;
+        }
+        img {
+            transition: 0.4s ease-in-out;
+        }
+    }
+    &_number {
+        color: $white-color;
+        margin-bottom: 5px;
+        margin-top: -0.24em;
+    }
+    &_text {
+        color: $gray-color;
+        display: block;
+        font-weight: 500;
+        margin-bottom: -0.45em;
+    }
+    .plus {
+        font-size: 24px;
+    }
+    &:hover {
+        .counter-card {
+            &_icon {
+                img {
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+    &.style2 {
+        .counter-card {
+            &_icon {
+                border: none;
+            }
+        }
+    }
+}
+
+@include ml {
+    .counter-card {
+        &_number {
+            max-width: 110px;
+        }
+    }
+}
+
+@include lg {
+    .counter-card {
+        &_number {
+            font-size: 40px;
+        }
+    }
+}
+
+
+@include sm {
+    .counter-card {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        &_number {
+            max-width: 100%;
+        }
+    }
+}
+
+@include vxs {
+    .counter-card-wrap {
+        padding: 65px 20px;
+    }
+}

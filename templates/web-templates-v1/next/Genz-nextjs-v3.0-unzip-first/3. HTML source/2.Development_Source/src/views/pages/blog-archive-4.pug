@@ -1,0 +1,21 @@
+extends ../layouts/master.pug
+block variables
+    - var PageTitle = 'Technology'
+block title
+    title Technology - Personal Blog  HTML Template
+
+block header
+    include ../components/header.pug
+
+block content
+    .cover-home3
+        .container
+            .row
+                .col-xl-1
+                .col-xl-10.col-lg-12
+                    include ../elements/head.pug
+                    include ../sections/loops/loop-4.pug
+                    .mb-70
+                    include ../sections/homepage3/sidebar_bottom.pug
+
+    block scripts-custom

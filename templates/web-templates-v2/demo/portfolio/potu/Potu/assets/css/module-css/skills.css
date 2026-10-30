@@ -1,0 +1,259 @@
+
+
+/** skills-section **/
+
+.skills-section{
+  position: relative;
+}
+
+.skills-section .upper-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-section .upper-box .link a{
+  position: relative;
+  display: inline-block;
+  width: 205px;
+  height: 205px;
+  line-height: 205px;
+  font-size: 60px;
+  color: var(--title-color);
+  border: solid;
+  border-width: 1px;
+  border-color: var(--secondary-color);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.skills-section .upper-box .link a i{
+  position: relative;
+  display: inline-block;
+  transition: all 500ms ease;
+}
+
+.skills-section .upper-box .link a:hover i{
+  transform: rotate(45deg);
+}
+
+.skills-section .title-box h2{
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 500;
+}
+
+.skills-section .left-content{
+  position: relative;
+  display: block;
+}
+
+.skills-section .left-content .inner-box .single-item{
+  position: relative;
+  padding: 37px 100px 45px 150px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.skills-section .left-content .inner-box .single-item:first-child{
+  border-top: 1px solid var(--secondary-color);
+}
+
+.skills-section .left-content .inner-box .single-item .year{
+  position: absolute;
+  left: 0px;
+  top: 37px;
+  display: block;
+  font-size: 16px;
+  line-height: 37px;
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+.skills-section .left-content .inner-box .single-item h3{
+  position: relative;
+  display: block;
+  font-size: 28px;
+  line-height: 37px;
+  font-family: var(--title-font);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.skills-section .left-content .inner-box .single-item .text-box span{
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 38px;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.skills-section .left-content .inner-box .single-item .count-text{
+  position: absolute;
+  top: 29px;
+  right: 0px;
+  font-size: 80px;
+  line-height: 72px;
+  font-family: var(--title-font);
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.10);
+}
+
+.skills-section .right-content{
+  position: relative;
+  display: block;
+}
+
+.skills-section .right-content .inner-box .single-item{
+  position: relative;
+  display: block;
+  background: #F5F4F5;
+  padding: 70px 48px 37px 32px;
+  margin-bottom: 44px;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.skills-section .right-content .inner-box .single-item:before{
+  position: absolute;
+  content: '';
+  background: #fff;
+  width: 100%;
+  height: 0%;
+  left: 0px;
+  bottom: 0px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 30px;
+  z-index: -1;
+  transition: all 500ms ease;
+}
+
+.skills-section .right-content .inner-box .single-item:hover:before{
+  height: 100%;
+  top: 0px;
+}
+
+.skills-section .right-content .inner-box .single-item:last-child{
+  margin-bottom: 0px;
+}
+
+.skills-section .right-content .inner-box .single-item h2{
+  position: relative;
+  display: block;
+  font-size: 72px;
+  line-height: 79px;
+  font-family: var(--text-font);
+  font-weight: 500;
+}
+
+.skills-section .right-content .inner-box .single-item .text-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-section .right-content .inner-box .single-item .text-box .text{
+  position: relative;
+  display: block;
+  font-size: 22px;
+  line-height: 39px;
+  color: rgba(0, 0, 0, 0.30);
+}
+
+.skills-section .right-content .inner-box .single-item .text-box .year{
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 39px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.skills-section .skills-list li{
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 30px;
+}
+
+.skills-section .skills-list li a{
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  background: var(--secondary-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 40px;
+  padding: 20px 36px;
+}
+
+.skills-section .skills-list li a:hover{
+
+}
+
+.skills-section .skills-list li button{
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 70px;
+  color: var(--title-color);
+  transition: all 500ms ease;
+}
+
+.skills-section .skills-list li button:hover{
+
+}
+
+.skills-section .image-layer{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.skills-section .image-layer-dark{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+}
+
+.skills-section .list-inner h3{
+  position: relative;
+  display: block;
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 500;
+  margin-bottom: 49px;
+}
+
+.skills-section .list-inner .skills-list li a{
+  padding: 20px 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

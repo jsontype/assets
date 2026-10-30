@@ -1,0 +1,100 @@
+.row.mt-70
+    .col-lg-12.mb-50
+        h2.color-linear.d-inline-block.mb-10 Recent posts
+        p.text-lg.color-gray-500 Don't miss the latest trends
+    .col-lg-8
+        .box-list-posts
+            .row
+                -
+                    const postLists = [
+                        {
+                            image: 'assets/imgs/page/homepage2/news1.png',
+                            author_img: 'assets/imgs/page/homepage2/author.png',
+                            title: '16 Unheard Ways To Achieve Greater Walker',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage2/news2.png',
+                            author_img: 'assets/imgs/page/homepage2/author2.png',
+                            title: 'Master The Art Of Nature With These 7 Tips',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage2/news5.png',
+                            author_img: 'assets/imgs/page/homepage2/author.png',
+                            title: '16 Unheard Ways To Achieve Greater Walker',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage2/news6.png',
+                            author_img: 'assets/imgs/page/homepage2/author2.png',
+                            title: 'Master The Art Of Nature With These 7 Tips',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage2/news7.png',
+                            author_img: 'assets/imgs/page/homepage2/author.png',
+                            title: 'Your Light Is About To Stop Being Relevant',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage2/news8.png',
+                            author_img: 'assets/imgs/page/homepage2/author2.png',
+                            title: 'Your Light Is About To Stop Being Relevant',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage2/news9.png',
+                            author_img: 'assets/imgs/page/homepage2/author.png',
+                            title: 'Your Light Is About To Stop Being Relevant',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage2/news10.png',
+                            author_img: 'assets/imgs/page/homepage2/author2.png',
+                            title: 'Your Light Is About To Stop Being Relevant',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+                        }
+                    ]
+                each post in postLists
+                    .col-lg-6
+                        .card-blog-1.hover-up.wow.animate__animated.animate__fadeIn
+                            .card-image.mb-20
+                                a.post-type(href='#')
+                                a(href= post.link)
+                                    img(src= post.image, alt="Genz")
+                            .card-info
+                                .row
+                                    .col-7
+                                        a.color-gray-700.text-sm(href="blog-archive.html") # Travel
+                                    .col-5.text-end
+                                        span.color-gray-700.text-sm.timeread 3 mins read
+                                a(href= post.link)
+                                    h5.color-gray-50.mt-20= post.title
+                                .row.align-items-center.mt-25
+                                    .col-7
+                                        .box-author
+                                            img(src= post.author_img, alt="Genz")
+                                            .author-info
+                                                h6.color-gray-700 Joseph
+                                                span.color-gray-700.text-sm 25 April 2022
+                                    .col-5.text-end
+                                        a.readmore.color-gray-500.text-sm(href= post.link)
+                                            span Read more
+            include ../../elements/pagination.pug
+    .col-lg-4
+        include ../../components/sidebar.pug

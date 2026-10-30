@@ -1,0 +1,88 @@
+//- Page Options
+- HtmlClass = 'no-js'
+- SiteName = 'Roger'
+- PageTitle = 'Modern & Creative CV/Resume HTML5 Template' // page title
+- Sections = [ 'Home', 'About', 'Portfolio', 'Experience', 'Testimonials', 'Blog', 'Contact' ];
+
+//- Options
+- Preloader = 'show' // show / hide
+- FooterFixed = 'enable' // enable / disable
+
+//- Body Class
+- BodyClass = Preloader == 'show' ? ' animsition' : ''
+
+include mixins/_global-mixins.pug
+
+doctype html
+html(lang='en', class=HtmlClass)
+	head
+		meta(charset='utf-8')
+
+		//- Head
+		include html/_head.pug
+
+	body(class=BodyClass)
+
+		//- Header
+		include template-parts/header/_header-onepage.pug
+
+		//- Main
+		+site_main
+
+			+ptf_fullpage_slider
+
+				//Home
+				+ptf_fullpage_slider_section({
+					anchor: Sections[0],
+					style: 'background-image: url(assets/img/attachment-01.jpg);'
+				})
+
+					include template-parts/sections/_main.pug
+
+				//About
+				+ptf_fullpage_slider_section({
+					anchor: Sections[1]
+				})
+
+					include template-parts/sections/_about.pug
+
+				//Portfolio
+				+ptf_fullpage_slider_section({
+					anchor: Sections[2]
+				})
+
+					include template-parts/sections/_portfolio.pug
+
+				//Experience
+				+ptf_fullpage_slider_section({
+					anchor: Sections[3]
+				})
+
+					include template-parts/sections/_experience.pug
+
+				//Testimonials
+				+ptf_fullpage_slider_section({
+					anchor: Sections[4]
+				})
+
+					include template-parts/sections/_testimonials.pug
+
+				//Blog
+				+ptf_fullpage_slider_section({
+					anchor: Sections[5]
+				})
+
+					include template-parts/sections/_blog.pug
+
+				//Contact
+				+ptf_fullpage_slider_section({
+					anchor: Sections[6]
+				})
+
+					include template-parts/sections/_contact.pug
+
+			//- Footer
+			include template-parts/footer/_footer.pug
+
+		//- Scripts
+		include html/_scripts.pug

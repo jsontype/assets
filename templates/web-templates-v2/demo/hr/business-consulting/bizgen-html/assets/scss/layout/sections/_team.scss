@@ -1,0 +1,251 @@
+/*----------------------------------------*/
+/*    Team Section                        */
+/*----------------------------------------*/
+
+.rts-team-area {
+    &.team-bg {
+        background: var(--color-heading);
+        margin: 30px;
+        border-radius: 20px;
+        padding-bottom: 290px;
+
+        @include mq(max-lg) {
+            margin: 0;
+        }
+    }
+
+    .rts-section-title {
+        .subtitle {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.rts-team-wrapper {
+    .single-team {
+        border: 1px solid #313131;
+        border-radius: 20px;
+        text-align: center;
+
+        .content {
+            padding: 40px 24px 30px 24px;
+
+            .title {
+                font-size: 24px;
+                color: var(--color-white);
+                margin-bottom: 5px;
+                @include rts-transition;
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+
+        .team-thumb {
+            a {
+                img {
+                    border-radius: 50px;
+                }
+            }
+        }
+
+        .text-btn {
+            border-top: 1px solid #313131;
+            margin-top: 40px;
+            padding: 25px 0;
+            width: 100%;
+            display: inline-block;
+            color: var(--color-white);
+            font-weight: var(--f-semi-bold);
+            @include rts-transition;
+
+            i {
+                transform: rotate(-45deg);
+                margin-left: 10px;
+                @include rts-transition;
+            }
+
+            &:hover {
+                color: var(--color-primary);
+
+                i {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+
+    &.team-inner {
+        .single-team {
+            box-shadow: 0 0 10px 0 rgb(0 0 0 / .07);
+            border-color: #EBEFFF;
+
+            .content {
+                .title {
+                    color: var(--color-heading);
+
+                    &:hover {
+                        color: var(--color-primary);
+                    }
+                }
+            }
+
+            .text-btn {
+                border-color: #EBEFFF;
+                color: var(--color-heading);
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+
+.rts-team-area-two {
+    background: linear-gradient(180deg, #EBEFFF 0%, #FBFBFF 100%);
+    margin-top: -90px;
+    padding-top: 200px;
+
+    .rts-section-title {
+        position: relative;
+        z-index: 1;
+
+        .big-title {
+            font-size: 220px;
+            font-weight: var(--f-bold);
+            line-height: 1;
+            leading-trim: both;
+            text-edge: cap;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.43) 0%, #FFFFFF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            display: block;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            z-index: -1;
+
+            @include mq(max-lg){
+                font-size: 170px;
+            }
+
+            @include mq(max-sm){
+                font-size: 80px;
+            }
+        }
+    }
+
+    .rts-team-wrapper-two {
+        position: relative;
+        z-index: 1;
+        .sing-item-wrapper {
+            margin-top: 90px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            @include mq(max-xl) {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 30px;
+                justify-content: center;
+            }
+
+            @include mq(max-lg) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include mq(max-md) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include mq(max-sm) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .single-item {
+                text-align: center;
+
+                .team-thumb {
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+
+                .content {
+                    margin-top: 35px;
+
+                    .name {
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+        .desc {
+            margin-top: 45px;
+            text-align: center;
+        }
+    }
+}
+
+.rts-team-area-three {
+    background: #fcfaf9;
+
+    .rts-team-wrapper-three {
+        margin-top: 60px;
+
+        @include mq(max-sm) {
+            margin-top: 30px;
+        }
+
+        .single-team {
+            overflow: hidden;
+            border-radius: 20px;
+            position: relative;
+
+            .content {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                padding: 0 35px 35px;
+
+                .desig {
+                    display: inline-block;
+                    font-size: 12px;
+                    font-weight: var(--f-semi-bold);
+                    line-height: 1;
+                    background: var(--color-white);
+                    color: var(--color-heading);
+                    padding: 8px 11px;
+                    margin-bottom: 17px;
+                }
+
+                .title {
+                    font-size: 24px;
+                    color: var(--color-white);
+                    @include rts-transition;
+
+                    &:hover {
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.mxx {
+    margin-left: -100px !important;
+    margin-right: -100px !important;
+}

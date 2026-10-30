@@ -1,0 +1,26 @@
+mixin ptf_timeline_slider(object)
+
+	//- Default
+	- object = object || {}
+
+	//- Element Class
+	- elClass = 'ptf-timeline-slider swiper-container'
+
+	//Timeline Slider
+	div(class=elClass)
+
+		.swiper-container
+
+			.swiper-wrapper
+
+				block
+
+		.ptf-swiper-pagination
+
+		.ptf-swiper-button-prev
+
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 38" width="20" height="38"><path fill="currentColor" d="m19.707.987-18 18.675-.72-.694 18-18.675.72.694Zm-18 16.736 18 18.675-.72.694-18-18.675.72-.694Z"/></svg>
+
+		.ptf-swiper-button-next
+
+			<svg width="20" height="38" viewBox="0 0 20 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.987046 0.987L18.987 19.6622L19.707 18.9682L1.70705 0.293029L0.987046 0.987ZM18.987 17.723L0.987044 36.3982L1.70705 37.0922L19.707 18.417L18.987 17.723Z" fill="currentColor"/></svg>

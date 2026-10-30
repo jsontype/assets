@@ -1,0 +1,25 @@
+/*******************************************************/
+/****************** ## Instagram Area ******************/
+/*******************************************************/
+.instagram-item
+    img
+        width: 100%
+    &:before
+        +poLT(0)
+        content: ''
+        +size(100%)
+        background: $primary-color
+        opacity: 0
+        visibility: hidden
+        transition: 0.3s
+    a
+        +absmiddle()
+        color: white
+        font-size: 50px
+        opacity: 0
+        visibility: hidden
+    &:hover
+        &:before,
+        a
+            opacity: 0.8
+            visibility: visible

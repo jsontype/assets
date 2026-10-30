@@ -1,0 +1,24 @@
+/*----------------------------------------*/
+/*   Brand Section                         */
+/*----------------------------------------*/
+.rts-brand-area{
+    margin: 30px 30px 0 30px;
+    border-radius: 20px;
+    @include mq(max-sm){
+        margin: 10px 10px 0 10px;
+    }
+    .rts-brand-wrapper{
+        .desc {
+            font-size: 20px;
+            color: var(--color-white);
+            text-align: center;
+            font-weight: var(--f-semi-bold);
+            margin-bottom: 35px;
+        }
+        .brand-item{
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+}

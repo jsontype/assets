@@ -1,0 +1,195 @@
+/*******************************************************/
+/******************* ## Offer Area *********************/
+/*******************************************************/
+.offer-card-item
+    padding: 40px 0
+    position: relative
+    text-align: center
+    background-color: $primary-color
+    background-image: url(../images/offer/offer-card-bg.png)
+    .badge
+        +size(90px)
+        @extend %h3
+        z-index: 1
+        +poRT(15%, 18%)
+        line-height: 72px
+        background-image: url(../images/offer/badge-bg.png)
+    .image
+        position: relative
+        padding-bottom: 80%
+        img
+            left: 50%
+            top: 68%
+            position: absolute
+            max-width: calc(100% + 80px)
+            transform: translate(-50%, -50%)
+    .title
+        color: white
+        display: block
+        font-size: 100px
+        @extend %heading
+        position: relative
+        +res-bl(xs)
+            font-size: 80px
+    .available-item
+        @extend %h6
+        color: white
+        padding: 5px 10px 2px
+        display: inline-block
+        border: 1px solid white
+        background: $primary-color
+    .bg-text
+        +absmiddle()
+        line-height: 1
+        top: 45%
+        font: 8em $heading-font
+        line-height: 0.8
+        color: rgba(255, 255, 255, 0.1)
+        +res-bl(md)
+            font-size: 6em
+        
+    &.style-two
+        background-color: $secondary-color
+        .badge
+            color: white
+            background-image: url(../images/offer/badge-bg-two.png)
+
+.offer-area
+    .marquee-wrap.style-two
+        position: absolute
+        z-index: -1
+        top: 55px
+    .offer-shapes
+        .shape
+            z-index: -1
+            max-width: 8%
+            position: absolute
+            &.one
+                left: 0
+                bottom: 50px
+            &.two
+                top: 15%
+                right: 18%
+            &.three
+                left: 30%
+                bottom: 6%
+
+.offer-content
+    img
+        max-width: 50%
+    h2
+        font-size: 95px
+        margin-top: 15px
+        line-height: 1.1
+        +res-bl(lp)
+            font-size: 70px
+        +res-bl(sm)
+            font-size: 60px
+        +res-bl(ms)
+            font-size: 55px
+        +res-bl(xs)
+            font-size: 45px
+    h3
+        color: $secondary-color
+        +res-bl(ms)
+            font-size: 26px
+        +res-bl(xs)
+            font-size: 22px
+        span
+            font-size: 1.66em
+            color: $secondary-color
+    p
+        max-width: 460px
+        margin-top: 15px
+        margin-bottom: 30px
+
+.offer-image
+    position: relative
+    text-align: right
+    max-width: 676px
+    +res-ab(lg)
+        margin-left: auto
+    +res-ab(xxl)
+        margin-right: -100px
+    .offer-badge
+        +poLB(19%, -4%)
+        +size(226px)
+        background-repeat: no-repeat
+        background-size: cover
+        +flexcenter(center)
+        text-align: center
+        +res-bl(md)
+            +size(130px)
+        +res-bl(xs)
+            +size(100px)
+        span
+            @extend %h3
+            font-size: 45px
+            +res-bl(md)
+                font-size: 25px
+            +res-bl(xs)
+                font-size: 20px
+            .price
+                line-height: 1
+                font-size: 1.66em
+    &.style-two
+        .offer-badge
+            left: auto
+            top: 0
+            right: 0
+            +res-ab(md)
+                +size(180px)
+                > span
+                    font-size: 30px
+            .price
+                display: block
+                font-size: 2em
+                font-weight: 600
+                +res-ab(md)
+                    margin-top: 10px
+        .marquee-wrap.style-two
+            z-index: -1
+            +poLB(35%, -28%)
+            
+        &.style-three
+            .offer-badge span
+                color: white
+            .marquee-wrap.style-two
+                left: 0
+                bottom: -40%
+                
+/* Special Offer Two */
+.offer-content-two
+    img
+        max-width: 90%
+    .section-title
+        h2
+            color: $secondary-color
+    p
+        +container(455px)
+        
+.offer-countdown-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    +gapLR(margin, -12px)
+    li
+        color: white
+        line-height: 1
+        font-size: 22px
+        min-width: 110px
+        padding: 20px 30px
+        text-align: center
+        margin-bottom: 25px
+        border-radius: 10px
+        +gapLR(margin, 12px)
+        background: $primary-color
+        font-family: $heading-font
+        span
+            display: block
+            font-size: 75px
+        +res-bl(md)
+            font-size: 20px
+            min-width: 100px
+            span
+                font-size: 55px

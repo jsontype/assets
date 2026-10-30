@@ -1,0 +1,81 @@
+/*----------------------------------------*/
+/*   Widget Sidebar                       */
+/*----------------------------------------*/
+
+.rts-widget-sidebar-area {
+    .single-widget {
+        background: #F6F6F6;
+        padding: 40px;
+        border-radius: 10px;
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+
+        .widget-title {
+            margin-bottom: 30px;
+        }
+
+        .category-list {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+                a {
+                    padding: 17px 25px;
+                    @include flex-center;
+                    justify-content: space-between;
+                    background: var(--color-white);
+                    color: var(--color-heading);
+                    font-weight: var(--f-medium);
+                    border-radius: 5px;
+                    @include rts-transition;
+
+                    &:hover {
+                        background: var(--color-primary);
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+        .download-list{
+            .download-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid #313131;
+                    padding-bottom: 20px;
+                }
+                .content-area {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    
+                    .content {
+                        .title{
+                            color: var(--color-white);
+                        }
+                        .subtitle {
+                            color: var(--color-white);
+                        }
+                    }
+                }
+                .donwload-btn {
+                    @include flex;
+                    width: 40px;
+                    height: 40px;
+                    background: var(--color-primary);
+                    color: var(--color-white);
+                    @include rts-transition;
+
+                    &:hover {
+                        background: var(--color-white);
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+}

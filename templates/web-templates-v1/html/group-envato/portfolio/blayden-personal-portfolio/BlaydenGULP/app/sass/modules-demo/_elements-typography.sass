@@ -1,0 +1,246 @@
+h1
+  font: normal 300 5.6rem var(--_font-accent)
+  color: var(--t-bright)
+  +MQ(M)
+    font-size: 9rem
+    max-width: 70rem
+  +MQ(XL)
+    max-width: none
+    font-size: 11rem
+  +MQ(XXL)
+    font-size: 12.6rem
+  +MQ(XXXL)
+    font-size: 16rem
+
+.headline__subtitle
+  &.space-top
+    margin-top: 4.6rem
+  &.space-bottom
+    margin-bottom: 3.8rem
+  +MQ(M)
+    &.space-top
+      margin-top: 5.7rem
+    &.space-bottom
+      margin-bottom: 4.2rem
+  +MQ(L)
+    &.space-top
+      margin-top: 6.4rem
+    &.space-bottom
+      margin-bottom: 4.9rem
+  +MQ(XL)
+    &.space-top
+      margin-top: 5.8rem
+    &.space-bottom
+      margin-bottom: 4rem
+  +MQ(XXL)
+    &.space-top
+      margin-top: 6.3rem
+    &.space-bottom
+      margin-bottom: 5.7rem
+  +MQ(XXXL)
+    &.space-top
+      margin-top: 6.8rem
+    &.space-bottom
+      margin-bottom: 4.1rem
+
+h2
+  font: normal 300 4.6rem var(--_font-accent)
+  color: var(--t-bright)
+  +MQ(M)
+    font-size: 8rem
+  +MQ(XL)
+    font-size: 9rem
+  +MQ(XXL)
+    font-size: 10rem
+  +MQ(XXXL)
+    font-size: 14rem
+
+.h2__text
+  margin-top: 4.5rem
+  +MQ(M)
+    margin-top: 5.7rem
+    max-width: 67rem
+  +MQ(L)
+    margin-top: 6.4rem
+  +MQ(XL)
+    margin-top: 5.9rem
+    max-width: 78rem
+    &.text-half
+      max-width: 54%
+    &.text-twothirds
+      max-width: 67%
+  +MQ(XXL)
+    margin-top: 6.6rem
+    &.text-half
+      max-width: 50%
+  +MQ(XXXL)
+    margin-top: 6.9rem
+    &.text-half
+      max-width: 45%
+
+h3
+  font: normal 400 3.4rem var(--_font-accent)
+  color: var(--t-bright)
+  &.dark
+    color: var(--t-per-bright-dark)
+    font-weight: 400
+  &.light
+    color: var(--t-per-bright-light)
+    font-weight: 300
+  +MQ(M)
+    font-size: 4.4rem
+  +MQ(XL)
+    font-size: 5rem
+  +MQ(XXL)
+    font-size: 5.6rem
+  +MQ(XXXL)
+    font-size: 6.4rem
+
+h4
+  font: normal 400 2.6rem var(--_font-accent)
+  color: var(--t-bright)
+  +MQ(XXL)
+    font-size: 3rem
+  +MQ(XXXL)
+    font-size: 3.6rem
+
+h5
+  font: normal var(--font-weight-base) 2.2rem var(--_font-accent)
+  color: var(--t-bright)
+
+h6
+  font: normal var(--font-weight-base)/1.6 1.8rem var(--_font-default)
+  color: var(--t-bright)
+  +MQ(XL)
+    font-size: 2rem
+  +MQ(XXL)
+    font-size: 2.2rem
+  +MQ(XXXL)
+    font-size: 2.6rem
+
+.section-name
+  position: relative
+  display: inline-flex
+  justify-content: start
+  align-items: center
+  justify-content: flex-start
+  font: normal var(--font-weight-base) 1.8rem/1.4 var(--_font-default)
+  color: var(--t-bright)
+  .section-name-caption,
+  i
+    position: relative
+    display: inline-flex
+  i
+    font-size: 2.3rem
+    overflow: hidden
+  &.icon-left
+    .section-name-caption
+      margin-left: 1rem
+  &.icon-right
+    .section-name-caption
+      margin-right: 1rem
+  +MQ(XL)
+    font-size: 2rem
+    i
+      font-size: 2.5rem
+  +MQ(XXL)
+    font-size: 2.2rem
+    i
+      font-size: 2.7rem
+  +MQ(XXXL)
+    font-size: 2.6rem
+    i
+      font-size: 3.2rem
+
+p
+  font: normal var(--font-weight-base) 1.8rem var(--_font-default)
+  color: var(--t-bright)
+  &.type-basic-160lh
+    line-height: 1.6
+  &.type-basic-140lh
+    line-height: 1.4
+  &.small
+    font-size: 1.6rem
+  &.dark
+    color: var(--t-per-bright-dark)
+    font-weight: 400
+  &.light
+    color: var(--t-per-bright-light)
+    font-weight: 300
+  +MQ(XL)
+    font-size: 2rem
+  +MQ(XXL)
+    font-size: 2.2rem
+  +MQ(XXXL)
+    font-size: 2.6rem
+    &.small
+      font-size: 1.8rem
+
+a
+  font: normal var(--font-weight-base) 1.8rem var(--_font-default)
+  color: var(--t-bright)
+  text-decoration: none
+  &.link-small
+    font-size: 1.6rem
+  &.link-small-underline
+    font-size: 1.6rem
+    text-decoration: underline
+  &.link-small-160lh
+    display: inline-flex
+    font-size: 1.6rem
+    line-height: 1.6
+  .no-touch &:hover
+    &.link-small
+      color: var(--t-medium)
+    &.link-small-underline
+      color: var(--t-medium)
+    &.link-small-160lh
+      color: var(--t-medium)
+  +MQ(XL)
+    font-size: 2rem
+  +MQ(XXL)
+    font-size: 2.2rem
+  +MQ(XXXL)
+    font-size: 2.6rem
+    &.link-small
+      font-size: 1.8rem
+    &.link-small-underline
+      font-size: 1.8rem
+      text-decoration: underline
+    &.link-small-160lh
+      font-size: 1.8rem
+      line-height: 1.6
+
+.logo-text
+  font: normal 600 1.8rem var(--_font-default)
+  color: var(--t-bright)
+  +MQ(M)
+    font-size: 2rem
+  +MQ(XXL)
+    font-size: 2.2rem
+  +MQ(XXXL)
+    font-size: 2.6rem
+
+.menu-link
+  font: normal 500 1.6rem var(--_font-default)
+  +MQ(XXXL)
+    font-size: 1.8rem
+
+.text-link
+  color: inherit
+  text-decoration: none
+  background: linear-gradient(to right, rgba(0,0,0, 0.0), rgba(0,0,0, 0.0)), linear-gradient(to right, var(--t-bright), var(--t-bright))
+  background-size: 100% 1px, 0 1px
+  background-position: 100% 100%, 0 100%
+  background-repeat: no-repeat
+  transition: background-size 400ms, color 300ms
+  &.text-link-medium
+    background: linear-gradient(to right, rgba(0,0,0, 0.0), rgba(0,0,0, 0.0)), linear-gradient(to right, var(--t-muted), var(--t-muted))
+    background-size: 100% 1px, 0 1px
+    background-position: 100% 100%, 0 100%
+    background-repeat: no-repeat
+    transition: background-size 400ms, color 300ms
+  .no-touch &:hover
+    //color: var(--t-bright)
+    background-size: 0 1px, 100% 1px
+

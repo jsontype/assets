@@ -1,0 +1,491 @@
+/* Counter 1 ---------------------------------- */
+.counter-area {
+    position: relative;
+    z-index: 2;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include ml {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        gap: 40px 30px;
+    }
+
+    @media(max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .divided {
+        &:not(:last-child) {
+            height: 150px;
+            width: 1px;
+            border: 1px solid #484848;
+
+            @include ml {
+                display: none;
+            }
+        }
+    }
+
+    &.style2 {
+        .divided {
+            &:not(:last-child) {
+                border: 1px solid rgba(255, 255, 255, 0.2); 
+
+                @include ml {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.counter-card {
+
+    @include ml {
+        text-align: center;
+    }
+
+    .box-number {
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 5px;
+        margin-top: 0;
+
+
+    }
+
+    .box-text {
+        font-family: $body-font;
+        font-size: 18px;
+        font-weight: 400;
+        color: $body-color;
+        margin-bottom: 0;
+        min-width: 145px;
+
+        @include md {
+            font-size: 18px;
+        }
+    }
+
+    &:hover {
+        .box-icon {
+            img {
+                animation: scaleUpDown 0.6s ease;
+            }
+        }
+    }
+
+    &.style2 {
+        .box-number {
+            color: $theme-color2;
+        }
+
+        .box-text {
+            color: $white-color;
+        }
+    }
+
+
+
+    &.style3 {
+        .box-number {
+            font-size: 64px;
+            line-height: 64px;
+            font-weight: 600;
+
+            @include md {
+                font-size: 40px;
+                line-height: 40px;
+            }
+        }
+
+        .box-text {
+            font-size: 20px;
+            font-weight: 600;
+            color: $title-color;
+        }
+    }
+
+    &.style4 {
+        .box-number {
+            font-size: 56px;
+            color: $white-color;
+        }
+
+        .box-text {
+            font-size: 18px;
+            color: $white-color;
+        }
+    }
+}
+
+@include lg {
+    .counter-card {
+        &-wrap {
+            &.style2 {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 30px 0;
+            }
+
+            .divider {
+                display: none;
+            }
+        }
+
+        .box-number {
+            font-size: 36px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include md {
+    .counter-card {
+        &-wrap {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 30px 0;
+
+            .divider {
+                display: none;
+            }
+        }
+
+        .box-number {
+            font-size: 36px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+@include sm {
+    .counter-card {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        .box-number {
+            font-size: 30px;
+        }
+
+        &-wrap {
+            &.style2 {
+                display: block;
+            }
+        }
+
+    }
+}
+
+@include xs {
+    .counter-card {
+        &-wrap {
+            display: block;
+            margin: auto;
+
+            .divider {
+                display: none;
+            }
+        }
+    }
+}
+
+/* counter-box  start ---------------------*/
+/* counter-box  start ---------------------*/
+.counter-box {
+    position: relative;
+    z-index: 2;
+
+
+    &:not(:last-child) {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 30px;
+            right: -45px;
+            width: 1px;
+            height: 29px;
+            background-color: #8B71FE;
+
+            @include sm {
+                display: none;
+            }
+        }
+    }
+
+
+    &-wrap {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+
+        @include sm {
+            gap: 40px;
+        }
+
+        @media(max-width: 480px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 25px;
+        }
+    }
+
+    .box-number {
+        margin-bottom: 0;
+
+        @include xl {
+            font-size: 35px;
+        }
+    }
+
+    .counter-text {
+        margin-bottom: 0;
+    }
+}
+
+.counter-item {
+    padding: 50px 50px 50px 0;
+
+
+
+    @include ml {
+        text-align: center;
+    }
+
+    @include sm {
+        padding: 30px 0 0 0;
+    }
+
+    &:first-child {
+        border-right: 1px solid #E0E0E0;
+
+        @include sm {
+            border-right: none;
+        }
+    }
+
+    &:nth-child(2) {
+        padding: 50px 0px 50px 100px;
+
+        @include xxl {
+            padding: 50px 0px 50px 50px;
+        }
+
+        @include sm {
+            padding: 30px 0 0 0;
+        }
+    }
+
+    &:nth-child(3) {
+        border-right: 1px solid #E0E0E0;
+        border-top: 1px solid #E0E0E0;
+        padding: 50px 100px 0px 0px;
+
+
+
+        @include xxl {
+            padding: 50px 50px 0px 0px;
+        }
+
+        @include sm {
+            border: none;
+            padding: 30px 0 0 0;
+        }
+    }
+
+    &:nth-child(4) {
+        border-top: 1px solid #E0E0E0;
+        padding: 50px 0px 0px 100px;
+
+
+        @include xxl {
+            padding: 50px 0px 0px 50px;
+        }
+
+        @include sm {
+            border: none;
+            padding: 30px 0 0 0;
+        }
+
+    }
+
+    .box-icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: $white-color;
+        border: 1px solid #E0E0E0;
+        margin-bottom: 18px;
+
+        @include ml {
+            display: block;
+            margin: auto auto 18px auto;
+        }
+
+    }
+
+    .box-number {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: $title-color;
+        margin-bottom: 0;
+
+        @include sm {
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+        .plus {
+            font-weight: 400;
+        }
+    }
+
+    .counter-text {
+        color: #4D5765;
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+
+        @include sm {
+            display: block;
+        }
+    }
+}
+
+/* counter-grid start -------------*/
+.counter-grid {
+    &_wrapp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include lg {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        @include xs {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    min-width: 340px;
+    height: 340px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(5px);
+    padding: 114px 45px;
+    border-radius: 50%;
+    text-align: center;
+
+    @include xxl {
+        min-width: 280px;
+        height: 280px;
+        max-width: 280px;
+        padding: 80px 35px;
+    }
+
+    @include sm {
+        min-width: 240px;
+        max-width: 240px;
+        height: 260px;
+        padding: 62px 20px;
+    }
+
+    @include xs {
+        min-width: 300px;
+        max-width: 300px;
+        height: 100%;
+    }
+
+    &:nth-child(1) {
+        margin-right: -20px;
+    }
+
+    &:nth-child(2) {
+        margin-right: -20px;
+    }
+
+    &:nth-child(3) {
+        margin-right: -20px;
+    }
+
+    &:nth-child(4) {
+        margin-right: -20px;
+    }
+
+    &:nth-child(5) {
+        margin-right: -20px;
+    }
+
+    &:nth-child(6) {
+        margin-right: -20px;
+    }
+
+    .box-number {
+        font-family: $title-font;
+        font-weight: 550;
+        font-size: 84px;
+        line-height: 84px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+
+        margin-bottom: 15px;
+
+        @include xxl {
+            font-size: 62px;
+            line-height: 62px;
+            margin-bottom: 0;
+        }
+    }
+
+    .box-text {
+        position: relative;
+        font-family: $body-font;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+
+}
+
+/* counter-sec ------------------------*/
+.counter-sec {
+    position: relative;
+    z-index: 3;
+    background-color: $theme-color;
+    mask-image: url("../img/bg/counter-shape.png");
+    mask-size: cover;
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    margin-top: -150px;
+
+    @include xs {
+        margin-top: 0;
+        mask-image: none;
+    }
+}
+
+.counter-sec2 {
+    padding: 97px 0;
+}

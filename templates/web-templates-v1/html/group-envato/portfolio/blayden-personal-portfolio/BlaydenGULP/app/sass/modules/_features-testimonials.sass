@@ -1,0 +1,102 @@
+.testimonials-card
+  padding: 3rem
+  background-color: var(--base)
+  border: 1px solid var(--stroke-elements)
+  border-radius: var(--_radius)
+  +MQ(L)
+    height: 500px
+  +MQ(XXL)
+    padding: 5rem
+    height: 600px
+  +MQ(XXXL)
+    height: 700px
+
+.testimonials-card__tdata
+  position: relative
+  padding-right: 0
+  +MQ(L)
+    height: 100%
+    padding-right: 1.5rem
+  +MQ(XXL)
+    padding-right: 2.5rem
+
+.testimonials-card__timage
+  position: relative
+  padding-left: 0
+  +MQ(L)
+    height: 100%
+    padding-left: 1.5rem
+  +MQ(XXL)
+    padding-left: 2.5rem
+ 
+.timage__inner
+  border-radius: var(--_radius)
+  overflow: hidden
+  img
+    min-width: 100%
+    min-height: 100%
+    object-fit: cover
+
+.testimonials-card__tauthor
+
+.testimonials-card__descr
+  max-width: 1050px
+  margin-top: 2.8rem
+  +MQ(M)
+    margin-top: 3.8rem
+  +MQ(XL)
+    margin-top: 3.6rem
+  +MQ(XXL)
+    margin-top: 3.4rem
+
+
+.testimonials-card__btnholder
+  margin-top: 2.2rem
+  margin-bottom: 3.3rem
+  +MQ(M)
+    margin-top: 3.2rem
+    margin-bottom: 4.2rem
+  +MQ(L)
+    +position(absolute, null null 0 0)
+    margin: 0
+
+.tauthor__avatar
+  width: 60px
+  min-width: 60px
+  height: 60px
+  margin-right: 2rem
+  border-radius: var(--_radius)
+  overflow: hidden
+  +MQ(M)
+    width: 120px
+    min-width: 120px
+    height: 120px
+    margin-right: 3rem
+
+
+.tauthor__info
+
+.tauthor__name
+  color: var(--t-bright)
+
+.tauthor__position
+  margin-top: 0.6rem
+  +MQ(XXXL)
+    margin-top: 0.8rem
+
+.tauthor__rating
+  margin-top: 1.3rem
+  i
+    display: block
+    margin-right: 1rem
+    font-size: 1.6rem
+    color: var(--t-bright)
+    &:last-of-type
+      margin-right: 0
+  +MQ(XXL)
+    i
+      font-size: 1.8rem
+  +MQ(XXXL)
+    margin-bottom: 0.4rem
+    i
+      font-size: 2rem

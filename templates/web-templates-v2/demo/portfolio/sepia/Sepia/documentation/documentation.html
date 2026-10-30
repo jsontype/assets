@@ -1,0 +1,1277 @@
+<!doctype html>
+
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Sepia - Photography Portfolio HTML Website Template</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Themetorium">
+	<meta name="copyright" content="Themetorium">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-02-26T00:00:00+01:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='800',easing='easeInOutExpo';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html {background-color:#FFFFFF;color:#383838;}
+		::-moz-selection {background:#222222;color:#FFFFFF;}
+		::selection {background:#222222;color:#FFFFFF;}
+		#documenter_sidebar #documenter_logo {background-image:url(assets/img/logo.png); background-size: 70%;}
+		a{color:#08c1b8;}
+		.btn {border-radius:3px;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #08c1b8, #08c1b8);
+			  background-image: -ms-linear-gradient(top, #08c1b8, #08c1b8);
+			  background-image: -webkit-gradient(linear, 0 0, 0 E83F33%, from(#111111), to(#08c1b8));
+			  background-image: -webkit-linear-gradient(top, #08c1b8, #08c1b8);
+			  background-image: -o-linear-gradient(top, #08c1b8, #08c1b8);
+			  background-image: linear-gradient(top, #08c1b8, #08c1b8);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#08c1b8', endColorstr='#08c1b8', GradientType=0);
+			  border-color: #08c1b8 #08c1b8 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #08c1b8 #987F28 #bfbfbf;
+		  background-color: #987F28;
+		}
+		hr {border-top:1px solid #DDDDDD;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a {background-color:#111111; color:#DDDDDD;}
+		#documenter_sidebar ul a {-webkit-text-shadow:1px 1px 0px #212121; -moz-text-shadow:1px 1px 0px #212121; text-shadow:1px 1px 0px #212121;}
+		#documenter_sidebar ul {border-top:1px solid #000000;}
+		#documenter_sidebar ul a {border-top:1px solid #212121; border-bottom:1px solid #000000; color:#DDDDDD;}
+		#documenter_sidebar ul a:hover {background:#222222; color:#FFFFFF; border-top:1px solid #222222;}
+		#documenter_sidebar ul a.current {background:#08c1b8; padding: 10px 15px 10px 0; color:#FFFFFF; border-top:1px solid #222222;}
+		#documenter_copyright {display:block !important; visibility:visible !important;}
+
+
+		/* Custom */
+		body {
+			font-size: 14px;
+		}
+		pre {
+			overflow: auto;
+			max-height: 400px;
+			font-size: 12px;
+		}
+		img {
+			max-width: 100%;
+		}
+		#documenter_content {
+			max-width: 1000px;
+		}
+		#documenter_content h1 {
+			margin-bottom: 10px;
+			font-size: 42px;
+			font-weight: bold;
+		}
+		#documenter_content h4 {
+			font-weight: bold;
+		}
+		#documenter_cover {
+			height: auto;
+		}
+		.page-header {
+			margin-bottom: 40px;
+		}
+		.page-header h3 {
+			font-size: 28px !important;
+			font-weight: bold !important;
+			color: #08c1b8;
+			margin: 18px 0 5px 0 !important;
+		}
+		
+	</style>
+	
+</head>
+
+<body class="documenter-project-sepia">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#information" title="Information">Information</a></li>
+			<li><a href="#files_structure" title="Files Structure">Files Structure</a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#html_structure" title="HTML Structure">HTML Structure</a></li>
+			<li><a href="#javascript" title="Javascript">Javascript</a></li>
+			<li><a href="#customization_styles" title="Customization & Styles">Customization & Styles</a></li>
+			<li><a href="#sliders_carousels" title="Sliders & Carousels">Sliders & Carousels</a></li>
+			<li><a href="#video_background" title="Video background">Video Background</a></li>
+			<li><a href="#contact_form" title="Contact Form">Contact Form</a></li>
+			<li><a href="#icons" title="Icons">Icons</a></li>
+			<li><a href="#fonts" title="Fonts">Fonts</a></li>
+			<li><a href="#updating" title="Updating">Updating</a></li>
+			<li><a href="#source_credits" title="Source & Credits">Source & Credits</a></li>
+			<li><a href="#support_policy" title="Support Policy">Support Policy</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Themetorium 2017<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+
+	<div id="documenter_content">
+
+	<section id="documenter_cover">
+		<h1>Sepia</h1>
+		<h2>Photography Portfolio HTML Website Template</h2>
+		<div id="documenter_buttons">
+			
+		</div>
+		<hr>
+		<ul>
+			<!-- <li>Created: 19. jun. 2017</li> -->
+			<li>by: Themetorium</li>
+		<li><a href="http://themeforest.net/user/themetorium?ref=Themetorium">http://themeforest.net/user/themetorium</a></li>
+		
+		</ul>
+		<p>Thank you for purchasing this template. :)</p>
+		<p><img alt="" src="assets/img/img-1.png"></p>
+	</section>
+	
+	<section id="information">
+	<div class="page-header"><h3>Information</h3><hr class="notop"></div>
+	<p>
+		This template based on Bootstrap 3 Framework.&nbsp;Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. More information:&nbsp;<a href="https://getbootstrap.com/docs/3.3/" target="_blank">https://getbootstrap.com/docs/3.3/</a>
+	</p>
+	<br>
+	<div class="alert alert-error">
+		<h5>
+			<strong>Important!</strong></h5>
+		<p>
+			<strong>This template requires that you are familiar with at least HTML and CSS. If you are not familiar with HTML and CSS, I highly recommend that you to hire a specialist. It will save your time and you will get only positive emotions while using this product.</strong></p>
+		<p>
+			It is also required that you are familiar with <a href="https://getbootstrap.com/docs/3.3/" target="_blank"><strong>Bootstrap 3</strong></a>. If not, then it is strongly recommended that you will familiarize yourself with how the Bootstrap 3 works before you begin to customize this template.</p>
+		<p>
+			<strong>Sepia</strong> - is a simple HTML template. HTML is static, this means no dynamic features (no PHP and MySQL). This template is just a good starting point if you want to create your own web site contains mainly the design elements you can use.</p>
+		<p>
+			<strong>* Some parts may not work properly in your local computer. Upload template to your web server in order to function properly!</strong>
+		</p>
+	</div>
+<h5>
+	<br>
+	<strong>Some Tips:</strong></h5>
+<div class="alert">
+	Use <a href="http://getfirebug.com/" target="_blank">Firebug</a> or <a href="https://developer.chrome.com/devtools" target="_blank">Chrome Developer Tools</a>.</div>
+<br>
+<div class="alert">
+	Do not start from scratch, use an existing page from the demo and modify it to learn how it works.</div>
+<br>
+<div class="alert">
+	Getting an error message? Someone might have seen it too, try a <a href="https://www.google.com" target="_blank">Google search</a> for a quick fix.</div>
+<br>
+<div class="alert">
+	The code is well commented, this makes much easier to customize it. Take the time to explore it, there is much explained.</div>
+
+</section>
+
+
+<section id="files_structure">
+	<div class="page-header"><h3>Files Structure</h3><hr class="notop"></div>
+<p>
+	All template files are located in folder named &quot;UPLOAD&quot;.&nbsp;</p>
+<pre class="prettyprint lang-plain linenums">
++-- sepia /
+	+-- assets /
+	&brvbar;	+-- css /
+	&brvbar;	&brvbar;	+-- color-skins /
+	&brvbar;	&brvbar;	&brvbar;    +-- ...all color skins CSS
+	&brvbar;	&brvbar;	+-- rtl /
+	&brvbar;	&brvbar;	&brvbar;    +-- helper-rtl.css (template helper RTL CSS)
+	&brvbar;	&brvbar;	&brvbar;    +-- theme-rtl.css (template RTL CSS)
+	&brvbar;	&brvbar;	&brvbar;
+	&brvbar;	&brvbar;    +-- dark-style.css (template dark style)
+	&brvbar;	&brvbar;    +-- helper.css (helper CSS classes)
+	&brvbar;	&brvbar;    +-- theme.css (template master CSS)
+	&brvbar;	+-- img /
+	&brvbar;	&brvbar;    +-- ...all images used
+	&brvbar;	+-- js /
+	&brvbar;	&brvbar;    +-- theme.js (template JS)
+	&brvbar;	+-- vendor /
+	&brvbar;	&brvbar;    +-- bootstrap (all Bootstrap files)
+	&brvbar;	&brvbar;    +-- ...all external scripts/plugins
+	&brvbar;
+	+-- favicon.ico
+	+-- mail.php
+	+-- index.html
+	+-- about-me.html
+	+-- about-me-2.html
+	+-- ...all .html files
+</pre>
+</section>
+
+
+<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+	<p>	Simply upload all template files (can be found in &quot;UPLOAD&quot; folder) to your server using your favorite FTP client (I recommend <a href="https://filezilla-project.org/" target="_blank">FileZilla</a>). Once uploaded, point your browser to your site URL and you are done. No any hocus-pocus. :)</p>
+	<p><img alt="" src="assets/img/img-2.jpg"></p>
+</section>
+
+
+<section id="html_structure">
+	<div class="page-header"><h3>HTML Structure</h3><hr class="notop"></div>
+	<p>This template based on Bootstrap 3 Framework. Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. More information: <a href="https://getbootstrap.com/docs/3.3/" target="_blank">https://getbootstrap.com/docs/3.3/</a></p>
+	<p>&nbsp;</p>
+	<h4 id="html_structure_basic_html_markup_for_bootstrap_nbsp_grid_system">Basic HTML Markup for Bootstrap 3 grid system:</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;row&quot;&gt;
+     &lt;div class=&quot;col-md-8&quot;&gt;.col-md-8&lt;/div&gt;
+     &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+     &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+     &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+     &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+     &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+     &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	More information about&nbsp;Bootstrap 3 grid system: <a href="https://getbootstrap.com/docs/3.3/css/#grid" target="_blank">https://getbootstrap.com/docs/3.3/css/#grid</a></p>
+<p>
+	&nbsp;</p>
+
+
+<h4 id="html_structure_basic_html_markup_for_theme_section">Basic HTML Markup for template content:</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;!-- ===========
+///// Body /////
+================
+* Use class &quot;animsition&quot; to enable page transition while page loads.
+* Use class &quot;tt-boxed&quot; to enable page boxed layout globally (affects all elements containing class &quot;tt-wrap&quot;).
+* Use class &quot;tt-dark-style&quot; to enable theme dark style.
+--&gt;
+&lt;body id=&quot;body&quot; class=&quot;animsition tt-boxed&quot;&gt;
+
+	&lt;!-- =================
+	//// Begin header //// 
+	======================
+	* Use class &quot;header-show-hide-on-scroll&quot; to hide header on scroll down and show on scroll up.
+	* Use class &quot;header-fixed-top&quot; to set header to fixed position.
+	* Use class &quot;header-transparent&quot; to set header to transparent.
+	* Use class &quot;menu-align-left&quot; to align menu to left.
+	* Use class &quot;menu-align-right&quot; to align menu to right.
+	* Use class &quot;menu-align-center&quot; to align menu to center (do not use with header classes!).
+	--&gt;
+	&lt;header id=&quot;header&quot; class=&quot;menu-align-right&quot;&gt;
+
+		&lt;!-- Begin header inner --&gt;
+		&lt;div class=&quot;header-inner tt-wrap&quot;&gt; &lt;!-- add/remove class &quot;tt-wrap&quot; to enable/disable element boxed layout (class &quot;tt-boxed&quot; is required in &lt;body&gt; tag! ) --&gt;
+
+			&lt;!-- Begin logo 
+			================ --&gt;
+			&lt;div id=&quot;logo&quot;&gt;
+				&lt;a href=&quot;index.html&quot; class=&quot;logo-dark&quot;&gt;&lt;img src=&quot;assets/img/logo-dark.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;
+				&lt;a href=&quot;index.html&quot; class=&quot;logo-light&quot;&gt;&lt;img src=&quot;assets/img/logo-light.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;
+
+				&lt;!-- for small screens --&gt;
+				&lt;a href=&quot;index.html&quot; class=&quot;logo-dark-m&quot;&gt;&lt;img src=&quot;assets/img/logo-dark-m.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;
+				&lt;a href=&quot;index.html&quot; class=&quot;logo-light-m&quot;&gt;&lt;img src=&quot;assets/img/logo-light-m.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;!-- End logo --&gt;
+
+			&lt;!-- ====================
+			//// Begin main menu ////
+			===================== --&gt;
+			&lt;nav class=&quot;tt-main-menu&quot;&gt;
+
+				&lt;!-- Begin mobile menu toggle button --&gt;
+				&lt;div id=&quot;tt-m-menu-toggle-btn&quot;&gt;
+					&lt;span&gt;&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;!-- End mobile menu toggle button --&gt;
+
+				&lt;!-- Begin menu tools 
+				====================== --&gt;
+				&lt;div class=&quot;tt-menu-tools&quot;&gt;
+					&lt;ul&gt;
+						&lt;!-- Begin search --&gt;
+						&lt;li&gt;
+							&lt;a href=&quot;#&quot; class=&quot;tt-clobal-search-trigger&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;div class=&quot;tt-clobal-search&quot;&gt;
+								&lt;div class=&quot;tt-clobal-search-inner&quot;&gt;
+									&lt;span class=&quot;tt-clobal-search-title&quot;&gt;Search&lt;/span&gt;
+									&lt;form id=&quot;tt-clobal-search-form&quot; class=&quot;form-btn-inside&quot; method=&quot;get&quot; action=&quot;search-results.html&quot;&gt;
+										&lt;input type=&quot;text&quot; id=&quot;tt-clobal-search-input&quot; name=&quot;search&quot; placeholder=&quot;Type your keywords ...&quot;&gt;
+										&lt;button type=&quot;submit&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+									&lt;/form&gt;
+								&lt;/div&gt; &lt;!-- /.tt-clobal-search-inner --&gt;
+								&lt;div class=&quot;tt-clobal-search-close&quot;&gt;&lt;i class=&quot;tt-close-btn tt-close-light&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+							&lt;/div&gt; &lt;!-- /.tt-clobal-search --&gt;
+						&lt;/li&gt;
+						&lt;!-- End search --&gt;
+
+						&lt;!-- Begin tt-dropdown (languages) 
+						===================================
+						* Use class &quot;tt-dropdown-dark&quot; to enable dropdown dark style.
+						--&gt;
+						&lt;li class=&quot;tt-dropdown-wrap tt-dropdown-master tt-dropdown-dark tt-dropdown-right tt-tools-lang&quot;&gt;
+							&lt;a href=&quot;#0&quot;&gt;&lt;img src=&quot;assets/img/flags/gb.png&quot; alt=&quot;English&quot;&gt; EN&lt;/a&gt;
+							&lt;ul class=&quot;tt-dropdown&quot;&gt;
+								&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;English&quot;&gt;&lt;img src=&quot;assets/img/flags/gb.png&quot; alt=&quot;English&quot;&gt; EN&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;French&quot;&gt;&lt;img src=&quot;assets/img/flags/fr.png&quot; alt=&quot;French&quot;&gt; FR&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;Deutsch&quot;&gt;&lt;img src=&quot;assets/img/flags/de.png&quot; alt=&quot;Deutsch&quot;&gt; DE&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt; &lt;!-- /.tt-dropdown --&gt;
+						&lt;/li&gt;
+						&lt;!-- End tt-dropdown --&gt;
+
+						&lt;!-- Begin call to action button --&gt;
+						&lt;li&gt;
+							&lt;a href=&quot;https://themeforest.net/user/themetorium/portfolio&quot; class=&quot;tt-tools-button&quot; target=&quot;_blank&quot;&gt;Buy&lt;span class=&quot;hide-from-sm&quot;&gt; This Theme&lt;/span&gt;!&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;!-- End call to action button --&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;!-- End menu tools --&gt;
+
+				&lt;!-- Collect the nav links for toggling 
+				========================================
+				* Use class &quot;tt-submenu-dark&quot; to enable submenu dark style.
+				--&gt;
+				&lt;div class=&quot;tt-menu-collapse tt-submenu-dark&quot;&gt;
+					&lt;ul class=&quot;tt-menu-nav&quot;&gt;
+
+						&lt;!-- Begin submenu (submenu master)
+						==================================== --&gt;
+						&lt;li class=&quot;tt-submenu-wrap tt-submenu-master&quot;&gt;
+							&lt;a href=&quot;#0&quot;&gt;Home&lt;/a&gt;
+							&lt;ul class=&quot;tt-submenu&quot;&gt;
+								&lt;li&gt;&lt;a href=&quot;home-landing.html&quot;&gt;Home Landing&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;home-intro-slideshow.html&quot;&gt;Slideshow&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;albums-slideshow.html&quot;&gt;Slideshow + Thumb.&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;home-intro-full-screen.html&quot;&gt;Full Screen Slideshow&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;categories-carousel.html&quot;&gt;Categories Carousel&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;home-intro-image.html&quot;&gt;Static Image Intro&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;home-intro-video.html&quot;&gt;Video Intro&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;home-intro-video-full-screen.html&quot;&gt;Full Screen Video Intro&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+						&lt;/li&gt;
+						&lt;!-- End submenu (sub-master) --&gt;
+
+						&lt;!-- Begin submenu (submenu master)
+						==================================== --&gt;
+						&lt;li class=&quot;tt-submenu-wrap tt-submenu-master&quot;&gt;
+							&lt;a href=&quot;#0&quot;&gt;About&lt;/a&gt;
+							&lt;ul class=&quot;tt-submenu&quot;&gt;
+								&lt;li&gt;&lt;a href=&quot;about-me.html&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;about-me-fluid.html&quot;&gt;About Me Fluid&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;about-me-2.html&quot;&gt;About Me 2&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;about-me-2-fluid.html&quot;&gt;About Me 2 Fluid&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+						&lt;/li&gt;
+						&lt;!-- End submenu (sub-master) --&gt;
+
+						&lt;!-- Begin submenu (submenu master)
+						==================================== --&gt;
+						&lt;li class=&quot;tt-submenu-wrap tt-submenu-master&quot;&gt;
+							&lt;a href=&quot;#0&quot;&gt;Portfolio&lt;/a&gt;
+							&lt;ul class=&quot;tt-submenu&quot;&gt;
+
+								&lt;!-- Begin submenu
+								=================== --&gt;
+								&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+									&lt;a href=&quot;#0&quot;&gt;Albums&lt;/a&gt;
+									&lt;ul class=&quot;tt-submenu&quot;&gt;
+
+										&lt;!-- Begin submenu
+										=================== --&gt;
+										&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+											&lt;a href=&quot;#0&quot;&gt;Grid&lt;/a&gt;
+											&lt;ul class=&quot;tt-submenu&quot;&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-grid.html&quot;&gt;Grid Default&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-grid-2.html&quot;&gt;Grid 2&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-grid-fluid.html&quot;&gt;Grid Fluid&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-grid-fluid-2.html&quot;&gt;Grid Fluid 2&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-grid-fluid-3.html&quot;&gt;Grid Fluid 3&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-grid-fluid-4.html&quot;&gt;Grid Fluid 4&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-grid-no-crop.html&quot;&gt;Grid No Crop&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-grid-simple.html&quot;&gt;Grid Simple&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-grid-styles.html&quot;&gt;Grid Item Styles&lt;/a&gt;&lt;/li&gt;
+											&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+										&lt;/li&gt;
+										&lt;!-- End submenu --&gt;
+
+										&lt;!-- Begin submenu
+										=================== --&gt;
+										&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+											&lt;a href=&quot;#0&quot;&gt;Carousel&lt;/a&gt;
+											&lt;ul class=&quot;tt-submenu&quot;&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-carousel.html&quot;&gt;Albums Carousel&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-carousel-no-crop.html&quot;&gt;Carousel No Crop&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-carousel-split.html&quot;&gt;Carousel Split&lt;/a&gt;&lt;/li&gt;
+											&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+										&lt;/li&gt;
+										&lt;!-- End submenu --&gt;
+
+										&lt;!-- Begin submenu
+										=================== --&gt;
+										&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+											&lt;a href=&quot;#0&quot;&gt;Archive&lt;/a&gt;
+											&lt;ul class=&quot;tt-submenu&quot;&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-archive.html&quot;&gt;Archive Default&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-archive-fluid.html&quot;&gt;Archive Fluid&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;albums-archive-fluid-2.html&quot;&gt;Archive Fluid 2&lt;/a&gt;&lt;/li&gt;
+											&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+										&lt;/li&gt;
+										&lt;!-- End submenu --&gt;
+
+										&lt;li&gt;&lt;a href=&quot;albums-horizontal-scroll.html&quot;&gt;Horizontal Scroll&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;albums-one-column.html&quot;&gt;One Column&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;albums-one-column-fluid.html&quot;&gt;One Column Fluid&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;albums-slideshow.html&quot;&gt;Slideshow + Thumb.&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;albums-thumbnails-list.html&quot;&gt;Thumbnails List&lt;/a&gt;&lt;/li&gt;
+
+									&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+								&lt;/li&gt;
+								&lt;!-- End submenu --&gt;
+
+								&lt;!-- Begin submenu
+								=================== --&gt;
+								&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+									&lt;a href=&quot;#0&quot;&gt;Gallery&lt;/a&gt;
+									&lt;ul class=&quot;tt-submenu&quot;&gt;
+
+										&lt;!-- Begin submenu
+										=================== --&gt;
+										&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+											&lt;a href=&quot;#0&quot;&gt;Gallery Carousel&lt;/a&gt;
+											&lt;ul class=&quot;tt-submenu&quot;&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-carousel.html&quot;&gt;Carousel Default&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-carousel-2.html&quot;&gt;Carousel + Info&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-carousel-center.html&quot;&gt;Carousel Center&lt;/a&gt;&lt;/li&gt;
+											&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+										&lt;/li&gt;
+										&lt;!-- End submenu --&gt;
+
+										&lt;!-- Begin submenu
+										=================== --&gt;
+										&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+											&lt;a href=&quot;#0&quot;&gt;Gallery Grid&lt;/a&gt;
+											&lt;ul class=&quot;tt-submenu&quot;&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid.html&quot;&gt;Grid Default&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid-2.html&quot;&gt;Grid 2&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid-cropped.html&quot;&gt;Grid Cropped&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid-fluid.html&quot;&gt;Grid Fluid&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid-fluid-2.html&quot;&gt;Grid Fluid 2&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid-fluid-2-cropped.html&quot;&gt;Grid Fluid 2 Cropped&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid-fluid-3.html&quot;&gt;Grid Fluid 3&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid-fluid-3-cropped.html&quot;&gt;Grid Fluid 3 Cropped&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid-simple.html&quot;&gt;Grid Simple&lt;/a&gt;&lt;/li&gt;
+											&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+										&lt;/li&gt;
+										&lt;!-- End submenu --&gt;
+
+										&lt;!-- Begin submenu
+										=================== --&gt;
+										&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+											&lt;a href=&quot;#0&quot;&gt;Gallery + Sidebar&lt;/a&gt;
+											&lt;ul class=&quot;tt-submenu&quot;&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-sidebar-left.html&quot;&gt;Sidebar Left&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-sidebar-left-simple.html&quot;&gt;Sidebar Left Simple&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-sidebar-right.html&quot;&gt;Sidebar Right&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-sidebar-right-simple.html&quot;&gt;Sidebar Right Simple&lt;/a&gt;&lt;/li&gt;
+											&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+										&lt;/li&gt;
+										&lt;!-- End submenu --&gt;
+
+										&lt;!-- Begin submenu
+										=================== --&gt;
+										&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+											&lt;a href=&quot;#0&quot;&gt;Gallery Styles&lt;/a&gt;
+											&lt;ul class=&quot;tt-submenu&quot;&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid-style-default.html&quot;&gt;Default&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid-style-colored.html&quot;&gt;Colored&lt;/a&gt;&lt;/li&gt;
+												&lt;li&gt;&lt;a href=&quot;gallery-single-grid-style-zoom-only.html&quot;&gt;Zoom Only&lt;/a&gt;&lt;/li&gt;
+											&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+										&lt;/li&gt;
+										&lt;!-- End submenu --&gt;
+
+									&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+								&lt;/li&gt;
+								&lt;!-- End submenu --&gt;
+
+								&lt;!-- Begin submenu
+								=================== --&gt;
+								&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+									&lt;a href=&quot;#0&quot;&gt;Categories&lt;/a&gt;
+									&lt;ul class=&quot;tt-submenu&quot;&gt;
+										&lt;li&gt;&lt;a href=&quot;categories-carousel.html&quot;&gt;Carousel&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;categories-grid.html&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;categories-grid-fluid.html&quot;&gt;Grid Fluid&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;categories-grid-fluid-2.html&quot;&gt;Grid Fluid 2&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;categories-grid-fluid-3.html&quot;&gt;Grid Fluid 3&lt;/a&gt;&lt;/li&gt;
+									&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+								&lt;/li&gt;
+								&lt;!-- End submenu --&gt;
+
+							&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+						&lt;/li&gt;
+						&lt;!-- End submenu (sub-master) --&gt;
+
+						&lt;!-- Begin submenu (submenu master)
+						==================================== --&gt;
+						&lt;li class=&quot;tt-submenu-wrap tt-submenu-master&quot;&gt;
+							&lt;a href=&quot;#0&quot;&gt;Blog&lt;/a&gt;
+							&lt;ul class=&quot;tt-submenu&quot;&gt;
+
+								&lt;!-- Begin submenu
+								=================== --&gt;
+								&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+									&lt;a href=&quot;#0&quot;&gt;Blog List&lt;/a&gt;
+									&lt;ul class=&quot;tt-submenu&quot;&gt;
+										&lt;li&gt;&lt;a href=&quot;blog-list-classic.html&quot;&gt;Classic&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;blog-list-simple.html&quot;&gt;Classic Simple&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;blog-list-grid.html&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;blog-list-grid-fluid.html&quot;&gt;Grid Fluid&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;blog-list-grid-no-sidebar.html&quot;&gt;Grid No Sidebar&lt;/a&gt;&lt;/li&gt;
+									&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+								&lt;/li&gt;
+								&lt;!-- End submenu --&gt;
+
+								&lt;!-- Begin submenu
+								=================== --&gt;
+								&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+									&lt;a href=&quot;#0&quot;&gt;Blog Single Post&lt;/a&gt;
+									&lt;ul class=&quot;tt-submenu&quot;&gt;
+										&lt;li&gt;&lt;a href=&quot;blog-single.html&quot;&gt;Default&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;blog-single-alter.html&quot;&gt;Alternate&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;blog-single-simple.html&quot;&gt;Simple&lt;/a&gt;&lt;/li&gt;
+									&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+								&lt;/li&gt;
+								&lt;!-- End submenu --&gt;
+
+								&lt;!-- Begin submenu
+								=================== --&gt;
+								&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+									&lt;a href=&quot;#0&quot;&gt;Blog Archive&lt;/a&gt;
+									&lt;ul class=&quot;tt-submenu&quot;&gt;
+										&lt;li&gt;&lt;a href=&quot;blog-archive.html&quot;&gt;Archive Default&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;blog-archive-2.html&quot;&gt;Archive Classic&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;blog-archive-3.html&quot;&gt;Archive Grid&lt;/a&gt;&lt;/li&gt;
+									&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+								&lt;/li&gt;
+								&lt;!-- End submenu --&gt;
+
+							&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+						&lt;/li&gt;
+						&lt;!-- End submenu (sub-master) --&gt;
+
+						&lt;!-- Begin submenu (submenu master)
+						==================================== --&gt;
+						&lt;li class=&quot;tt-submenu-wrap tt-submenu-master&quot;&gt;
+							&lt;a href=&quot;#0&quot;&gt;Contact&lt;/a&gt;
+							&lt;ul class=&quot;tt-submenu&quot;&gt;
+								&lt;li&gt;&lt;a href=&quot;contact.html&quot;&gt;Contact Default&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;contact-fluid.html&quot;&gt;Contact Fluid&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;contact-simple.html&quot;&gt;Contact Simple&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+						&lt;/li&gt;
+						&lt;!-- End submenu (sub-master) --&gt;
+
+						&lt;!-- Begin submenu (submenu master)
+						==================================== --&gt;
+						&lt;li class=&quot;tt-submenu-wrap tt-submenu-master&quot;&gt;
+							&lt;a href=&quot;#0&quot;&gt;More&lt;/a&gt;
+							&lt;ul class=&quot;tt-submenu&quot;&gt;
+
+								&lt;!-- Begin submenu
+								=================== --&gt;
+								&lt;li class=&quot;tt-submenu-wrap&quot;&gt;
+									&lt;a href=&quot;#0&quot;&gt;Dummy Pages&lt;/a&gt;
+									&lt;ul class=&quot;tt-submenu&quot;&gt;
+										&lt;li&gt;&lt;a href=&quot;page-dummy-classic.html&quot;&gt;No Sidebar&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;page-dummy-classic-sidebar-left.html&quot;&gt;Sidebar Left&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;page-dummy-classic-sidebar-right.html&quot;&gt;Sidebar Right&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href=&quot;page-dummy-modern.html&quot;&gt;Modern&lt;/a&gt;&lt;/li&gt;
+									&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+								&lt;/li&gt;
+								&lt;!-- End submenu --&gt;
+
+								&lt;li&gt;&lt;a href=&quot;page-404.html&quot;&gt;404 Error&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;page-404-2.html&quot;&gt;404 Error 2&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;page-faq.html&quot;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;page-pricing.html&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;search-results.html&quot;&gt;Search Results&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;page-password.html&quot;&gt;Password Protected&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;footer-styles.html&quot;&gt;Footer Styles&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt; &lt;!-- /.tt-submenu --&gt;
+						&lt;/li&gt;
+						&lt;!-- End submenu (sub-master) --&gt;
+
+					&lt;/ul&gt; &lt;!-- /.tt-menu-nav --&gt;
+				&lt;/div&gt; &lt;!-- /.tt-menu-collapse --&gt;
+
+			&lt;/nav&gt; 
+			&lt;!-- End main menu --&gt;
+
+		&lt;/div&gt;
+		&lt;!-- End header inner --&gt;
+
+	&lt;/header&gt;
+	&lt;!-- End header --&gt;
+
+
+	&lt;!-- *************************************
+	*********** Begin body content *********** 
+	************************************** --&gt;
+	&lt;div id=&quot;body-content&quot;&gt;
+
+
+		&lt;!-- ========================
+		///// Begin page header /////
+		=============================
+		* Use classes &quot;ph-xs&quot;, &quot;ph-sm&quot;, &quot;ph-lg&quot; or &quot;ph-xlg&quot; to set page header size.
+		* Use class &quot;ph-center&quot; or &quot;ph-right&quot; to align page header caption.
+		--&gt;
+		&lt;section id=&quot;page-header&quot; class=&quot;ph-lg&quot;&gt;
+
+			&lt;!-- Begin page header image 
+			============================= 
+			* Use class &quot;parallax-bg-1&quot; up to &quot;parallax-bg-6&quot; to enable background image parallax effect.
+			* Use class &quot;fade-out-scroll-3&quot; to enable fade out effect if page scroll.
+			* Use class &quot;hide-ph-image&quot; to hide page header image without removing the code.
+			--&gt;
+			&lt;div class=&quot;page-header-image parallax-bg-3 bg-image&quot; style=&quot;background-image: url(assets/img/misc/page-header-bg-4.jpg);&quot;&gt;
+				
+				&lt;!-- Element cover 
+				===================
+				* You can use prepared background transparent classes depends on brightness of your page header image. More info: file &quot;helper.css&quot;.
+				--&gt;
+				&lt;div class=&quot;cover bg-transparent-5-dark&quot;&gt;&lt;/div&gt;
+				
+			&lt;/div&gt;
+			&lt;!-- End page header image --&gt;
+
+			&lt;!-- Begin page header inner --&gt;
+			&lt;div class=&quot;page-header-inner tt-wrap&quot;&gt;
+
+				&lt;!-- Begin page header caption 
+				===============================
+				* Use classes &quot;ph-caption-xs&quot;, &quot;ph-caption-sm&quot;, &quot;ph-caption-lg&quot; or &quot;ph-caption-xlg&quot; to set page header size.
+				* Use class &quot;parallax-1&quot; up to &quot;parallax-6&quot; to enable parallax effect.
+				* Use class &quot;fade-out-scroll-1&quot; up to &quot;fade-out-scroll-6&quot; to enable fade out effect if page scroll.
+				--&gt;
+				&lt;div class=&quot;page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3&quot;&gt;
+					&lt;h1 class=&quot;page-header-title&quot;&gt;Page Header Title&lt;/h1&gt;
+					&lt;hr class=&quot;hr-short&quot;&gt;
+					&lt;div class=&quot;page-header-description&quot;&gt;
+						&lt;p&gt;Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum.&lt;/p&gt;
+					&lt;/div&gt;
+
+				&lt;/div&gt;
+				&lt;!-- End page header caption --&gt;
+
+			&lt;/div&gt; 
+			&lt;!-- End page header inner --&gt;
+
+		&lt;/section&gt;
+		&lt;!-- End page header --&gt;
+
+
+		&lt;!-- =====================================
+		///// Begin whatever content section /////
+		====================================== --&gt;
+		&lt;section id=&quot;your-section-id&quot; class=&quot;some-extra-class-maybe&quot;&gt;
+			&lt;div class=&quot;your-section-inner tt-wrap&quot;&gt; &lt;!-- add/remove class &quot;tt-wrap&quot; to enable/disable element boxed layout (class &quot;tt-boxed&quot; is required in &lt;body&gt; tag! ) --&gt;
+
+				Your section content here...
+
+			&lt;/div&gt; &lt;!-- /.your-section-inner --&gt;
+		&lt;/section&gt;
+		&lt;!-- End whatever content section --&gt;
+
+
+		&lt;!-- ===========================
+		///// Begin footer section /////
+		================================
+		* Use class &quot;footer-dark&quot; to enable dark footer.
+		* Use class &quot;no-margin-top&quot; if needed. 
+		--&gt;
+		&lt;section id=&quot;footer&quot; class=&quot;footer-dark&quot;&gt;
+			&lt;div class=&quot;footer-inner&quot;&gt;
+				&lt;div class=&quot;footer-container tt-wrap&quot;&gt;
+					&lt;div class=&quot;row&quot;&gt;
+						&lt;div class=&quot;col-md-3&quot;&gt;
+
+							&lt;!-- Begin footer logo --&gt;
+							&lt;div id=&quot;footer-logo&quot;&gt;
+								&lt;a href=&quot;index.html&quot; class=&quot;logo-dark&quot;&gt;&lt;img src=&quot;assets/img/logo-dark.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;
+								&lt;a href=&quot;index.html&quot; class=&quot;logo-light&quot;&gt;&lt;img src=&quot;assets/img/logo-light.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;
+
+								&lt;!-- for small screens --&gt;
+								&lt;a href=&quot;index.html&quot; class=&quot;logo-dark-m&quot;&gt;&lt;img src=&quot;assets/img/logo-dark-m.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;
+								&lt;a href=&quot;index.html&quot; class=&quot;logo-light-m&quot;&gt;&lt;img src=&quot;assets/img/logo-light-m.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;
+							&lt;/div&gt;
+							&lt;!-- End footer logo --&gt;
+
+						&lt;/div&gt; &lt;!-- /.col --&gt;
+
+						&lt;div class=&quot;col-md-5&quot;&gt;
+
+							&lt;!-- Begin footer text --&gt;
+							&lt;div class=&quot;footer-text&quot;&gt;
+								&lt;h4&gt;- Creative Photo Studio&lt;/h4&gt;
+								Sed non auctor magna. Nunc eu ultrices orci. Donec commodo ligula in massa ultricies volutpat. Fusce vel cursus lectus. Cras commodo odio mi, eu cursus nibh iaculis ut.
+							&lt;/div&gt;
+							&lt;!-- End footer text --&gt;
+
+						&lt;/div&gt; &lt;!-- /.col --&gt;
+
+						&lt;div class=&quot;col-md-4&quot;&gt;
+
+							&lt;!-- Begin social buttons --&gt;
+							&lt;div class=&quot;social-buttons&quot;&gt;
+								&lt;ul&gt;
+									&lt;li&gt;&lt;a href=&quot;https://www.facebook.com/themetorium&quot; class=&quot;btn btn-social-min btn-default btn-rounded-full&quot; title=&quot;Follow me on Facebook&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;a href=&quot;https://twitter.com/Themetorium&quot; class=&quot;btn btn-social-min btn-default btn-rounded-full&quot; title=&quot;Follow me on Twitter&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;a href=&quot;https://plus.google.com/+SiiliOnu&quot; class=&quot;btn btn-social-min btn-default btn-rounded-full&quot; title=&quot;Follow me on Google+&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;a href=&quot;https://www.pinterest.com/themetorium&quot; class=&quot;btn btn-social-min btn-default btn-rounded-full&quot; title=&quot;Follow me on Pinterest&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-pinterest&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;a href=&quot;https://dribbble.com/Themetorium&quot; class=&quot;btn btn-social-min btn-default btn-rounded-full&quot; title=&quot;Follow me on Dribbble&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;a href=&quot;contact.html&quot; class=&quot;btn btn-social-min btn-default btn-rounded-full&quot; title=&quot;Drop me a line&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+								&lt;/ul&gt;
+							&lt;/div&gt;
+							&lt;!-- End social buttons --&gt;
+
+							&lt;!-- Begin footer subscribe form --&gt;
+							&lt;form id=&quot;footer-subscribe-form&quot; class=&quot;form-btn-inside&quot;&gt;
+								&lt;div class=&quot;form-group&quot;&gt;
+									&lt;input type=&quot;email&quot; class=&quot;form-control no-bg&quot; id=&quot;footer-subscribe&quot; name=&quot;subscribe&quot; placeholder=&quot;Subscribe. Enter your email address...&quot; required=&quot;&quot;&gt;
+									&lt;button type=&quot;submit&quot;&gt;&lt;i class=&quot;fa fa-paper-plane&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+								&lt;/div&gt;
+							&lt;/form&gt;
+							&lt;!-- End footer subscribe form --&gt;
+
+						&lt;/div&gt; &lt;!-- /.col --&gt;
+
+					&lt;/div&gt; &lt;!-- /.row --&gt;
+				&lt;/div&gt; &lt;!-- /.footer-container --&gt;
+
+				&lt;div class=&quot;footer-bottom&quot;&gt;
+					&lt;div class=&quot;footer-container tt-wrap&quot;&gt;
+						&lt;div class=&quot;row&quot;&gt;
+							&lt;div class=&quot;col-md-6 col-md-push-6&quot;&gt;
+
+								&lt;!-- Begin footer menu --&gt;
+								&lt;ul class=&quot;footer-menu&quot;&gt;
+									&lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;a href=&quot;about-me.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;a href=&quot;albums-grid-fluid-2.html&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;a href=&quot;blog-list-grid.html&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;a href=&quot;page-faq.html&quot;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+								&lt;/ul&gt;
+								&lt;!-- End footer menu --&gt;
+
+							&lt;/div&gt; &lt;!-- /.col --&gt;
+
+							&lt;div class=&quot;col-md-6 col-md-pull-6&quot;&gt;
+
+								&lt;!-- Begin footer copyright --&gt;
+								&lt;div class=&quot;footer-copyright&quot;&gt;
+									&lt;p&gt;&amp;copy; Sepia 2017 / All rights reserved&lt;/p&gt;
+									&lt;p&gt;Design by: &lt;a href=&quot;https://themeforest.net/user/themetorium/portfolio?ref=Themetorium&quot; target=&quot;_blank&quot;&gt;Themetorium&lt;/a&gt;&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;!-- End footer copyright --&gt;
+
+							&lt;/div&gt; &lt;!-- /.col --&gt;
+
+						&lt;/div&gt; &lt;!-- /.row --&gt;
+					&lt;/div&gt; &lt;!-- /.footer-container --&gt;
+				&lt;/div&gt; &lt;!-- /.footer-bottom --&gt;
+
+			&lt;/div&gt; &lt;!-- /.footer-inner --&gt;
+
+			&lt;!-- Scroll to top button --&gt;
+			&lt;a href=&quot;#body&quot; class=&quot;scrolltotop sm-scroll&quot; title=&quot;Scroll to top&quot;&gt;&lt;i class=&quot;fa fa-chevron-up&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+		&lt;/section&gt;
+		&lt;!-- End footer section --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- End body content --&gt;
+
+
+	&lt;!-- ====================
+	///// Scripts below /////
+	===================== --&gt;
+
+	All template scripts JS here...
+
+
+	&lt;!--==============================
+	///// Begin Google Analytics /////
+	============================== --&gt;
+
+	&lt;!-- Paste your Google Analytics code here. 
+	Go to http://www.google.com/analytics/ for more information. --&gt;
+
+	&lt;!--==============================
+	///// End Google Analytics /////
+	============================== --&gt;
+</pre>
+</section>
+
+
+<section id="javascript">
+	<div class="page-header"><h3>Javascript</h3><hr class="notop"></div>
+<p>	<strong>jQuery</strong> - is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.&nbsp;For more information: <a href="http://jquery.com/" target="_blank">http://www.jquery.com</a></p>
+<p>	<em><strong>Note:</strong></em> The initialization of the elements, libs and features is made by the file named &quot;<strong>theme.js</strong>&quot; which is located in the folder named&nbsp;&quot;<strong>js</strong>&quot;.</p>
+<p>&nbsp;</p>
+</section>
+
+
+<section id="customization_styles">
+	<div class="page-header"><h3>Customization &amp; Styles</h3><hr class="notop"></div>
+
+	<div class="alert">
+		<strong>Note:</strong> The code is well commented, this makes much easier to customize it. Take the time to explore it, there is much explained.
+	</div>
+
+	<br>
+
+	<h4 id="helper_classes">Helper classes</h4>
+	<p>This template contains some extra prepared helper classes you can use. All helper classes are located in the file "<strong>helper.css</strong>". You are free to use these classes to customize your web site.</p>
+
+	<br>
+	<h4 id="template_styles">Dark Style</h4>
+	<p>To enable template dark style proceed as follows:</p>
+
+	<p><strong>1)</strong> In <strong>&lt;head&gt;</strong> section on your template HTML files find:</p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Template dark style CSS (just uncomment line below to enable dark style) --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/dark-style.css&quot;&gt; --&gt;
+</pre>
+
+	<p><strong>2)</strong> Just uncomment line below to enable template dark style:</p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/dark-style.css&quot;&gt; --&gt;
+</pre>
+
+	<p>Example:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Template dark style CSS (just uncomment line below to enable dark style) --&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/dark-style.css&quot;&gt;
+</pre>
+
+	<br>
+	<h4 id="template_styles">Color Skins</h4>
+	<p>To enable template color skins proceed as follows:</p>
+
+	<p><strong>1)</strong> In <strong>&lt;head&gt;</strong> section on your template HTML files find:</p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Template color skins CSS (just uncomment line below to enable color skin. One line at a time!) --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-red.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-green.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-blue.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-orange.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-purple.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-pink.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-brown.css&quot;&gt; --&gt;
+</pre>
+
+	<p><strong>2)</strong> Just uncomment <strong>one</strong> line below to enable template color skin:</p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-red.css&quot;&gt; --&gt;
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-green.css&quot;&gt; --&gt;
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-blue.css&quot;&gt; --&gt;
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-orange.css&quot;&gt; --&gt;
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-purple.css&quot;&gt; --&gt;
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-pink.css&quot;&gt; --&gt;
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-brown.css&quot;&gt; --&gt;
+</pre>
+
+	<p>Example:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Template color skins CSS (just uncomment line below to enable color skin. One line at a time!) --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-red.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-green.css&quot;&gt; --&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-blue.css&quot;&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-orange.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-purple.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-pink.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/color-skins/skin-brown.css&quot;&gt; --&gt;
+</pre>
+
+	<br>
+	<h4 id="template_styles">Template Round Style</h4>
+	<p>To enable template round style proceed as follows:</p>
+
+	<p><strong>1)</strong> In <strong>&lt;head&gt;</strong> section on your template HTML files find:</p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Template round style CSS (just uncomment line below to enable round style) --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/round-style.css&quot;&gt; --&gt;
+</pre>
+
+	<p><strong>2)</strong> Just uncomment line below to enable template round style:</p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/round-style.css&quot;&gt; --&gt;
+</pre>
+
+	<p>Example:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Template round style CSS (just uncomment line below to enable round style) --&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/round-style.css&quot;&gt;
+</pre>
+
+	<br>
+	<h4 id="template_styles">Template RTL (right to left) mode</h4>
+	<p>To enable template RTL mode proceed as follows:</p>
+
+	<p><strong>1)</strong> In <strong>&lt;head&gt;</strong> section on your template HTML files find:</p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Template RTL mode CSS (just uncomment all 3 lines below to enable right to left mode) --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/vendor/bootstrap/css/bootstrap-rtl/bootstrap-rtl.min.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/rtl/theme-rtl.css&quot;&gt; --&gt;
+	&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/rtl/helper-rtl.css&quot;&gt; --&gt;
+</pre>
+
+	<p><strong>2)</strong> Just uncomment <strong>all</strong> lines below to enable template RTL mode:</p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/vendor/bootstrap/css/bootstrap-rtl/bootstrap-rtl.min.css&quot;&gt; --&gt;
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/rtl/theme-rtl.css&quot;&gt; --&gt;
+&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/rtl/helper-rtl.css&quot;&gt; --&gt;
+</pre>
+
+	<p>Example:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Template RTL mode CSS (just uncomment all 3 lines below to enable right to left mode) --&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/vendor/bootstrap/css/bootstrap-rtl/bootstrap-rtl.min.css&quot;&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/rtl/theme-rtl.css&quot;&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/rtl/helper-rtl.css&quot;&gt;
+</pre>
+
+</section>
+
+
+<section id="sliders_carousels">
+	<div class="page-header"><h3>Sliders &amp; Carousels</h3><hr class="notop"></div>
+<h4 id="sliders_carousels_owl_carousel">Content Carousel</h4>
+<p>Touch enabled jQuery plugin that lets you create beautiful responsive carousel sliders.</p>
+
+<h5>Basic HTML Markup for Content Carousel:</h5>
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Begin content carousel (http://www.owlcarousel.owlgraphic.com)
+====================================================================
+* Use class &quot;nav-outside&quot; for outside nav (requires boxed layout).
+* Use class &quot;nav-outside-top&quot; for outside top nav (requires enough space at the top of the carousel).
+* Use class &quot;nav-bottom-right&quot; for bottom right nav.
+* Use class &quot;nav-rounded&quot; for rounded nav.
+* Use class &quot;nav-light&quot; to enable nav light style.
+* Use class &quot;dots-outside&quot; for outside dots (requires enough space at the bottom of the carousel).
+* Use class &quot;dots-left&quot;, &quot;dots-right&quot; or &quot;dots-center-right&quot; to align dots.
+* Use class &quot;dots-rounded&quot; for rounded dots.
+* Use class &quot;owl-mousewheel&quot; to enable mousewheel support.
+* Use class &quot;cursor-grab&quot; to enable cursor grab icon (no effect on links!).
+* Use class &quot;cc-hover-light&quot;, &quot;cc-hover-dark&quot; or &quot;cc-hover-zoom&quot; to enable carousel items hover effect.
+* Use class &quot;cc-height-1&quot;, &quot;cc-height-2&quot;, &quot;cc-height-3&quot;, &quot;cc-height-4&quot;, &quot;cc-height-5&quot;, &quot;cc-height-6&quot; or &quot;cc-height-full&quot; to set carousel height (do not use with data-autoheight=&quot;true&quot;!!!).
+* Use class &quot;cc-height-m&quot; to set full height for small screens (do not use with data-autoheight=&quot;true&quot;!!!).
+================================================================
+* Available carousel data attributes:
+		data-items=&quot;5&quot;.......................(items visible on desktop)
+		data-tablet-landscape=&quot;4&quot;............(items visible on mobiles)
+		data-tablet-portrait=&quot;3&quot;.............(items visible on mobiles)
+		data-mobile-landscape=&quot;2&quot;............(items visible on tablets)
+		data-mobile-portrait=&quot;1&quot;.............(items visible on tablets)
+		data-loop=&quot;true&quot;.....................(true/false)
+		data-margin=&quot;10&quot;.....................(space between items)
+		data-center=&quot;true&quot;...................(true/false)
+		data-start-position=&quot;0&quot;..............(item start position)
+		data-animate-in=&quot;fadeIn&quot;.............(more animations: http://daneden.github.io/animate.css/)
+		data-animate-out=&quot;fadeOut&quot;...........(more animations: http://daneden.github.io/animate.css/)
+		data-mouse-drag=&quot;false&quot;..............(true/false)
+		data-touch-drag=&quot;false&quot;..............(true/false)
+		data-autoheight=&quot;true&quot;...............(true/false)
+		data-autoplay=&quot;true&quot;.................(true/false)
+		data-autoplay-timeout=&quot;5000&quot;.........(milliseconds)
+		data-autoplay-hover-pause=&quot;true&quot;.....(true/false)
+		data-autoplay-speed=&quot;800&quot;............(milliseconds)
+		data-drag-end-speed=&quot;800&quot;............(milliseconds)
+		data-nav=&quot;true&quot;......................(true/false)
+		data-nav-speed=&quot;800&quot;.................(milliseconds)
+		data-dots=&quot;false&quot;....................(true/false)
+		data-dots-speed=&quot;800&quot;................(milliseconds)
+--&gt;
+&lt;div class=&quot;owl-carousel&quot; data-items=&quot;1&quot; data-nav=&quot;true&quot;&gt;
+ 
+	&lt;!-- Begin carousel item 
+	========================= --&gt;
+	&lt;div class=&quot;cc-item&quot;&gt;
+		your content here...
+	&lt;/div&gt;
+	&lt;!-- End carousel item --&gt;	
+ 
+	&lt;!-- Begin carousel item 
+	========================= --&gt;
+	&lt;div class=&quot;cc-item&quot;&gt;
+		your content here...
+	&lt;/div&gt;
+	&lt;!-- End carousel item --&gt;	
+ 
+	&lt;!-- Begin carousel item 
+	========================= --&gt;
+	&lt;div class=&quot;cc-item&quot;&gt;
+		your content here...
+	&lt;/div&gt;
+	&lt;!-- End carousel item --&gt;	
+ 
+&lt;/div&gt;
+&lt;!-- End content carousel --&gt;
+</pre>
+
+<p>Note: Content Carousel based on popular OWL Carousel. More information about OWL Carousel:&nbsp;<a href="http://www.owlcarousel.owlgraphic.com" target="_blank">http://www.owlcarousel.owlgraphic.com</a></p>
+</section>
+
+<section id="video_background">
+	<div class="page-header"><h3>Video background</h3><hr class="notop"></div>
+<h4 id="video_background_basic_html_markup_for_video_background">Basic HTML Markup for video background:</h4>
+<p>An open source jQuery component to easily build your custom Youtube player or to use a Youtube video as background for your page.</p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Begin YTPlayer (Youtube video background)
+===============================================
+* NOTE: Replace videoURL with your own (videoURL:'your-youtube-video-URL'). 
+* Do not forget to add your background image for mobile devices (because the video background doesn't work on mobile devices).
+* YTPlayer may not work in the local computer. It works properly only if used under a web server.
+* More info about YTPlayer: https://github.com/pupunzi/jquery.mb.YTPlayer 
+--&gt;
+&lt;div class=&quot;youtube-bg-wrap ytp-full&quot;&gt; &lt;!-- Class &quot;ytp-full&quot; is for full cover (depend on parent element size). --&gt;
+	&lt;div class=&quot;youtube-bg&quot; 
+		style=&quot;background-image: url(assets/img/video-bg/video-bg-1.jpg); background-position: 50% 50%;&quot;
+		data-property=&quot;{
+			videoURL: 'https://www.youtube.com/watch?v=x0pX705VRds',
+			containment: 'self',
+			quality: 'default',
+			startAt: 0,
+			stopAt: 0,
+			autoPlay: true,
+			loop: true,
+			mute: true,
+			showControls: false,
+			showYTLogo: false,
+			realfullscreen: true,
+			addRaster: false,
+			optimizeDisplay: true,
+			stopMovieOnBlur: true
+		}&quot;&gt;
+
+	&lt;/div&gt; &lt;!-- /.youtube-bg --&gt;
+&lt;/div&gt;
+&lt;!-- End YTPlayer (Youtube video background) --&gt;
+</pre>
+<p>More information about YTPlayer:&nbsp;<a href="https://github.com/pupunzi/jquery.mb.YTPlayer" target="_blank">https://github.com/pupunzi/jquery.mb.YTPlayer</a></p>
+</section>
+
+
+<section id="contact_form">
+	<div class="page-header"><h3>Contact Form</h3><hr class="notop"></div>
+<p>This template includes a working contact form. Proceed as follows in order to configure it.</p>
+
+<div class="alert alert-error"><strong>Important!</strong> Before using this form, please make sure that your server supports sending email! Contact your hosting provider for more information.</div>
+
+<h4>Configuration:</h4>
+<p>Open file "<strong>contact.html</strong>" or whatever contact page variation you want to use. Find and configure the following code:</p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Begin hidden required fields (https://github.com/agragregra/uniMail) --&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;project_name&quot; value=&quot;yourwebsiteaddress.com&quot;&gt; &lt;!-- Change value to your site name --&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;admin_email&quot; value=&quot;your@email.com&quot;&gt; &lt;!-- Change value to your valid email address (where a message will be sent) --&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;form_subject&quot; value=&quot;Message from yourwebsiteaddress.com&quot;&gt; &lt;!-- Change value to your own message subject --&gt;
+&lt;!-- End Hidden Required Fields --&gt;
+</pre>
+<p>More information about uniMail:&nbsp;<a href="https://github.com/agragregra/uniMail" target="_blank">https://github.com/agragregra/uniMail</a></p>
+
+<div class="alert"><strong>Important!</strong> Do not remove the file "mail.php". Otherwise, the contact form is not working.</div>
+</section>
+
+
+<section id="icons">
+	<div class="page-header"><h3>Icons</h3><hr class="notop"></div>
+<p>	<strong>Font Awesome -</strong> gives you scalable vector icons that can instantly be customized &mdash; size, color, drop shadow, and anything that can be done with the power of CSS.</p>
+<h4 id="icons_html_markup">HTML Markup:</h4>
+<pre class="prettyprint lang-js linenums">
+&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-folder-open&quot;&gt;&lt;/i&gt;
+...</pre>
+<p>	For more information, please visit this site:&nbsp;<a href="http://fontawesome.io" target="_blank">http://fontawesome.io</a></p>
+</section>
+
+
+<section id="fonts">
+	<div class="page-header"><h3>Fonts</h3><hr class="notop"></div>
+	<h4 id="fonts_fonts_in_use">Fonts in use:</h4>
+	<p>	<strong>Google Fonts:</strong></p>
+	<ul>	
+		<li><strong>Poppins</strong> (global font)</li>
+	</ul>
+	<p>Please take a look in the <strong>&lt;head&gt;</strong> part of the website and you will find this tag:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Google fonts (https://www.google.com/fonts) --&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&quot; rel=&quot;stylesheet&quot;&gt; &lt;!-- Global font --&gt;
+</pre>
+	<p>To change the font, first go to <a href="http://www.google.com/webfonts" target="_blank">http://www.google.com/webfonts</a> choose a font/fonts and use the generated code.</p>
+</section>
+
+
+<section id="updating">
+	<div class="page-header"><h3>Updating</h3><hr class="notop"></div>
+	<div class="alert">
+		Because of the nature of the HTML, it is not possible to use dynamic features to update the template automatically. All code changes and updates must be made manually!
+	</div>
+	<br>
+	<div class="alert alert-error">
+		<strong>IMPORTANT!:</strong> Before you proceed to update, make sure that you have made copies of all the template files, in case something goes wrong then you can restore the previous version.
+	</div>
+	<p>The best way to uptate the template is to use some file comparison program to compare the differences between the old and new template versions <br>
+	(I recommend “<a href="http://winmerge.org/" target="_blank">WinMerge</a>”: ). Then make the necessary changes. I know this may be time consuming, but unfortunately there is no easier solution.</p>
+
+	<br>
+	<br>
+
+	<h4>Useful Tip:</h4>
+
+	<p>The good practice is that you do not edit directly to the template core CSS files. Instead, create a new CSS file (for example: "<i>custom.css</i>") and place it in the folder <code>assets/css/</code>, then make your changes there.
+	<br>
+	<br>
+	Do not forget to add:  <code class="text-red">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/custom.css&quot;&gt;</code> to <code>&lt;head&gt;</code> part of your HTML file. Make sure it is located below "<i>Template master CSS</i>" section, otherwise it will not work.</p>
+
+	<h5>Example:</h5>
+
+	In <code>&lt;head&gt;</code> part of your HTML file find:
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Theme master CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/helper.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/theme.css&quot;&gt;
+</pre>
+
+	Below it add:
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Theme custom CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/custom.css&quot;&gt;
+</pre>
+
+	<p>Now file <code>custom.css</code> overwrites the master CSS files and next time if you update the template then your CSS changes will not be lost.</p>
+
+	<br>
+
+	<div class="alert">
+		Note that all changes in HTML files must still be done manually!
+	</div>
+
+</section>
+
+
+<section id="source_credits">
+	<div class="page-header"><h3>Source &amp; Credits</h3><hr class="notop"></div>
+
+	<div class="alert alert-error">
+		Images used in demo site are licensed to their respective owners and are not included in the download package!
+	</div>
+	<br>
+
+	<strong>Fonts:</strong></p>
+	<ul>
+		<li>Google Fonts - <a href="http://www.google.com/webfonts" target="_blank">http://www.google.com/webfonts</a></li>
+		<li>Font Icons - <a href="http://fontawesome.io" target="_blank">http://fontawesome.io</a></li>
+	</ul>
+
+	<strong>Scripts:</strong>
+	<ul>
+		<li>jQuery - <a href="http://www.jquery.com/" target="_blank">http://www.jquery.com</a></li>
+		<li>Bootstrap framework - <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com</a></li>
+		<li>Animsition - <a href="http://git.blivesta.com/animsition/" target="_blank">http://git.blivesta.com/animsition/</a></li>
+		<li>jQuery Mouse Wheel - <a href="https://github.com/jquery/jquery-mousewheel" target="_blank">https://github.com/jquery/jquery-mousewheel</a></li>
+		<li>Owl Carousel - <a href="http://owlgraphic.com/owlcarousel" target="_blank">http://owlgraphic.com/owlcarousel</a></li>
+		<li>YTPlayer - <a href="https://github.com/pupunzi/jquery.mb.YTPlayer" target="_blank">https://github.com/pupunzi/jquery.mb.YTPlayer</a></li>
+		<li>Animate.css - <a href="http://daneden.me/animate" target="_blank">http://daneden.me/animate</a></li>
+		<li>Isotope - <a href="http://isotope.metafizzy.co" target="_blank">http://isotope.metafizzy.co</a></li>
+		<li>Imagesloaded - <a href="http://imagesloaded.desandro.com/" target="_blank">http://imagesloaded.desandro.com/</a></li>
+		<li>Lightgallery - <a href="http://sachinchoolur.github.io/lightGallery/" target="_blank">http://sachinchoolur.github.io/lightGallery/</a></li>
+		<li>Jquery Easing - <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
+		<li>Google Maps - <a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank">https://developers.google.com/maps/documentation/javascript/tutorial</a></li>
+		<li>uniMail - <a href="https://github.com/agragregra/uniMail" target="_blank">https://github.com/agragregra/uniMail</a></li>
+	</ul>
+
+	<strong>Images:</strong>
+	<ul>
+		<li><a href="https://unsplash.com/" target="_blank">https://unsplash.com/</a></li>
+		<li><a href="https://www.goodfon.com/" target="_blank">https://www.goodfon.com/</a></li>
+	</ul>
+
+	<strong>Other:</strong>
+	<ul>
+		<li><a href="http://www.flaticon.com/authors/anton-saputro" target="_blank">Anton Saputro</a></li>
+	</ul>
+</section>
+
+
+<section id="support_policy">
+	<div class="page-header"><h3>Support Policy</h3><hr class="notop"></div>
+
+	<div class="alert alert-error">
+		<strong>Support is offered to verified customers only! </strong>As author of this template I provide support only for my items which I created. This means that I will respond to questions which are directly and strictly related to this product (errors and bugs reports, also pre-sale questions).
+	</div>
+	<br>
+
+	<div class="alert">
+		<h4 id="support_policy_support_for_my_items_includes">Support for my items includes:</h4>
+		<ul>
+			<li>Responding to questions or problems regarding the item and its features</li>
+		</ul>
+		<h4 id="support_policy_item_support_does_not_include">Item support does not include:</h4>
+		<ul>
+			<li>
+				Customization and installation services</li>
+			<li>
+				Support for third party software, scripts and plug-ins</li>
+			<li>
+				Teaching you HTML, CSS, JavaScript, jQuery</li>
+			<li>
+				Resolving individual server issues, hosting problems, etc.</li>
+		</ul>
+	</div>
+	<br>
+
+	<h4 id="support_policy_how_do_i_contact_for_support">How do contact for support?</h4>
+	<p>If you need help with a product please send me an email by using <a href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226/support" target="_blank"><strong>item support form</strong></a>.</p>
+
+</section>
+
+	</div>
+</body>
+</html>

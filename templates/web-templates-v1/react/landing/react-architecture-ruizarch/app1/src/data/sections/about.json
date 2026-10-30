@@ -1,0 +1,17 @@
+{
+    "image": {
+        "url": "/img/photo/2.jpg",
+        "alt": "img"
+    },
+    "number": {
+        "value": "17",
+        "label": "<span class=\"mil-marker\">Years</span> of <br/>successful <br/>work"
+    },
+    "title": "Great experience",
+    "subtitle": "About Studio",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices gravida.",
+    "button": {
+        "link": "https://www.youtube.com/watch?v=HR4giV4oUjI",
+        "label": "Watch video"
+    }
+}

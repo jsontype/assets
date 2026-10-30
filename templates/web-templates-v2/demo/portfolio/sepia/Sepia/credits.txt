@@ -1,0 +1,53 @@
+
+Note: Images used on demo site are licensed to their respective owners and are not included in the final download package! They are only used for demonstration proposals.
+
+
+
+=========
+Credits:
+=========
+
+
+Fonts:
+-------
+
+Google Fonts - http://www.google.com/webfonts
+
+
+Icons:
+-------
+
+Font Icons - http://fontawesome.io (free version)
+
+
+Scripts:
+---------
+
+jQuery - http://www.jquery.com
+Bootstrap framework - http://getbootstrap.com
+Animsition - http://git.blivesta.com/animsition/
+jQuery Mouse Wheel - https://github.com/jquery/jquery-mousewheel
+Owl Carousel - http://owlgraphic.com/owlcarousel
+YTPlayer - https://github.com/pupunzi/jquery.mb.YTPlayer
+Animate.css - http://daneden.me/animate
+Isotope - http://isotope.metafizzy.co
+Imagesloaded - http://imagesloaded.desandro.com/
+Lightgallery - http://sachinchoolur.github.io/lightGallery/
+Jquery Easing - http://gsgd.co.uk/sandbox/jquery/easing/
+Google Maps - https://developers.google.com/maps/documentation/javascript/tutorial
+uniMail - https://github.com/agragregra/uniMail
+
+
+Images in demo site:
+---------------------
+
+https://unsplash.com/
+https://www.goodfon.com/
+
+
+Other:
+-------
+
+http://www.flaticon.com/authors/anton-saputro
+
+

@@ -1,0 +1,48 @@
+
+/*----------------------------------------*/
+/*   variables                            */
+/*----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+    /* theme color */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-primary: #3358D3;
+    --color-heading: #1D1D1E;
+    --color-body: #868689;
+    --color-body-2: #74787C;
+
+    // notify Colors
+    --color-success: #26CF4B;
+    --color-danger: #FF0003;
+    --color-warning: #FF8F3C;
+    --color-info: #1BA2DB;
+
+    //Social icon colors
+    --color-facebook: #3B5997;
+    --color-twitter: #1BA1F2;
+    --color-youtube: #ED4141;
+    --color-linkedin: #0077B5;
+    --color-pinterest: #E60022;
+    --color-instagram: #C231A1;
+    --color-vimeo: #00ADEF;
+    --color-twitch: #6441A3;
+    --color-discord: #7289da;
+
+    // Font weight
+    --f-light: 300;
+    --f-regular: 400;
+    --f-medium: 500;
+    --f-semi-bold: 600;
+    --f-bold: 700;
+    --f-extra-bold: 800;
+    --f-black: 900;
+
+    // Font Family
+    --font-primary: "Inter Tight", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+    --font-dm: "DM Sans", sans-serif;
+}

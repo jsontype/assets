@@ -1,0 +1,320 @@
+/*******************************************************/
+/******************** ## Hero Area ********************/
+/*******************************************************/
+.hero-area
+    +overlay(#030303, .8)
+        
+.hero-content
+    max-width: 590px
+    .sub-title
+        font-size: 24px
+        color: $secondary-color
+        display: block
+        margin-bottom: 22px
+        +res-bl(ms)
+            font-size: 20px
+        i
+            color: $secondary-color
+            margin-right: 5px
+    h1
+        margin-bottom: 20px
+        +res-bl(lp)
+            font-size: 95px
+        +res-bl(xl)
+            font-size: 80px
+        +res-bl(md)
+            font-size: 70px
+        +res-bl(ms)
+            font-size: 60px
+        +res-bl(xs)
+            font-size: 50px
+    p
+        margin-bottom: 40px
+        +res-ab(xs)
+            font-size: 18px
+            
+    &.style-two
+        max-width: none
+        h2
+            margin-bottom: 20%
+            +res-ab(xxl)
+                font-size: 85px
+            +res-bl(lb)
+                margin-bottom: 30px
+            +res-bl(sm)
+                font-size: 45px
+            +res-bl(xs)
+                font-size: 38px
+        
+.hero-images
+    position: relative
+    +res-ab(lb)
+        text-align: right
+        margin-right: -18%
+    .price
+        max-width: 31%
+        +poRB(-14%, 35%)
+        +res-bl(xxl)
+            right: -5%
+        
+.hero-shapes
+    .shape
+        position: absolute
+        max-width: 7%
+        z-index: -1
+        &.one
+            left: 50%
+            top: 0
+        &.two
+            left: 4%
+            top: 18%
+        &.three
+            right: 5%
+            top: 19%
+        &.four
+            left: 6%
+            bottom: 11%
+        &.five
+            left: 52%
+            bottom: 11%
+            
+/* Hero Two */
+.hero-area-two
+    .pizza
+        z-index: -1
+        +absmiddle()
+        max-width: 38%
+        +res-bl(lg)
+            left: 65%
+    .price-badge
+        z-index: -1
+        +size(170px)
+        color: white
+        +poLT(62%, 20%)
+        font-size: 35px
+        +flexcenter(center)
+        flex-direction: column
+        background-size: cover
+        font-family: $heading-font
+        +res-bl(xl)
+            +size(120px)
+            font-size: 25px
+        +res-bl(md)
+            +size(80px)
+            font-size: 16px
+            line-height: 1.3
+        +res-bl(lg)
+            top: 30%
+        b
+            font-size: 1.2em
+            +res-ab(xl)
+                margin-top: 15px
+    .shape.three
+        top: 40%
+        max-width: 5%
+    .letter-shape-one
+        z-index: -1
+        +poRT(0, 18%)
+        max-width: 20%
+    .letter-shape-two
+        +poLB(0, 4%)
+        z-index: -1
+        max-width: 10%
+
+.hero-content-two
+    max-width: 234px
+    +res-ab(xl)
+        margin-left: 16%
+    .price
+        line-height: 1
+        display: block
+        font-size: 30px
+        margin-bottom: 33px
+        color: $secondary-color
+        font-family: $heading-font
+
+.hero-title
+    color: white
+    display: block
+    line-height: 0.8
+    font-size: 300px
+    font-family: $heading-font
+    +res-bl(xxl)
+        font-size: 200px
+    +res-bl(lg)
+        font-size: 150px
+    +res-bl(md)
+        font-size: 100px
+    +res-bl(sm)
+        font-size: 80px
+        
+/* Hero Three */
+.hero-area-three
+    background-size: cover
+    background-position: bottom center
+    .marquee-wrap.style-two
+        top: 11%
+        opacity: 1
+        position: absolute
+        +res-bt(lg, xxl)
+            font-size: 400px
+        +res-bl(sm)
+            top: 13%
+            font-size: 85px
+    
+.hero-content-three
+    h1
+        +res-bl(xl)
+            font-size: 85px
+        +res-bl(ms)
+            font-size: 55px
+        +res-bl(xs)
+            font-size: 50px
+    p
+        font-weight: 500
+        max-width: 515px
+        margin-bottom: 35px
+        +res-ab(ms)
+            line-height: 2
+            font-size: 20px
+    .theme-btn
+        border: 1px solid $secondary-color
+        &:not(:hover) i
+            transition: 0.5s
+            color: $heading-color
+    
+.hero-three-image
+    position: relative
+    +res-ab(xl)
+        margin-right: -25%
+    .offer-badge
+        +size(170px)
+        line-height: 1
+        +poLT(-5%, 10%)
+        font-size: 45px
+        @extend %heading
+        text-align: center
+        +flexcenter(center)
+        background-size: cover
+        +res-bl(ms)
+            left: 0
+            +size(120px)
+            font-size: 30px
+        +res-bl(xs)
+            top: 0
+            +size(100px)
+            font-size: 25px
+            
+/* Hero Four */
+.hero-area-four
+    position: relative
+    z-index: 1
+    &:before
+        +poLT(0)
+        z-index: -1
+        content: ''
+        +size(100%)
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.95) 100%)
+    .shape.five
+        left: 85%
+    
+.hero-content-four
+    position: relative
+    .quality-food
+        +poLB(10%, 3%)
+        +size(180px)
+        font-size: 30px
+        line-height: 1.2
+        border-radius: 50%
+        +flexcenter(center)
+        background-size: cover
+        font-family: $heading-font
+        background-repeat: no-repeat
+        +res-bl(md)
+            +size(130px)
+            bottom: -5%
+            font-size: 22px
+        +res-bl(ms)
+            +size(100px)
+            font-size: 16px
+        .for-border
+            +size(70%)
+            +poLT(15%)
+            border: 2px dashed white
+            border-radius: 50%
+    .sub-title
+        color: white
+        font-size: 24px
+        font-weight: 600
+        text-transform: uppercase
+        +res-bl(md)
+            font-size: 20px
+        +res-bl(ms)
+            font-size: 16px
+    h1
+        margin-bottom: -10%
+        +res-ab(xxl)
+            font-size: 250px
+            margin-top: -10px
+        +res-bt(lg, xxl)
+            font-size: 170px
+        +res-bl(xxl)
+            margin-bottom: -7%
+        +res-bl(md)
+            font-size: 88px
+        +res-bl(ms)
+            font-size: 68px
+        +res-bl(xs)
+            font-size: 50px
+            
+    &.style-two
+        +container(775px)
+        .sub-title
+            display: block
+            margin-bottom: 20px
+            color: $secondary-color
+        h1
+            margin-top: 0
+            line-height: 1
+            margin-bottom: 15px
+            +res-ab(lg)
+                letter-spacing: 5px
+            +res-ab(md)
+                font-size: 130px
+        p
+            +container(575px)
+            +res-ab(xs)
+                font-size: 20px
+                
+/* Hero Five */
+.hero-area-five
+    background-position: bottom center
+    .shape.five
+        left: 90%
+    .hero-left,
+    .hero-right
+        z-index: -1
+        max-width: 30%
+        position: absolute
+    .hero-left
+        left: 4%
+        bottom: 20%
+    .hero-right
+        right: 4%
+        bottom: 30%
+        
+/* Hero Six */
+.hero-btns
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    > *
+        margin-bottom: 15px
+    .theme-btn
+        &:not(:last-child)
+            margin-right: 40px
+            +res-bl(ms)
+                margin-right: 20px
+    .header-number
+        display: block
+        margin-left: 0

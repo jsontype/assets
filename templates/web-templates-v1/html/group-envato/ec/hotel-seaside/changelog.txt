@@ -1,0 +1,19 @@
+Seaside 1.0.6
+- Fixes for content not show when set option to hide preloader (designesia.js)
+
+Seaside 1.0.5
+- New option to show/hide preloader (designesia.js)
+
+Seaside 1.0.4
+- New added element-modal.html
+- New added element-tab.html
+
+Seaside 1.0.3
+- New added "Main Homepage + Snow"
+
+Seaside 1.0.2
+- New added "Homepage with Room Slider"
+
+Seaside 1.0.1
+- Fixes for booking form and contact form notification 
+- Fixes multiple rooms bugs on booking form

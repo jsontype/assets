@@ -1,0 +1,53 @@
+.box-sidebar.bg-gray-850.border-gray-800
+    .head-sidebar
+        h5.line-bottom Categories
+    .content-sidebar
+        .list-cats
+            -
+                const Categories = [
+                    {
+                        image: 'assets/imgs/page/healthy/cat1.png',
+                        title: 'Travel Tips',
+                        number: '36',
+                        link: 'blog-archive.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/healthy/cat2.png',
+                        title: 'Technology',
+                        number: '14',
+                        link: 'blog-archive-2.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/healthy/cat3.png',
+                        title: 'Business',
+                        number: '87',
+                        link: 'blog-archive-3.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/healthy/cat4.png',
+                        title: 'Food',
+                        number: '125',
+                        link: 'blog-archive-4.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/healthy/cat5.png',
+                        title: 'Lifestyle',
+                        number: '6',
+                        link: 'blog-archive-5.html'
+                    }
+                ]
+            each cat in Categories
+                .item-cats.border-gray-800.wow.animate__animated.animate__fadeIn
+                    .cat-left
+                        .image-cat
+                            a(href= cat.link)
+                                img(src= cat.image, alt="Genz")
+                        .info-cat
+                            a.color-gray-500.text-xl(href= cat.link)= cat.title
+                    .cat-right
+                        a.btn.btn-small.text-sm.color-gray-500.bg-gray-800(href= cat.link)= cat.number
+                            |
+                            | posts

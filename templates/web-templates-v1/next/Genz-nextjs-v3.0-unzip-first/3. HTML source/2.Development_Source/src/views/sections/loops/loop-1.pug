@@ -1,0 +1,157 @@
+.mt-50.mb-50
+    .row.mt-50.mb-10
+        -
+            const articleLists = [
+                {
+                    no: 1,
+                    image: 'assets/imgs/page/travel-tip/news1.png',
+                    title: 'Are You Ready To Go Home After The Sunset View? ',
+                    link: 'single-sidebar.html',
+                    type: 'video'
+                },
+                {
+                    no: 2,
+                    image: 'assets/imgs/page/travel-tip/news2.png',
+                    title: 'Life is as free as eagles, or is it just loneliness?',
+                    link: 'single-sidebar.html',
+                    type: 'image'
+                },
+                {
+                    no: 3,
+                    image: 'assets/imgs/page/travel-tip/news3.png',
+                    title: '16 Unheard Ways To Achieve Greater Walker',
+                    link: 'single-sidebar.html',
+                    type: 'audio'
+                },
+                {
+                    no: 4,
+                    image: 'assets/imgs/page/travel-tip/news4.png',
+                    title: 'Master The Art Of Nature With These 7 Tips',
+                    link: 'single-sidebar.html',
+                    type: 'image'
+                },
+                {
+                    no: 5,
+                    image: 'assets/imgs/page/travel-tip/news5.png',
+                    title: 'Master The Art Of Nature With These 7 Tips',
+                    link: 'single-sidebar.html',
+                    type: 'video'
+                },
+                {
+                    no: 6,
+                    image: 'assets/imgs/page/travel-tip/news6.png',
+                    title: '16 Unheard Ways To Achieve Greater Walker',
+                    link: 'single-sidebar.html',
+                    type: 'audio'
+                },
+                {
+                    no: 7,
+                    image: 'assets/imgs/page/travel-tip/news7.png',
+                    title: 'Master The Art Of Nature With These 7 Tips',
+                    link: 'single-sidebar.html',
+                    type: 'audio'
+                },
+                {
+                    no: 8,
+                    image: 'assets/imgs/page/travel-tip/news8.png',
+                    title: 'Master The Art Of Nature With These 7 Tips',
+                    link: 'single-sidebar.html',
+                    type: 'audio'
+                },
+                {
+                    no: 9,
+                    image: 'assets/imgs/page/travel-tip/news9.png',
+                    title: 'Your Light Is About To Stop Being Relevant',
+                    link: 'single-sidebar.html',
+                    type: 'audio'
+                },
+                {
+                    no: 10,
+                    image: 'assets/imgs/page/travel-tip/news10.png',
+                    title: 'Your Light Is About To Stop Being Relevant',
+                    link: 'single-sidebar.html',
+                    type: 'audio'
+                },
+                {
+                    no: 11,
+                    image: 'assets/imgs/page/travel-tip/news11.png',
+                    title: 'Your Light Is About To Stop Being Relevant',
+                    link: 'single-sidebar.html',
+                    type: 'audio'
+                },
+                {
+                    no: 12,
+                    image: 'assets/imgs/page/travel-tip/news12.png',
+                    title: 'Your Light Is About To Stop Being Relevant',
+                    link: 'single-sidebar.html',
+                    type: 'audio'
+                },
+                {
+                    no: 13,
+                    image: 'assets/imgs/page/travel-tip/news13.png',
+                    title: 'Your Light Is About To Stop Being Relevant',
+                    link: 'single-sidebar.html',
+                    type: 'audio'
+                },
+                {
+                    no: 14,
+                    image: 'assets/imgs/page/travel-tip/news14.png',
+                    title: 'Your Light Is About To Stop Being Relevant',
+                    link: 'single-sidebar.html',
+                    type: 'audio'
+                }
+            ]
+        each post in articleLists
+            if (post.no > 2)
+                .col-lg-4
+                    .card-blog-1.hover-up.wow.animate__animated.animate__fadeIn
+                        .card-image.mb-20
+                            a.post-type(href='#')
+                            a(href= post.link)
+                                img(src= post.image, alt="Genz")
+                        .card-info
+                            .row
+                                .col-7
+                                    a.color-gray-700.text-sm(href="blog-archive.html") #Travel
+                                .col-5.text-end
+                                    span.color-gray-700.text-sm.timeread 3 mins read
+                            a(href= post.link)
+                                h5.color-white.mt-20= post.title
+                            .row.align-items-center.mt-25
+                                .col-7
+                                    .box-author
+                                        img(src="assets/imgs/page/homepage1/author.jpg", alt="Genz")
+                                        .author-info
+                                            h6.color-gray-700 Joseph
+                                            span.color-gray-700.text-sm 25 April 2022
+                                .col-5.text-end
+                                    a.readmore.color-gray-500.text-sm(href="single-sidebar.html")
+                                        span Read more
+            else
+                .col-lg-6
+                    .card-blog-1.hover-up.wow.animate__animated.animate__fadeIn
+                        .card-image.mb-20
+                            a.post-type(href='#')
+                            a(href= post.link)
+                                img(src= post.image, alt="Genz")
+                        .card-info
+                            .row
+                                .col-7
+                                    a.color-gray-700.text-sm(href="blog-archive.html") # Travel
+                                    a.color-gray-700.text-sm(href="blog-archive.html") # Lifestyle
+                                .col-5.text-end
+                                    span.color-gray-700.text-sm.timeread 3 mins read
+                            a(href= post.link)
+                                h4.color-white.mt-20= post.title
+                            .row.align-items-center.mt-25
+                                .col-7
+                                    .box-author
+                                        img(src="assets/imgs/page/homepage1/author.jpg", alt="Genz")
+                                        .author-info
+                                            h6.color-gray-700 Joseph
+                                            span.color-gray-700.text-sm 25 April 2022
+                                .col-5.text-end
+                                    a.readmore.color-gray-500.text-sm(href="single-sidebar.html")
+                                        span Read more
+
+    include ../../elements/pagination.pug

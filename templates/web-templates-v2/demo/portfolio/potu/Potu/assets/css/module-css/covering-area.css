@@ -1,0 +1,105 @@
+
+
+/** covering-area-section **/
+
+.covering-area-section{
+  position: relative;
+  background: #F6F6F6;
+  padding: 0px 75px;
+  z-index: 1;
+}
+
+.covering-area-section .title-text h2{
+  position: relative;
+  display: block;
+  font-size: 36px;
+  line-height: 72px;
+  font-family: var(--text-font);
+  font-weight: 500;
+}
+
+.covering-area-section .outer-container{
+  position: relative;
+  background: #fff;
+  border-radius: 100px;
+  padding: 100px 115px 113px 115px;
+}
+
+.covering-area-section .single-item{
+  position: relative;
+  display: block;
+  left: -20px;
+}
+
+.covering-area-section .single-item .image-box{
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  border: 24px solid #fff;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.covering-area-section .single-item .image-box img{
+  max-width: none;
+  border-radius: 50%;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.covering-area-section .single-item:hover .image-box img{
+  transform: scale(1.0);
+}
+
+.covering-area-section .single-item h2{
+  position: relative;
+  display: block;
+  font-size: 40px;
+  line-height: 52px;
+  font-family: var(--text-font);
+  font-weight: 500;
+}
+
+.covering-area-section .single-item h2 a{
+  display: inline-block;
+  color: var(--title-color);
+}
+
+.covering-area-section .single-item h2 a:hover{
+
+}
+
+.covering-area-section .pattern-layer{
+  position: absolute;
+  left: 0px;
+  bottom: -185px;
+  width: 100%;
+  height: 370px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

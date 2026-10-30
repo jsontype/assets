@@ -1,0 +1,128 @@
+/*----------------------------------------*/
+/*   Price Section                        */
+/*----------------------------------------*/
+
+.rts-price-area {
+    .rts-section-title {
+        .title {
+            margin-bottom: 20px;
+        }
+
+        .desc {
+            font-weight: var(--f-medium);
+        }
+
+        .price-tab-button-area {
+            display: inline-block;
+
+            .nav-tabs {
+                margin: 30px auto 0;
+                border-radius: 100px;
+                background: var(--color-white);
+                max-width: max-content;
+                box-shadow: 0 4px 58px rgb(54 58 116 / .08);
+                padding-left: 8px !important;
+                padding-right: 8px !important;
+                border-color: transparent;
+                gap: 20px;
+
+                li {
+                    button {
+                        background: none;
+                        margin: 7px 0;
+                        padding: 12px 32px;
+                        font-size: 14px;
+                        font-weight: var(--f-semi-bold);
+                        color: var(--color-heading);
+                        border-radius: 100px;
+
+                        &.active {
+                            background: var(--color-primary);
+                            color: var(--color-white);
+                            box-shadow: 0px 4px 58px rgba(54, 58, 116, 0.08);
+                        }
+
+                        &:hover {
+                            border-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .rts-price-tab-content-area {
+        padding-bottom: 250px;
+
+        .rts-price-wrapper {
+            margin-top: 40px;
+
+            .single-price-item {
+                background: var(--color-white);
+                box-shadow: 0px 14px 72px rgba(10, 12, 21, 0.12);
+                border: 1px solid #EBEBEC;
+                border-radius: 20px;
+
+                .title {
+                    font-size: 24px;
+                }
+
+                .desc {
+                    text-align: center;
+                    color: var(--color-heading);
+                    font-weight: var(--f-medium);
+                    padding: 10px 0;
+                    border-bottom: 1px solid #EBEBEC;
+                }
+
+                .price-content-area {
+                    padding: 40px;
+
+                    .price {
+                        font-size: 48px;
+                        margin-top: 15px;
+                        margin-bottom: 30px;
+                        padding-bottom: 35px;
+                        border-bottom: 1px solid #EBEBEC;
+                        color: var(--color-primary);
+                        line-height: 1;
+
+                        .price-sm {
+                            font-size: 16px;
+                            color: var(--color-heading);
+                            font-weight: var(--f-regular);
+                            font-family: var(--font-dm);
+                        }
+                    }
+
+                    .features-list {
+                        li {
+                            color: var(--color-heading);
+                            font-weight: var(--f-medium);
+                            display: flex;
+                            align-items: center;
+                            gap: 15px;
+
+                            &:not(:last-child) {
+                                margin-bottom: 15px;
+                            }
+
+                            i {
+                                color: var(--color-primary);
+                            }
+                        }
+                    }
+
+                    .rts-btn {
+                        margin-top: 35px;
+                        max-width: 100%;
+                        width: 100%;
+                        text-align: center;
+                        padding: 15px 30px;
+                        border-radius: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

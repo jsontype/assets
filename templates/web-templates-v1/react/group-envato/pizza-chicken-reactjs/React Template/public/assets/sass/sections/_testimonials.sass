@@ -1,0 +1,275 @@
+/*******************************************************/
+/*************** ## Testimonials Area *****************/
+/*******************************************************/
+.testimonials-active
+    +gapLR(margin, -15px)
+    .testimonial-item
+        +gapLR(margin, 15px)
+    .slick-dots
+        margin-top: 35px
+
+.testimonial-item
+    background: white
+    margin-bottom: 30px
+    padding: 40px 40px 35px 45px
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .quote
+        font-size: 75px
+        width: max-content
+        margin-bottom: 26px
+        color: $primary-color
+        transform: rotate(180deg)
+    .text
+        @extend %h5
+        +res-bl(xs)
+            font-size: 20px
+    .author
+        display: flex
+        margin-top: 28px
+        padding-top: 35px
+        align-items: center
+        border-top: 1px solid $border-color
+        img
+            max-width: 55px
+            border-radius: 50%
+            margin-right: 20px
+        h5
+            line-height: 1
+            margin-top: 10px
+            margin-bottom: 0
+        
+.testimonials-shapes
+    .shape
+        z-index: -1
+        min-width: 5%
+        position: absolute
+        &.one
+            left: 5%
+            bottom: 15%
+        &.two
+            right: 5%
+            bottom: 20%
+        &.three
+            left: 5%
+            top: 13%
+        &.four
+            right: 8%
+            top: 16%
+        &.five
+            right: 28%
+            bottom: 0
+            
+.testimonials-three
+    .testimonials-shapes .shape
+        max-width: 10%
+            
+/* Testimonials Two */
+.testimonials-two-content
+    +container(750px)
+    +res-bl(xl)
+        padding-left: 0
+        padding-right: 25px
+    +res-bl(lg)
+        padding-left: 25px
+    .marquee-wrap.style-two
+        +poLT(0, -35px)
+        +res-bl(lg)
+            top: 2%
+    .shape
+        +poRB(10%, 0)
+        z-index: -1
+        max-width: 10%
+        
+
+.testimonials-two-carousel
+    .slick-dots
+        margin-top: 60px
+        li
+            background: $secondary-color
+            
+.testimonial-two-item
+    .quote i
+        line-height: 1
+        font-size: 88px
+        display: inline-block
+        color: $secondary-color
+        transform: rotate(180deg)
+    .text
+        font-size: 24px
+        +container(610px)
+        line-height: 1.66
+        font-family: $heading-font
+        +res-bl(ms)
+            font-size: 20px
+    .author
+        display: block
+        margin-top: 10px
+        font-family: $heading-font
+        +res-ab(ms)
+            font-size: 20px
+            
+    &.style-two
+        +res-ab(lg)
+            display: flex
+            align-items: center
+        .image
+            flex: none
+            display: flex
+            margin-right: 3%
+            +res-bl(lg)
+                margin-bottom: 25px
+            .quote
+                margin-right: -12%
+                border: 1px solid white
+                +circle(transparent, 185px)
+                +res-bl(ms)
+                    +size(100px)
+                    margin-right: -6%
+                    line-height: 100px
+                    i
+                        font-size: 50px
+                i
+                    color: white
+                    line-height: 1.8
+            img
+                border-radius: 50%
+                +res-bl(ms)
+                    +size(100px)
+        .content
+            .icon
+                margin-bottom: 30px
+                img
+                    border-radius: 50%
+            .text
+                margin-left: 0
+                margin-bottom: 18px
+                
+.testimonials-three-content
+    .testimonial-two-item
+        .image
+            img,
+            .quote
+                opacity: 0
+                transition: 1s
+                transform: translate(50px)
+        .content
+            opacity: 0
+            transition: 1s
+            transform: translate(-50px)
+        &.slick-active
+            .content,
+            .image img,
+            .image .quote
+                opacity: 1
+                transform: translate(0)
+            .image .quote
+                transition-delay: 0.35s
+                
+/* Testimonials Five */
+.testimonials-five-authors
+    height: 75px
+    +container(215px)
+    .slick-track
+        display: flex
+        align-items: center
+    
+.testimonial-five-author-item
+    img
+        +size(55px)
+        cursor: pointer
+        transition: 0.5s
+        border-radius: 50%
+    &.slick-center
+        +gapLR(margin, 15px)
+        img
+            +size(75px)
+            border: 3px solid $primary-color
+
+.testimonials-five-content
+    .slick-dots
+        margin-top: 70px
+
+.testimonial-five-item
+    color: $heading-color
+    padding: 30px 40px
+    position: relative
+    background: white
+    line-height: 1.66
+    margin-top: 30px
+    font-size: 24px
+    +res-bl(sm)
+        font-size: 20px
+    +res-bl(ms)
+        +gapLR(padding, 20px)
+    +res-bl(xs)
+        font-size: 16px
+    &:before
+        opacity: 0
+        content: ''
+        transition: 0.5s
+        transform: translate(-50%)
+        +poLB(50%, calc(100% - 30px))
+        border-bottom: 30px solid white
+        border-left: 25px solid transparent
+        border-right: 25px solid transparent
+    .author
+        display: block
+        line-height: 1
+        margin-top: 25px
+        font-family: $heading-font
+    .designation
+        font-size: 0.6em
+    &.slick-active
+        &:before
+            opacity: 1
+            bottom: 100%
+        
+.testimonials-five
+    .testimonials-shapes
+        .shape
+            max-width: 10%
+        
+.testimonials-five-shapes
+    .shape
+        z-index: -1
+        position: absolute
+        &.left
+            top: 50%
+            left: -5%
+            max-width: 24%
+            transform: translateY(-50%)
+        &.right
+            bottom: 0
+            right: -7%
+            max-width: 27%
+            
+/* Testimonials Six */ 
+.testimonials-six
+    margin-top: -170px
+    .slick-dots
+        justify-content: flex-start
+        
+.testimonial-quote-badge
+    max-width: 350px
+    .testi-badge
+        text-align: right
+        margin-bottom: -33%
+        img
+            max-width: 55%
+    .quote
+        +size(285px)
+        font-size: 150px
+        margin-right: 18%
+        line-height: 285px
+        text-align: center
+        border-radius: 50%
+        color: $secondary-color
+        border: 1px solid white
+        +res-bl(xs)
+            +size(222px)
+            font-size: 100px
+            line-height: 222px
+        i
+            display: inline-block
+            transform: rotate(180deg)

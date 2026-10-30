@@ -1,0 +1,157 @@
+.marquee-wrapper {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 9;
+
+    .marqee-list {
+        gap: 15px;
+    }
+}
+
+.text-slider {
+    height: 120px;
+
+
+   img {
+     border-radius: 20px;
+     width: 120px;
+     height: 120px;
+   }
+
+}
+
+.marquee-inner {
+    position: absolute;
+    display: inline-flex;
+    width: 200%;
+    gap: 15px;
+}
+
+.marquee-list {
+    float: left;
+    width: 50%;
+}
+
+.marquee-item {
+    float: left;
+    transition: animation 0.2s ease-out;
+}
+
+.marquee-inner.to-left {
+    animation: marqueeLeft 25s linear infinite;
+}
+
+@keyframes marqueeLeft {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.marquee-inner.to-right {
+    animation: marqueeRight 25s linear infinite;
+}
+
+@keyframes marqueeRight {
+    0% {
+       right : 0;
+    }
+    100% {
+        right: -100%;
+    }
+}
+
+.marque-section {
+    position: relative;
+
+    .gradient-shape {
+        position: absolute;
+        top: 0%;
+        left: 20%;
+
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        background: linear-gradient(90deg, #0B0E13 0%, rgba(11, 14, 19, 0.00) 100%);
+        width: 348px;
+        height: 100%;
+        z-index: 10;
+
+         @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -10%;
+        content: "";
+        background: linear-gradient(90deg, #0B0E13 0%, rgba(11, 14, 19, 0.00) 100%);
+        width: 348px;
+        height: 100%;
+        z-index: 10;
+        transform: rotate(-90deg);
+
+         @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+
+    .download-app {
+        border-radius: 60px;
+        background: #1C1D20;
+        position: relative;
+        z-index: 9;
+        max-width: 730px;
+        margin: 60px auto 0;
+        padding: 22px 25px;
+        @include flex;
+        gap: 30px;
+
+         @include breakpoint (max-md){
+           flex-wrap: wrap;
+           gap: 20px;
+           justify-content: center;
+           text-align: center;
+           border-radius: 20px;
+        }
+
+        h5 {
+            color: #ABABAB;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .download-btn {
+            @include flex;
+            gap: 16px;
+
+             @include breakpoint (max-md){
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .theme-btn {
+                svg {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+

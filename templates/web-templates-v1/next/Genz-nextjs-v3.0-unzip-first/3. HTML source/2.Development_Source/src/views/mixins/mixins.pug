@@ -1,0 +1,52 @@
+mixin cardBlog1(img='assets/imgs/page/homepage1/news2.png', title=' Self-observation is the first step of inner unfolding', authorImg="assets/imgs/page/homepage1/author.png", time="3 mins read", authorName='Joseph', date="25 Nov 2022", link='single-sidebar.html', catlink="blog-archive.html")
+    .card-blog-1.hover-up
+        .card-image.mb-20
+            a.post-type(href= catlink)
+            a(href= link)
+                img(src= img, alt="Genz")
+        .card-info
+            .row
+                .col-7
+                    if block
+                        block
+                .col-5.text-end
+                    span.color-gray-700.text-sm.timeread= time
+            a(href= link)
+                h4.color-white.mt-20= title
+            .row.align-items-center.mt-25
+                .col-7
+                    .box-author
+                        img(src= authorImg, alt="Genz")
+                        .author-info
+                            h6.color-gray-700= authorName
+                            span.color-gray-700.text-sm= date
+                .col-5.text-end
+                    a.readmore.color-gray-500.text-sm(href= link)
+                        span
+                            | Read more
+mixin cardBlog1-small(img='assets/imgs/page/homepage1/news2.png', title=' Self-observation is the first step of inner unfolding', authorImg="assets/imgs/page/homepage1/author.png", time="3 mins read", authorName='Joseph', date="25 November 2022", link='single-sidebar.html', catlink="blog-archive.html")
+    .card-blog-1.hover-up
+        .card-image.mb-20
+            a.post-type(href= catlink)
+            a(href= link)
+                img(src= img, alt="Genz")
+        .card-info
+            .row
+                .col-7
+                    if block
+                        block
+                .col-5.text-end
+                    span.color-gray-700.text-sm.timeread= time
+            a(href= link)
+                h5.color-white.mt-20= title
+            .row.align-items-center.mt-25
+                .col-7
+                    .box-author
+                        img(src= authorImg, alt="Genz")
+                        .author-info
+                            h6.color-gray-700= authorName
+                            span.color-gray-700.text-sm= date
+                .col-5.text-end
+                    a.readmore.color-gray-500.text-sm(href= link)
+                        span
+                            | Read more

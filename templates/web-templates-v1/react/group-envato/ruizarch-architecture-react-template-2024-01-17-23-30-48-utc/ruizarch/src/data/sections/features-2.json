@@ -1,0 +1,37 @@
+{
+    "items": [
+        {
+            "title": "Perfect <br>Planning",
+            "text": "Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "list": [
+                "3D Modeling",
+                "Programs to Map Territory",
+                "Robotics and AI Technology",
+                "Morphological Thinking",
+                "Material Simulation"
+            ]
+        },
+        {
+            "title": "Professional <br>Design",
+            "text": "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "list": [
+                "3D Modeling",
+                "Programs to Map Territory",
+                "Robotics and AI Technology",
+                "Morphological Thinking",
+                "Material Simulation"
+            ]
+        },
+        {
+            "title": "Best Experts <br>Team",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore magna aliqua.",
+            "list": [
+                "3D Modeling",
+                "Programs to Map Territory",
+                "Robotics and AI Technology",
+                "Morphological Thinking",
+                "Material Simulation"
+            ]
+        }
+    ]
+}

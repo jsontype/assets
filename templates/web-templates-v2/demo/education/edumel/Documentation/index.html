@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Documentation | Edumel HTML</title>
+
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Poppins:400,600,700%7CRoboto:400,700' rel='stylesheet'>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+
+</head>
+
+<body data-spy="scroll" data-offset="60" data-target=".navbar" class="relative">
+
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">Loading...</div>
+  </div>
+
+  <div class="main-wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul class="local-scroll nav navbar-nav">
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#theme-install">Install Template</a></li>
+        <li><a href="#recommended-plugins">Recommended Plugins</a></li>
+        <li><a href="#fonts">Fonts</a></li>
+        <li><a href="#theme-menu">Menu</a></li>
+        <li><a href="#logo-upload">Logo upload</a></li>
+        <li><a href="#layout">Html Layout</a></li>
+        <li><a href="#csslayout"> Css Layout</a></li>
+        <li><a href="#jslayout"> Js Layout</a></li>
+        <li><a href="#contact-form">Contact Form</a></li>
+        <li><a href="#img-source">Image Source </a></li>
+        <li><a href="#credits">Credits</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu Icon -->
+    <button class="menu-icon" id="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu Icon Close -->
+    <button class="menu-icon-close" id="menu-icon-close">
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Content -->
+    <div class="content-wrapper oh">
+
+      <header>
+        <h1>Edumel Template Documentation</h1>
+        <p>Thank you for purchasing our template. If you have any questions regarding our product feel free to contact Us directly as Mail <a href="malito:dreambuzz71@gmail.com">dreambuzz71@gmail.com</a></p>
+      </header>
+
+      <hr>
+
+      <h1 class="section-title" id="getting-started">Getting Started</h1>
+      <p>Unzip files from archive and you will following folders and files.</p>
+      <ul>
+        <li><strong>Edumel.zip</strong> - Full Html file with Documentation</li>
+        <li><strong>Html Folder</strong> - Main Html Templates files</li>
+        <li><strong>Documentation</strong> - Documentation guide</li>
+      </ul>
+      <hr>
+      <div class="features">
+        <h2 class="twenty">Template Features</h2>
+
+        <ul>
+          <li>4 Home Layout</li>
+          <li>Latest Bootstrap4 build</li>
+          <li>Clean &amp; Simple Design</li>
+          <li>HTML5 &amp; CSS3</li>
+          <li>Fully Responsive Design</li>
+          <li>All files are well commented</li>
+          <li>Cross Browser Compatible</li>
+          <li>Extensive Documentation</li>
+        </ul>
+      </div>
+
+      <h1 class="section-title" id="theme-install">Installation</h1>
+      <div class="section-content">
+        <ol>
+          <li>After unzip the download pack, you'll found a Template Folder with all the files.</li>
+          <li>You can view this Template in any browser, you can display or edit the Template without an internet connection.(May
+            not wotrk fonts and google map).</li>
+          <li>The only section that will not work is the Contact Section which contains PHP code and requires a server environment
+            for send messages.</li>
+          <li>Now go to your cpanel or open your FTP Client (like <a target="_blank" href="https://filezilla-project.org/download.php">Filezilla</a>)
+            and upload the content of the Template on your server root.</li>
+          <li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
+        </ol>
+      </div>
+      <hr>
+      <h1 class="section-title" id="recommended-plugins">Used Plugins</h1>
+      <ul class= "list-item">
+        <li>Owl Carousel</li>
+        <li>Bootstrap 5</li>
+        <li>Counterup</li>
+        <li>Isotope</li>
+        <li>Flaticon</li>
+        <li>Font Awesome</li>
+      </ul>
+
+      <h1 class="section-title" id="fonts">Fonts</h1>
+      <p>By default, the template loads this font from Google Web Font Services, you can change the font with the one that
+        suits you best.</p>
+
+        <img src="img/fonts.png" alt="">
+
+      <p class="twenty">Remember to change the font into <strong>style.css</strong></p>
+
+      <h1 class="section-title" id="theme-menu">Template Menu</h1>
+      <p>Go to <strong>Index-header section at top</strong></p>
+      <!-- Code Start -->
+      <pre class="brush:html">
+        
+<header class="header-style-1"> 
+  <div class="header-topbar topbar-style-1">
+      <div class="container">
+          <div class="row justify-content-between align-items-center">
+              <div class="col-xl-8 col-lg-8 col-sm-6">
+                 <div class="header-contact text-center text-sm-start text-lg-start">
+                      <a href="#">1010 Moon ave, New York, NY US</a>
+                 </div>
+              </div>
+
+              <div class="col-xl-4 col-lg-4 col-sm-6">
+                  <div class="header-socials text-center text-lg-end">
+                      <ul class="list-inline">
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="header-navbar navbar-sticky">
+      <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+              <div class="site-logo">
+                  <a href="index.html">
+                      <img src="assets/images/logo.png" alt="" class="img-fluid" />
+                  </a>
+              </div>
+
+              <div class="offcanvas-icon d-block d-lg-none">
+                  <a href="#" class="nav-toggler"><i class="fal fa-bars"></i></a> 
+              </div>
+
+              <div class="header-category-menu d-none d-xl-block">
+                  <ul>
+                      <li class="has-submenu">
+                          <a href="#"><i class="fa fa-th me-2"></i>Categories</a>
+                          <ul class="submenu">
+                              <li>
+                                  <a href="#">Design</a>
+                                  <ul class="submenu">
+                                      <li><a href="#">Design Tools</a></li>
+                                      <li><a href="#">Photoshop mastering</a></li>
+                                      <li><a href="#">Adobe Xd Deisgn</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#">Developemnt</a></li>
+                              <li><a href="#">Marketing</a></li>
+                              <li><a href="#">Freelancing</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+      
+              <nav class="site-navbar ms-auto">
+                  <ul class="primary-menu">
+                      <li class="current">
+                          <a href="index.html">Home</a>
+                          <ul class="submenu">
+                              <li><a href="index.html">Home One</a></li>
+                              <li><a href="index-2.html">Home Two</a></li>
+                              <li><a href="index-3.html">Home Three</a></li>
+                              <li><a href="index-4.html">Home Four</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="about.html">About</a></li>
+
+                      <li>
+                          <a href="courses.html">Courses</a>
+                          <ul class="submenu">
+                              <li><a href="courses.html">Courses</a></li>
+                              <li><a href="courses-2.html">Course Grid 2 </a></li>
+                              <li><a href="courses-3.html">Course Grid 3</a></li>
+                              <li><a href="courses-4.html">Course Grid 4</a></li>
+                              <li><a href="courses-5-list.html">Course List</a></li>
+                              <li>
+                                  <a href="#">Single Layout</a>
+                                  <ul class="submenu">
+                                      <li><a href="course-single.html">Course Single 1</a></li>
+                                      <li><a href="course-single-2.html">Course Single 2</a></li>
+                                      <li><a href="course-single-3.html">Course Single 3</a></li>
+                                      <li><a href="course-single-4.html">Course Single 4</a></li>
+                                      <li><a href="course-single-5.html">Course Single 5</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+
+                      <li>
+                          <a href="#">Pages</a>
+                          <ul class="submenu">
+                              <li><a href="instructor.html">Instructors</a></li>
+                              <li><a href="cart.html">Cart</a></li>
+                              <li><a href="checkout.html">Checkout</a></li>
+                              <li><a href="login.html">Login</a></li>
+                              <li><a href="Register.html">Register</a></li>
+                          </ul>
+                      </li>
+
+                      <li>
+                          <a href="blog.html">Blog</a>
+                          <ul class="submenu">
+                              <li><a href="blog-grid.html">Blog </a></li>
+                              <li><a href="blog-single.html">Blog Details</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+
+                  <a href="#" class="nav-close"><i class="fal fa-times"></i></a>
+              </nav>
+
+              <div class="header-btn d-none d-xl-block">
+                  <a href="login.html" class="login">Login</a>
+                  <a href="register.html" class="btn btn-main-2 btn-sm-2 rounded">Sign up</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+<!--====== Header End ======-->
+    </pre>
+    <!-- Code End -->
+
+
+
+      <!--  Customize Settings -->
+
+      <h1 class="section-title" id="logo-upload">Logo upload</h1>
+      <p>You can Change your logo from Navigation menu section as below. Can change logo size from style css </p>
+      <img src="img/logo-header.png" alt="">
+
+      <h1 class="section-title" id="layout">Html layout structure</h1>
+      <pre class="brush: html">
+        <header>
+          
+        </header>
+
+        <section class="section">
+          
+        </section>
+        <section class="section">
+          
+        </section>
+        <section class="section">
+          
+        </section>
+
+        <footer>
+          
+        </footer>
+      </pre>
+
+      <h1 class="section-title" id="csslayout">Css structure</h1>
+        <pre class="brush: html">
+          <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css">
+          <!-- Iconfont Css -->
+          <link rel="stylesheet" href="assets/vendors/awesome/css/fontawesome-all.min.css">
+          <link rel="stylesheet" href="assets/vendors/flaticon/flaticon.css">
+          <link rel="stylesheet" href="assets/fonts/gilroy/font-gilroy.css">
+          <link rel="stylesheet" href="assets/vendors/magnific-popup/magnific-popup.css">
+          <!-- animate.css -->
+          <link rel="stylesheet" href="assets/vendors/animate-css/animate.css">
+          <link rel="stylesheet" href="assets/vendors/owl/assets/owl.carousel.min.css">
+          <link rel="stylesheet" href="assets/vendors/owl/assets/owl.theme.default.min.css">
+        
+          <!-- Main Stylesheet -->
+          <link rel="stylesheet" href="assets/css/woocomerce.css">
+          <link rel="stylesheet" href="assets/css/style.css">
+          <link rel="stylesheet" href="assets/css/responsive.css">
+          
+          </pre>
+
+      <h1 class="section-title" id="jslayout">JS structure</h1>
+      <pre class="brush: html">
+             <!-- Main jQuery -->
+        <script src="assets/vendors/jquery/jquery.js"></script>
+        <!-- Bootstrap 5:0 -->
+        <script src="assets/vendors/bootstrap/popper.min.js"></script>
+        <script src="assets/vendors/bootstrap/bootstrap.js"></script>
+        <!-- Counterup -->
+        <script src="assets/vendors/counterup/waypoint.js"></script>
+        <script src="assets/vendors/counterup/jquery.counterup.min.js"></script>
+        <!--  Owl Carousel -->
+        <script src="assets/vendors/owl/owl.carousel.min.js"></script>
+        <!-- Isotope -->
+        <script src="assets/vendors/isotope/jquery.isotope.js"></script>
+        <script src="assets/vendors/isotope/imagelaoded.min.js"></script>
+        <!-- Magnific Popup -->
+        <script src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+        
+        <script src="assets/js/script.js"></script>
+      </pre>
+
+
+
+      <h1 class="section-title" id="contact-form">Contact Form</h1>
+        <p>Open up the mail.php file and put the email <strong> $mail_to</strong> section</p>
+				<p>You can see the screenshot to check.</p>
+		
+				<img src="img/mail.png" alt="" class="img-responsive">
+
+
+        <h1 class="section-title" id="img-source">Image Sources</h1>
+
+        <ul>
+          <li>Pexels</li>
+          <li>Unsplash</li>
+          <li>Burst Shopify</li>
+        </ul>
+
+      <h1 class="section-title" id="credits">Credits</h1>
+        <ul>
+          <li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
+          <li><a target="_blank" href="http://getbootstrap.com/">Bootstrap</a></li>
+          <li><a target="_blank" href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel</a></li>
+          <li><a target="_blank" href="http://fontawesome.io/">FontAwesome</a></li>
+          <li><a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">Magnefic Pop Up</a></li>
+        </ul>
+
+
+      <h1 class="section-title">Support</h1>
+      <p>If you have any question feel free to Contact at our mail <strong>dreambuzz71@gmail.com</strong></a></p>   
+      
+     
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="copyright">
+          <span>
+            &copy; 2020 Edumel | Made by <a href="http://themeturn.com">Dreambuzz</a>
+          </span>
+        </div>
+      </footer> <!-- end footer -->
+
+
+    </div> <!-- end content wrapper -->
+  </div> <!-- end main wrapper -->
+
+  <!-- jQuery Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+  <script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.all()
+	</script>
+
+</body>
+</html>

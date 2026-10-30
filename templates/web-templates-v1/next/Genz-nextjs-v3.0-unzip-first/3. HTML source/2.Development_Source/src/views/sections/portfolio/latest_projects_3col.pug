@@ -1,0 +1,175 @@
+.text-center.mt-70.mb-50
+    h2.color-linear.d-inline-block.mb-20.wow.animate__animated.animate__fadeInUp My Latest Projects
+    p.text-lg.color-gray-500.wow.animate__animated.animate__fadeInUp The convention is the main event of the year for professionals in
+        br.d-none.d-lg-block
+        | the world of design and architecture.
+.row.text-center.filter-nav
+    .col-lg-12
+        span.wow.animate__animated.animate__fadeInUp(data-wow-delay= '.0s')
+            span.btn.btn-border-linear.btn-filter.hover-up(data-filter='')
+                | All
+        span.wow.animate__animated.animate__fadeInUp(data-wow-delay= '.1s')
+            span.btn.btn-border-linear.btn-filter.hover-up(data-filter='web')
+                | Web Development
+        span.wow.animate__animated.animate__fadeInUp(data-wow-delay= '.2s')
+            span.btn.btn-border-linear.btn-filter.hover-up(data-filter='mobile')
+                | Mobile App
+        span.wow.animate__animated.animate__fadeInUp(data-wow-delay= '.3s')
+            span.btn.btn-border-linear.btn-filter.hover-up(data-filter='motion')
+                | Motion
+        span.wow.animate__animated.animate__fadeInUp(data-wow-delay= '.4s')
+            span.btn.btn-border-linear.btn-filter.hover-up(data-filter='graphic')
+                | Graphic Design
+.mt-70
+    .row
+        -
+            const articleLists = [
+                {
+                    image: 'assets/imgs/page/about/img1.png',
+                    title: 'Flyer design',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'video',
+                    delay: '.0s',
+                    dataFilter: 'web motion'
+                },
+                {
+                    image: 'assets/imgs/page/about/img2.png',
+                    title: 'Banner design',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'image',
+                    delay: '.1s',
+                    dataFilter: 'graphic web'
+                },
+                {
+                    image: 'assets/imgs/page/about/img3.png',
+                    title: 'Disk cover',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'audio',
+                    delay: '.2s',
+                    dataFilter: 'mobile motion graphic'
+                },
+                {
+                    image: 'assets/imgs/page/about/img4.png',
+                    title: 'Pattern design',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'image',
+                    delay: '.0s',
+                    dataFilter: 'motion mobile'
+                },
+                {
+                    image: 'assets/imgs/page/about/img5.png',
+                    title: 'Logo design',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'video',
+                    delay: '.1s',
+                    dataFilter: 'web graphic'
+                },
+                {
+                    image: 'assets/imgs/page/about/img6.png',
+                    title: 'Animal pattern',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'audio',
+                    delay: '.2s',
+                    dataFilter: 'mobile'
+                },
+                {
+                    image: 'assets/imgs/page/about/img7.png',
+                    title: 'Flyer design',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'video',
+                    delay: '.0s',
+                    dataFilter: 'web motion'
+                },
+                {
+                    image: 'assets/imgs/page/about/img8.png',
+                    title: 'Banner design',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'image',
+                    delay: '.1s',
+                    dataFilter: 'graphic web'
+                },
+                {
+                    image: 'assets/imgs/page/about/img9.png',
+                    title: 'Disk cover',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'audio',
+                    delay: '.2s',
+                    dataFilter: 'mobile motion graphic'
+                },
+                {
+                    image: 'assets/imgs/page/about/img10.png',
+                    title: 'Pattern design',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'image',
+                    delay: '.0s',
+                    dataFilter: 'motion mobile'
+                },
+                {
+                    image: 'assets/imgs/page/about/img11.png',
+                    title: 'Logo design',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'video',
+                    delay: '.1s',
+                    dataFilter: 'web graphic'
+                },
+                {
+                    image: 'assets/imgs/page/about/img12.png',
+                    title: 'Animal pattern',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'audio',
+                    delay: '.2s',
+                    dataFilter: 'mobile'
+                },
+                {
+                    image: 'assets/imgs/page/about/img13.png',
+                    title: 'Pattern design',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'image',
+                    delay: '.0s',
+                    dataFilter: 'motion mobile'
+                },
+                {
+                    image: 'assets/imgs/page/about/img14.png',
+                    title: 'Logo design',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'video',
+                    delay: '.1s',
+                    dataFilter: 'web graphic'
+                },
+                {
+                    image: 'assets/imgs/page/about/img15.png',
+                    title: 'Animal pattern',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vitae risus eget maximus. Pellentesque suscipit',
+                    link: 'portfolio-details.html',
+                    type: 'audio',
+                    delay: '.2s',
+                    dataFilter: 'mobile'
+                }
+            ]
+        each post in articleLists
+            .col-lg-4
+                .project(data-category= post.dataFilter)
+                    .item-content
+                        .card-style-1.hover-up.mb-30(data-wow-delay= post.delay)
+                            .card-image
+                                a.link-post(href= post.link)
+                                    img(src= post.image, alt="Genz")
+                                    .card-info.card-bg-2
+                                        .info-bottom.mb-15
+                                            h3.color-white.mb-10= post.title
+                                            p.color-gray-500.text-sm= post.description
+include ../../elements/pagination.pug

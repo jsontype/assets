@@ -1,0 +1,18 @@
+{
+    "title": "Interested in Working Together?",
+    "subtitle": "Your Future",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices gravida.",
+    "button": {
+        "link": "/contact",
+        "label": "Sign up now"
+    },
+    "image": {
+        "url": "/img/photo/13.jpg",
+        "alt": "image"
+    },
+    "avatar": {
+        "image": "/img/faces/2.jpg",
+        "name": "Joe French",
+        "subname": "Recruit"
+    }
+}

@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+
+		<!-- Meta -->
+		<meta charset="UTF-8">
+		<title>Documentation for - Homy-Real Estate HTML5 Template & Dashboard</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Favicons -->
+		<link rel="icon" href="assets/icon.png">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/reset.css">
+		<link rel="stylesheet" href="assets/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/shCore.css">
+		<link rel="stylesheet" href="assets/shThemeDefault.css">
+		<link rel="stylesheet" href="assets/style.css">
+
+	</head>
+
+	<body>
+
+		<!-- Header -->
+		<div id="header">
+			<h1>Homy-Real Estate HTML5 Template & Dashboard</h1>
+		</div>
+
+		<!-- Menu -->
+		<div id="doc-menu">
+			<ul class="nav">
+                <li class="section active"><a href="#notice">READ FIRST</a></li>
+                <li class="section"><a href="#start">Installation</a></li>
+                <li class="section"><a href="#s1">HTML Structure</a></li>
+                <li class="section"><a href="#fav">Favicon Settings</a></li>
+                <li class="section"><a href="#logo">Logo Settings</a></li>
+                <li class="section"><a href="#font">Fonts Settings</a></li>
+                <li class="section"><a href="#contact">Contact Form</a></li>
+				<li class="section"><a href="#s2">CSS Structure</a></li>
+				<li class="section"><a href="#s3">JavaScripts</a></li>
+				<li class="section"><a href="#s4">Credits</a></li>
+                <li class="section"><a href="#s5">Changelog<sup>**</sup> </a></li>
+			</ul>
+		</div>
+
+		<!-- Content -->
+		<div id="doc-content" data-spy="scroll" data-target="#menu">
+
+			<div id="intro">
+				<div class="vertical">
+					<h1>Homy-Real Estate HTML5 Template & Dashboard</h1> <br>
+                    <p>First of all, thank you for purchasing the <code>Homy</code> Real Estate HTML5 Template & Dashboard. You can find the detailed information about the template in this document. If there is anything you cannot find in this document, you can send an e-mail via the <a href="https://themeforest.net/user/creativegigs">Profile Page</a>.</p>
+				</div>
+			</div>
+            <!-- <img src="assets/preview.png" alt="" style="margin:auto; display: block;"> -->
+
+
+<!-- ===================================================================================-->
+<!-- Notice
+ -->
+<!-- ===================================================================================-->
+        <h1 id="notice">Homy In A Brief</h1>
+        <p><strong>Homy</strong> is a sophisticated HTML5 real estate template designed for modern property websites. Its sleek and intuitive design seamlessly integrates with advanced features, showcasing properties with stunning visuals. <br>
+            In download folder you will find <strong>Two folder:</strong>
+            <ul>
+                <li><code>Documentation</code> (Documentation for main template)</li>
+                <li><code>Template</code> (Main Template)</li>
+            </ul>
+            <br>
+
+            Remember, when you want to use the shortcode/element in any pages you need to adjust the section spacing by giving <code>margin</code> or <code>padding</code>. Don't get panic if you messed up anything when you edit the template. We are always available to support our customer.  <br>
+            You can contact our developer directly by <a href="mailto:heloshape18@gmail.com">email</a> or in <a href="https://www.fiverr.com/zubayer_hasan" target="_blank">Fiverr.</a> or in <a href="https://www.upwork.com/o/profiles/users/_~01d7e43940a4dff0b9/" target="_blank">Upwork</a> or in <a href="https://www.peopleperhour.com/site/register?rfrd=3057829.5" target="_blank">PPH</a>
+        </p>
+
+
+<!-- ===================================================================================-->
+<!-- 1 Installation
+ -->
+<!-- ===================================================================================-->
+        <h1 id="start"><span>1</span>Installation</h1>
+        <p>Follow the steps below to setup your site template:</p>
+        <ol>
+            <li>Unzip the downloaded package and open the <code>Template</code> folder to find all the template files. You wil get <code>homy</code> folder in there. You need to upload this folder to your hosting web server using FTP or cPanel in order to use it on your website.</li>
+            <li>Below is the folder structure you will see in your website root directory:
+                <ul>
+                    <li><code>homy/css</code> - Stylesheet files</li>
+                    <li><code>homy/dashboard</code> - dashboard html files and images</li>
+                    <li><code>homy/fonts</code> - Icon/fonts files</li>
+                    <li><code>homy/images</code> - Image files</li>
+                    <li><code>homy/inc</code> - contact from file</li>
+                    <li><code>homy/js</code> - js files</li>
+                    <li><code>homy/scss</code> - sass files</li>
+                    <li><code>homy/vendor</code> - plugins files</li>
+                </ul>
+            </li>
+            <li>You need to upload all or specific HTML files as per your need.</li>
+            <li>And now you are ready to go to generate your webiste with this awesome template.</li>
+        </ol>
+
+<!-- ===================================================================================-->
+<!-- 2 HTML Structure
+ -->
+<!-- ===================================================================================-->
+
+            <h1 id="s1"><span>2</span>HTML Structure</h1>
+            <p>We are used the latest Bootstrap <code>v5.3.1</code> framework in this template.<br> The general template structure is the same throughout the template. Here is the general structure.</p>
+            
+
+<!-- Code ==============================================================================-->
+<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Real estate, Property sale, Property buy">
+    <meta name="description" content="Homy is a beautiful website template designed for Real Estate Agency.">
+    <meta property="og:site_name" content="Homy">
+    <meta property="og:url" content="https://creativegigstf.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Homy-Real Estate HTML5 Template & Dashboard">
+    <meta name='og:image' content='images/assets/ogg.png'>
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Resposive Device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For Window Tab Color -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#0D1A1C">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0D1A1C">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0D1A1C">
+    <title>Homy-Real Estate HTML5 Template & Dashboard</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all">
+    <!-- Main style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" media="all">
+    <!-- responsive style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
+
+    <!-- Fix Internet Explorer ______________________________________-->
+    <!--[if lt IE 9]>
+
+    <![endif]-->
+</head>
+
+<body>
+    <div class="main-page-wrapper">
+        <!-- ===================================================
+            Loading Transition
+        ==================================================== -->
+        <div id="preloader">
+            <div id="ctn-preloader" class="ctn-preloader">
+                <div class="icon"><img src="images/loader.gif" alt="" class="m-auto d-block" width="64"></div>
+            </div>
+        </div>
+
+
+        
+        <!-- 
+        =============================================
+            Theme Main Menu
+        ============================================== 
+        -->
+        <header class="theme-main-menu menu-overlay menu-style-one sticky-menu">
+
+        </header> 
+        <!-- /.theme-main-menu -->
+
+
+
+        <!-- 
+        =============================================
+            Hero Banner
+        ============================================== 
+        -->
+        <div class="hero-banner-one bg-pink z-1 pt-225 xl-pt-200 pb-250 xl-pb-150 lg-pb-100 position-relative">
+
+        </div>
+        <!-- /.hero-banner-one -->
+
+
+        
+        <!-- 
+        =============================================
+            Feedback Section One
+        ============================================== 
+        -->
+        <div class="feedback-section-one position-relative z-1 pt-70 md-pt-50 pb-80 md-pb-60">
+
+        </div>
+        <!-- /.feedback-section-one -->
+        
+
+
+        <!--
+        =====================================================
+            BLock Feature One
+        =====================================================
+        -->
+        <div class="block-feature-one mt-150 xl-mt-120">
+
+        </div>
+        <!-- /.block-feature-one -->
+
+
+        <!--
+        =====================================================
+            BLock Feature Two
+        =====================================================
+        -->
+        <div class="block-feature-two mt-150 xl-mt-110">
+
+        </div>
+        <!-- /.block-feature-two -->
+        
+
+
+        <!--
+        =====================================================
+            BLock Feature Three
+        =====================================================
+        -->
+        <div class="block-feature-three mt-150 xl-mt-120">
+
+        </div>
+        <!-- /.block-feature-three -->
+
+
+
+        <!-- 
+        =============================================
+            Property Listing One
+        ============================================== 
+        -->
+        <div class="property-listing-one bg-pink-two mt-150 xl-mt-120 pt-140 xl-pt-120 lg-pt-80 pb-180 xl-pb-120 lg-pb-100">
+
+        </div>
+        <!-- /.property-listing-one -->
+
+
+        
+
+        <!--
+        =====================================================
+            Fancy Banner One
+        =====================================================
+        -->
+        <div class="fancy-banner-one position-relative z-1 pt-160 xl-pt-140 lg-pt-80 pb-140 xl-pb-120 lg-pb-100">
+
+        </div>
+        <!-- /.fancy-banner-one -->
+
+
+        <!--
+        =====================================================
+            Agent Section One
+        =====================================================
+        -->
+        <div class="agent-section-one position-relative z-1 mt-150 xl-mt-120">
+
+        </div>
+        <!-- /.agent-section-one -->
+
+
+
+        <!--
+        =====================================================
+            BLock Feature Four
+        =====================================================
+        -->
+        <div class="block-feature-four mt-170 xl-mt-130 md-mt-40">
+
+        </div>
+        <!-- /.block-feature-four -->
+
+
+
+        <!--
+        =====================================================
+            BLock Feature Five
+        =====================================================
+        -->
+        <div class="block-feature-five position-relative z-1 bg-pink pt-100 lg-pt-80 pb-130 xl-pb-100 lg-pb-80 mt-225 xl-mt-200 lg-mt-150">
+
+        </div>
+        <!-- /.block-feature-five -->
+
+
+        <!--
+        =====================================================
+            Fancy Banner Two
+        =====================================================
+        -->
+        <div class="fancy-banner-two position-relative z-1 pt-90 lg-pt-50 pb-90 lg-pb-50">
+
+        </div>
+        <!-- /.fancy-banner-two -->
+
+
+
+        <!--
+        =====================================================
+            Fancy Banner Three
+        =====================================================
+        -->
+        <div class="fancy-banner-three position-relative text-center z-1 pt-200 xl-pt-150 lg-pt-100 pb-250 xl-pb-200 lg-pb-120">
+
+        </div>
+        <!-- /.fancy-banner-three -->
+
+
+
+
+        <!--
+        =====================================================
+            Footer One
+        =====================================================
+        -->
+        <div class="footer-one">
+
+        </div> <!-- /.footer-one -->
+
+
+        <!-- ################### Login Modal ####################### -->
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+
+            </div>
+        </div>
+
+
+
+        <button class="scroll-top">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+
+
+
+
+        <!-- Optional JavaScript _____________________________  -->
+
+        <!-- jQuery first, then Bootstrap JS -->
+        <!-- jQuery -->
+
+    </div> <!-- /.main-page-wrapper -->
+</body>
+
+</html>
+
+
+]]></script>
+<p>The code block above is powered by <a href="http://alexgorbatchev.com/SyntaxHighlighter/" target="_blank">SyntaxHighlighter</a>.</p>
+
+<!-- ===================================================================================-->
+<!-- 3 Favicon
+ -->
+<!-- ===================================================================================-->
+        <h1 id="fav"><span>3</span>Favicon Settings</h1>
+        <p>Favicon Will be found in <code>head</code> section.</p>
+        <pre>
+        <!-- Favicon -->
+        &lt;link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png"&gt;
+        </pre>
+
+
+
+<!-- ===================================================================================-->
+<!-- 4 Logo
+ -->
+<!-- ===================================================================================-->
+        <h1 id="logo"><span>4</span>Logo Settings</h1>
+        <p>The Logo will be found in the <code>Theme Main Menu</code> section.</p>
+        <pre>
+        &lt;div class="logo order-lg-0"&gt;&lt;a href="index.html" class="d-flex align-items-center"&gt;&lt;img src="images/logo/logo_01.svg" alt="" &gt;&lt;/a&gt;&lt;/div&gt;
+        </pre>
+        <p>You can replace any <code>.jpg</code> <code>.png</code> <code>.svg</code> logo. And set the <code>width</code> according to your logo size.</p>
+
+
+
+
+
+<!-- ===================================================================================-->
+<!-- 5 Fonts
+ -->
+<!-- ===================================================================================-->
+        <h1 id="font"><span>5</span>Fonts Settings</h1>
+        <p>In <code>homy</code> we use <code><a href="https://fonts.google.com/specimen/EB+Garamond" target="_blank">EB Garamond</a></code> and <code><a href="https://fontshub.pro/font/gordita-download" target="_blank">Gordita</a></code> font.<br>
+        You can change both fonts form <code>scss/base.scss</code> file:
+        </p>
+        <pre>
+            @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+            @import url('../fonts/gordita/stylesheet.css');
+        </pre>
+
+
+<!--====================================================================================-->
+
+			
+
+			<section id="contact-form">
+                <h1 id="contact"><span>6</span>Activeted PHP Contact Form</h1>
+				<p>You can edit your form simply and quickly. Open <code>contact.php</code> from <code>inc</code> folder and add your email into <code>$sendTo</code> field</p>
+<pre>
+<code>
+    &lt;?php
+/*
+ *  CONFIGURE EVERYTHING HERE
+ */
+
+// an email address that will be in the From field of the email.
+$from = 'homy &lt;demo@domain.com&gt;';
+
+// an email address that will receive the email with the output of the form
+$sendTo = 'homy contact form &lt;<span style="color:red;">demo@domain.com</span>&gt;'; // Add Your emnail here
+
+// subject of the email
+$subject = 'New message from homy';
+
+// form field names and their translations.
+// array variable name => Text to appear in the email
+$fields = array('name' => 'Name', 'email' => 'Email', 'subject' => 'Subject', 'message' => 'Message'); 
+
+// message that will be displayed when everything is OK :)
+$okMessage = 'Thank you, We will get back to you soon!';
+
+// If something goes wrong, we will display this message.
+$errorMessage = 'There was an error while submitting the form. Please try again later';
+
+?>
+</code></pre>
+
+
+			</section>
+	
+    
+<!-- ===================================================================================-->
+<!-- 2 CSS Structure
+ -->
+<!-- ===================================================================================-->
+
+			<h1 id="s2"><span>7</span>CSS Structure</h1>
+			<p>The <code>style.css</code> file contains all of the specific stylings for the page. The file is separated into sections using:</p>
+
+                 
+                 <ul>
+                	<li>
+                    	<h4>bootstrap.min.css</h4>
+                        <p>This file includes core <a href="https://getbootstrap.com/docs/5.1/getting-started/download/">bootstrap</a> styles</p>
+                        <a href="https://getbootstrap.com/docs/5.1/getting-started/download/"><small>Source</small></a>
+                    </li>
+
+                    <li>
+                        <h4>bootstrap-icons.css</h4>
+                        <p>This file contains <a href="https://icons.getbootstrap.com/">bootstrap icon</a> library</p>
+                        <a href="https://icons.getbootstrap.com/"><small>Source</small></a>
+                        
+                        <h5>Example</h5>
+                        <code>
+                            &lt;i class="bi bi-person">&lt;/i>
+                        </code>
+                    </li>
+                    
+                    <li>
+                    	<h4>font-awesome.css</h4>
+                        <p>This file contains styles about <a href="https://fontawesome.com/v5.15/icons">Fontawesome</a> icon library</p>
+                        <a href="https://fontawesome.com/v5.15/icons"><small>Source</small></a>
+                        
+                        <h5>Example</h5>
+                        <code>
+                        	&lt;i class="fab fa-facebook-square">&lt;/i>
+                        </code>
+                    </li>
+
+                     <li>
+                    	<h4>jquery.fancybox.min.css</h4>
+                        <p>This file contains styles about <code>fancybox</code></p>
+                        
+                    </li>
+                    
+                    <li>
+                    	<h4>animate.min.css</h4>
+                        <p><code>animate.css</code> is a bunch of cool, fun, and cross-browser animations for you to use in projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.</p>
+                        <a href="https://michalsnik.github.io/aos/"><small>Source</small></a>
+                        
+                        <h5>Example</h5>
+						
+                        <code>
+                        &lt;div class="wow fadeInUp">
+                        ...
+                        &lt;/div>
+                        </code>
+                    </li>
+                    
+                    <li>
+                    	<h4>slick.css</h4>
+                        <p>This file contains styles about slick carousel plugin</p>
+                        
+                        <a href="https://kenwheeler.github.io/slick/"><small>Source</small></a>
+                    </li>
+                    
+                    
+                    <li>
+                    	<h4>style.css</h4>
+                        <p>All styles about template</p>
+                    </li>
+
+                </ul>
+
+<!-- ===================================================================================-->
+<!-- 3 JavaScripts
+ -->
+<!-- ===================================================================================-->
+
+			<h1 id="s3"><span>8</span>JavaScripts</h1>
+			<ul>
+                    <li>
+                        <h4>jQuery 3.5.0</h4>
+                        <p>jQuery is a fast, small, and feature-rich JavaScript library.</p>
+                        <a href="https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"><small>Source</small></a>
+                    </li>
+                    
+                    <li>
+                        <h4>bootstrap.min.js</h4>
+                        <p>Core bootstrap js file</p>
+                        <a href="http://getbootstrap.com"><small>Source</small></a>
+                    </li>
+                    
+                                        
+                    <li>
+                    	<h4>slick.min.js</h4>
+                        <p>jQuery carousel plugin from Slick</p>
+                        
+                        <a href="https://kenwheeler.github.io/slick/"><small>Source</small></a>
+                    </li>
+                    
+                  	<li>
+                        <h4>wow.min.js</h4>
+                        <p>A lightweight script to animate scrolling.Reveal Animations When You Scroll.</p>
+                        <small><a href="https://wowjs.uk/" target="_blank">Source</a></small>
+                        
+                    </li>
+                    
+                    <li>
+                    	<h4>jquery.fancybox.min.js</h4>
+                        <p>fancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages.</p>
+                        
+                        <a href="https://fancyapps.com/fancybox/3/"><small>Source</small></a>
+                    </li>
+                    
+                    
+                     <li>
+                        <h4>theme.js</h4>
+                        <p>This file contains all script about site.</p>
+                    </li>
+                    
+                    
+                </ul>
+
+
+
+
+
+<!-- ===================================================================================-->
+<!-- 4 Credits -->
+<!-- ===================================================================================-->
+
+			<h1 id="s4"><span>9</span>Credits</h1>
+			<ul>
+                	<li>
+                    	<a href="http://getbootstrap.com"><h4>Bootstrap</h4></a>
+                    </li>
+
+                    
+                    <li>
+                    	<h4>Stock Image<a href="https://unsplash.com/"> Unsplash</a></h4>
+                    </li>
+                    
+                    <li>
+                    	<a href="http://fontawesome.io"><h4>Fontawesome</h4></a>
+                    </li>
+                    
+                    <li>
+                    	<a href="http://daneden.github.io/animate.css/"><h4>Animate.css</h4></a>
+                    </li>
+                    
+                </ul>
+
+<!-- ===================================================================================-->
+<!-- 5 Change Log -->
+<!-- ===================================================================================-->
+
+            <h1 id="s5"><span>10</span>Changelog:</h1>
+            <small>Dates are formated in <code>dd/mm/yy</code></small>
+            <pre>
+                <!-- ________________________________
+                ----- (27/07/2022) ------
+                First Published -->
+            </pre>
+
+		</div>
+
+		<!-- JavaScripts -->
+		<script type='text/javascript' src='assets/jquery.min.js'></script>
+		<script type='text/javascript' src='assets/bootstrap.min.js'></script>
+		<script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+		<script type='text/javascript' src='assets/jquery.localscroll-1.2.7-min.js'></script>
+		<script type='text/javascript' src='assets/shCore.js'></script>
+		<script type='text/javascript' src='assets/shBrushPhp.js'></script>
+		<script type='text/javascript' src='assets/shBrushXML.js'></script>
+		<script type='text/javascript' src='assets/shBrushJScript.js'></script>
+		<script type='text/javascript' src='assets/shBrushCss.js'></script>
+		<script type='text/javascript' src='assets/custom.js'></script>
+
+	</body>
+</html>

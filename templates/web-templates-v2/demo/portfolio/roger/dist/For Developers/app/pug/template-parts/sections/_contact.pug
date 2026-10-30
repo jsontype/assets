@@ -1,0 +1,93 @@
+include ../../mixins/_global-mixins.pug
+
+.ptf-section__vertical-align
+
+	.ptf-section__content
+
+		//Ken Burn Effect
+		.ptf-section__ken-burn-background
+
+			img(src='assets/img/attachment-04.jpg', alt='')
+
+		.container
+
+			.row(style='--bs-gutter-y: 70px;')
+
+				.col-lg-6
+
+					+ptf_animation_block
+
+						h1 Contact
+
+						.ptf-gap-25
+
+						p(class='has-color-white', style='max-width: 330px;') You’ll called for yielding male, so lights. Stars abundantly, is their.
+
+						.ptf-gap-80
+
+						.has-color-white
+
+							a(href='#', class='ptf-social-icon') #[i.lnir-facebook-filled]
+							a(href='#', class='ptf-social-icon') #[i.lnir-twitter-original]
+							a(href='#', class='ptf-social-icon') #[i.lnir-pinterest]
+							a(href='#', class='ptf-social-icon') #[i.lnir-linkedin-original]
+
+						.ptf-gap-80
+
+						a(href='tel:+29481012345', class='has-color-white h5') +2 (948) 101-23-45
+
+						.ptf-gap-30
+
+						a(href='mailto:roger@gmail.com', class='has-color-white h5') roger@gmail.com
+
+				.col-lg-6
+
+					+ptf_animation_block({
+						delay: '100ms'
+					})
+
+						h5 I am always looking for great collaborators. Let’s message me and make #[span.has-color-accent something together!]
+
+						.ptf-gap-50
+
+						form(class='ptf-contact-form', novalidate='novalidate')
+
+							.ptf-form-row.two-col
+
+								.ptf-form-group
+
+									input(type='text', id='name', class='ptf-form-control', name='name', required='required')
+									label(for='name', class='ptf-form-label') Name *
+
+								.ptf-form-group
+
+									input(type='tel', id='tel', class='ptf-form-control', name='tel')
+									label(for='tel', class='ptf-form-label') Phone
+
+							.ptf-form-row.two-col
+
+								.ptf-form-group
+
+									input(type='email', id='email', class='ptf-form-control', name='email', required='required')
+									label(for='email', class='ptf-form-label') Email *
+
+								.ptf-form-group
+
+									select(id='budget', name='budget')
+										option(value='') Budget
+										option(value='500-1000') $500 - $1000
+										option(value='1000-10000') $1000 - $10 000
+										option(value='10000+') $10 000 +
+
+							.ptf-form-group
+
+								textarea(name='message', id='message', class='ptf-form-control', rows='4')
+								label(for='message', class='ptf-form-label') Message
+
+							.message.success Your message is successfully sent...
+							.message.danger Sorry something went wrong!
+
+							+ptf_button({
+								tag: 'button',
+								title: 'Send Request'
+							})

@@ -1,0 +1,30 @@
+{
+    "title": "The office renaissance",
+    "subtitle": "Future of Work",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices gravida.",
+    "button": {
+        "link": "/projects",
+        "label": "Learn More"
+    },
+    "image": {
+        "url": "/img/photo/2.jpg",
+        "alt": "image"
+    },
+    "avatar": {
+        "image": "/img/faces/1.jpg",
+        "name": "Joe French",
+        "subname": "Project Agent"
+    },
+    "items": [
+        {
+            "value": "10",
+            "valueAfter": "+",
+            "label": "Years <br/>Experience"
+        },
+        {
+            "value": "99",
+            "valueAfter": "k+",
+            "label": "Billion <br/>Invested"
+        }
+    ]
+}

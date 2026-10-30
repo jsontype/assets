@@ -1,0 +1,43 @@
+.demo__loader
+  +position(fixed, 0 0 0 0)
+  z-index: 1000
+  &.loaded
+   opacity: 0
+   visibility: hidden
+
+.loader__wrapper
+  position: absolute
+  top: 0
+  width: 100%
+  height: 100%
+  background: var(--base)
+  color: var(--t-bright)
+  display: flex
+  justify-content: center
+  align-items: center
+
+.loader__content
+  position: absolute
+  +center
+  display: flex
+  justify-content: center
+  width: 100%
+  z-index: 2
+  color: var(--t-bright)
+  overflow: hidden
+
+.loader__count
+  display: flex
+  justify-content: end
+  overflow: hidden
+  line-height: 1
+  span
+    display: inline-flex
+    font: normal var(--font-weight-base) 4.6rem/0.9 var(--_font-accent)
+    color: var(--t-bright)
+  +MQ(M)
+    span
+      font-size: 8rem
+  +MQ(XXL)
+    span
+      font-size: 10rem

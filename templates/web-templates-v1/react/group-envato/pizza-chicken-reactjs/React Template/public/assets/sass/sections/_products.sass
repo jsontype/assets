@@ -1,0 +1,168 @@
+/*******************************************************/
+/****************** ## Products Area ******************/
+/*******************************************************/
+/* Pizza Products */
+.product-item
+    text-align: center
+    margin-bottom: 30px
+    transition: .3s
+    .image
+        position: relative
+        margin-bottom: 22px
+        min-height: 250px
+        +flexcenter(center)
+        .pizza-badge
+            +poLT(25px, 2px)
+            +size(65px)
+            background-image: url(../images/shapes/pizza-badge-shape.png)
+            background-size: cover
+            background-repeat: no-repeat
+            border-radius: 50%
+            @extend %h6
+            color: white
+            line-height: 65px
+    .content
+        .ratting
+            margin-bottom: 10px
+        h5
+            margin-bottom: 0
+            +res-bl(md)
+                font-size: 22px
+        .price
+            font-size: 20px
+            font-weight: 500
+            color: $primary-color
+            del
+                color: $base-color
+                
+.pizza-active
+    .slick-dots
+        margin-top: 30px
+        
+/* Dish Products */
+.product-item-two
+    transition: .3s
+    background: white
+    text-align: center
+    position: relative
+    margin-bottom: 30px
+    padding: 35px 38px 30px
+    border: 1px solid $border-color
+    +res-bl(md)
+        +gapLR(padding, 20px)
+    .image
+        min-height: 180px
+        +flexcenter(center)
+        margin-bottom: 20px
+        .pizza-badge
+            +poRT(20px)
+            +size(65px)
+            background-image: url(../images/shapes/pizza-badge-shape.png)
+            background-size: cover
+            background-repeat: no-repeat
+            border-radius: 50%
+            @extend %h6
+            color: white
+            line-height: 65px
+    .content
+        .ratting
+            margin-bottom: 10px
+        h5
+            margin-bottom: 0
+            +res-bl(md)
+                font-size: 22px
+        .price
+            font-size: 20px
+            font-weight: 500
+            color: $primary-color
+            del
+                color: $base-color
+    .theme-btn
+        opacity: 0
+        +absmiddle()
+        transition: 0.5s
+        padding: 7px 30px
+        width: max-content
+    &:hover
+        background: $lighter-color
+        border-color: $lighter-color
+        .theme-btn
+            opacity: 1
+        
+/* Shop Page */
+.shop-shorter
+    flex-wrap: wrap
+    +flexcenter(space-between)
+    .sort-text
+        font-size: 22px
+    .nice-select
+        border: none
+        padding-right: 70px
+        +gapTB(padding, 6px)
+        font-family: $base-font
+        background: $lighter-color
+        &:after
+            +size(9px)
+            right: 30px
+            margin-top: -7px
+        
+/* Product Details */
+.product-details-content
+    .price
+        display: block
+        font-size: 20px
+        font-weight: 600
+        color: $primary-color
+    .section-title h2
+        margin-bottom: 2px
+    .ratting
+        i
+            color: $primary-color
+            &:first-child
+                margin-left: 0
+    .add-to-cart
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        h5
+            margin-right: 25px
+            margin-bottom: 15px
+        input
+            font-size: 20px
+            max-width: 120px
+            padding: 10px 30px
+            margin-bottom: 15px
+            margin-right: 25px
+            border-color: $border-color
+    .category-tags
+        li
+            display: flex
+            font-size: 20px
+            margin-bottom: 10px
+            align-items: center
+            h6
+                margin-bottom: 0
+                min-width: 85px
+            a
+                margin-left: 10px
+                &:not(:last-child)
+                    &:after
+                        content: ','
+    .social-style-one
+        margin-left: 0
+        align-items: center
+        h5
+            margin-bottom: 0
+            margin-right: 30px
+            +res-bl(xs)
+                margin-right: 20px
+        a
+            border: none
+            &:not(:hover)
+                background: $lighter-color
+            
+/* Filtarable Food */
+.product-filter-active
+    .product-item-two
+        background: white
+        border-color: white

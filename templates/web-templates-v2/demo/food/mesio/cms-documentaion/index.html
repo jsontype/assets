@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="header-text">
+        Mesio - Payload CMS Documentation by George_FX
+      </h3>
+      <h1 class="title">Mesio - Payload CMS Documentation</h1>
+      <!-- Details -->
+      <div class="details">
+        <div class="details__left">
+          <span class="details__left-text">Created: 18/07/2025</span>
+          <span class="details__left-text">By: George_FX</span>
+          <span class="details__left-text">
+            Email:
+            <a href="#" class="details__left-link">kul.giorgi@gmail.com</a>
+          </span>
+        </div>
+        <div class="details__right">
+          <p class="details__right-text">
+            Thank you for purchasing my theme. If you have any questions that
+            are beyond the scope of this help file, please feel free to email
+            via my user page contact form
+            <a href="http://themeforest.net/user/George_FX">here</a>
+            . Thanks so much!
+          </p>
+        </div>
+      </div>
+      <!-- Description -->
+      <p class="description">
+        Before setting up the project, you should have a basic understanding of
+        the following: Javascript, React, Node.js, npm for more information
+        about the above topics, you can visit the following links:
+        <a href="https://www.w3schools.com/js/">Javascript</a>
+        <a href="https://reactjs.org/">React</a>
+        <a href="https://nodejs.org/en/">Node.js</a>
+        <a href="https://www.npmjs.com/">npm</a>
+      </p>
+      <!-- Steps -->
+      <h2 class="steps__title">
+        You need to follow the following steps to install the theme:
+      </h2>
+      <!-- List -->
+      <ol class="steps__list">
+        <!-- 1. Folder structure -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">1.</span>
+          <a href="#introduction" class="steps__list-item-text">
+            Introduction to Payload CMS
+          </a>
+        </li>
+        <!-- 2. Install environment -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">2.</span>
+          <a href="#environment" class="steps__list-item-text">
+            Install environment
+          </a>
+        </li>
+        <!-- 3. Install dependencies -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">3.</span>
+          <a href="#dependencies" class="steps__list-item-text">
+            Install dependencies
+          </a>
+        </li>
+        <!-- 4. Enter your database uri -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">4.</span>
+          <a href="#enter-database-uri" class="steps__list-item-text">
+            Enter your database uri
+          </a>
+        </li>
+        <!-- 5. Run the project -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">5.</span>
+          <a href="#run-project" class="steps__list-item-text">
+            Run the project
+          </a>
+        </li>
+        <!-- 6. Deploy the project -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">6.</span>
+          <a href="#deploy-project" class="steps__list-item-text">
+            Deploy the project
+          </a>
+        </li>
+        <!-- 7. Support and Dependencies -->
+        <li class="steps__list-item">
+          <span class="steps__list-item-number">7.</span>
+          <a href="#support" class="steps__list-item-text">
+            Support and Dependencies
+          </a>
+        </li>
+      </ol>
+
+      <!-- 1. Introduction -->
+      <section class="steps__section" id="introduction">
+        <h3 class="steps__sub-title">
+          <strong>1. Introduction to Payload CMS</strong>
+        </h3>
+        <p class="steps__section-description">
+          This project is built with Payload CMS — a headless CMS powered by
+          Node.js, offering a flexible and developer-friendly way to manage
+          content via a modern admin panel and REST/GraphQL APIs.
+        </p>
+        <p class="steps__section-description">
+          You can find more information about Payload CMS on the
+          <a href="https://payloadcms.com/">official website</a>
+          .
+        </p>
+        <img src="assets/payload-cms.png" class="steps__section-image" />
+      </section>
+
+      <!-- 2. Install environment -->
+      <section class="steps__section" id="environment">
+        <h3 class="steps__sub-title">
+          <strong>2. Install environment</strong>
+        </h3>
+        <p class="steps__section-description">
+          Your computer should have Node.js and npm installed to manage the
+          dependencies. You can download Node.js (which includes npm) from the
+          following link:
+          <a href="https://nodejs.org/en/">Node.js</a>
+        </p>
+        <img src="assets/download-node.png" class="steps__section-image" />
+      </section>
+
+      <!-- 3. Install dependencies -->
+      <section class="steps__section" id="dependencies">
+        <h3 class="steps__sub-title">
+          <strong>3. Install dependencies</strong>
+        </h3>
+        <p class="steps__section-description">
+          To install the project dependencies, run the following command in the
+          project directory:
+          <code>npm install</code>
+        </p>
+        <img src="assets/npm-install.png" class="steps__section-image" />
+      </section>
+
+      <!-- 4. Enter your database uri -->
+      <section class="steps__section" id="enter-database-uri">
+        <h3 class="steps__sub-title">
+          <strong>4. Enter your database uri</strong>
+        </h3>
+        <p class="steps__section-description">
+          Enter your database URI in the
+          <code>.env</code>
+          file located in the root directory of the project.
+        </p>
+        <img src="assets/database-uri.png" class="steps__section-image" />
+        <br />
+        <br />
+        <p class="steps__section-description">
+          You can obtain the database connection URI from your
+          <a href="https://neon.com/">Neon.com</a>
+          dashboard.
+          <br />
+          After creating a project on Neon, navigate to your project settings or
+          database dashboard, where you’ll find the connection details,
+          including the URI. This URI is required to connect your application or
+          backend to the Neon database.
+        </p>
+        <img src="assets/neon.png" class="steps__section-image" />
+      </section>
+
+      <!-- 5. Run the project -->
+      <section class="steps__section" id="run-project">
+        <h3 class="steps__sub-title">
+          <strong>5. Run the project</strong>
+        </h3>
+        <p class="steps__section-description">
+          To run the project, use the following command:
+          <code>npm run dev</code>
+        </p>
+        <p class="steps__section-description">
+          This command will start the development server, and you can access the
+          project in your browser.
+        </p>
+        <img src="assets/npm-run-dev.png" class="steps__section-image" />
+        <br />
+        <br />
+        <p class="steps__section-description">
+          After running the project, you will be redirected to a page where you
+          need to click the button -
+          <strong>Go to Admin Panel</strong>
+        </p>
+        <img src="assets/welcome.png" class="steps__section-image" />
+        <br />
+        <br />
+        <p class="steps__section-description">
+          In the next window, you need to enter the email address and password
+          of the administrator.
+        </p>
+        <img src="assets/welcome-2.png" class="steps__section-image" />
+        <br />
+        <br />
+        <p class="steps__section-description">
+          After this, you will be redirected to the admin panel, where you can
+          manage the content of your project.
+        </p>
+        <img src="assets/dashboard.png" class="steps__section-image" />
+      </section>
+
+      <!-- 6. Deploy the project -->
+      <section class="steps__section" id="deploy-project">
+        <h3 class="steps__sub-title">
+          <strong>6. Deploy the project</strong>
+        </h3>
+        <p class="steps__section-description">
+          You can find more information on how to deploy the project in the
+          Payload CMS documentation:
+          <a href="https://payloadcms.com/docs/production/deployment">
+            Payload CMS Deployment
+          </a>
+        </p>
+        <img
+          src="assets/production-deployment.png"
+          class="steps__section-image"
+        />
+      </section>
+
+      <!-- 7. Support and Dependencies -->
+      <section class="steps__section" id="support">
+        <h3 class="steps__sub-title">
+          <strong>7. Support and Dependencies</strong>
+        </h3>
+        <p class="steps__section-description">
+          If you have any questions or need support, please contact me via
+          email:
+          <a href="mailto:kul.giorgi@gmail.com">kul.giorgi@gmail.com</a>
+          <br />
+          The project uses the following dependencies:
+        </p>
+        <ul class="api__list">
+          <li class="api__list-item">
+            <a href="https://payloadcms.com/">payloadcms.com</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

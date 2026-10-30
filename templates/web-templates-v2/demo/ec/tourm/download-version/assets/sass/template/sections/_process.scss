@@ -1,0 +1,157 @@
+.process-image {
+    border-radius: 32px 32px 300px 32px;
+
+    img {
+        border-radius: 32px 32px 300px 32px;
+    }
+}
+
+.process-shape {
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    transform: translate(calc(-50% + 500px), calc(-50% + 25px));
+    margin: 0 -500px;
+    z-index: -1;
+
+    @include md {
+        display: none;
+    }
+}
+
+.process-area {
+    min-height: 1396px;
+
+    @include xl {
+        min-height: 100%;
+    }
+}
+
+.process-image2 {
+    position: absolute;
+    bottom: 120px;
+    right: 10%;
+    border-radius: 400px 32px 32px 32px;
+
+    @include xxl {
+        right: 1%;
+    }
+
+    @include xl {
+        display: none;
+    }
+
+    img {
+        border-radius: 400px 32px 32px 32px;
+
+    }
+
+}
+
+.process-item {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 300px;
+
+    @include sm {
+        max-width: 100%;
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: -70%;
+        left: 50%;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $theme-color;
+        transform: translate(-50%, -50%);
+
+        @include xl {
+            display: none;
+        }
+    }
+
+
+    &:after {
+        top: -80%;
+        left: 46%;
+        @extend .ripple-animation;
+        background-color: $theme-color;
+        animation-delay: 1s;
+    }
+
+    &_wrapp {
+        &:first-child {
+            margin-top: 250px;
+            transform: rotate(-5.85deg);
+
+            @include md {
+                margin-top: 30px;
+                transform: none;
+            }
+
+        }
+
+        &:nth-child(2) {
+            position: absolute;
+            bottom: 30%;
+            left: 38%;
+            transform: rotate(-19.93deg);
+
+            @include xl {
+                bottom: 20%;
+                left: 27%;
+            }
+
+            @include md {
+                position: relative;
+                left: unset;
+                bottom: unset;
+                transform: none;
+            }
+
+
+        }
+
+        &:nth-child(3) {
+            position: absolute;
+            top: 38%;
+            left: 48%;
+            transform: rotate(-61.92deg);
+
+            @include md {
+                position: relative;
+                left: unset;
+                bottom: unset;
+                transform: none;
+            }
+
+
+        }
+
+        &:nth-child(4) {
+            position: absolute;
+            top: 36%;
+            right: 5%;
+            transform: rotate(17.29deg);
+
+            @include md {
+                position: relative;
+                left: unset;
+                bottom: unset;
+                transform: none;
+            }
+
+        }
+
+
+    }
+
+    .box-title {
+        margin-bottom: 5px;
+    }
+}

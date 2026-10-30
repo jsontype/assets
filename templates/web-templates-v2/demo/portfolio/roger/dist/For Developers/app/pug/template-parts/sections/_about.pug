@@ -1,0 +1,72 @@
+include ../../mixins/_global-mixins.pug
+
+.ptf-section__vertical-align
+
+	.ptf-section__content
+
+		.container
+
+			.row(style='--bs-gutter-y: 70px;')
+
+				.col-lg-6
+
+					+ptf_animation_block
+
+						span.has-color-white Specialization
+
+						.ptf-gap-30
+
+						h2 Bright design will#[br] #[span.has-color-accent help attract] more#[br] clients 🔥
+
+						.ptf-gap-50
+
+						.row
+
+							.col-md-6
+
+								p(style='max-width: 330px;') “There are three answers to the result of a design - yes, no, and NOTHING! "Wow" is something to strive for. "
+
+							.col-md-6.text-md-end
+
+								.ptf-gap-30
+
+								cite.ptf-cite
+
+									| __Roger Day
+
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 210 141"><path stroke="currentColor" d="M64.546 1C131.182 1 209 25.826 209 66.281 209 106.736 70.478 140 0 140"/></svg>
+
+				.col-lg-5.offset-lg-1
+
+					.ptf-gap-40
+
+					+ptf_animation_block({
+						delay: '100ms'
+					})
+
+						+ptf_progress_bar({
+							title: 'Development',
+							value: 80
+						})
+
+					.ptf-gap-70
+
+					+ptf_animation_block({
+						delay: '200ms'
+					})
+
+						+ptf_progress_bar({
+							title: 'Design',
+							value: 90
+						})
+
+					.ptf-gap-70
+
+					+ptf_animation_block({
+						delay: '300ms'
+					})
+
+						+ptf_progress_bar({
+							title: 'Graphic',
+							value: 70
+						})

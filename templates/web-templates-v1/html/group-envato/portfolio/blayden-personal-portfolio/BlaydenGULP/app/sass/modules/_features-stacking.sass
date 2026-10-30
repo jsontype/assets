@@ -1,0 +1,182 @@
+.stack-wrapper
+  position: relative
+  width: 100%
+
+.stack-offset
+  display: flex
+  width: 100%
+  height: 8rem
+  background-color: var(--base)
+  &.solid-block
+    height: 8rem
+  +MQ(M)
+    height: 10rem
+    &.solid-block
+      height: 10rem
+  +MQ(L)
+    height: 10rem
+    &.solid-block
+      height: 10rem
+  +MQ(XL)
+    &.solid-block
+      height: 10rem
+  +MQ(XXL)
+    height: 11rem
+    &.solid-block
+      height: 11rem
+  +MQ(XXXL)
+    &.solid-block
+      height: 11rem
+
+.services-stack
+  width: 100%
+  position: relative
+  height: 65vh
+  min-height: 615px
+  +MQ(M)
+    height: 500px
+    min-height: 0
+  +MQ(XXL)
+    height: 600px
+  +MQ(XXXL)
+    height: 700px
+
+.portfolio-stack
+  width: 100%
+  position: relative
+  height: 460px
+  +MQ(M)
+    height: 530px
+  +MQ(XXL)
+    height: 630px
+  +MQ(XXXL)
+    height: 750px
+
+.stack-item
+  display: flex
+  position: absolute
+  width: 100%
+  height: 100%
+  padding-bottom: 2rem
+  +MQ(M)
+    padding-bottom: 3rem
+  +MQ(XXXL)
+    padding-bottom: 5rem
+
+.services-stack__inner
+  position: relative
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  width: 100%
+  height: 100%
+  background-color: var(--base)
+  border: 1px solid var(--stroke-elements)
+  border-radius: var(--_radius)
+
+.services-stack__title
+  padding: 2.6rem 3rem 0 3rem
+  margin-bottom: 2.3rem
+  +MQ(M)
+    +position(absolute, 0 null null 0)
+    max-width: 60%
+    //z-index: 2
+    margin-bottom: 0
+  +MQ(XXL)
+    padding: 4rem 5rem 4.6rem 5rem
+
+.services-stack__descr
+  padding: 0 3rem
+  margin-bottom: 2.3rem
+  i
+    display: inline-block
+    font-size: 5.4rem
+    color: var(--t-bright)
+    margin-bottom: 2.3rem
+    margin-left: -0.2rem
+  +MQ(M)
+    +position(absolute, null null 0 0)
+    max-width: 50%
+    //z-index: 2
+    margin-bottom: 0
+    padding: 2.6rem 3rem
+  +MQ(XXL)  
+    padding: 4rem 5rem 4.6rem 5rem
+
+.services-stack__image
+  display: flex
+  padding-left: 3rem
+  position: relative
+  overflow: hidden
+  flex: 1
+  .service-img
+    max-width: 100%
+    max-height: 100%
+    object-fit: cover
+  .service-img-m
+    display: none
+  +MQ(M)
+    +position(absolute, 0 0 null null)
+    width: 100%
+    height: 100%
+    //z-index: 1
+    padding-left: 0
+    .service-img
+      +position(absolute, null -10% 0 null)
+      height: 100%
+      width: auto
+    .service-img-s
+      display: none
+    .service-img-m
+      display: block
+  +MQ(L)
+    .service-img
+      +position(absolute, null 0 0 null)
+
+.portfolio-stack__inner
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 100%
+  height: 100%
+  background-color: var(--base)
+  border-radius: var(--_radius)
+  overflow: hidden
+  cursor: pointer
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+
+.portfolio-stack__descr
+  display: none
+  +position(absolute, null null 0 0)
+  width: 100%
+  padding: 2.4rem 3rem
+  +MQ(M)
+    display: block
+    width: 60%
+    padding: 2.6rem 3rem
+  +MQ(XL)
+    width: 40%
+    padding: 4rem 5rem 4.6rem 5rem
+  +MQ(XXXL)
+    width: 33.3334%
+
+.portfolio-stack__title
+  color: var(--t-per-bright-light)
+  &.dark
+    color: var(--t-per-bright-dark)
+    font-weight: 400
+  &.light
+    color: var(--neutral-white)
+    font-weight: 300
+
+.portfolio-stack__text
+  margin-top: 3rem
+  font-weight: 300
+  color: var(--t-per-bright-light)
+  &.dark
+    font-weight: 400
+    color: var(--t-per-bright-dark)
+  +MQ(XXL)
+    margin-top: 4rem

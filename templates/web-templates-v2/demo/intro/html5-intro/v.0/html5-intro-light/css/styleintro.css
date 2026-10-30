@@ -1,0 +1,364 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700';
+
+/* CSS Document */
+
+/* 
+	preloader
+	container
+	reset
+	sound
+	frame-page
+	overlay background
+	wraper text and logo
+*/
+
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, button, output, ruby, section, summary, time, mark, audio, video {
+font-family: 'Open Sans', sans-serif;
+margin: 0;
+padding: 0;
+border: 0;
+font: inherit;
+color:#000;
+text-decoration:none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+  	overflow:hidden;
+	background:#fff;
+}
+
+/* preloader */
+.preloaderintro
+	{
+		position: fixed;
+  		top: 0;
+  		left: 0;
+  		width: 100%;
+  		height: 100%;
+  		z-index: 99999;
+  		display: -webkit-box;
+  		display: -webkit-flex;
+  		display: -ms-flexbox;
+  		display: flex;
+  		-webkit-flex-flow: row nowrap;
+  		    -ms-flex-flow: row nowrap;
+  		        flex-flow: row nowrap;
+  		-webkit-box-pack: center;
+  		-webkit-justify-content: center;
+  		    -ms-flex-pack: center;
+  		        justify-content: center;
+  		-webkit-box-align: center;
+  		-webkit-align-items: center;
+  		    -ms-flex-align: center;
+  		        align-items: center;
+  		background: none ;
+	}
+.ax-spinner-wave.ax-spinner 
+	{
+  		width: 50px;
+  		height: 30px;
+  		text-align: center;
+  		font-size: 10px; 
+  	}
+.ax-spinner-wave div 
+	{
+  		background-color: #333;
+  		height: 100%;
+  		width: 6px;
+  		display: inline-block;
+         -webkit-animation: barpre 1.2s infinite ease-in-out;
+                 animation: barpre 1.2s infinite ease-in-out;
+         
+    }
+.ax-spinner-wave .ax2 
+	{
+          -webkit-animation-delay: -1.1s;
+                  animation-delay: -1.1s; 
+      }
+.ax-spinner-wave .ax3 
+	{
+          -webkit-animation-delay: -1s;
+                  animation-delay: -1s; 
+     }
+.ax-spinner-wave .ax4 
+	{
+          -webkit-animation-delay: -0.9s;
+                  animation-delay: -0.9s;
+     }
+.ax-spinner-wave .ax5 
+	{
+          -webkit-animation-delay: -0.8s;
+                  animation-delay: -0.8s; 
+     }
+
+@-webkit-keyframes barpre {
+  0%, 40%, 100% {
+            -webkit-transform: scaleY(0.4);
+                    transform: scaleY(0.4); }
+
+  20% {
+            -webkit-transform: scaleY(1);
+                    transform: scaleY(1); } }
+
+@keyframes barpre {
+  0%, 40%, 100% {
+            -webkit-transform: scaleY(0.4);
+                    transform: scaleY(0.4); }
+
+  20% {
+            -webkit-transform: scaleY(1);
+                    transform: scaleY(1); } }
+/* end preloader */
+
+
+/* all element begin here */
+
+/* container */
+#boxintro{ 
+width:100%; 
+height:100%; 
+position:fixed; 
+top: 0;
+left: 0;
+right: 0;
+bottom: 0; 
+background:#fff;
+display:none;
+}
+
+/* sound */
+#soundintro{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 52px;
+  height: 46px;
+  z-index: 999;
+  cursor: pointer;
+  opacity:0.8;
+   -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#soundintro:hover{
+	opacity:1;
+ -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.soundOnintro{ background:url("../img/soundon.png");  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;}
+.soundOffintro{ background:url("../img/soundoff.png");  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;}
+
+/* frame-page */
+#frame1, #frame2, #frame3, #frame4, #frame5{
+  display:none;
+  position: fixed;
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+  background:rgba(0, 0, 0, 0);
+}
+
+.bgintro{
+  position: fixed;
+  width: 100%;
+  height:100%;
+}
+.bgintro img{
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* wraper text and logo */
+.contentintro{ 
+width: 100%;
+text-align:center;
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index:999;
+}
+
+.logointro{font-size:39pt; font-weight:bold; opacity:0;}
+.headingintro{ font-size:39pt; font-weight:bold; opacity:0;}
+.subheadingintro{ font-size:28pt; font-weight:300; opacity:0; color:#222;}
+
+/* overlay background */
+/*cloud*/
+sky {
+			height: auto;
+			background:#000;
+			position:relative;
+			overflow:hidden;
+			-webkit-animation:sky_background 100s ease-out infinite;
+			-moz-animation:sky_background 100s ease-out infinite;
+			-o-animation:sky_background 100s ease-out infinite;
+			transition:sky_background 100s ease-out infinite;
+			-webkit-transform:translate3d(0,0,0);
+			-moz-transform:translate3d(0,0,0);
+			-o-transform:translate3d(0,0,0);
+			transition:translate3d(0,0,0);
+		}
+
+		.awan_1 {
+			background:url("../img/awan/awan_1.png");
+			position:absolute;
+			left:0;
+			top:0;
+			height:100%;
+			width:300%;
+			-webkit-animation:awan_1 100s linear infinite;
+			-moz-animation:awan_1 100s linear infinite;
+			-o-animation:awan_1 100s linear infinite;
+			animation:awan_1 100s linear infinite;
+			-webkit-transform:translate3d(0,0,0);
+			-moz-transform:translate3d(0,0,0);
+			-o-transform:translate3d(0,0,0);
+			transition:translate3d(0,0,0);
+		}
+		
+		.awan_2 {
+			background:url("../img/awan/awan_2.png");
+			position:absolute;
+			left:0;
+			top:0;
+			height:100%;
+			width:300%;
+			-webkit-animation:awan_2 75s linear infinite;
+			-moz-animation:awan_2 75s linear infinite;
+			-o-animation:awan_2 75s linear infinite;
+			animation:awan_2 75s linear infinite;
+			-webkit-transform:translate3d(0,0,0);
+			-moz-transform:translate3d(0,0,0);
+			-o-transform:translate3d(0,0,0);
+		}
+		
+		.awan_3 {
+			background:url("../img/awan/awan_3.png");
+			position:absolute;
+			left:0;
+			top:0;
+			height:100%;
+			width:300%;
+			-webkit-animation:awan_3 100s linear infinite;
+			-moz-animation:awan_3 100s linear infinite;
+			-o-animation:awan_3 100s linear infinite;
+			animation:awan_3 100s linear infinite;
+			-webkit-transform:translate3d(0,0,0);
+			-moz-transform:translate3d(0,0,0);
+			-o-transform:translate3d(0,0,0);
+		}
+		
+		@-webkit-keyframes sky_background {
+			0% {
+				background:#000;
+				color:#007fd5
+			}
+			
+			50% {
+				background:#000;
+				color:#a3d9ff
+			}
+			
+			100% {
+				background:#000;
+				color:#007fd5
+			}
+		}
+		@keyframes sky_background {
+			0% {
+				background:#000;
+				color:#007fd5
+			}
+			
+			50% {
+				background:#000;
+				color:#a3d9ff
+			}
+			
+			100% {
+				background:#000;
+				color:#007fd5
+			}
+		}
+		
+		
+		@-webkit-keyframes awan_1 {
+			0% {
+				left:0
+			}
+		
+			100% {
+				left:-200%
+			}
+		}
+		@keyframes awan_1 {
+			0% {
+				left:0
+			}
+		
+			100% {
+				left:-200%
+			}
+		}
+		
+		@-webkit-keyframes awan_2 {
+			0% {
+				left:0
+			}
+		
+			100% {
+				left:-200%
+			}
+		}
+		@keyframes awan_2 {
+			0% {
+				left:0
+			}
+		
+			100% {
+				left:-200%
+			}
+		}
+		
+		@-webkit-keyframes awan_3 {
+			0% {
+				left:0
+			}
+		
+			100% {
+				left:-200%
+			}
+		}
+		@keyframes awan_3 {
+			0% {
+				left:0
+			}
+		
+			100% {
+				left:-200%
+			}
+		}
+		
+		

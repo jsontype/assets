@@ -1,0 +1,160 @@
+
+
+/** funfact-section **/
+
+.funfact-section{
+  position: relative;
+  padding: 0px 50px;
+}
+
+.funfact-section .outer-container{
+  position: relative;
+  padding: 94px 130px 86px 130px;
+  border: 1px solid var(--secondary-color);
+  border-top: none;
+}
+
+.funfact-section .funfact-inner{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.funfact-block-one .inner-box{
+  position: relative;
+  display: block;
+}
+
+.funfact-block-one .inner-box .count-outer{
+  position: relative;
+  display: block;
+  font-size: 100px;
+  line-height: 105px;
+  font-weight: 500;
+  color: var(--title-color);
+  margin-bottom: 17px;
+}
+
+.funfact-block-one .inner-box p{
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/** funfact-style-two **/
+
+.funfact-style-two{
+  position: relative;
+  padding: 0px 40px;
+}
+
+.funfact-style-two .outer-container{
+  position: relative;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: var(--secondary-color);
+  padding: 0px 46px;
+}
+
+.funfact-block-two{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 630px;
+  height: 630px;
+  border-radius: 50%;
+  border: solid;
+  border-width: 1px;
+  border-color: var(--secondary-color);
+}
+
+.funfact-block-two .inner-box .count-outer{
+  position: relative;
+  display: block;
+  font-size: 120px;
+  line-height: 90px;
+  font-family: 'Playfair Display', cursive;
+  color: var(--title-color);
+}
+
+.funfact-block-two .inner-box p{
+  font-size: 48px;
+  line-height: 90px;
+  color: var(--title-color);
+}
+
+.funfact-style-two.home-4{
+  background: #FBF5F1;
+}
+
+.funfact-style-two.home-4 .outer-container{
+  border-bottom: none;
+  padding-bottom: 274px;
+}
+
+.funfact-block-two{
+  transition: all 500ms ease;
+}
+
+.funfact-style-two.home-4 .funfact-block-two:hover .inner-box .count-outer,
+.funfact-style-two.home-4 .funfact-block-two:hover .inner-box p{
+  color: #fff;
+}
+
+.funfact-block-two{
+  cursor: pointer;
+  z-index: 1;
+  transition: all 500ms ease;
+}
+
+.funfact-block-two:before{
+  position: absolute;
+  content: '';
+  background: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  transform: scale(0,0);
+  z-index: -1;
+  border-radius: 50%;
+  transition: all 500ms ease;
+}
+
+.funfact-block-two:hover:before{
+  transform: scale(1,1);
+}
+
+.funfact-block-two .inner-box .count-outer,
+.funfact-block-two .inner-box p{
+  transition: all 500ms ease;
+}
+
+.funfact-block-two:hover .inner-box .count-outer,
+.funfact-block-two:hover .inner-box p{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

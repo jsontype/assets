@@ -1,0 +1,185 @@
+.checklist {
+    ul {
+        padding-left: 0;
+        list-style: none;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    li {
+        color: $title-color;
+        margin-bottom: 11px;
+        font-weight: 500;
+        position: relative;
+        padding-left: 24px;
+        &:before {
+            content: "\f336";
+            font-family: $icon-font;
+            font-weight: 900;
+            color: $theme-color;
+            position: absolute;
+            left: 0;
+            transition: 0.3s ease-in-out;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &.style2 {
+        li {
+            font-family: $body-font;
+            font-weight: 400;
+            color: $body-color;
+            margin-bottom: 5px;
+            &:before {
+                content: "\f336";
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.mb-40 {
+        @include lg {
+            margin-bottom: 32px;
+        }
+    }
+    &.mb-45 {
+        @include lg {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.bg-img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+.img-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 48%;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top right;
+    }
+    @include lg {
+        position: relative;
+        width: 100%;
+    }
+}
+
+.xdsoft_datetimepicker {
+    background-color: $white-color;
+    z-index: 10;
+}
+.home-dark .xdsoft_datetimepicker {
+    --title-color: #010f1c;
+    --body-color: #4d5765;
+    --smoke-color: rgba(1, 15, 28, 0.06);
+}
+
+.th-video {
+    position: relative;
+    border-radius: 10px;
+    > img {
+        border-radius: inherit;
+        min-height: 175px;
+        object-fit: cover;
+    }
+    .play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        > i {
+            background-color: $theme-color;
+            color: $white-color;
+        }
+    }
+}
+
+.video-box1 {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    > img {
+        min-height: 290px;
+        object-fit: cover;
+    }
+    .video-content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.icon-box {
+    .slick-arrow {
+        &:first-child {
+            margin-right: 5px;
+        }
+    }
+}
+
+.btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px 30px;
+}
+@include ml {
+    .chili {
+        max-width: 260px;
+    }
+    .leaf {
+        max-width: 180px;
+    }
+    .leaf-group {
+        max-width: 50%;
+        top: 35% !important;
+    }
+}
+
+@include lg {
+    p {
+        &.mb-30 {
+            margin-bottom: 25px;
+        }
+        &.mb-35 {
+            margin-bottom: 28px;
+        }
+        &.mb-40 {
+            margin-bottom: 32px;
+        }
+        &.mb-45 {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@include md {
+    .chili {
+        max-width: 160px;
+    }
+    .leaf {
+        max-width: 100px;
+    }
+}
+
+
+@include sm {
+    .bg-img.shape_style1 {
+        background-size: 180% 100%;
+    }
+}

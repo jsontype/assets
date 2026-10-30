@@ -1,0 +1,9 @@
+{
+    "title": "Interested in Our <span class=\"mil-marker\">Work?</span>",
+    "subtitle": "Your Idea",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "button": {
+        "label": "Let's Talk Now",
+        "link": "/contact"
+    }
+}

@@ -1,0 +1,49 @@
+.th-pagination {
+  margin-bottom: 30px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 6px;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: $title-color;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+
+    i {
+      padding: 15px 16px;
+      width: 48px;
+      height: 48px;
+      background: #F4F7FF;
+      border-radius: 48px;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        background-color: $theme-color;
+        color: $white-color;
+      }
+
+    }
+  }
+
+  span,
+  a {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    color: $title-color;
+    font-weight: 500;
+
+  }
+  .active {
+    color: $theme-color;
+  }
+}

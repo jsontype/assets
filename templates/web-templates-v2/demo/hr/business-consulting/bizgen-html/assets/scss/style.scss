@@ -1,0 +1,77 @@
+/*
+Template Name: Bizgen - Business Consulting HTML Template
+Author: ThemeWant
+Author URI: https://themeforest.net/user/themewant
+Tags: business, adviser, finance, consulting, legal marketing
+Version: 1.0
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS
+----------------------------------------------------------------
+
+01. Variables
+02. Mixins
+03. Reset
+04. Typography
+05. Spacing
+06. Preloader
+07. Common
+08. Section Title
+09. Button
+10. Breadcrumb
+11. Header
+12. Nav
+13. Offcanvas
+14. Footer
+15. Banner
+16. About
+17. Services
+18. Brand
+19. Why
+20. Team
+21. Cta
+22. Blog
+23. Counter
+24. Project
+25. Testimonial
+26. Price
+27. Faq
+28. Appointment
+29. Contact
+
+----------------------------------------------------------------*/
+
+
+
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/reset";
+@import "utils/typgraphy";
+@import "utils/spacing";
+@import "components/preloader";
+@import "components/common";
+@import "components/section-title";
+@import "components/button";
+@import "components/breadcrumb";
+@import "layout/header/header";
+@import "layout/header/nav";
+@import "layout/header/offcanvas";
+@import "layout/footer/footer";
+@import "layout/sections/banner";
+@import "layout/sections/about";
+@import "layout/sections/services";
+@import "layout/sections/brand";
+@import "layout/sections/why";
+@import "layout/sections/team";
+@import "layout/sections/cta";
+@import "layout/sections/blog";
+@import "layout/sections/counter";
+@import "layout/sections/project";
+@import "layout/sections/testimonial";
+@import "layout/sections/price";
+@import "layout/sections/faq";
+@import "layout/sections/appointment";
+@import "layout/sections/contact";
+@import "layout/sections/rtl";
+@import "layout/sections/rtl-responsive";

@@ -1,0 +1,96 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.8 cta css
+/*----------------------------------------*/
+
+.#{$theme-prifix}-cta{
+  &-bg{
+    &-shape{
+      position: absolute;
+      top: 27px;
+      height: 100%;
+      left: 60px;
+      right: 60px;
+      width: 95%;
+      margin: 0 auto;
+      z-index: -1;
+    }
+  }
+  &-big{
+    &-title{
+      font-weight: 700;
+      font-size: 300px;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      text-align: center;
+      color: var(--td-common-white);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: var(--td-common-white);
+      -webkit-text-stroke-color: var(--td-theme-primary);
+      -webkit-text-stroke-width: 3px;
+      text-shadow: 0 60px 120px rgba(0, 0, 0, 0.1);
+      @media #{$md} {
+        font-size: 200px;
+      }
+      @media #{$sm} {
+        font-size: 150px;
+      }
+      @media #{$xs} {
+        font-size: 110px;
+      }
+    }
+  }
+  &-count{
+    &-2{
+      margin-left: 23px;
+    }
+    &-wrap{
+      display: flex;
+      align-items: center;
+    }
+  }
+  &-para{
+    & p{
+      line-height: 1.5;
+      color: var(--td-grey-2);
+      margin-bottom: 0;
+      margin-right: 30px;
+      @media #{$xl} {
+        margin-right: 0;
+        margin-left: 20px;
+      }
+      @media #{$lg, $md, $sm, $xs} {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+    &-2{
+      & p{
+        margin-right: 0;
+      }
+    }
+  }
+  &-icon{
+    margin-right: 20px;
+  }
+  &-count{
+    &-title{
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 1;
+      color: var(--td-theme-primary);
+      margin-bottom: 0;
+      &-pre{
+        font-size: 40px;
+        @media #{$xl} {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+

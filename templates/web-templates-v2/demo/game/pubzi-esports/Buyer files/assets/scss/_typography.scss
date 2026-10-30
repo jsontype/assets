@@ -1,0 +1,149 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$heading-font: 'Days One', sans-serif;
+$body-font: "Chakra Petch", sans-serif;
+//font-family: "Font Awesome 6 Free";
+$fa: "Font Awesome 6 Pro";
+
+body {
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $text-color;
+    background-color: $bg-color;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	text-transform: uppercase;
+	// cursor: pointer;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+	padding: 0;
+}
+
+input:focus{
+	color: $white;
+	outline: none;
+}
+
+input{
+	color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
+    margin: 0px;
+	padding: 0;
+    color: $white;
+	@include transition;
+	text-transform: initial;
+}
+
+h1 {
+	font-size: 140px;
+	font-weight: 400;
+	line-height: 88%;
+	letter-spacing: -3.2px;
+
+}
+
+h2 {
+	font-size: 52px;
+	font-weight: 400;
+	line-height: 116%;
+	letter-spacing: -1.04px;
+
+	@include breakpoint(max-xxl){
+		font-size: 50px;
+	}
+
+	@include breakpoint(max-xl){
+		font-size: 40px;
+	}
+
+	@include breakpoint(max-lg){
+		font-size: 40px;
+	}
+
+	@include breakpoint(max-md){
+		font-size: 35px;
+	}
+
+	@include breakpoint(max-sm){
+		font-size: 30px;
+	}
+
+	@include breakpoint(max-xxs){
+		font-size: 25px;
+	}
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 125%;
+
+	@include breakpoint(max-sm){
+		font-size: 20px;
+	}
+}
+
+h4 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 150%;
+
+	@include breakpoint(max-xl){
+		font-size: 20px;
+	}
+}
+
+h5 {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    outline: none !important;
+    cursor: pointer;
+    color: $white;
+	@include transition;
+}
+
+p {
+    margin: 0px;
+	@include transition;
+}
+
+span {
+	margin: 0px;
+	// @include transition;
+}
+

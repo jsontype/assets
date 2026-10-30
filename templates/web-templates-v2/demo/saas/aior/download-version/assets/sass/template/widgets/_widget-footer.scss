@@ -1,0 +1,268 @@
+.footer-widget {
+    margin-bottom: 50px;
+
+    &,
+    .widget {
+        padding: 0;
+        border: none;
+        padding-bottom: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .form-group {
+        >i {
+            color: $theme-color;
+            top: 18px;
+        }
+    }
+
+    .sidebar-gallery {
+        max-width: 340px;
+    }
+
+    .widget_title {
+        max-width: 270px;
+        padding: 0 0 25px 0;
+        margin: 0 0 15px 0;
+    }
+
+    &.widget_meta,
+    &.widget_pages,
+    &.widget_archive,
+    &.widget_categories,
+    &.widget_nav_menu {
+        ul {
+            margin-top: -5px;
+        }
+
+        .menu,
+        >ul {
+            margin-bottom: -5px;
+        }
+
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0;
+            margin-bottom: 21px;
+            font-family: $body-font;
+            color: #5E5E60;
+            display: block;
+            max-width: 100%;
+            width: max-content;
+            background-color: transparent;
+            border: none;
+            position: relative;
+            transition: all 0.9s ease-in-out;
+
+            &:before {
+                display: none;
+            }
+
+            &:hover {
+                color: $theme-color;
+
+                &:before {
+                    background-color: $theme-color;
+                    transition: all 0.9s ease-in-out;
+                }
+            }
+        }
+
+        li {
+            >span {
+                @include equal-size(auto);
+                position: relative;
+                background-color: transparent;
+                color: $body-color;
+                line-height: 1;
+            }
+
+            &:last-child {
+                a {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &.style2 {
+            a {
+                &:before {
+                    content: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.3'%3E%3Cpath d='M16.25 6.47399V9.52606C16.25 9.75581 16.0638 9.94225 15.8338 9.94225H10.1923V15.5838C10.1923 15.8139 10.0058 16 9.77606 16H6.72399C6.49437 16 6.30779 15.8138 6.30779 15.5838V9.94225H0.666193C0.436253 9.94225 0.25 9.75581 0.25 9.52606V6.47399C0.25 6.24419 0.436253 6.05779 0.666193 6.05779H6.30779V0.416193C6.30779 0.186162 6.49432 0 6.72399 0H9.77606C10.0058 0 10.1923 0.186162 10.1923 0.416193V6.05779H15.8338C16.0639 6.05779 16.25 6.24419 16.25 6.47399Z' fill='%235C5F71'/%3E%3C/g%3E%3C/svg%3E%0A");
+                }
+
+                &:hover {
+                    &:before {
+                        content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6.47399V9.52606C16 9.75581 15.8138 9.94225 15.5838 9.94225H9.94225V15.5838C9.94225 15.8139 9.75581 16 9.52606 16H6.47399C6.24437 16 6.05779 15.8138 6.05779 15.5838V9.94225H0.416193C0.186253 9.94225 0 9.75581 0 9.52606V6.47399C0 6.24419 0.186253 6.05779 0.416193 6.05779H6.05779V0.416193C6.05779 0.186162 6.24432 0 6.47399 0H9.52606C9.75581 0 9.94225 0.186162 9.94225 0.416193V6.05779H15.5838C15.8139 6.05779 16 6.24419 16 6.47399Z' fill='%23F96363'/%3E%3C/svg%3E%0A");
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .recent-post {
+        max-width: 303px;
+        margin-top: -0.3em;
+        margin-bottom: 28px;
+
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        .media-img {
+            margin-right: 20px;
+            width: 95px;
+            height: 80px;
+            overflow: hidden;
+            border-radius: 16px;
+        }
+
+        .recent-post-meta {
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                color: $body-color;
+                line-height: 1.2;
+            }
+
+            i {
+                color: $body-color;
+            }
+
+            a:hover {
+
+                i {
+                    color: $body-color;
+                }
+            }
+        }
+
+        .post-title {
+            color: $white-color;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+
+.th-widget-about {
+    .about-logo {
+        margin-bottom: 32px;
+    }
+
+    .about-text {
+        font-size: 16px;
+        color: #5E5E60;
+        margin-bottom: 30px;
+        margin-top: -0.5em;
+    }
+
+    .footer-info {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex: 1;
+        color: $white-color;
+        max-width: 322px;
+        font-size: 16px;
+        margin-top: 0;
+
+        i {
+            min-width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid rgba(183, 189, 222, 0.5);
+            border-radius: 50%;
+            color: $white-color;
+            font-size: 16px;
+            background-color: transparent;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                background-color: $white-color;
+                color: $title-color;
+            }
+
+        }
+
+        &:not(:last-child) {
+            margin: 0 0 16px 0;
+        }
+    }
+
+}
+
+.footer-text {
+    margin-top: -0.46em;
+    margin-bottom: 25px;
+}
+
+.social-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .social-title {
+        font-size: 20px;
+        color: $white-color;
+        font-weight: 600;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+
+.icon-group {
+    a {
+        color: $white-color;
+        font-size: 18px;
+        margin-right: 17px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.newsletter-widget {
+    max-width: 290px;
+
+    .form-control {
+        background-color: $white-color !important;
+        border: 1px solid $border-color;
+    }
+}
+
+@include lg {
+    .footer-widget {
+
+        &.widget_meta,
+        &.widget_pages,
+        &.widget_archive,
+        &.widget_categories,
+        &.widget_nav_menu {
+            a {
+                margin-bottom: 16px;
+            }
+
+        }
+    }
+}
+
+@include sm {
+
+    .th-widget-about .about-text {
+        margin-bottom: 20px;
+        ;
+    }
+
+    .social-box.mb-30 {
+        margin-bottom: 25px;
+    }
+}

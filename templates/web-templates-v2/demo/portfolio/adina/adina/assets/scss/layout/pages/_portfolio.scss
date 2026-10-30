@@ -1,0 +1,502 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.16 portfolio css
+/*----------------------------------------*/
+
+.#{$theme-prifix}-portfolio{
+  &-wrap{
+    &:hover{
+      & .td-poerfolio-thumb{
+        & img{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  &-cetagory{
+    & span{
+      display: inline-block;
+      font-size: 14px;
+      line-height: 143%;
+      color: var(--td-theme-primary);
+      border: 1px solid var(--td-common-line);
+      border-radius: 96px;
+      padding: 9px 19px;
+      margin-right: 7px;
+      @media #{$xs}{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &-space{
+    @media #{$xs}{
+      padding-bottom: 100px;
+    }
+  }
+  &-title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 131%;
+    @media #{$xs}{
+      font-size: 26px;
+    }
+    &-wrap{
+      @media #{$xs}{
+        margin-bottom: 40px;
+      }
+    }
+    & a{
+      @include bgborder(#20282d, 0,0);
+      @include transition(all .3s ease);
+      &:hover{
+          @include bgborder(#20282d, 0,100%);
+          @include transition(all .3s ease);
+      }
+    }
+  }
+  &-tab{
+    &-btn{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--td-grey-2);
+      padding: 0;
+      margin-right: 40px;
+      @include bgborder(#20282d, 0,0);
+      @include transition(all .3s ease);
+      @media #{$lg} {
+        margin-right: 20px;
+      }
+      @media #{$sm,$xs} {
+        margin-bottom: 20px;
+      }
+      &:hover{
+          @include bgborder(#20282d, 0,100%);
+          @include transition(all .3s ease);
+          color: var(--td-theme-primary);
+      }
+      &.active{
+        @include bgborder(#20282d, 0,100%);
+        @include transition(all .3s ease);
+        color: var(--td-theme-primary);
+      }
+    }
+  }
+  &-slider{
+    &-active{
+      margin-right: -390px;
+      @media #{$md} {
+        margin-right: -190px;
+      }
+      @media #{$sm,$xs} {
+        margin-right: 0;
+      }
+    }
+  }
+  &-right{
+    &-btn{
+      @media #{$md,$sm,$xs} {
+        text-align: left!important;
+      }
+    }
+  }
+  &-2{
+    &-wrap{
+      &:hover{
+        & .td-portfolio-2-title{
+          &::before{
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+          }
+        }
+      }
+    }
+    &-title{
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 1.12;
+      margin-bottom: 0;
+      @media #{$md} {
+        font-size: 55px;
+      }
+      @media #{$sm,$xs} {
+        font-size: 44px;
+      }
+      @media #{$xs} {
+        font-size: 35px;
+      }
+      &-pre{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.62;
+        margin-right: 10px;
+      }
+    }
+    &-content{
+      padding: 41px 0px;
+
+      &:hover{
+        z-index: 3;
+        & .td-portfolio-2-thumb-inner{
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(-20px);
+        }
+      }
+    }
+    &-icon{
+      border-radius: 150px;
+      width: 100px;
+      height: 100px;
+      background: var(--td-common-white);
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      text-align: center;
+      line-height: 100px;
+      @media #{$lg,$md,$sm,$xs} {
+        line-height: 60px;
+        width: 60px;
+        height: 60px;
+      }
+      @media #{$xs} {
+        right: 10px;
+        top: 10px;
+      }
+    }
+    &-thumb{
+      & img{
+        box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.1);
+        border: 4px solid var(--td-common-white);
+        @media #{$lg,$md,$sm,$xs} {
+          width: 350px;
+        }
+        @media #{$xs} {
+          width: 200px;
+        }
+      }
+      &-inner{
+        position: absolute;
+        top: -160px;
+        right: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-80px);
+        @include transition(all .5s ease);
+        z-index: -1;
+        @media #{$lg,$md,$sm} {
+          top: -60px;
+        }
+        @media #{$xs} {
+          top: -10px;
+        }
+      }
+    }
+    &-border{
+      border-bottom: 1px solid var(--td-common-line);
+    }
+  }
+  &-4{
+    &-tag{
+      & a{
+        border: 1px solid var(--td-common-line);
+        padding: 5px 8px;
+        background: var(--td-common-white);
+        font-family: var(--font-family);
+        font-size: 14px;
+        line-height: 1;
+        text-transform: uppercase;
+        display: inline-block;
+        color: var(--td-theme-primary);
+        margin-right: 5px;
+      }
+    }
+    &-title{
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 1.31;
+      color: var(--td-theme-primary);
+      & a{
+        @include bgborder(#20282d, 0,0);
+        @include transition(all .3s ease);
+        &:hover{
+            @include bgborder(#20282d, 0,100%);
+            @include transition(all .3s ease);
+        }
+      }
+    }
+    &-slider{
+      &-active{
+        overflow: visible;
+      }
+    }
+  }
+  &-5{
+    &-tab{
+      &-content{
+        @media #{$md, $sm, $xs} {
+          padding-top: 0;
+        }
+        & p{
+          line-height: 1.5;
+          color: var(--td-grey-2);
+        }
+      }
+      &-list{
+        & button{
+          font-weight: 600;
+        }
+      }
+    }
+    &-content{
+      position: absolute;
+      bottom: 0;
+      left: 40px;
+      right: 40px;
+      opacity: 0;
+      visibility: hidden;
+      @extend %tp-transition;
+    }
+    &-item{
+      &:hover{
+        & .td-portfolio-5-thumb{
+          & img{
+            transform: scale(1.1);
+          }
+          & span{
+            visibility: visible;
+            opacity: 1;
+            @include transform(perspective(600px) rotateY(0deg));
+          }
+        }
+        & .td-portfolio-5-content{
+          bottom: 30px;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    &-thumb{
+      position: relative;
+      overflow: hidden;
+      & img{
+        @extend %tp-transition;
+        width: 100%;
+      }
+      & span{
+        position: absolute;
+        background: linear-gradient(180deg, rgba(32, 40, 45, 0) 0%, #20282d 100%);
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        @include transform(perspective(500px) rotateY(20deg));
+        @extend %tp-transition;
+        visibility: hidden;
+      }
+    }
+    &-title{
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 1;
+      color: var(--td-common-white);
+      @media #{$xs} {
+        font-size: 24px;
+      }
+      & a{
+        @include bgborder(#ffff, 0,0);
+        @include transition(all .3s ease);
+        &:hover{
+            @include bgborder(#ffff, 0,100%);
+            @include transition(all .3s ease);
+        }
+      }
+      &-pre{
+        font-size: 14px;
+        line-height: 1;
+        color: var(--td-common-white);
+        opacity: 0.7;
+        margin-bottom: 12px;
+        display: inline-block;
+      }
+    }
+  }
+  &-wrap{
+    @media #{$md, $sm, $xs} {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &-details{
+    &-title{
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 1.16;
+      @media #{$md,$sm}{
+        font-size: 55px;
+      }
+      @media #{$xs}{
+        font-size: 40px;
+      }
+    }
+    &-text{
+      @media #{$lg,$md,$sm,$xs}{
+        margin-right: 0;
+      }
+      & p{
+        line-height: 1.62;
+        color: var(--tp-grey-2);
+      }
+    }
+    &-tab{
+      & .td-portfolio-tab-btn{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        color: #999;
+        margin-bottom: 0;
+        padding-bottom: 18px;
+        margin-right: 10px;
+        padding-right: 30px;
+        @media #{$xs}{
+          padding-right: 10px;
+          padding-bottom: 5px;
+          margin-bottom: 15px;
+        }
+        &.active{
+          color: var(--td-theme-primary);
+        }
+      }
+      &-content{
+        & p{
+          line-height: 1.62;
+          color: var(--td-grey-2);
+          margin-bottom: 38px;
+        }
+      }
+      & .td-portfolio-tab-btn-list{
+        border-bottom: 1px solid#d9d9d9;
+        margin-bottom: 37px;
+      }
+    }
+  }
+  &-navigation{
+    border-top: 1px solid var(--td-common-line);
+    padding-top: 40px;
+  }
+  &-more{
+    &-icon{
+      border: 1px solid var(--td-common-line);
+      height: 36px;
+      width: 36px;
+      display: inline-block;
+      text-align: center;
+      line-height: 36px;
+      color: var(--td-theme-primary);
+      transition: all .4s ease;
+      &:hover{
+        color: var(--td-common-white);
+        background: var(--td-theme-primary);
+      }
+    }
+    &-content{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1;
+      color: var(--td-theme-primary);
+      &:hover{
+        color: var(--td-grey-2);
+      }
+    }
+    &-menu{
+      @media #{$xs}{
+        text-align: left!important;
+      }
+    }
+    &-left{
+      @media #{$xs}{
+        text-align: left!important;
+      }
+    }
+  }
+  &-case{
+    &-details{
+      &-wrap{
+        background: var(--td-grey-1);
+        padding: 50px 50px 40px 50px;
+        margin-left: 10px;
+        @media #{$xl,$lg,$md,$sm,$xs}{
+          margin-left: 0;
+        }
+        @media #{$lg,$xs}{
+          padding: 50px 30px 40px 30px;
+        }
+      }
+    }
+    &-title{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1;
+      border-bottom: 1px solid#d2dae7;
+      padding-bottom: 20px;
+    }
+    &-info{
+      & span{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1;
+        color: var(--td-theme-primary);
+      }
+    }
+    &-list{
+      &-item{
+        border-bottom: 1px solid #d2dae7;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    &-social{
+      & ul{
+        & li{
+          list-style: none;
+          display: inline-block;
+          margin-right: 6px;
+          & a{
+            font-size: 14px;
+            color: var(--td-grey-2);
+            &:hover{
+              color: var(--td-theme-primary);
+              & svg{
+                fill: var(--td-theme-primary);
+              }
+            }
+            & svg{
+              width: 14px;
+              fill: var(--td-grey-2);
+              transition: all .4s ease;
+              transform: translateY(-2px);
+            }
+          }
+        }
+      }
+    }
+    &-location{
+      & span{
+        font-weight: 500;
+        line-height: 1;
+        color: var(--td-grey-2);
+      }
+    }
+  }
+}
+.td-poerfolio-thumb{
+  overflow: hidden;
+  transition: all .4s ease;
+  & img{
+    transition: all .4s ease;
+  }
+}

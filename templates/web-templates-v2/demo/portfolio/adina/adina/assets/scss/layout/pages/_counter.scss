@@ -1,0 +1,141 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.7 counter
+/*----------------------------------------*/
+.#{$theme-prifix}-counter{
+  &-content{
+    @media #{$x3l,$xxl,$xl,$lg} {
+      margin-right: 30px;
+      margin-left: 80px;
+    }
+    @media #{$md,$sm} {
+      margin-right: 30px;
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    @media #{$xs} {
+      margin-right: 15px;
+      margin-left: 15px;
+      margin-top: 30px;
+    }
+    & p{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 175%;
+      color: var(--td-theme-primary);
+      @media #{$xl,$lg,$md,$sm,$xs} {
+        font-size: 18px;
+      }
+      & span{
+        font-weight: 700;
+      }
+    }
+  }
+  &-single{
+    &-border{
+      position: relative;
+      padding-bottom: 37px;
+      @media #{$lg,$md,$sm,$xs} {
+        margin-right: 30px;
+        margin-bottom: 0;
+        padding: 0;
+        &::before{
+          display: none;
+        }
+      }
+      &::before{
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 190px;
+        bottom: 0;
+        background:  var(--td-common-line);
+        left: 0;
+      }
+    }
+  }
+  &-thumb{
+    height: 100%;
+    & img{
+      height: 100%;
+      object-fit: cover;
+    }
+    @media #{$lg,$md,$sm,$xs} {
+      margin-bottom: 40px;
+    }
+  }
+  &-count{
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 116%;
+    &-wrap{
+      @media #{$lg} {
+        margin-top: 30px;
+      }
+      @media #{$lg,$md,$sm,$xs} {
+        margin-left: 30px;
+        display: flex;
+      }
+      @media #{$xs} {
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+      &-2{
+        @media #{$sm,$xs} {
+          margin-left: 0;
+        }
+      }
+    }
+    &-para{
+      line-height: 150%;
+      color: var(--td-grey-2);
+    }
+  }
+  &-map{
+    position: absolute;
+    right: 0;
+    bottom: 88px;
+    z-index: -1;
+  }
+  &-logo{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: var(--td-common-white);
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    @media #{$md,$sm,$xs} {
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+    & h3{
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+
+.fs-36{
+	font-size: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+

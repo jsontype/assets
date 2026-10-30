@@ -1,0 +1,54 @@
+/******************************************************/
+/* Counter Section                                     */
+/******************************************************/
+
+
+.rts-counter-wrapper {
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E4E6EC;
+
+    @include mq(max-xl){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        text-align: center;
+    }
+
+    @include mq(max-sm){
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .single-counter {
+        h2 {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 3px;
+            font-size: 48px;
+            line-height: 1;
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 76px;
+                height: 76px;
+                border-radius: 50%;
+                background: rgba(51, 88, 211, 0.1);
+                z-index: -1;
+            }
+        }
+
+        .desc {
+            font-size: 12px;
+            font-weight: var(--f-bold);
+            color: var(--color-heading);
+        }
+    }
+}

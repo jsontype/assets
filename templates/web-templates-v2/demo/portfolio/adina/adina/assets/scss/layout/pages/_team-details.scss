@@ -1,0 +1,118 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 7.20 team-details css
+/*----------------------------------------*/
+
+.#{$theme-prifix}-team-details{
+    &-title{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 1;
+    }
+    &-content{
+        margin-left: 70px;
+        margin-right: 70px;
+        @media #{$xl, $lg, $md, $sm, $xs} {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    &-thumb{
+        @media #{$lg, $md, $sm, $xs} {
+            margin-right: 0;
+        }
+    }
+    &-subtitle{
+        font-size: 14px;
+        line-height: 1;
+        color: var(--td-grey-2);
+        display: inline-block;
+    }
+    &-social{
+        border-top: 1px solid var(--td-common-line);
+        border-bottom: 1px solid var(--td-common-line);
+        padding: 14px 0px 10px 0px;
+        & span{
+            font-size: 16px;
+            line-height: 1;
+            color: var(--td-grey-2);
+            margin-right: 40px;
+            display: inline-block;
+            & a{
+                &:hover{
+                    color: var(--td-theme-primary);
+                }
+            }
+            & i{
+                color: var(--td-theme-primary);
+                margin-right: 5px;
+            }
+        }
+        & ul{
+            display: inline-block;
+            & li{
+                list-style: none;
+                font-size: 16px;
+                color: var(--td-grey-2);
+                display: inline-block;
+                margin-left: 13px;
+                &:hover{
+                    color: var(--td-theme-primary);
+                    & svg{
+                        fill: var(--td-theme-primary);
+                    }
+                }
+                & svg{
+                    width: 15px;
+                    fill: var(--td-grey-2);
+                    transition: all .4s ease;
+                }
+            }
+        }
+    }
+    &-biography{
+        &-title{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1;
+        }
+        & p{
+            line-height: 1.62;
+            color: var(--td-grey-2);
+        }
+    }
+    &-education{
+        & ul{
+            & li{
+                list-style: none;
+                font-family: var(--font-family);
+                line-height: 2.25;
+                color: var(--td-grey-2);
+            }
+        }
+    }
+    &-skill{
+        & ul{
+            & li{
+                list-style: none;
+                display: inline-block;
+                & a{
+                    line-height: 1;
+                    color: var(--td-grey-2);
+                    @include bgborder(#20282d, 0,0);
+                    @include transition(all .3s ease);
+                    &:hover{
+                        @include bgborder(#20282d, 0,100%);
+                        @include transition(all .3s ease);
+                        color: var(--td-theme-primary);
+                    }
+                }
+                & span{
+                    color: #cacaca;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}

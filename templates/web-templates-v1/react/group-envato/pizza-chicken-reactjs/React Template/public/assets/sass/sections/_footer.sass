@@ -1,0 +1,183 @@
+/*******************************************************/
+/******************* ## Main Footer *******************/
+/*******************************************************/
+.footer-widget
+    margin-bottom: 50px
+    p
+        color: white
+                
+.footer-title
+    margin-bottom: 20px
+    h5
+        color: white
+        
+.footer-links
+    +res-ab(xl)
+        max-width: 340px
+        margin-left: auto
+    ul
+        li
+            color: white
+            &:not(:last-child)
+                margin-bottom: 7px
+            a
+                color: white
+                &:hover
+                    color: $secondary-color
+                    text-decoration: underline
+        &.two-column
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            li
+                width: 50%
+
+.footer-contact ul
+    li
+        color: white
+        &:not(:last-child)
+            margin-bottom: 15px
+        a
+            color: white
+            &:hover
+                color: $secondary-color
+            
+.opening-hour
+    ul li
+        color: white
+        span
+            color: $secondary-color
+    .any-question
+        h5
+            color: white
+            margin-bottom: 15px
+        .theme-btn
+            font-size: 16px
+            padding: 7px 30px
+    
+.newsletter-form
+    max-width: 630px
+    +gapLR(margin, auto)
+    padding: 10px
+    position: relative
+    display: flex
+    background: #fff
+    label
+        color: $primary-color
+        font-size: 18px
+        +poLT(30px, 21px)
+    input
+        border: 0
+        color: #9B9B9B
+        font-size: 18px
+        padding: 11px 10px 11px 50px
+        &::placeholder
+            color: #9B9B9B
+    .theme-btn i
+        +res-bl(xs)
+            display: none
+    &.style-two
+        background: $lighter-color
+        margin-left: 0
+        input
+            background-color: transparent
+            
+/* Newsleter HomeFive */
+.newsletter-wrap
+    padding: 80px 70px 60px
+    border: 2px dashed rgba(255, 255, 255, 0.7)
+    +res-bl(md)
+        padding: 40px 30px 20px
+    +res-bl(ms)
+        +gapLR(padding, 20px)
+    +res-bl(xs)
+        +gapLR(padding, 15px)
+    .section-title
+        max-width: 580px
+    .newsletter-form-wrap
+        h6
+            color: white
+        .check-field label
+            color: #989898
+            +res-bl(xs)
+                font-size: 13px
+        +res-bl(xs)
+            .newsletter-form
+                label
+                    top: 15px
+                    left: 15px
+                input
+                    padding: 5px 5px 5px 30px
+                button
+                    padding: 5px 15px
+            
+.newsletter-area
+    .section-title h2
+        +res-bt(md, xl)
+            font-size: 45px
+/* Newsletter Shapes */
+.newsletter-shapes
+    .shape
+        z-index: 2
+        max-width: 17%
+        +poRB(0)
+
+/* Footer Bottom */  
+.footer-bottom
+    position: relative
+    border-top: 1px solid rgba(255, 255, 255, 0.1)
+    .copyright-text
+        color: white
+        a
+            color: $secondary-color
+    .scroll-top
+        position: absolute
+        top: -50px
+        left: calc(50% - 40px)
+        +res-bl(lg)
+            top: -40px
+            left: calc(50% - 30px)
+        
+.footer-bottom-nav
+    flex-wrap: wrap
+    display: inline-flex
+    +gapLR(margin, -13px)
+    justify-content: center
+    li
+        margin: 0 13px 5px
+        a
+            color: white
+            
+            
+/* Footer Shapes */
+.footer-shapes
+    .shape
+        z-index: -1
+        position: absolute
+        &.one
+            left: 5%
+            bottom: 15%
+            max-width: 5%
+            filter: drop-shadow(0px 10px 30px rgba(236, 61, 8, 0.5))
+        &.two
+            top: 10%
+            right: 5%
+            max-width: 7%
+            filter: drop-shadow(0px 10px 60px rgba(236, 61, 8, 0.5))
+        &.three
+            left: 0
+            top: 0
+            max-width: 20%
+            
+/* Footer Two */
+.main-footer.footer-two
+    .footer-widget
+        max-width: 236px
+        &.footer-contact ul li
+            margin-bottom: 0
+    .scroll-top
+        right: 0
+        left: auto
+        top: -65px
+        color: $heading-color
+        background-image: url(../images/shapes/scroll-top-yellow-bg.png)

@@ -1,0 +1,88 @@
+/*
+Template Name: Techsoon - Coming Soon HTML Template
+Version: 1.0.0
+Author: Techzaa
+File: Main Css File
+*/
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+
+@import "wave";
+
+
+
+html {
+    @apply relative scroll-smooth;
+}
+
+
+
+body {
+    font-size: 15px;
+    @apply font-body overflow-x-hidden text-gray-700;
+}
+
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @apply font-semibold;
+}
+
+.navbar-show {
+    height: 6rem;
+    opacity: 1;
+}
+
+
+// index-2 End======
+
+// index-3 start======
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+// index-3 End======
+
+
+// index-5 start======
+.flip-card-top {
+    animation: flip-top 350ms ease-in;
+    transform-origin: bottom;
+}
+
+@keyframes flip-top {
+    100% {
+        transform: rotateX(90deg);
+    }
+}
+
+.flip-card-bottom {
+    animation: flip-bottom 350ms ease-in-out 350ms;
+    transform-origin: top;
+    transform: rotateX(90deg);
+}
+
+@keyframes flip-bottom {
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+// index-5 End======
+
+// index-6 start======
+.border-b-solid {
+    border-bottom: solid;
+    @apply border-b-sky-500;
+}

@@ -1,0 +1,132 @@
+/* Offer 1 ---------------------------------- */
+.price_style1 {
+    color: $white-color;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 24px;
+    del {
+        font-size: 0.75em;
+        margin-left: 3px;
+        vertical-align: middle;
+        color: $smoke-color2;
+    }
+    &.text-theme {
+        del {
+            color: $theme-color;
+        }
+    }
+}
+
+.discount_counter1 {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        @include equal-size(60px);
+        background-color: $white-color;
+        border-radius: 10px;
+        margin: 0 0 5px 0;
+        padding: 10px 5px;
+        text-align: center;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    .count-number {
+        font-size: 22px;
+        margin-bottom: -2px;
+        line-height: 1;
+        font-weight: bold;
+        font-family: $title-font;
+        color: $title-color;
+    }
+    .count-name {
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: -4px;
+    }
+}
+
+.discount_style2 {
+    position: absolute;
+    top: $space;
+    right: 6%;
+    text-align: center;
+    padding: 55px 40px 50px 70px;
+    height: 242px;
+    width: 234px;
+    .percentage {
+        font-size: 40px;
+        font-weight: bold;
+        color: $theme-color;
+        margin-bottom: 0;
+    }
+    .small-text1,
+    .small-text2 {
+        font-family: $title-font;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $title-color;
+        margin-bottom: 0;
+        line-height: 1.1;
+    }
+}
+
+.position-relative {
+    &:hover {
+        .discount_style2 {
+            animation: pluse1 2s ease-in-out infinite;
+        }
+    }
+}
+
+@include md {
+    .discount_style2 {
+        top: $space;
+        right: 1%;
+    }
+}
+
+@include sm {
+    .discount_counter1 {
+        display: inline-block;
+        li {
+            display: inline-block;
+        }
+    }
+    .discount_style2 {
+        position: relative;
+        margin-top: -40px;
+        top: 0;
+        right: 0;
+    }
+}
+
+/* Offer 2 ---------------------------------- */
+.offer-card {
+    padding: 40px;
+    border-radius: 10px;
+    background-position: left center;
+    .offer-title {
+        color: $white-color;
+        margin-bottom: 8px;
+    }
+    .offer-text {
+        color: $white-color;
+        max-width: 145px;
+        margin-bottom: 8px;
+    }
+    .line-btn {
+        color: $white-color;
+        &:before {
+            background-color: $white-color;
+            width: 100%;
+        }
+        &:hover {
+            &:before {
+                width: 35px;
+            }
+        }
+    }
+}

@@ -1,0 +1,212 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.17 pricing css
+/*----------------------------------------*/
+
+.#{$theme-prifix}-pricing{
+  $self : &;
+  &-wrap{
+    box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.08);
+    background: var(--td-common-white);
+    padding: 70px 40px 40px 40px;
+    &-2{
+      background: var(--td-theme-primary);
+      & #{$self}{
+        &-tag h5 {
+          color: var(--td-common-white);
+        }
+        &-tag span {
+          color: var(--td-common-white);
+        }
+        &-price h2 {
+          -webkit-text-fill-color: var(--td-common-white);
+          -webkit-text-stroke-color: var(--td-common-white);
+        }
+        &-price P {
+          color: var(--td-common-white);
+        }
+      }
+    }
+  }
+  &-tag{
+    & h5{
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 1.31;
+      color: var(--td-theme-primary);
+    }
+    & span{
+      line-height: 1.6;
+      color: var(--td-theme-primary);
+      opacity: 0.6;
+    }
+  }
+  &-price{
+    & h2{
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 1.12;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-color: var(--td-theme-primary);
+      -webkit-text-stroke-width: 1px;
+    }
+    & P{
+      line-height: 1.62;
+      color: var(--td-grey-2);
+      @media #{$xs} {
+        & br{
+          display: none;
+        }
+      }
+    }
+  }
+  &-btn{
+    & a{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1;
+      color: var(--td-theme-primary);
+      border: 1px solid var(--td-common-line);
+      padding: 21px;
+      display: block;
+      transition: all .4s ease;
+      width: 100%;
+      background: var(--td-common-white);
+    }
+    &-2{
+      & a{
+        &:hover{
+          background: var(--td-theme-primary);
+          color: var(--td-common-white);
+        }
+      }
+    }
+    &-line{
+      position: absolute;
+      top: -51px;
+      @media #{$xxl, $xl, $lg} {
+        right: 40px;
+      }
+      @media #{$md} {
+        right: 36%;
+      }
+      @media #{$sm, $xs} {
+        right: 12%;
+      }
+    }
+    &-offer{
+      &-tag{
+        position: absolute;
+        top: -43px;
+        right: -60px;
+        @media #{$xxl, $xl, $lg} {
+          right: -20px;
+        }
+        @media #{$md} {
+          right: 28%;
+        }
+        @media #{$sm, $xs} {
+          right: 0;
+        }
+        & span{
+          border: 1px solid var(--td-theme-primary);
+          border-radius: 99px;
+          width: 60px;
+          height: 60px;
+          background: var(--td-common-white);
+          display: inline-block;
+          font-size: 14px;
+          line-height: 1;
+          color: var(--td-grey-2);
+          text-align: center;
+          padding-top: 15px;
+          position: relative;
+          &::before{
+            position: absolute;
+            content: "";
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background: var(--td-theme-primary);
+            bottom: -5px;
+            right: -5px;
+            z-index: -1;
+          }
+          & b{
+            color: var(--td-theme-primary);
+          }
+        }
+      }
+    }
+    &-bg{
+      border: 1px solid #dfe7f2;
+      border-radius: 40px;
+      background: var(--td-grey-1);
+      position: relative;
+      display: inline-block;
+      & button{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+        display: inline-block;
+        color: var(--td-theme-primary);
+        padding: 31px 51px;
+        position: relative;
+        z-index: 1;
+        @media #{$xs} {
+          padding: 31px 24px;
+        }
+        &:hover{
+          color: var(--td-theme-primary);
+        }
+        &.active{
+          color: var(--td-theme-primary);
+        }
+      }
+      & .test {
+        position: absolute;
+        transition: transform 0.2s ease-in-out;
+        will-change: transform;
+        width: 200px;
+        height: calc(87% - 8px);
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        display: block;
+        content: "";
+        background: var(--td-common-white);
+        box-shadow: 0px 2px 2px -1px rgba(89, 86, 233, 0.15), 0px 0px 1px rgba(89, 86, 233, 0.1);
+        border-radius: 30px;
+        transform: translateX(197px);
+        @media #{$xs} {
+          width: 145px;
+          transform: translateX(150px);
+        }
+      }
+    }
+    &-box{
+      @media #{$md, $sm, $xs} {
+        justify-content: flex-start!important;
+      }
+    }
+  }
+  &-badge{
+    font-weight: 500;
+    line-height: 1;
+    color: var(--td-common-white);
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    padding: 10px 13px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+
+.td-pricing-btn-bg button.monthly.active ~ .test {
+  transform: translateX(0px);
+}

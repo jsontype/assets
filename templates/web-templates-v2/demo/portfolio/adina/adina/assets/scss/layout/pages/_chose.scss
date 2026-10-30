@@ -1,0 +1,46 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.5 chose css
+/*----------------------------------------*/
+
+.#{$theme-prifix}-chose{
+  &-item{
+    @media #{$xs} {
+      margin-left: 0;
+    }
+    &:hover{
+      & .td-chose-icon{
+        animation-name: tdshake;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.4s;
+        animation-iteration-count: 1;
+        transition: all 0.4s ease;
+      }
+    }
+  }
+  &-top{
+    &-border{
+      border-top: 1px solid var(--td-theme-primary);
+    }
+  }
+  &-content{
+    & p{
+      line-height: 1.62;
+      color: var(--td-grey-2);
+    }
+  }
+  &-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    & a{
+      @include bgborder(#20282d, 0,0);
+      @include transition(all .3s ease);
+      &:hover{
+          @include bgborder(#20282d, 0,100%);
+          @include transition(all .3s ease);
+      }
+    }
+  }
+}

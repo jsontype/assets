@@ -1,0 +1,31 @@
+{
+    "bg_image": "/img/photo/1.jpg",
+    "title": "Modern<br/><span class=\"mil-accent\">Architectural</span><br/>Design",
+    "subtitle": "The future",
+    "button": {
+        "link": "/projects",
+        "label": "View Projects"
+    },
+    "numbers": [
+        {
+            "value": "346",
+            "afterValue": "+",
+            "label": "Succeeded <br/>Projects"
+        },
+        {
+            "value": "9",
+            "afterValue": "k+",
+            "label": "Working <br/>Hours"
+        },
+        {
+            "value": "10",
+            "afterValue": "+",
+            "label": "Years <br/>Experience"
+        },
+        {
+            "value": "99",
+            "afterValue": "+",
+            "label": "Billion <br/>Invested"
+        }
+    ]
+}

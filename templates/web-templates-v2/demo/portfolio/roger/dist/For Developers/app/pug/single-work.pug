@@ -1,0 +1,217 @@
+
+//- Page Options
+- HtmlClass = 'no-js'
+- SiteName = 'Roger'
+- PageTitle = 'Modern & Creative CV/Resume HTML5 Template' // page title
+- Sections = [ 'Home', 'About', 'Portfolio', 'Experience', 'Testimonials', 'Blog', 'Contact' ];
+
+//- Options
+- Preloader = 'show' // show / hide
+
+//- Body Class
+- BodyClass = Preloader == 'show' ? ' animsition' : ''
+
+include mixins/_global-mixins.pug
+
+doctype html
+html(lang='en', class=HtmlClass)
+	head
+		meta(charset='utf-8')
+
+		//- Head
+		include html/_head.pug
+
+	body(class=BodyClass)
+
+		//- Header
+		include template-parts/header/_header.pug
+
+		//- Main
+		+site_main
+
+			section.vh-100.jarallax
+
+				img(src='assets/img/attachment-05.jpg', alt='', class='jarallax-img', loading='lazy')
+
+			section
+
+				.ptf-gap-90
+
+				.container
+
+					.row(style='--bs-gutter-y: 50px;')
+
+						.col-sm-3
+
+							+ptf_animation_block
+
+								dl
+
+									dt Design
+									dd Jonny Laymore
+
+						.col-sm-3
+
+							+ptf_animation_block({
+								delay: '100ms'
+							})
+
+								dl
+
+									dt Services
+									dd Branding, UI/UX Design, #[br]Mobile Design
+
+						.col-sm-3
+
+							+ptf_animation_block({
+								delay: '200ms'
+							})
+
+								dl
+
+									dt Date
+									dd Feburary 25th, 2020
+
+						.col-sm-3
+
+							+ptf_animation_block({
+								delay: '300ms'
+							})
+
+								dl
+
+									dt Team
+									dd Paul - Designer#[br]VLThemes - Coder
+
+				.ptf-gap-90
+
+			section
+
+				.ptf-gap-60
+
+				.container.text-center
+
+					+ptf_animation_block
+
+						span.has-color-white Photography
+
+						.ptf-gap-20
+
+						h2 Minimalistic composition
+
+					.ptf-gap-90
+
+					+ptf_animation_block
+
+						a(href='assets/img/attachment-06.jpg', data-fancybox)
+
+							img(src='assets/img/attachment-06.jpg', alt='', loading='lazy')
+
+					.ptf-gap-100
+
+					.row
+
+						.col-md-6.offset-md-3
+
+							+ptf_animation_block
+
+								p Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out: #[a(href='https://example.domain/denima6vsco', class='has-color-white') https://example.domain/denima6vsco]
+
+				.ptf-gap-90
+
+			section
+
+				.ptf-gap-90
+
+				.container.text-center
+
+					+ptf_animation_block
+
+						h2 Composition
+
+					.ptf-gap-90
+
+					.row(style='--bs-gutter-y: 50px; --bs-gutter-x: 50px;')
+
+						.col-md-6
+
+							+ptf_animation_block
+
+								a(href='assets/img/attachment-07.jpg', data-fancybox)
+
+									img(src='assets/img/attachment-07.jpg', alt='', loading='lazy')
+
+						.col-md-6
+
+							+ptf_animation_block({
+								delay: '100ms'
+							})
+
+								a(href='assets/img/attachment-08.jpg', data-fancybox)
+
+									img(src='assets/img/attachment-08.jpg', alt='', loading='lazy')
+
+						.col-md-12
+
+							+ptf_animation_block({
+								delay: '200ms'
+							})
+
+								a(href='assets/img/attachment-09.jpg', data-fancybox)
+
+									img(src='assets/img/attachment-09.jpg', alt='', loading='lazy')
+
+					.ptf-gap-100
+
+					.row
+
+						.col-md-8.offset-md-2
+
+							+ptf_animation_block
+
+								p One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes.
+
+				.ptf-gap-90
+
+			section
+
+				.ptf-gap-90
+
+				.container.text-center
+
+					+ptf_animation_block
+
+						h2 Watch result
+
+					.ptf-gap-90
+
+					.row
+
+						.col-md-8.offset-md-2
+
+							+ptf_animation_block
+
+								p Thing form thing fifth. Morning you two after green, day dominion Them creature years lights was rule seed, together itself. Lights creeping second spirit air the. You night and their.
+
+					.ptf-gap-90
+
+			section.vh-100.jarallax(data-jarallax-video='https://vimeo.com/21609137')
+
+				img(src='assets/img/attachment-10.jpg', alt='', class='jarallax-img', loading='lazy')
+
+			section
+
+				.ptf-gap-150
+
+				.container.text-center
+
+					.ptf-like-button
+
+						a(href='#')
+
+							<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 41"><defs></defs><path d="M35.362 0C27.4165 0 23.5 7.45452 23.5 7.45452S19.5836 0 11.638 0C5.18077 0 .0673416 5.14129.00125128 11.2761-.133377 24.0105 10.6161 33.0666 22.3985 40.6772c.3248.2103.7086.3228 1.1015.3228.3929 0 .7767-.1125 1.1015-.3228 11.7812-7.6106 22.5307-16.6667 22.3973-29.4011C46.9327 5.14129 41.8193 0 35.362 0z" fill="currentColor"></path></svg>
+
+				.ptf-gap-250
+
+		//- Scripts
+		include html/_scripts.pug

@@ -1,0 +1,57 @@
+section.section-box.shop-template.mt-30
+    .container
+        h3.color-brand-3 Related Blogs
+        .row.mt-30
+            -
+                const blogLists = [
+                    {
+                        image: 'assets/imgs/page/blog/blog-17.jpg',
+                        title: 'Amazon’s ‘Safe’ New Robot Won’t Fix its Worker',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-16.jpg',
+                        title: 'When AI Makes Art, Humans Supply',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'single-sidebar.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-15.jpg',
+                        title: 'How Do You Know a Cargo Ship Is Polluting?',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'single-no-sidebar.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-7.jpg',
+                        title: 'The Summer\'s Best Read Is About AI, Surveillance',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'single-center.html'
+                    }
+                ]
+            each blog in blogLists
+                .col-lg-3.col-md-6.col-sm-6.col-12.mb-40
+                    .card-grid-style-1
+                        .image-box
+                            a(href= blog.link)
+                                img(src= blog.image, alt='GenZ')
+                        a.tag-dot.font-xs(href='blog-archive-2.html')= blog.tag
+                        a.color-gray-1100(href= blog.link)
+                            h4.mb-10= blog.title
+                        .row.mt-20
+                            .col-12
+                                span.color-gray-500.font-xs.mr-30= blog.date
+                                span.color-gray-500.font-xs= blog.minute
+                                    span
+                                        |  Mins read
+        .nav-center
+            include ../elements/pagination.pug

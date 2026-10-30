@@ -1,0 +1,18 @@
+/* WIDGET: CONTACT FORM
+-------------------------------------------- */
+
+.ptf-contact-form {
+
+	label.error {
+		margin: px2rem(5px) 0 0;
+		font-size: px2rem(12px);
+	}
+
+	.message {
+		display: none;
+		margin-bottom: px2rem(30px);
+		font-size: px2rem(14px);
+		color: var(--ptf-color-1);
+	}
+
+}

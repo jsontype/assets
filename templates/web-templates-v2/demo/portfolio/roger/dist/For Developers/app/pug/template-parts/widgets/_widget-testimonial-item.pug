@@ -1,0 +1,41 @@
+mixin ptf_testimonial_item(object)
+
+	//- Default
+	- object = object || {}
+	- object.text = object.text || ''
+	- object.name = object.name || ''
+	- object.function = object.function || ''
+
+	//- Element Class
+	- elClass = 'ptf-testimonial-item'
+
+	//Testimonial Item
+	div(class=elClass)
+
+		.ptf-testimonial-item__content
+
+			if object.text != ''
+
+				p #{object.text}
+
+		.ptf-testimonial-item__footer
+
+			.ptf-testimonial-item__meta
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 210 141"><path stroke="currentColor" d="M145.454 140C78.818 140 1 115.174 1 74.719 1 34.264 139.522 1 210 1"/></svg>
+
+				if object.name != ''
+					h6 #{object.name}
+
+				if object.function != ''
+					span #{object.function}
+
+			.ptf-testimonial-item__navigation
+
+				.ptf-swiper-button-prev
+
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 38" width="20" height="38"><path fill="currentColor" d="m19.707.987-18 18.675-.72-.694 18-18.675.72.694Zm-18 16.736 18 18.675-.72.694-18-18.675.72-.694Z"/></svg>
+
+				.ptf-swiper-button-next
+
+					<svg width="20" height="38" viewBox="0 0 20 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.987046 0.987L18.987 19.6622L19.707 18.9682L1.70705 0.293029L0.987046 0.987ZM18.987 17.723L0.987044 36.3982L1.70705 37.0922L19.707 18.417L18.987 17.723Z" fill="currentColor"/></svg>

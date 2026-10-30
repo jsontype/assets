@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <title>Aali - Personal Portfolio React Template</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Aali multi purpose is super flexible, powerful, clean &amp; modern responsive admin dashboard with unlimited possibilities."
+    />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- VENDOR CSS -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/vendor/animate-css/vivify.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/light-gallery/css/lightgallery.css"
+    />
+    <!-- JSTree (Folder Stewart) -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/jstree/dist/themes/default/style.min.css"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./assets/css/site.min.css" />
+
+    <!-- for demo only -->
+    <style>
+      .card .body {
+        font-size: 15px;
+      }
+
+      .main_features li {
+        padding: 5px 0;
+      }
+
+      .prettyprint {
+        color: #ffffff;
+      }
+
+      #Credits li {
+        line-height: 30px;
+      }
+
+      .lightGallery img {
+        border: 1px solid #450b5a;
+      }
+
+      .sm-logo {
+        width: 80px;
+      }
+
+      #main-content {
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+
+      div#wrapper {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body class="theme-violet font-krub light_version">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+      <div class="loader">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+      </div>
+    </div>
+
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+
+    <div id="wrapper">
+      <nav class="navbar top-navbar">
+        <div class="container-fluid">
+          <div class="navbar-left">
+            <div class="navbar-btn">
+              <a href="index"
+                ><img
+                  src="./assets/logo.png"
+                  alt="Aali Logo"
+                  class="img-fluid sm-logo"
+              /></a>
+              <button type="button" class="btn-toggle-offcanvas">
+                <i class="lnr lnr-menu fa fa-bars"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="navbar-right">
+            <div id="navbar-menu">
+              <ul class="nav navbar-nav">
+                <li>
+                  <form id="navbar-search" class="navbar-form search-form">
+                    <input
+                      value=""
+                      class="form-control"
+                      placeholder="Search here..."
+                      type="text"
+                    />
+                    <button type="button" class="btn btn-default">
+                      <i class="icon-magnifier"></i>
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </nav>
+
+      <div id="megamenu" class="megamenu particles_js">
+        <a href="javascript:void(0);" class="megamenu_toggle btn btn-danger"
+          ><i class="icon-close"></i
+        ></a>
+
+        <div id="particles-js"></div>
+      </div>
+
+      <div id="left-sidebar" class="sidebar">
+        <div class="navbar-brand">
+          <a href="https://Aalitheme1.vercel.app/" target="_blank"
+            ><img
+              src="./assets/logo.png"
+              alt="Aali Logo"
+              class="img-fluid sm-logo"
+          /></a>
+          <button
+            type="button"
+            class="btn-toggle-offcanvas btn btn-sm float-right"
+          >
+            <i class="lnr lnr-menu fa fa-chevron-circle-left"></i>
+          </button>
+        </div>
+        <div class="sidebar-scroll">
+          <nav id="left-sidebar-nav" class="sidebar-nav">
+            <ul id="main-menu" class="metismenu">
+              <li class="active">
+                <a href="#documenter_cover"
+                  ><i class="icon-home"></i><span>Start</span></a
+                >
+              </li>
+              <!-- <li>
+                            <a href="#features"><i class="icon-star"></i><span>Features</span></a>
+                        </li> -->
+              <li>
+                <a href="#react_js"
+                  ><i class="icon-tag"></i><span>React.js</span></a
+                >
+              </li>
+              <li>
+                <a href="#main_content"
+                  ><i class="icon-arrow-right"></i><span>Main Content</span></a
+                >
+              </li>
+              <li>
+                <a href="#dependencies"
+                  ><i class="icon-support"></i><span>Dependencies</span></a
+                >
+              </li>
+              <li>
+                <a href="#create_page"
+                  ><i class="icon-plus"></i><span>Create a Page</span></a
+                >
+              </li>
+              <li>
+                <a href="#routing"
+                  ><i class="icon-arrow-right"></i><span>Routing</span></a
+                >
+              </li>
+              <li>
+                <a href="#deployment"
+                  ><i class="icon-tag"></i><span>Deployment</span></a
+                >
+              </li>
+              <!-- <li>
+                            <a href="#folder_structure"><i class="icon-folder-alt"></i><span>Folder Structure</span></a>
+                        </li> -->
+              <li>
+                <a href="#Credits"
+                  ><i class="icon-like"></i><span>Credits</span></a
+                >
+              </li>
+              <li>
+                <a href="#thank_you"
+                  ><i class="icon-heart"></i><span>THANK YOU!</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="main-content">
+        <div class="block-header">
+          <div class="row clearfix">
+            <div class="col-md-6 col-sm-12">
+              <h1>Documentation</h1>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Aali</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Documentation
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-md-6 col-sm-12 text-right hidden-xs"></div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row clearfix">
+            <div class="col-sm-12">
+              <div class="card" id="documenter_cover">
+                <div class="body">
+                  <h4 class="mb-3">Aali - Creative Agency React Template</h4>
+                  <p>
+                    Aali is a popular WebApp template for multi purpose use .
+                    It’s responsive React template, which is based on the
+                    Bootstrap framework. It utilizes all of the Bootstrap
+                    components in design and re-styles many commonly used
+                    plugins to create a consistent design that can be used in
+                    all type of business an organisations website.
+                  </p>
+                  <ul>
+                    <li>
+                      Skype:
+                      <a href="live:.cid.e7c268dfe9f2cf77" class="gmail"
+                        >sabujhasansarker</a
+                      >
+                    </li>
+                    <li>
+                      Gmail:
+                      <a
+                        target="_blank"
+                        href="https://www.google.com/intl/en-GB/gmail/about/#"
+                        class="gmail"
+                        >info@codeefly.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <div class="card" id="react_js">
+                <div class="header">
+                  <h2>
+                    React.JS Installation & Setup
+                    <small
+                      >A JavaScript library for building user interfaces.</small
+                    >
+                  </h2>
+                </div>
+                <div class="body">
+                  <!-- <p>
+                    <strong>Manual Setup:</strong> Run
+                    <code>npm install next react react-dom</code>
+                    command from your terminal to install React Globally.
+                  </p> -->
+                  <p>
+                    <strong>Install npm:</strong> Run
+                    <code>npm install</code> command from your project
+                    directory. It will create 'node_module' folder in this all
+                    dependency files will be install with this command.
+                  </p>
+                  <p>
+                    <strong>Run Project:</strong> Run
+                    <code>npm run dev</code> command from your project
+                    directory. With is command file will be compiled and it will
+                    be loaded on local server `http://localhost:5000`.
+                  </p>
+                  <p>
+                    <strong>Production Build:</strong> Run
+                    <code>npm run build</code> Builds the app for production to
+                    the `build` folder. It correctly bundles React in production
+                    mode and optimizes the build for the best performance.
+                  </p>
+                  <p>
+                    <strong>Further help:</strong> To get more help on the
+                    Next.js checkout
+                    <a href="https://nextjs.org/">Next.js</a>
+                  </p>
+                  <p>
+                    <strong>Note:</strong> You can learn more in the
+                    <a
+                      href="https://facebook.github.io/create-react-app/docs/getting-started"
+                      >Create React App Documentation</a
+                    >. To learn Next.js, check out the
+                    <a href="https://nextjs.org/docs/getting-started"
+                      >Next.js Documentation</a
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <div class="card" id="main_content">
+                <div class="header">
+                  <h2>Main Content</h2>
+                  <h5>_app.js Structure</h5>
+                  <ul class="header-dropdown dropdown">
+                    <li>
+                      <a href="javascript:void(0);" class="full-screen"
+                        ><i class="icon-frame"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="body">
+                  <pre class="prettyprint lang-html linenums">
+import "../styles/globals.css";
+
+function MyApp({ Component, pageProps }) {
+  return &lt;Component {...pageProps} />;
+}
+
+export default MyApp;
+</pre
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card" id="main_content">
+                <div class="header">
+                  <h5>layout.js Structure</h5>
+                  <ul class="header-dropdown dropdown">
+                    <li>
+                      <a href="javascript:void(0);" class="full-screen"
+                        ><i class="icon-frame"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="body">
+                  <pre class="prettyprint lang-html linenums">
+import Head from "next/head";
+import { Fragment, useEffect } from "react";
+import {
+  aali_tm_moving_animation,
+  aTagClick,
+  dataImage,
+  wowJsAnimation,
+} from "../utilits";
+import Cursor from "./Cursor";
+import Footer from "./Footer";
+import Header from "./Header";
+import MobileMenu from "./MobileMenu";
+import Preloader from "./Preloader";
+
+const Layout = ({ children, headName, dark }) => {
+  useEffect(() => {
+    dataImage();
+    wowJsAnimation();
+    aali_tm_moving_animation();
+    aTagClick();
+  });
+  return (
+    &lt;Fragment>
+      &lt;Head>
+        &lt;title>Aali | {headName ? headName : "Home"} &lt;/title>
+      &lt;/Head>
+      &lt;Preloader />
+      &lt;div className="aali_tm_all_wrap" data-magic-cursor="show">
+        &lt;MobileMenu />
+        &lt;Header dark={dark} />
+        {children}
+        &lt;Footer />
+        &lt;Cursor />
+      &lt;/div>
+    &lt;/Fragment>
+  );
+};
+
+export default Layout;
+                    
+</pre
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card" id="dependencies">
+                <div class="header">
+                  <h2>Dependencies</h2>
+                  <h5>package.json</h5>
+                  <ul class="header-dropdown dropdown">
+                    <li>
+                      <a href="javascript:void(0);" class="full-screen"
+                        ><i class="icon-frame"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="body">
+                  <pre class="prettyprint lang-html linenums">
+{
+  "name": "aali",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "isotope-layout": "^3.0.6",
+    "jarallax": "^1.12.8",
+    "next": "12.0.3",
+    "parallax-js": "^3.1.0",
+    "react": "17.0.2",
+    "react-countup": "^6.1.0",
+    "react-dom": "17.0.2",
+    "react-visibility-sensor": "^5.1.1",
+    "swiper": "^7.2.0",
+    "vanilla-tilt": "^1.7.2",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.3"
+  }
+}                    
+                                      
+</pre
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card" id="create_page">
+                <div class="header">
+                  <h2>
+                    Create a Page
+                    <h5>How to create a custom page</h5>
+                  </h2>
+                </div>
+                <div class="body">
+                  <p>1. Create page <code> pages\blank.js</code></p>
+                  <pre class="prettyprint lang-html linenums">
+function Blank() {
+
+export function MyPage() {
+  return(
+   &lt;h1&gt;Hello!&lt;/h1&gt;
+  ) 
+} 	
+export default Blank;						
+						</pre
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card" id="routing">
+                <div class="header">
+                  <h2>
+                    Routing
+                    <h5>Linking between pages</h5>
+                  </h2>
+                </div>
+                <div class="body">
+                  <p>
+                    The Next.js router allows you to do client-side route
+                    transitions between pages, similar to a single-page
+                    application.
+                  </p>
+                  <p>
+                    A React component called <strong>Link</strong> is provided
+                    to do this client-side route transition.
+                  </p>
+
+                  <pre class="prettyprint lang-html linenums">
+import Link from 'next/link'
+					
+function Home() {
+  return(
+	&lt;ul&gt;
+	   &lt;li&gt;
+		&lt;Link href="/"&gt;
+		  &lt;a&gt;Home&lt;/a&gt;
+		&lt;/Link&gt;
+	   &lt;/li&gt; 
+	   &lt;li&gt;
+		&lt;Link href="/about"&gt;
+		  &lt;a&gt;About Us&lt;/a&gt;
+		&lt;/Link&gt;
+	   &lt;/li&gt; 
+	   &lt;li&gt;
+		&lt;Link href="/blog/hello-world"&gt;
+		  &lt;a&gt;Blog Post&lt;/a&gt;
+		&lt;/Link&gt;
+	   &lt;/li&gt; 
+	&lt;/ul&gt;
+  ) 
+} 	
+export default Home;						
+							</pre
+                  >
+                  <p>
+                    In the example above we have multiple links, each one maps a
+                    path (href) to a known page:
+                  </p>
+                  <ul>
+                    <li>/ <strong> → </strong> pages/index.js</li>
+                    <li>/about <strong> → </strong> pages/about.js</li>
+                    <li>
+                      /blog/hello-world
+                      <strong> → </strong> pages/blog/[slug].js
+                    </li>
+                  </ul>
+                  <p>
+                    Any<strong> <link /> </strong>in the viewport (initially or
+                    through scroll) will be prefetched by default (including the
+                    corresponding data) for pages using Static Generation. The
+                    corresponding data for server-rendered routes is not
+                    prefetched.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card" id="deployment">
+                <div class="header">
+                  <h2>
+                    Vercel (Recommended)
+                    <h5>Getting started</h5>
+                  </h2>
+                </div>
+                <div class="body">
+                  <p>
+                    If you haven’t already done so, push your Next.js app to a
+                    Git provider of your choice: GitHub, GitLab, or BitBucket.
+                    Your repository can be private or public.
+                  </p>
+                  <strong>Then, follow these steps:</strong>
+                  <ul>
+                    <li>Sign up to Vercel (no credit card is required).</li>
+                    <li>
+                      After signing up, you’ll arrive on the “Import Project”
+                      page. Under “From Git Repository”, choose the Git provider
+                      you use and set up an integration. (Instructions: GitHub /
+                      GitLab / BitBucket).
+                    </li>
+                    <li>
+                      Once that’s set up, click “Import Project From …” and
+                      import your Next.js app. It auto-detects that your app is
+                      using Next.js and sets up the build configuration for you.
+                      No need to change anything — everything should work just
+                      fine!
+                    </li>
+                    <li>
+                      After importing, it’ll deploy your Next.js app and provide
+                      you with a deployment URL
+                    </li>
+                    <li>
+                      To get more help on the deployment checkout
+                      <a
+                        href="https://www.youtube.com/watch?v=4DbNUJ-9_U4&t=217s"
+                        target="_blank"
+                      >
+                        Deployment</a
+                      >
+                    </li>
+                  </ul>
+                  <strong class="d-block"
+                    >In terminal, follow these steps:</strong
+                  ><br />
+                  <p>
+                    <strong class="d-block">Step-1:</strong> Run
+                    <code> npm i -g vercel</code>
+                  </p>
+                  <br />
+                  <img src="assets/images/step-1.png" class="mb-3" alt="" />
+                  <p>
+                    <strong class="d-block">Step-2: </strong>Check version
+                    <code> vercel --version</code>
+                  </p>
+                  <br />
+                  <img src="assets/images/step-2.png" class="mb-3" alt="" />
+                  <p>
+                    <strong class="d-block">Step-3:</strong> login in
+                    vercel<code> vercel login</code>
+                  </p>
+                  <p />
+                  <br />
+                  <img src="assets/images/step-3.png" class="mb-3" alt="" />
+                  <p>
+                    <strong class="d-block">Step-4:</strong> write your mail
+                    <code> abc@example.com</code>
+                  </p>
+                  <br />
+                  <img src="assets/images/step-4.png" class="mb-3" alt="" />
+                  <p>
+                    <strong class="d-block">Step-5: </strong> <br />
+                    Now, answer some questions <br />
+                    1. do you want deploy project on vercel.<br />
+                    2. Link to existing project?<br />
+                    3. write your project name.<br />
+                    4. In which directory is your code located? <br />
+                  </p>
+                  <img src="assets/images/step-7.png" class="mb-3" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-sm-12">
+                        <div class="card" id="folder_structure">
+                            <div class="header">
+                                <h2>Folder Structure</h2>
+                                <ul class="header-dropdown dropdown">
+                                    <li><a href="javascript:void(0);" class="full-screen"><i class="icon-frame"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0);">Action</a></li>
+                                            <li><a href="javascript:void(0);">Another Action</a></li>
+                                            <li><a href="javascript:void(0);">Something else</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <section class="app-brief">
+                                    <div class="left-align">
+                                        <div class="section-header">
+                                        </div>
+                                        <div id="dz_tree" class="tree-demo">
+                                            <ul>
+                                                <li data-jstree='{ "opened" : true }'>.next
+                                                </li>
+                                                <li data-jstree='{ "opened" : true }'>.vercel
+                                                    <ul>
+                                                        <li data-jstree='{ "type" : "file" }'>project.json</li>
+                                                    </ul>
+                                                </li>
+                                                <li data-jstree='{ "opened" : true }'>component</li>
+                                                <li data-jstree='{ "opened" : true }'>element</li>
+                                                <li data-jstree='{ "opened" : true }'>layout
+                                                    <ul>
+                                                        <li data-jstree='{ "type" : "file" }'>header.js</li>
+                                                        <li data-jstree='{ "type" : "file" }'>bottom.js</li>
+                                                        <li data-jstree='{ "type" : "file" }'>bottom.js</li>
+                                                        <li data-jstree='{ "type" : "file" }'>menu.js</li>
+                                                        <li data-jstree='{ "type" : "file" }'>nav.js</li>
+                                                        <li data-jstree='{ "type" : "file" }'>sidebar.js</li>
+                                                        <li data-jstree='{ "type" : "file" }'>footer.js</li>
+                                                    </ul>
+                                                </li>
+                                                <li data-jstree='{ "opened" : true }'>pages
+                                                    <ul>
+                                                        <li data-jstree='{ "opened" : true }'>api</li>
+                                                        <li data-jstree='{ "type" : "file" }'>_app.js</li>
+                                                        <li data-jstree='{ "type" : "file" }'>index.js</li>
+                                                        <li data-jstree='{ "type" : "file" }'>blank.js</li>
+                                                        <li data-jstree='{ "type" : "file" }'>error-404.js</li>
+                                                        <li data-jstree='{ "type" : "file" }'>other-pages.js</li>
+                                                    </ul>
+                                                </li>
+                                                <li data-jstree='{ "opened" : true }'>public
+                                                    <ul>
+                                                        <li data-jstree='{ "selected" : false }'>images
+                                                            <ul>
+                                                                <li data-jstree='{ "opened" : true }'>about</li>
+                                                                <li data-jstree='{ "opened" : true }'>background</li>
+                                                                <li data-jstree='{ "opened" : true }'>banner</li>
+                                                                <li data-jstree='{ "opened" : true }'>blog</li>
+                                                                <li data-jstree='{ "opened" : true }'>icon</li>
+                                                                <li data-jstree='{ "opened" : true }'>logo</li>
+                                                                <li data-jstree='{ "opened" : true }'>main-slider</li>
+                                                                <li data-jstree='{ "opened" : true }'>move</li>
+                                                                <li data-jstree='{ "opened" : true }'>pattern</li>
+                                                                <li data-jstree='{ "opened" : true }'>pricingtable</li>
+                                                                <li data-jstree='{ "opened" : true }'>projects</li>
+                                                                <li data-jstree='{ "opened" : true }'>team</li>
+                                                                <li data-jstree='{ "opened" : true }'>testimonials</li>
+                                                                <li data-jstree='{ "type" : "file" }'>logo.png</li>
+                                                            </ul>
+                                                        <li data-jstree='{ "type" : "file" }'>favicon.ico</li>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                            <li data-jstree='{ "selected" : false }'>vendor
+                                                <ul>
+                                                    <li data-jstree='{ "opened" : true }'>animate</li>
+                                                    <li data-jstree='{ "opened" : true }'>deznav</li>
+                                                    <li data-jstree='{ "opened" : true }'>metismenu</li>
+                                                    <li data-jstree='{ "opened" : true }'>perfect-scrollbar</li>
+                                                </ul>
+                                            </li>
+                                            <li data-jstree='{ "type" : "file" }'>package.json</li>
+                                            <li data-jstree='{ "type" : "file" }'>package-lock.json</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div> -->
+            <div class="col-sm-12">
+              <div class="card" id="Credits">
+                <div class="header">
+                  <h2>Credits</h2>
+                  <ul class="header-dropdown dropdown">
+                    <li>
+                      <a href="javascript:void(0);" class="full-screen"
+                        ><i class="icon-frame"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="body">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                      <ul>
+                        <li>
+                          Next Js:
+                          <a href="https://nextjs.org/" class="text-warning"
+                            >Click to See</a
+                          >
+                        </li>
+                        <li>
+                          Isotop
+                          <a
+                            href="https://www.npmjs.com/package/isotope-layout"
+                            class="text-warning"
+                            >Click to See</a
+                          >
+                        </li>
+                        <li>
+                          Swiper Slider
+                          <a
+                            href="https://swiperjs.com/swiper-api"
+                            class="text-warning"
+                            >Click to See</a
+                          >
+                        </li>
+
+                        <li>
+                          React CountUp
+                          <a
+                            href="https://www.npmjs.com/package/react-countup"
+                            class="text-warning"
+                            >Click to See</a
+                          >
+                        </li>
+                        <li>
+                          React Visibility Sensor
+                          <a
+                            href="https://www.npmjs.com/package/react-visibility-sensor"
+                            class="text-warning"
+                            >Click to See</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <ul>
+                        <li>
+                          WOW js
+                          <a
+                            href="https://www.npmjs.com/package/wowjs"
+                            class="text-warning"
+                            >Click to See</a
+                          >
+                        </li>
+                        <li>
+                          jarallax
+                          <a
+                            href="https://www.npmjs.com/package/jarallax"
+                            class="text-warning"
+                            >Click to See</a
+                          >
+                        </li>
+
+                        <li>
+                          vanilla-tilt.js
+                          <a
+                            href="https://www.npmjs.com/package/vanilla-tilt"
+                            class="text-warning"
+                            >Click to See</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card" id="thank_you">
+                <div class="header">
+                  <h2>Thank You!</h2>
+                  <ul class="header-dropdown dropdown">
+                    <li>
+                      <a href="javascript:void(0);" class="full-screen"
+                        ><i class="icon-frame"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="body">
+                  <p>
+                    Once again, thank you so much for purchasing this template.
+                    As I said at the beginning, I&#39;d be glad to help you if
+                    you have any questions relating to this template.
+                  </p>
+                  <p>
+                    <strong>REGULAR SUPPORT</strong> : You have in template
+                    support if you face any issue with the usage of it then you
+                    can contact us on below Email ID.
+                  </p>
+                  <p>
+                    <strong>EXTENDED SUPPORT</strong> : Development it is
+                    chargeable according to your requirement. For that you need
+                    to mail us your requirement on below Email ID.
+                  </p>
+                  <p>
+                    <strong>COST OF SERVICE</strong> : Depends on the hours
+                    required. But as you are already using our template we have
+                    discounted rates for our template customer.
+                  </p>
+                  <p>
+                    <strong>EXTENDED LICENSE</strong> : With the Extended
+                    Support we also include Extended License. So you save much
+                    more with your investment than you will with purchasing
+                    Regular License and later buying Extended one + Development
+                    cost.
+                  </p>
+                  <p>
+                    You will get a quick reply from our team and feel free to
+                    contact us. We don’t charge for requirement discussion so
+                    don’t worry.
+                  </p>
+                  <p>
+                    Contact Us :
+                    <strong>info@codeefly.com</strong>
+                  </p>
+                  <p>Skype : <strong>sabujhasansarker</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="./assets/bundles/libscripts.bundle.js"></script>
+    <script src="./assets/bundles/vendorscripts.bundle.js"></script>
+
+    <script src="./assets/bundles/lightgallery.bundle.js"></script>
+    <!-- Light Gallery Plugin Js -->
+
+    <script src="./assets/bundles/mainscripts.bundle.js"></script>
+
+    <!-- Folder onClick -->
+    <script src="./assets/vendor/jstree/dist/jstree.min.js"></script>
+
+    <script>
+      $(".metismenu li").click(function () {
+        var $this = $(this);
+        if (!$this.is("active")) {
+          $(".metismenu li").removeClass("active").removeData("top");
+          $this.addClass("active").data("top", $this.offset().top);
+        }
+      });
+    </script>
+    <script>
+      // prettyPhoto
+      jQuery(document).ready(function () {
+        $(".full-height").css("height", $(window).height());
+
+        $("#dz_tree").jstree({
+          core: {
+            themes: {
+              responsive: false,
+            },
+          },
+          types: {
+            default: {
+              icon: "fa fa-folder",
+            },
+            file: {
+              icon: "fa fa-file-text",
+            },
+          },
+          plugins: ["types"],
+        });
+      });
+    </script>
+  </body>
+</html>

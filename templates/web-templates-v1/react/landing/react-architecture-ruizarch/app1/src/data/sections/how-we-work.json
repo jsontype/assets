@@ -1,0 +1,21 @@
+{
+    "title": "This is How Magic Happens",
+    "subtitle": "How We Work",
+    "items": [
+        {
+            "title": "High Efficiency",
+            "icon": "/img/icons/7.svg",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua."
+        },
+        {
+            "title": "Team of Experts",
+            "icon": "/img/icons/8.svg",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua."
+        },
+        {
+            "title": "Technology",
+            "icon": "/img/icons/9.svg",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua."
+        }
+    ]
+}

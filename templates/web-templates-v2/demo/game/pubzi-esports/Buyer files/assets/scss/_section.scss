@@ -1,0 +1,263 @@
+
+//>>>>> Section Title Start <<<<<//
+
+.section-title {
+	position: relative;
+	z-index: 99;
+	margin-bottom: 30px;
+	margin-top: -6px;
+
+	@include breakpoint (max-md){
+		margin-bottom: 0;
+	}
+
+	h6 {
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: -0.32px;
+		line-height: 1;
+		color: $theme-color;
+		font-family: $body-font;
+		position: relative;
+		// padding-left: 30px;
+		// padding-right: 30px;
+		display: inline-block;
+		margin-bottom: 25px;
+		display: inline-block;
+		position: relative;
+		text-transform: uppercase;
+
+		&::after {
+			position: absolute;
+			content: "";
+			background: linear-gradient(90deg, #CBFE1C 0%, #0B0E13 100%);
+			width: 116px;
+			height: 1px;
+			left: 0;
+ 			bottom: -8px;
+		}
+	}
+
+	h2 {
+		color: $white;
+		text-transform: capitalize;
+
+		span {
+			color: $theme-color;
+		}
+	}
+
+	&.style-3 {
+		
+		h2 {
+			font-size: 45px;
+			color: $white;
+			text-transform: capitalize;
+
+			@include breakpoint(max-xxl){
+				font-size: 34px;
+			}
+
+			@include breakpoint(max-xl){
+				font-size: 34px;
+			}
+
+			@include breakpoint(max-lg){
+				font-size: 40px;
+			}
+
+			@include breakpoint(max-md){
+				font-size: 35px;
+			}
+
+			@include breakpoint(max-sm){
+				font-size: 30px;
+			}
+
+			@include breakpoint(max-xxs){
+				font-size: 25px;
+			}
+		}
+
+		p {
+			@include breakpoint (max-sm) {
+				margin-left: 0 !important;
+			}
+		}
+	}
+}
+
+
+.section-title-2 {
+	position: relative;
+	z-index: 99;
+	margin-bottom: 30px;
+	margin-top: -6px;
+
+	@include breakpoint (max-md){
+		margin-bottom: 0;
+	}
+
+	h2 {
+		text-transform: capitalize;
+	}
+
+	h6 {
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: -0.32px;
+		line-height: 1;
+		color: $theme-color;
+		font-family: $body-font;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 25px;
+		display: inline-block;
+		position: relative;
+		padding-left: 60px;
+		text-transform: uppercase;
+		padding-right: 60px;
+
+		@include breakpoint (max-sm) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		
+
+		&::before {
+			position: absolute;
+			content: "";
+			background: linear-gradient(90deg, #CBFE1C 0%, #0B0E13 100%);
+			width: 44px;
+			height: 1px;
+			left: 0;
+			top: 8px;
+			animation: borderAnim 2s infinite alternate ease-in-out;
+
+			@include breakpoint (max-sm) {
+				display: none;
+			}
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			background: linear-gradient(90deg, #CBFE1C 0%, #0B0E13 100%);
+			width: 44px;
+			height: 1px;
+			right: 0;
+			top: 8px;
+			left: initial;
+			animation: borderAnim 2s infinite alternate ease-in-out;
+
+			@include breakpoint (max-sm) {
+				display: none;
+			}
+		}
+	}
+}
+
+
+.section-title-area	{
+	@include flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 9;
+	margin-bottom: 30px;
+
+	.gt-section-title-2 {
+		margin-bottom: 0;
+	}
+	
+	.gt-section-title {
+		margin-bottom: 0;
+	}
+	
+	@include breakpoint (max-lg) {
+		flex-wrap: wrap;
+		// justify-content: center;
+		// text-align: center;
+		gap: 30px;
+	}
+
+	@include breakpoint (max-md){
+		margin-bottom: 0;
+	}
+
+	.rating {
+		span {
+			font-size: 14px;
+			font-weight: 400;
+			color: rgba(136, 136, 136, 1);
+		}
+
+		.star {
+			margin-top: 5px;
+			color: rgba(255, 8, 8, 1);
+		}
+	}
+
+	.nav {
+		@include flex;
+		gap: 40px;
+		
+		.nav-item {
+			.nav-link {
+				font-size: 18px;
+				font-weight: 700;
+				color: #ABABAB;
+				padding: 0;
+
+				&.active {
+					color: $theme-color;
+				}
+
+				&.style-2 {
+					color: #9FA0A2;
+
+					&.active {
+						 background: linear-gradient(
+						90deg,
+						#DDF247 0.25%,
+						#7CFFE5 99.75%
+						);
+						background-clip: text;
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						color: initial !important;
+					}
+				}
+			}
+		}
+	}
+}
+//>>>>> Section Title End <<<<<//
+
+//>>>>> Basic Css Start <<<<<//
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.section-bg {
+	background-color: $bg-color;
+}
+
+.section-bg-1 {
+	background-color: $bg-color;
+}
+
+.section-padding {
+	padding: 120px 0;
+
+	@include breakpoint(max-xl){
+		padding: 100px 0;
+	}
+
+	@include breakpoint(max-lg){
+		padding: 80px 0;
+	}
+}
+//>>>>> Basic Css End <<<<<//
+

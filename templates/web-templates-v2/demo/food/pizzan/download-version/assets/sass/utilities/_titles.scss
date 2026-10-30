@@ -1,0 +1,137 @@
+.sec-title {
+    margin-bottom: calc(var(--section-title-space) - 12px);
+    margin-top: -0.23em;
+}
+
+.sub-title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: $theme-color;
+    font-family: $style-font;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    position: relative;
+    .icon {
+        margin: -13px 3px 0 0;
+    }
+}
+
+.title-area {
+    margin-bottom: calc(var(--section-title-space) - 12px);
+    position: relative;
+    z-index: 2;
+    .sec-title {
+        margin-bottom: 15px;
+    }
+    &.mb-0 {
+        .sec-title {
+            margin-bottom: -0.41em;
+        }
+    }
+}
+
+.title-border {
+    border-bottom: 1px dashed $gray-color;
+    margin-bottom: var(--section-title-space);
+}
+
+.divider-title {
+    position: relative;
+    z-index: 2;
+    margin: 35px 0;
+    text-align: center;
+    font-size: 30px;
+    .text {
+        display: inline-block;
+        background-color: $white-color;
+        padding: 0 10px;
+        position: relative;
+        z-index: 2;
+    }
+    &:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background-color: $theme-color;
+    }
+}
+
+.sec-text {
+    max-width: 560px;
+	margin-bottom: 23px;
+}
+
+.sec-btn {
+    margin-bottom: var(--section-title-space);
+}
+
+.box-title {
+    font-size: 24px;
+	margin-top: -0.3em;
+    line-height: 1.417;
+	a {
+		color: inherit;
+		&:hover {
+			color: $theme-color;
+		}
+	}
+}
+
+@include lg {
+    .sub-title {
+        margin-bottom: 17px;
+    }
+    .title-area,
+    .sec-title {
+        --section-title-space: 60px;
+        &.mb-30 {
+            margin-bottom: 25px;
+        }
+        &.mb-40 {
+            margin-bottom: 30px;
+        }
+        &.mb-45 {
+            margin-bottom: 32px;
+        }
+        &.mb-50 {
+            margin-bottom: 35px;
+        }
+        &.mb-25 {
+            margin-bottom: 15px;
+        }
+        &.mb-35 {
+            margin-bottom: 25px;
+        }
+    }
+    .sec-btn {
+        --section-title-space: 65px;
+    }
+}
+
+@include md {
+    .title-area,
+    .sec-title {
+        --section-title-space: 45px;
+        &.mb-40 {
+            margin-bottom: 25px;
+        }
+        &.mb-45 {
+            margin-bottom: 27px;
+        }
+        &.mb-50 {
+            margin-bottom: 28px;
+        }
+    }
+    .sec-btn,
+    .title-border {
+        --section-title-space: 45px;
+    }
+    .divider-title {
+        font-size: 26px;
+    }
+}

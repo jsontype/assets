@@ -1,0 +1,274 @@
+/*******************************************************/
+/***************** ## Popular Food Area *****************/
+/*******************************************************/
+.food-item
+    position: relative
+    padding: 25px 45px 8px
+    background-color: $lighter-color
+    border: 1px dashed $border-color
+    background-repeat: no-repeat
+    background-size: cover
+    transition: .3s
+    +res-bt(xl, lp)
+        +gapLR(padding, 30px)
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .content
+        display: flex
+        justify-content: space-between
+        h5
+            margin-bottom: 4px
+            transition: .3s
+        .price
+            flex: none
+            width: 40px
+            text-align: right
+            span
+                @extend %h5
+                color: $primary-color
+                transition: .3s
+    .image
+        +poRB(0)
+        opacity: 0
+        visibility: hidden
+        transition: .3s
+        z-index: 2
+        img
+            max-width: 120px
+            border-radius: 50%
+    &:hover
+        color: white
+        background-color: $primary-color
+        background-image: url(../images/shapes/food-shape.png)
+        .content
+            h5,
+            .price span
+                color: white
+        .image
+            opacity: 1
+            visibility: visible
+            right: -25%
+            bottom: 36%
+            +res-bl(xl)
+                right: 0
+                bottom: 10%
+            
+/* Pizza Menu Item */    
+.food-menu-item
+    padding: 25px 25px 20px
+    display: flex
+    align-items: center
+    border: 1.2px dashed rgba(14, 19, 23, 0.1)
+    margin-bottom: 30px
+    +res-bl(lg)
+        +gapLR(padding, 15px)
+    +res-bl(xs)
+        flex-wrap: wrap
+    .image
+        flex: none
+        margin-right: 35px
+        +res-bl(lg)
+            margin-right: 15px
+    .content
+        margin-right: 10px
+        h5
+            margin-bottom: 0
+            line-height: 1
+        p
+            margin-bottom: 5px
+        .price
+            @extend %h5
+            line-height: 1
+            color: $primary-color
+    .details-btn
+        flex: none
+        text-align: center
+        line-height: 35px
+        font-size: 13px
+        color: $heading-color
+        margin-left: auto
+        +box($secondary-color, 35px)
+        
+    &.style-two
+        padding: 0
+        border: none
+        align-items: center
+        .image
+            flex: none
+            width: 100px
+            margin-right: 20px
+            +res-bl(xs)
+                margin-bottom: 13px
+        .content
+            width: 100%
+            margin-right: 0
+            h5
+                margin-top: 8px
+                margin-bottom: 5px
+                display: flex
+                align-items: end
+                .title
+                    flex: none
+                .dots
+                    height: 2px
+                    width: 100%
+                    margin-left: 25px
+                    margin-bottom: 10px
+                    border-bottom: 2px dotted $base-color
+                .price
+                    margin-left: 20px
+            p
+                margin-bottom: 0
+        &:last-child
+            margin-bottom: 0
+                
+.popular-menu-wrap
+    height: 100%
+    background: white
+    margin-top: -1px
+    margin-right: -1px
+    padding: 50px 60px
+    border: 1px solid $border-color
+    box-shadow: 0px 10px 60px rgba(220, 220, 220, 0.25)
+    +res-bl(md)
+        padding: 35px 25px
+    
+    &.bgc-black
+        box-shadow: none
+        background-color: $heading-color
+        border: 1px solid rgba(255, 255, 255, 0.05)
+        .food-menu-item.style-two
+            .content
+                h5
+                    color: white
+                p
+                    color: #ACACAC
+        
+.menu-items-shape
+    .shape
+        top: 15%
+        z-index: -1
+        max-width: 15%
+        position: absolute
+        &.one
+            left: 3%
+        &.two
+            right: 3%
+        
+.special-pizza
+    position: relative
+    z-index: 1
+    padding: 30px 35px 35px
+    background-color: $primary-color
+    background-size: cover
+    background-repeat: no-repeat
+    overflow: hidden
+    margin-bottom: 30px
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    &:after
+        +poRB(0)
+        content: ''
+        width: 38%
+        height: 73%
+        background-image: url(../images/shapes/special-pizza-shape.png)
+        background-repeat: no-repeat
+        background-size: cover
+        z-index: -2
+    .image
+        z-index: -1
+        +poRT(0, 40px)
+        max-width: 52%
+    .price
+        font-size: 24px
+        font-family: $heading-font
+        color: $secondary-color
+        display: block
+        margin-bottom: 4px
+    h3
+        font-size: 50px
+        color: white
+        line-height: 1.05
+        +res-bl(ms)
+            font-size: 40px
+    .ratting
+        margin-left: -3px
+        span
+            color: white
+            margin-left: 10px
+            margin-bottom: -3px
+            font-family: $heading-font
+    .theme-btn.style-two
+        margin-top: 16px
+        font-size: 16px
+        padding: 6px 30px
+        border: 1px solid $secondary-color
+        
+.restaurant-menu-area
+    .shape
+        max-width: 10%
+        
+/* Food Menu Five */
+.food-menu-five
+    .food-menu-item.style-two
+        padding: 25px 30px
+        border: 2px dashed $border-color
+        +res-bl(ms)
+            display: block
+        &:not(:last-child)
+            margin-bottom: 20px
+        .image
+            +res-bl(ms)
+                margin-bottom: 15px
+            img
+                +size(80px)
+                border-radius: 50%
+                border: 3px solid white
+                box-shadow: 0px 10px 30px rgba(150, 150, 150, 0.25)
+                
+/* Grill Menu */
+.grill-menu-image
+    height: 100%
+    min-height: 500px
+    +res-ab(lg)
+        margin-right: -100px
+    
+.grill-menu-wrap
+    .popular-menu-wrap
+        margin-top: 60px
+        position: relative
+        margin-bottom: -60px
+        +res-bl(xl)
+            +gapLR(padding, 25px)
+        .food-menu-item.style-two
+            &:not(:last-child)
+                padding-bottom: 30px
+                border-bottom: 2px dotted $border-color
+            .image
+                width: 80px
+            .content
+                h5
+                    font-size: 22px
+                    +res-bl(xs)
+                        font-size: 20px
+                        .dots
+                            margin-left: 15px
+            +res-bl(ms)
+                display: block
+                .image
+                    margin-bottom: 15px
+        .vertical-text
+            height: 100%
+            color: white
+            padding: 5px
+            +poRT(100%, 0)
+            font-size: 24px
+            +flexcenter(center)
+            writing-mode: vertical-lr
+            transform: rotate(-180deg)
+            background: $primary-color
+            +res-bl(lg)
+                display: none
+            i
+                margin: 25px 0
+                transform: rotate(90deg)

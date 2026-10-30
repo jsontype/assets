@@ -1,0 +1,21 @@
+extends ../layouts/master.pug
+block variables
+    - var PageTitle = 'Healthy'
+block title
+    title Healthy - Personal Blog  HTML Template
+
+block header
+    include ../components/header.pug
+
+block content
+    .cover-home3
+        .container
+            .row
+                .col-xl-1
+                .col-xl-10.col-lg-12
+                    include ../elements/head.pug
+                    include ../sections/loops/loop-2.pug
+                    .mb-10
+                    include ../sections/homepage1/popular_tags.pug
+
+    block scripts-custom

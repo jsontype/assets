@@ -1,0 +1,42 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.9 error css start
+/*----------------------------------------*/
+.#{$theme-prifix}-error{
+    &-title{
+        font-weight: 700;
+        font-size: 300px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: var(--td-common-white);
+        -webkit-text-stroke-width: 1px;
+        @media #{$sm} {
+            font-size: 200px;
+        }
+        @media #{$xs} {
+            font-size: 150px;
+        }
+    }
+    &-text{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: var(--td-common-white);
+        @media #{$xs} {
+            font-size: 40px;
+        }
+    }
+    &-spacing{
+        padding-top: 250px;
+        padding-bottom: 258px;
+        @media #{$xs} {
+            padding-top: 200px;
+            padding-bottom: 170px;
+        }
+    }
+}

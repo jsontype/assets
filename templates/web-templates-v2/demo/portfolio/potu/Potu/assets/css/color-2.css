@@ -1,0 +1,118 @@
+
+
+/* text-color */
+
+.main-menu .navigation > li.current > a,
+.main-menu .navigation > li:hover > a,
+.main-menu .navigation > li > ul > li > a:hover,
+.main-menu .navigation > li > .megamenu li > a:hover,
+.theme-btn:hover,
+.banner-section .content-box h2 .color-text,
+.portfolio-block-one .inner-box .content-box .link a:hover,
+.skills-section .lower-box .skills-list li button:hover,
+.dark_bg .skills-section .lower-box .skills-list li button,
+.contact-section .title-box .title-text h2 .color-text,
+.contact-section .info-content .single-item h3 a:hover,
+.contact-section .info-content .map-link p a,
+.banner-style-two .content-box h2 span,
+.dark_bg .about-section .content-box p span,
+.pricing-block-one .inner-box .link a,
+.testimonial-style-two .title-inner .theme-btn:hover,
+.footer-bottom-two .copyright p a:hover
+
+{
+  color: var(--theme-color-2);
+}
+
+
+
+/** background **/
+
+.main-menu .navigation > li > ul > li > a:before,
+.main-header .btn-box a:hover,
+.hamburger__hidden,
+.hamburger__hidden::before, .hamburger__hidden::after,
+.theme-btn,
+.banner-section .content-box .lower-box .links-box .social-links li a:hover,
+.demo-switch button,
+.dark_bg .banner-section .content-box .lower-box .links-box .social-links li a:hover,
+.service-section .left-content .inner-box .text,
+.service-section .right-content .single-item .link a:hover,
+.skills-section .lower-box .skills-list li a:hover,
+.dark_bg .skills-section .lower-box .skills-list li a:hover,
+.testimonial-section .testimonial-block .image-box .image:before,
+.testimonial-section .nav-style-one .owl-nav button:hover,
+.dark_bg .testimonial-section .nav-style-one .owl-nav button:hover,
+.instagram-block-one .inner-box .image-box,
+.pricing-block:first-child .pricing-block-one .inner-box,
+.portfolio-block-two .inner-box .content-box .link a:hover,
+.testimonial-style-two .outer-container,
+.clients-style-two .outer-container,
+.footer-style-two .newsletter-widget .form-inner .form-group input:focus + button,
+.footer-style-two .newsletter-widget .form-inner .form-group button:hover,
+.footer-style-two .newsletter-widget .social-links li a:hover
+
+{
+  background: var(--theme-color-2);
+}
+
+
+
+
+/** border-color **/
+
+.theme-btn,
+.about-section .content-box p span,
+.portfolio-block-two .inner-box .content-box .link a:hover,
+.footer-style-two .newsletter-widget .form-inner input:focus,
+.footer-style-two .newsletter-widget .social-links li a:hover
+
+{
+  border-color: var(--theme-color-2) !important;
+}
+
+
+
+.theme-btn:hover{
+  box-shadow: 0px 0px 10px 0px var(--theme-color-2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

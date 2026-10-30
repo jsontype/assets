@@ -1,0 +1,22 @@
+:root {
+    --thm-primary-color: #66c988;
+    --thm-primary-color-rgb: 102, 201, 136;
+    --thm-secondary-color: #000000;
+    --thm-secondary-color-rgb: 0, 0, 0;
+
+    --thm-body-font-color: #a9afac;
+    --thm-body-font-size: 16px;
+    --thm-body-line-height: 26px;
+    --thm-body-font-weight: 400;
+
+    --thm-heading-font-color: #ffffff;
+    --thm-white: #ffffff;
+
+    --thm-black-bg: #111312;
+    --thm-border-color: #2c302e;
+}
+
+
+.body-bg-4 {
+    background-color: #111312;
+}

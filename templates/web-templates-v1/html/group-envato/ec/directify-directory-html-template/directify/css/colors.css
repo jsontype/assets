@@ -1,0 +1,181 @@
+@charset "utf-8";
+/*
+/*	Copyright (c) 2017 Frenify
+/*	Author: Frenify
+/*	This file is made for CURRENT TEMPLATE
+/*
+	01) PRIMARY BACKGROUNDS' COLOR: #0089e2;
+	02) PRIMARY TITLES' COLOR: #253147;
+	03) ADD LISTINGS' COLOR: #ffd200;
+*/
+/*------------------------------------------------------------------*/ 
+/*	01) PRIMARY BACKGROUNDS' COLOR: #0089e2;
+/*------------------------------------------------------------------*/
+.directify_fn_leftbar_wrap .directify_fn_leftbar_overlay .overlay_color,
+.featured_box_wrap .featured_box_price span.text,
+.featured_box_wrap .featured_box_price span.after:after,
+.featured_box_wrap .featured_box_info .featured_box_author_img .author_img .svg,
+.directify_fn_tabs > .title_holder span.line:after,
+.directify_fn_tabs ul.fam_city .fam_city_wrap .number span.text,
+.directify_fn_tabs ul.fam_city .fam_city_wrap .number span.after:after,
+.simple_famous_cities_wrap > .title_holder span.line:after,
+.directify_fn_workstep_wrap .workstep > .title_holder span.line:after,
+.directify_fn_workstep_wrap .workstep .steps .step_single_wrap .step_single .number span.text:after,
+.directify_fn_workstep_wrap .workstep .steps .step_single_wrap .step_single .number span.after:after,
+.directify_fn_exmblog_wrap .exmblogs > .title_holder span.line:after,
+.directify_fn_all_listings_wrap .discovering .searching a.directify_fn_search_btn,
+.all_cat_btn a:hover i:after,
+.directify_fn_all_listings_wrap.changed .discovering_wrap.mycolor,
+.directify_fn_listingable.listing_categories_wrap .title_holder span.line:after,
+.directify_fn_footer_wrap .footer_nav_list_wrap,
+.directify_fn_header_search_see_wrap .header_search_see  > a,
+.directify_fn_carousel_famous_cities_wrap,
+.leaflet-marker-icon.leaflet-interactive .fl-location-icon,
+.leaflet-marker-icon.leaflet-interactive .fl-location-icon:after,
+.leaflet-mypopup-wrapper .price span.text,
+.leaflet-mypopup-wrapper .price span.after:after,
+.leaflet-mypopup-wrapper .rating span.rating,
+.directify_fn_single_wrapper .single_title .title_btns ul li.write a,
+.directify_fn_single_wrapper .single_profile,
+.directify_fn_single_wrapper .single_profile .profile_verified a.prfbtn,
+.directify_fn_review_wrapper .all_reviews_wrap .review_single .person_comment .footer a:hover,
+.directify_fn_review_wrapper .add_review_wrap form input[type="submit"],
+.directify_fn_btn_contactsend,
+.directify_fn_pagination ul li a:hover,
+.directify_fn_pagination ul li.activated a,
+.directify_fn_comment .add_comment_wrap form input[type="submit"],
+.directify_fn_submit_form input[type="submit"],
+.directify_fn_dashboard_wrapper .dashboard_bg .overlay_color,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .action__single .content p .rating,
+.directify_fn_profile_form input[type="submit"],
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .invoice__single .details__see a,
+.directify_fn_sign_in input[type="submit"],
+.directify_fn_mobile_menu_wrap .mobile_search_see > a,
+.directify_fn_single_wrapper .single_title .title_verified .svg,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.back-bar .pointer,
+.directify_fn_contact_wrapper .directify_fn_contact_bg .overlay_color,
+.directify_fn_btn_contactsend_page,
+.directify_fn_submit_img_holder .overlay_color{background-color: #0089e2;}
+
+
+h1>a:hover,h2>a:hover,h3>a:hover,h4>a:hover,h5>a:hover,h6>a:hover,
+.directify_fn_rating .up .svg,
+.directify_fn_tabs ul.fam_city li > a:hover .fam_city_content .title_holder h3,
+.directify_fn_tabs ul.fam_city li > a:hover .fam_city_content .title_holder span,
+.directify_fn_tabs ul.fam_city li > a:hover .fam_city_content .arrow i,
+.directify_fn_tabs ul.fam_city li > a.active .fam_city_content .title_holder h3,
+.directify_fn_tabs ul.fam_city li > a.active .fam_city_content .title_holder span,
+.directify_fn_tabs ul.fam_city li > a.active .fam_city_content .arrow i,
+.directify_fn_exmblog_wrap .exmblogs .exmblog_single_wrap .exmblog_single .title_holder span.read_more a,
+.all_cat_btn a:hover,
+.directify_fn_mobile_nav ul li a:hover,
+.directify_fn_single_wrapper .single_title .title_info .title_holder span.categories,
+.directify_fn_single_wrapper .single_title .title_info .title_holder span.categories a,
+.directify_fn_single_wrapper .single_title .title_btns ul li:hover a,
+.directify_fn_single_wrapper .single_info .opening_time .hire_me a.hire,
+.directify_fn_review_wrapper .all_reviews_wrap .review_single .person_comment .img_holder a,
+.directify_fn_review_wrapper .all_reviews_wrap .review_single .person_comment .footer a,
+.directify_fn_review_wrapper .add_review_wrap form .your-rating .directify_fn_rating label,
+.directify_fn_review_wrapper .add_review_wrap form .your-image label.forinput,
+.directify_fn_single_wrapper .single_info .address ul li a,
+.directify_fn_single_wrapper .single_info .phone p,
+.directify_fn_single_wrapper.second_single .single_info .video_presentaiton_wrap a .svg,
+.directify_fn_single_wrapper.second_single .single_info .photo_box_wrap .see a,
+.directify_fn_blog_wrap .blog_wrapper ul.mypost li .post .title_holder > span a,
+.directify_fn_blog_single_wrap .blog_single_wrapper .post_content .title_holder > span a,
+.directify_fn_tags > em,
+.directify_fn_tags > em a,
+.directify_fn_social_icons > ul > li a:hover,
+.directify_fn_comment .comment_single .person_comment .inner > span a,
+.directify_fn_submit_main_section .have-account p a,
+.directify_fn_submit_opening_section a,
+.directify_fn_dashboard_wrapper .dashboard_content .menu_wrap .content ul.nav li a:hover,
+.directify_fn_dashboard_wrapper .dashboard_content .menu_wrap .content ul.nav li a:hover i,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .action__single .content p .title a:hover,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .listings__active .active__single .content p a.name:hover,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .review_wrap .review__single .content .name_holder .title a:hover,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .bookmark_wrap .bookmark__single .content p a.name:hover,
+.directify_invoice__single_details .print a{color: #0089e2;}
+
+
+.directify_fn_exmblog_wrap .exmblogs .exmblog_single_wrap .exmblog_single .title_holder span.read_more a:hover,
+.directify_fn_single_wrapper .single_info .address ul li a:hover,
+.directify_fn_blog_wrap .blog_wrapper ul.mypost li .post .title_holder > span a:hover,
+.directify_fn_blog_single_wrap .blog_single_wrapper .post_content .title_holder > span a:hover,
+.directify_fn_tags > em a:hover,
+.directify_fn_comment .comment_single .person_comment .inner > span a:hover,
+.directify_fn_submit_main_section .have-account p a:hover,
+.directify_fn_single_wrapper .single_title .title_info .title_holder span.categories a:hover{border-bottom-color: #0089e2;}
+
+
+.cat_single_wrap .cat_single:hover .overlay_color,
+.directify_fn_review_wrapper .all_reviews_wrap .review_single .person_comment .footer a,
+.directify_fn_review_wrapper .add_review_wrap form .your-image label.forinput,
+.directify_fn_pagination ul li a:hover,
+.directify_fn_pagination ul li.activated a,
+.directify_fn_submit_opening_section a span.trigger,
+.directify_invoice__single_details .print a{border-color: #0089e2;}
+/*------------------------------------------------------------------*/ 
+/*	02) PRIMARY TITLES' COLOR: #253147;
+/*------------------------------------------------------------------*/
+h1>a,h2>a,h3>a,h4>a,h5>a,h6>a,
+.directify_fn_mobile_menu .mobile_search a,
+.directify_fn_mobile_menu .s-search a,
+.directify_fn_mobile_nav ul li a,
+.directify_fn_header_wrap.absolute .directify_fn_header_nav_list ul li.add_listing a,
+.directify_fn_header .directify_fn_header_search a,
+.directify_fn_header .directify_fn_header_nav_list ul li,
+.directify_fn_header .directify_fn_header_nav_list ul li.add_listing a,
+.directify_fn_leftbar_wrap .leftbar form .leftbar_search_btn a,
+a.directify_fn_search_btn,
+.custom_nav a,
+.featured_box_wrap .featured_box_info .featured_box_title h3,
+.directify_fn_tabs > .title_holder h3,
+.directify_fn_tabs ul.fam_city .fam_city_wrap .fam_city_content .title_holder h3,
+.directify_fn_workstep_wrap .workstep > .title_holder h3,
+.directify_fn_workstep_wrap .workstep .steps .step_single_wrap .step_single .title_holder h3,
+.directify_fn_exmblog_wrap .exmblogs > .title_holder h3,
+.directify_fn_exmblog_wrap .exmblogs .exmblog_single_wrap .exmblog_single .title_holder h3,
+.directify_fn_all_listings_wrap .discovering .title_holder h3,
+.directify_fn_all_listings_wrap .discovering .title_holder span,
+.cat_single_wrap .cat_single_content a,
+.directify_fn_all_listings_wrap .searching.input-changed-width a.directify_fn_search_btn,
+.directify_fn_listingable.listing_categories_wrap .title_holder h3,
+.footer_location_rows .footer_location_row span,
+.directify_fn_header_wrap.absolute .directify_fn_header_nav_list ul li ul.sub_menu li,
+.directify_fn_blog_single_wrap .blog_single_wrapper .post_content .title_holder  h3,
+.directify_fn_blog_single_wrap .blog_single_wrapper .post_content .title_holder p.post_intro,
+.directify_fn_sign_in h3,
+.directify_fn_single_wrapper .single_title .price_wrapper span.text,
+.directify_fn_single_wrapper .single_title .price_wrapper span.number,
+.directify_fn_single_wrapper .single_title .title_info .title_holder h3,
+.directify_fn_review_wrapper .rating_box .rating_total > h3,
+.directify_fn_dashboard_wrapper .dashboard_content .menu_wrap .content ul li span,
+.directify_fn_dashboard_wrapper .dashboard_content .menu_wrap .content ul li a,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .title_holder h3,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .informator__single.review span,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .informator__single.review h3,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .action__single .content p .title a,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .listings__active .active__single .content p a.name,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .review_wrap .review__single .content .name_holder .title a,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .bookmark_wrap .bookmark__single .content p a.name,
+.directify_fn_profile_main_section .changer label,
+.directify_fn_profile_security_section h3,
+.directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .invoice__single .col h5.label,
+.dashboard_wrap .hidden_list_nav ul li a,
+.directify_invoice__single_details .invoice__info h5 .label,
+.directify_invoice__single_details .title_holder h3,
+.directify_invoice__single_details .supp_cust .col h5,
+.directify_fn_dashboard_wrapper .dashboard_content .menu_wrap .header .title_holder h3,
+.directify_fn_sign_in h5{color: #253147;}
+
+.directify_fn_header .directify_fn_header_search ::-webkit-input-placeholder{color: #253147;}
+.directify_fn_header .directify_fn_header_search ::-moz-placeholder{color: #253147;}
+.directify_fn_header .directify_fn_header_search :-moz-placeholder{color: #253147;}
+.directify_fn_header .directify_fn_header_search :-ms-input-placeholder{color: #253147;}
+/*------------------------------------------------------------------*/ 
+/*	03) ADD LISTINGS' COLOR: #ffd200;
+/*------------------------------------------------------------------*/
+.directify_fn_header .directify_fn_header_nav_list ul li.add_listing,
+.directify_fn_all_listings_wrap .searching.input-changed-width a.directify_fn_search_btn{background-color: #ffd200;}

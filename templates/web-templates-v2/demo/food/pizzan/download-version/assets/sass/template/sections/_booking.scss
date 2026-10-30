@@ -1,0 +1,119 @@
+/* Booking 1 ---------------------------------- */
+.booking-form {
+    position: relative;
+    z-index: 3;
+    .form-control {
+        background-color: $title-color;
+        border-color: $body-color;
+        color: $white-color;
+        @include inputPlaceholder {
+            color: $white-color;
+        }
+    }
+    .form-group {
+        i {
+            color: $white-color;
+        }
+    }
+}
+
+/* Booking 2 ---------------------------------- */
+.available-table {
+    background-color: $white-color;
+    padding: 45px 50px;
+    border-radius: 20px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    &_title {
+        font-family: $style-font;
+        font-size: 30px;
+        border-bottom: 1px solid $theme-color;
+        padding-bottom: 16px;
+        margin-bottom: 30px;
+        margin-top: -0.3em;
+        &.style2 {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 8px;
+            margin-top: 25px;
+        }
+    }
+    &_info {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px dashed $gray-color;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        span {
+            display: inline-block;
+        }
+    }
+    &_call {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: $title-font;
+        padding-top: 10px;
+        display: block;
+        max-width: fit-content;
+        border-top: 1px soliD $theme-color;
+        margin: 0 auto -0.2em auto;
+    }
+    &.style2 {
+        width: 100%;
+        box-shadow: 0px 0px 25px rgba(1, 15, 28, 0.09) !important;
+    }
+}
+
+.available-table-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 39%;
+}
+
+.booking-form {
+    &.style2 {
+        max-width: 940px;
+    }
+}
+
+@include xxl {
+    .booking-form.style2 {
+        max-width: 760px;
+    }
+    .available-table {
+        width: 470px;
+    }
+}
+
+@include xl {
+    .booking-form.style2 {
+        max-width: 700px;
+    }
+    .available-table {
+        width: 390px;
+    }
+}
+
+@include lg {
+    .available-table-bg {
+        display: none;
+    }
+    .available-table {
+        width: 550px;
+        margin: 0 auto 45px auto;
+    }
+    .booking-form.style2 {
+        max-width: 100%;
+    }
+}
+
+@include xs {
+    .available-table {
+        width: 100%;
+        padding: 45px 20px;
+    }
+}

@@ -1,0 +1,15 @@
+Version 1.1
+--------------------------------------------------------------
+June 26 2019 :
+- Minor HTML Corrections
+- Added 21 Inner Pages
+- Added Few New Sections
+- Added Onscroll Animation
+- Updated Documentation
+etc.
+
+
+Version 1.0
+--------------------------------------------------------------
+June 24 2019 :
+- Template Release

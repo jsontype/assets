@@ -1,0 +1,31 @@
+.theme-coffee {
+    --theme-color: #77524A;
+}
+
+.link-btn {
+    i.circle {
+        background-color: $theme-color;
+        color: $white-color;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 24px;
+        border-radius: 50%;
+        transition: 0.3s ease-in-out;
+    }
+    &:hover {
+        i.circle {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+@include xl {
+    .shape-mockup {
+        &.coffee {
+            max-width: 150px;
+        }
+    } 
+}
+

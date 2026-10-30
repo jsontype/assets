@@ -1,0 +1,82 @@
+.category-box {
+    &-area {
+        background-color: $smoke-color2;
+        border-radius: 20px;
+        border: 2px solid $theme-color;
+        padding: 80px;
+        position: relative;
+    }
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    &_icon {
+        background-color: rgba($color: #fff, $alpha: 0.1);
+        border-radius: 10px;
+        padding: 5px;
+    }
+    &_content {
+        margin-bottom: -0.45em;
+    }
+    &_title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: -0.35em;
+        margin-bottom: 3px;
+        color: $white-color;
+        a {
+            color: inherit;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    &_text {
+        color: $white-color;
+        margin-bottom: 10px;
+    }
+    .line-btn {
+        color: $white-color;
+        font-weight: 500;
+        &:before {
+            background-color: $white-color;
+        }
+    }
+}
+
+@include md {
+    .category-box {
+        gap: 15px;
+        &-area {
+            padding: 40px;
+        }
+        &_icon {
+            width: 92px;
+        }
+    }
+}
+
+@include sm {
+    .category-box-area {
+        .shape-mockup {
+            display: none;
+        }
+    }
+}
+
+@include vxs {
+    .category-box-area {
+        padding: 40px 20px 20px;
+    }
+}
+
+@media (max-width: 340px) {
+    .category-box {
+        padding: 12px;
+        &_title {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,754 @@
+@font-face {
+	font-family: 'pragueicon';
+	src:  url('../fonts/pragueicon.eot?2wvzvq');
+	src:  url('../fonts/pragueicon.eot?2wvzvq#iefix') format('embedded-opentype'),
+	url('../fonts/pragueicon.ttf?2wvzvq') format('truetype'),
+	url('../fonts/pragueicon.woff?2wvzvq') format('woff'),
+	url('../fonts/pragueicon.svg?2wvzvq#pragueicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="pragueicon-"], [class*=" pragueicon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'pragueicon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.pragueicon-apartment-building-hotel-real-room:before {
+	content: "\e900";
+	color: inherit;
+}
+.pragueicon-apartment-building-hotel-room:before {
+	content: "\e901";
+	color: inherit;
+}
+.pragueicon-apartment:before {
+	content: "\e902";
+	color: inherit;
+}
+.pragueicon-barn:before {
+	content: "\e903";
+	color: inherit;
+}
+.pragueicon-boat:before {
+	content: "\e904";
+	color: inherit;
+}
+.pragueicon-building-factory-real-stock-store:before {
+	content: "\e905";
+	color: inherit;
+}
+.pragueicon-building-hotel-real-room:before {
+	content: "\e906";
+	color: inherit;
+}
+.pragueicon-building:before {
+	content: "\e907";
+	color: inherit;
+}
+.pragueicon-bungalow:before {
+	content: "\e908";
+	color: inherit;
+}
+.pragueicon-car-house:before {
+	content: "\e909";
+	color: inherit;
+}
+.pragueicon-castle:before {
+	content: "\e90a";
+	color: inherit;
+}
+.pragueicon-container-estate-office-real-room:before {
+	content: "\e90b";
+	color: inherit;
+}
+.pragueicon-guesthouse:before {
+	content: "\e90c";
+	color: inherit;
+}
+.pragueicon-hill:before {
+	content: "\e90d";
+	color: inherit;
+}
+.pragueicon-home:before {
+	content: "\e90e";
+	color: inherit;
+}
+.pragueicon-homestay:before {
+	content: "\e90f";
+	color: inherit;
+}
+.pragueicon-house-japan:before {
+	content: "\e910";
+	color: inherit;
+}
+.pragueicon-house-residence:before {
+	content: "\e911";
+	color: inherit;
+}
+.pragueicon-house:before {
+	content: "\e912";
+	color: inherit;
+}
+.pragueicon-hut-property-real-room-villa:before {
+	content: "\e913";
+	color: inherit;
+}
+.pragueicon-igloo:before {
+	content: "\e914";
+	color: inherit;
+}
+.pragueicon-inn:before {
+	content: "\e915";
+	color: inherit;
+}
+.pragueicon-key:before {
+	content: "\e916";
+	color: inherit;
+}
+.pragueicon-lighthouse:before {
+	content: "\e917";
+	color: inherit;
+}
+.pragueicon-maldives:before {
+	content: "\e918";
+	color: inherit;
+}
+.pragueicon-mosque:before {
+	content: "\e919";
+	color: inherit;
+}
+.pragueicon-outdoor-room-tent:before {
+	content: "\e91a";
+	color: inherit;
+}
+.pragueicon-palace:before {
+	content: "\e91b";
+	color: inherit;
+}
+.pragueicon-residence:before {
+	content: "\e91c";
+	color: inherit;
+}
+.pragueicon-store:before {
+	content: "\e91d";
+	color: inherit;
+}
+.pragueicon-temple:before {
+	content: "\e91e";
+	color: inherit;
+}
+.pragueicon-villa:before {
+	content: "\e91f";
+	color: inherit;
+}
+.pragueicon-bank:before {
+	content: "\e920";
+}
+.pragueicon-brush:before {
+	content: "\e921";
+}
+.pragueicon-building-tile:before {
+	content: "\e922";
+}
+.pragueicon-car:before {
+	content: "\e923";
+}
+.pragueicon-carpenter:before {
+	content: "\e924";
+}
+.pragueicon-construction-2:before {
+	content: "\e925";
+}
+.pragueicon-construction-3:before {
+	content: "\e926";
+}
+.pragueicon-construction-4:before {
+	content: "\e927";
+}
+.pragueicon-construction-5:before {
+	content: "\e928";
+}
+.pragueicon-construction-6:before {
+	content: "\e929";
+}
+.pragueicon-construction-7:before {
+	content: "\e92a";
+}
+.pragueicon-construction-8:before {
+	content: "\e92b";
+}
+.pragueicon-construction-9:before {
+	content: "\e92c";
+}
+.pragueicon-construction-10:before {
+	content: "\e92d";
+}
+.pragueicon-construction-11svg:before {
+	content: "\e92e";
+}
+.pragueicon-construction-12svg:before {
+	content: "\e92f";
+}
+.pragueicon-construction-13svg:before {
+	content: "\e930";
+}
+.pragueicon-construction-14svg:before {
+	content: "\e931";
+}
+.pragueicon-construction-15svg:before {
+	content: "\e932";
+}
+.pragueicon-construction-16svg:before {
+	content: "\e933";
+}
+.pragueicon-construction-17svg:before {
+	content: "\e934";
+}
+.pragueicon-construction-18svg:before {
+	content: "\e935";
+}
+.pragueicon-construction-19svg:before {
+	content: "\e936";
+}
+.pragueicon-construction-20svg:before {
+	content: "\e937";
+}
+.pragueicon-construction-21svg:before {
+	content: "\e938";
+}
+.pragueicon-construction-22svg:before {
+	content: "\e939";
+}
+.pragueicon-construction-23svg:before {
+	content: "\e93a";
+}
+.pragueicon-construction-24:before {
+	content: "\e93b";
+}
+.pragueicon-construction-25:before {
+	content: "\e93c";
+}
+.pragueicon-construction-26:before {
+	content: "\e93d";
+}
+.pragueicon-construction-27:before {
+	content: "\e93e";
+}
+.pragueicon-construction-28:before {
+	content: "\e93f";
+}
+.pragueicon-construction-29:before {
+	content: "\e940";
+}
+.pragueicon-construction-30:before {
+	content: "\e941";
+}
+.pragueicon-construction-31:before {
+	content: "\e942";
+}
+.pragueicon-construction-32:before {
+	content: "\e943";
+}
+.pragueicon-construction-33:before {
+	content: "\e944";
+}
+.pragueicon-construction-35:before {
+	content: "\e945";
+}
+.pragueicon-construction-36:before {
+	content: "\e946";
+}
+.pragueicon-construction-37:before {
+	content: "\e947";
+}
+.pragueicon-construction-38:before {
+	content: "\e948";
+}
+.pragueicon-construction-39:before {
+	content: "\e949";
+}
+.pragueicon-construction-40:before {
+	content: "\e94a";
+}
+.pragueicon-construction-41:before {
+	content: "\e94b";
+}
+.pragueicon-construction-42:before {
+	content: "\e94c";
+}
+.pragueicon-construction-43:before {
+	content: "\e94d";
+}
+.pragueicon-construction-44:before {
+	content: "\e94e";
+}
+.pragueicon-construction-46:before {
+	content: "\e94f";
+}
+.pragueicon-construction-47:before {
+	content: "\e950";
+}
+.pragueicon-construction-48:before {
+	content: "\e951";
+}
+.pragueicon-construction-49:before {
+	content: "\e952";
+}
+.pragueicon-construction-50:before {
+	content: "\e953";
+}
+.pragueicon-construction-51:before {
+	content: "\e954";
+}
+.pragueicon-construction-53:before {
+	content: "\e955";
+}
+.pragueicon-construction-54:before {
+	content: "\e956";
+}
+.pragueicon-construction-55:before {
+	content: "\e957";
+}
+.pragueicon-construction-56:before {
+	content: "\e958";
+}
+.pragueicon-construction-57:before {
+	content: "\e959";
+}
+.pragueicon-construction:before {
+	content: "\e95a";
+}
+.pragueicon-construction1svg:before {
+	content: "\e95b";
+}
+.pragueicon-drill:before {
+	content: "\e95c";
+}
+.pragueicon-electrical:before {
+	content: "\e95d";
+}
+.pragueicon-estate:before {
+	content: "\e95e";
+}
+.pragueicon-excavator:before {
+	content: "\e95f";
+}
+.pragueicon-factory:before {
+	content: "\e960";
+}
+.pragueicon-floor:before {
+	content: "\e961";
+}
+.pragueicon-foam:before {
+	content: "\e962";
+}
+.pragueicon-hospital:before {
+	content: "\e963";
+}
+.pragueicon-interior-105:before {
+	content: "\e964";
+}
+.pragueicon-interior-106:before {
+	content: "\e965";
+}
+.pragueicon-knife:before {
+	content: "\e966";
+}
+.pragueicon-laser:before {
+	content: "\e967";
+}
+.pragueicon-leve:before {
+	content: "\e968";
+}
+.pragueicon-light:before {
+	content: "\e969";
+}
+.pragueicon-onstruction-2:before {
+	content: "\e96a";
+}
+.pragueicon-onstruction-3:before {
+	content: "\e96b";
+}
+.pragueicon-onstruction-4:before {
+	content: "\e96c";
+}
+.pragueicon-onstruction-5:before {
+	content: "\e96d";
+}
+.pragueicon-onstruction:before {
+	content: "\e96e";
+}
+.pragueicon-paint:before {
+	content: "\e96f";
+}
+.pragueicon-pipe:before {
+	content: "\e970";
+}
+.pragueicon-plumb:before {
+	content: "\e971";
+}
+.pragueicon-radiator:before {
+	content: "\e972";
+}
+.pragueicon-repair:before {
+	content: "\e973";
+}
+.pragueicon-ruler:before {
+	content: "\e974";
+}
+.pragueicon-sealant-gun:before {
+	content: "\e975";
+}
+.pragueicon-set-of-tools:before {
+	content: "\e976";
+}
+.pragueicon-shop:before {
+	content: "\e977";
+}
+.pragueicon-shovel:before {
+	content: "\e978";
+}
+.pragueicon-sign-stop:before {
+	content: "\e979";
+}
+.pragueicon-steps:before {
+	content: "\e97a";
+}
+.pragueicon-tile:before {
+	content: "\e97b";
+}
+.pragueicon-tools:before {
+	content: "\e97c";
+}
+.pragueicon-tube:before {
+	content: "\e97d";
+}
+.pragueicon-voltmeter:before {
+	content: "\e97e";
+}
+.pragueicon-wallpaper:before {
+	content: "\e97f";
+}
+.pragueicon-welding:before {
+	content: "\e980";
+}
+.pragueicon-wheelbarrow:before {
+	content: "\e981";
+}
+.pragueicon-window:before {
+	content: "\e982";
+}
+.pragueicon-worker:before {
+	content: "\e983";
+}
+.pragueicon-interior-2:before {
+	content: "\e984";
+}
+.pragueicon-interior-3:before {
+	content: "\e985";
+}
+.pragueicon-interior-4:before {
+	content: "\e986";
+}
+.pragueicon-interior-5:before {
+	content: "\e987";
+}
+.pragueicon-interior-6:before {
+	content: "\e988";
+}
+.pragueicon-interior-7:before {
+	content: "\e989";
+}
+.pragueicon-interior-8:before {
+	content: "\e98a";
+}
+.pragueicon-interior-9:before {
+	content: "\e98b";
+}
+.pragueicon-interior-10:before {
+	content: "\e98c";
+}
+.pragueicon-interior-11:before {
+	content: "\e98d";
+}
+.pragueicon-interior-12:before {
+	content: "\e98e";
+}
+.pragueicon-interior-13:before {
+	content: "\e98f";
+}
+.pragueicon-interior-14svg:before {
+	content: "\e990";
+}
+.pragueicon-interior-15:before {
+	content: "\e991";
+}
+.pragueicon-interior-16:before {
+	content: "\e992";
+}
+.pragueicon-interior-17:before {
+	content: "\e993";
+}
+.pragueicon-interior-18:before {
+	content: "\e994";
+}
+.pragueicon-interior-19:before {
+	content: "\e995";
+}
+.pragueicon-interior-20:before {
+	content: "\e996";
+}
+.pragueicon-interior-21:before {
+	content: "\e997";
+}
+.pragueicon-interior-23:before {
+	content: "\e998";
+}
+.pragueicon-interior-24:before {
+	content: "\e999";
+}
+.pragueicon-interior-25:before {
+	content: "\e99a";
+}
+.pragueicon-interior-26:before {
+	content: "\e99b";
+}
+.pragueicon-interior-27:before {
+	content: "\e99c";
+}
+.pragueicon-interior-28:before {
+	content: "\e99d";
+}
+.pragueicon-interior-29:before {
+	content: "\e99e";
+}
+.pragueicon-interior-30:before {
+	content: "\e99f";
+}
+.pragueicon-interior-31:before {
+	content: "\e9a0";
+}
+.pragueicon-interior-32:before {
+	content: "\e9a1";
+}
+.pragueicon-interior-33:before {
+	content: "\e9a2";
+}
+.pragueicon-interior-34:before {
+	content: "\e9a3";
+}
+.pragueicon-interior-35:before {
+	content: "\e9a4";
+}
+.pragueicon-interior-36:before {
+	content: "\e9a5";
+}
+.pragueicon-interior-37:before {
+	content: "\e9a6";
+}
+.pragueicon-interior-38:before {
+	content: "\e9a7";
+}
+.pragueicon-interior-39:before {
+	content: "\e9a8";
+}
+.pragueicon-interior-40:before {
+	content: "\e9a9";
+}
+.pragueicon-interior-41:before {
+	content: "\e9aa";
+}
+.pragueicon-interior-42:before {
+	content: "\e9ab";
+}
+.pragueicon-interior-43:before {
+	content: "\e9ac";
+}
+.pragueicon-interior-44:before {
+	content: "\e9ad";
+}
+.pragueicon-interior-45:before {
+	content: "\e9ae";
+}
+.pragueicon-interior-46:before {
+	content: "\e9af";
+}
+.pragueicon-interior-47:before {
+	content: "\e9b0";
+}
+.pragueicon-interior-48:before {
+	content: "\e9b1";
+}
+.pragueicon-interior-49:before {
+	content: "\e9b2";
+}
+.pragueicon-interior-50:before {
+	content: "\e9b3";
+}
+.pragueicon-interior-51:before {
+	content: "\e9b4";
+}
+.pragueicon-interior-52:before {
+	content: "\e9b5";
+}
+.pragueicon-interior-53:before {
+	content: "\e9b6";
+}
+.pragueicon-interior-54:before {
+	content: "\e9b7";
+}
+.pragueicon-interior-55:before {
+	content: "\e9b8";
+}
+.pragueicon-interior-56:before {
+	content: "\e9b9";
+}
+.pragueicon-interior-57:before {
+	content: "\e9ba";
+}
+.pragueicon-interior-59:before {
+	content: "\e9bb";
+}
+.pragueicon-interior-60:before {
+	content: "\e9bc";
+}
+.pragueicon-interior-61:before {
+	content: "\e9bd";
+}
+.pragueicon-interior-62:before {
+	content: "\e9be";
+}
+.pragueicon-interior-63:before {
+	content: "\e9bf";
+}
+.pragueicon-interior-64:before {
+	content: "\e9c0";
+}
+.pragueicon-interior-65:before {
+	content: "\e9c1";
+}
+.pragueicon-interior-66:before {
+	content: "\e9c2";
+}
+.pragueicon-interior-67:before {
+	content: "\e9c3";
+}
+.pragueicon-interior-68:before {
+	content: "\e9c4";
+}
+.pragueicon-interior-69:before {
+	content: "\e9c5";
+}
+.pragueicon-interior-70:before {
+	content: "\e9c6";
+}
+.pragueicon-interior-71:before {
+	content: "\e9c7";
+}
+.pragueicon-interior-73:before {
+	content: "\e9c8";
+}
+.pragueicon-interior-74:before {
+	content: "\e9c9";
+}
+.pragueicon-interior-76:before {
+	content: "\e9ca";
+}
+.pragueicon-interior-77:before {
+	content: "\e9cb";
+}
+.pragueicon-interior-78:before {
+	content: "\e9cc";
+}
+.pragueicon-interior-79:before {
+	content: "\e9cd";
+}
+.pragueicon-interior-80:before {
+	content: "\e9ce";
+}
+.pragueicon-interior-81:before {
+	content: "\e9cf";
+}
+.pragueicon-interior-82:before {
+	content: "\e9d0";
+}
+.pragueicon-interior-83:before {
+	content: "\e9d1";
+}
+.pragueicon-interior-84:before {
+	content: "\e9d2";
+}
+.pragueicon-interior-85:before {
+	content: "\e9d3";
+}
+.pragueicon-interior-86:before {
+	content: "\e9d4";
+}
+.pragueicon-interior-87:before {
+	content: "\e9d5";
+}
+.pragueicon-interior-88:before {
+	content: "\e9d6";
+}
+.pragueicon-interior-89:before {
+	content: "\e9d7";
+}
+.pragueicon-interior-90:before {
+	content: "\e9d8";
+}
+.pragueicon-interior-91:before {
+	content: "\e9d9";
+}
+.pragueicon-interior-92:before {
+	content: "\e9da";
+}
+.pragueicon-interior-93:before {
+	content: "\e9db";
+}
+.pragueicon-interior-94:before {
+	content: "\e9dc";
+}
+.pragueicon-interior-95:before {
+	content: "\e9dd";
+}
+.pragueicon-interior-96:before {
+	content: "\e9de";
+}
+.pragueicon-interior-97:before {
+	content: "\e9df";
+}
+.pragueicon-interior-98:before {
+	content: "\e9e0";
+}
+.pragueicon-interior-99:before {
+	content: "\e9e1";
+}
+.pragueicon-interior-100:before {
+	content: "\e9e2";
+}
+.pragueicon-interior-101:before {
+	content: "\e9e3";
+}
+.pragueicon-interior-102:before {
+	content: "\e9e4";
+}
+.pragueicon-interior-103:before {
+	content: "\e9e5";
+}
+.pragueicon-interior-104:before {
+	content: "\e9e6";
+}
+.pragueicon-interior:before {
+	content: "\e9e7";
+}

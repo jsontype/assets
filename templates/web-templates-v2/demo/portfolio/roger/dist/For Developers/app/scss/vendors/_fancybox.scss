@@ -1,0 +1,16 @@
+/* VENDOR: FANCYBOX
+-------------------------------------------- */
+
+.fancybox-bg,
+.vp-fancybox .fancybox-bg {
+	background-color: var(--ptf-color-3);
+}
+
+.fancybox-is-open .fancybox-bg {
+	opacity: .8;
+}
+
+.fancybox-loading {
+	border: 2px solid var(--ptf-color-1);
+	border-top-color: var(--ptf-color-accent);
+}

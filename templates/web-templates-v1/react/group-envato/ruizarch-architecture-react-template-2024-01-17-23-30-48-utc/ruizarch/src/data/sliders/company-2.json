@@ -1,0 +1,23 @@
+{
+    "title": "What We Have Done",
+    "subtitle": "Work",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "button": {
+        "label": "See Projects",
+        "link": "/portfolio"
+    },
+    "items": [
+        {
+            "image": "/img/photo/8.jpg",
+            "alt": "image"
+        },
+        {
+            "image": "/img/photo/7.jpg",
+            "alt": "image"
+        },
+        {
+            "image": "/img/photo/1.jpg",
+            "alt": "image"
+        }
+    ]
+}

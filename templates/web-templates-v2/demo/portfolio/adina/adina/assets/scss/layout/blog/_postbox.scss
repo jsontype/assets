@@ -1,0 +1,298 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.2 Postbox css
+/*----------------------------------------*/
+
+.#{$theme-prifix}-postbox{
+  &-wrapper{
+    &-space{
+      padding-right: 70px;
+      border-right: 1px solid var(--td-common-line);
+      margin-right: 10px;
+      &-2{
+        padding-right: 60px;
+        @media #{$lg,$md,$sm,$xs} {
+          padding-right: 0;
+        }
+      }
+      @media #{$lg,$md,$sm,$xs} {
+        padding-right: 0;
+        border-right: none;
+        margin-right: 0;
+      }
+    }
+  }
+  &-title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.25;
+    @media #{$sm} {
+      font-size: 34px;
+    }
+    @media #{$xs} {
+      font-size: 30px;
+    }
+    & a{
+      @include bgborder(#20282d, 0,0);
+      @include transition(all .3s ease);
+      &:hover{
+          @include bgborder(#20282d, 0,100%);
+          @include transition(all .3s ease);
+      }
+    }
+  }
+  &-text{
+    border-bottom: 1px solid var(--td-common-line);
+    & p{
+      line-height: 1.62;
+      color: var(--td-grey-2);
+    }
+  }
+  &-user{
+    & img{
+      width: 30px;
+      margin-right: 14px;
+    }
+    & a{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1;
+      color: #ababab;
+      & span{
+        color: var(--td-theme-primary);
+        font-weight: 700;
+      }
+    }
+  }
+  &-meta{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-here{
+      & span{
+        font-size: 14px;
+        line-height: 1;
+        color: var(--td-theme-primary);
+        &:not(:first-child){
+          margin-left: 38px;
+          @media #{$xs} {
+            margin-left: 0;
+          }
+        }
+        @media #{$xs} {
+          margin-right: 18px;
+        }
+        @media #{$sm,$xs} {
+          margin-top: 15px;
+          display: inline-block;
+        }
+        & a{
+          &:hover{
+            & i{
+              background: var(--td-theme-primary);
+              color: var(--td-common-white);
+            }
+          }
+        }
+        & i{
+          height: 30px;
+          width: 30px;
+          border: 1px solid var(--td-common-line);
+          text-align: center;
+          line-height: 30px;
+          margin-right: 10px;
+          transition: all .4s ease;
+          color: var(--td-theme-primary);
+        }
+      }
+    }
+  }
+  &-badge{
+    font-family: var(--td-ff-inter);
+    font-weight: 600;
+    color: var(--td-theme-primary);
+    padding: 7px 18px;
+    background: var(--td-common-white);
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    z-index: 99;
+    right: 20px;
+    @media #{$xs} {
+      right: 10px;
+      top: 10px;
+    }
+  }
+  &-nav{
+    & button{
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 48px;
+      border: 1px solid rgba($color: #fff, $alpha: .7);
+      background-color: transparent;
+      color: var(--td-common-white);
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      @include transform(translateY(-50%));
+      z-index: 1;
+      font-size: 18px;
+      &:hover{
+        background-color: var(--td-common-white);
+        border-color: var(--td-common-white);
+        color: var(--td-theme-primary);
+      }
+      &.td-postbox-slider-button-next{
+          right: 15px;
+          left: auto;
+      }
+      }
+  }
+  &-content{
+    &-2{
+      & p{
+        line-height: 1.62;
+        color: var(--td-grey-2);
+      }
+    }
+  }
+  &-comment{
+    &-title{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.3;
+      & span{
+        font-weight: 400;
+      }
+    }
+    & ul{
+      & li{
+        border-top: 1px solid var(--td-common-line);
+        list-style: none;
+        padding-top: 40px;
+      }
+    }
+    &-name{
+      & h5{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1;
+        margin-bottom: 0;
+        margin-right: 10px;
+      }
+      & .post-meta{
+        font-weight: 400;
+        color: var(--td-grey-2);
+      }
+    }
+    &-box{
+      @media #{$xs} {
+        flex-direction: column;
+      }
+    }
+    &-avatar{
+      @media #{$xs} {
+        margin-bottom: 10px;
+      }
+    }
+    & .children{
+      margin-left: 110px;
+      @media #{$sm,$xs} {
+        margin-left: 0;
+      }
+    }
+    &-text{
+      & p{
+        font-size: 14px;
+        line-height: 1.71;
+        color: var(--td-grey-2);
+      }
+    }
+    &-reply{
+      & a{
+        font-size: 14px;
+        line-height: 1;
+        color: var(--td-theme-primary);
+        & i{
+          border: 1px solid #e4e4e4;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+    &-form{
+      &-title{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.3;
+      }
+      &-content{
+        border-bottom: 1px solid var(--td-common-line);
+        padding-bottom: 10px;
+        @media #{$xs} {
+          flex-direction: column;
+        }
+      }
+      &-rating{
+        & ul{
+          & li{
+            list-style: none;
+            display: inline-block;
+            & span{
+              color: #cecece;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    &-input{
+      & input{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        color: var(--td-grey-4);
+        background: var(--td-grey-1);
+        border: 1px solid #d5dde9;
+        height: 54px;
+        &:focus{
+          background: none;
+          border-color: var(--td-theme-primary);
+        }
+        &::placeholder{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.14;
+          color: var(--td-grey-4);
+        }
+      }
+    }
+    &-textarea{
+      & textarea{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        color: var(--td-grey-4);
+        background: var(--td-grey-1);
+        border: 1px solid #d5dde9;
+        height: 180px;
+        resize: none;
+        &:focus{
+          background: none;
+          border-color: var(--td-theme-primary);
+        }
+        &::placeholder{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.14;
+          color: var(--td-grey-4);
+        }
+      }
+    }
+  }
+}

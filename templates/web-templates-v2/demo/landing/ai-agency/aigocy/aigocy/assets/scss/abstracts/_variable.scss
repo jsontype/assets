@@ -1,0 +1,60 @@
+$font-main: "Urbanist",
+    sans-serif;
+$font-roboto: "Roboto";
+$fontIcon: "icomoon";
+
+:root {
+    // color
+    --white: #ffffff;
+    --black: #000000;
+    --primary: #09090B;
+    --secondary: #71717A;
+
+    --brand: #FD3A25;
+    --neutral-50: #FAFAFA;
+    --neutral-100: #F4F4F5;
+    --neutral-200: #E4E4E7;
+    --neutral-300: #D4D4D8;
+    --neutral-400: #A1A1AA;
+    --neutral-500: #71717A;
+    --neutral-600: #52525B;
+    --neutral-700: #3F3F46;
+    --neutral-800: #27272A;
+    --neutral-900: #18181B;
+    --neutral-950: #09090B;
+
+    --body: #EDECEC;
+
+}
+
+[data-color-primary="color-primary-1"] {
+    --brand: #FD3A25;
+}
+
+[data-color-primary="color-primary-2"] {
+    --brand: #f8c736;
+}
+
+[data-color-primary="color-primary-3"] {
+    --brand: #f5772e;
+}
+
+[data-color-primary="color-primary-4"] {
+    --brand: #2ac6f8;
+}
+
+[data-color-primary="color-primary-5"] {
+    --brand: #8dca37;
+}
+
+[data-color-primary="color-primary-6"] {
+    --brand: #6c34fa;
+}
+
+[data-color-primary="color-primary-7"] {
+    --brand: #f14444;
+}
+
+[data-color-primary="color-primary-8"] {
+    --brand: #e14392;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Y Systems — Y Systems 메모</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		p{margin:0; padding:0;}
+		hr{ height:1px; margin:40px 0 40px 0;}
+		pre {
+		  display:block;
+		  font:normal 12px/22px Monaco,Monospace !important;
+		  color:#333;
+		  background-color:#f2f2f2;
+		  background-image:-webkit-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:-moz-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:-ms-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:-o-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  padding:0em 1em;
+		  overflow:auto;
+		  border:solid 1px #ccc;
+		}
+		
+		pre strong{color:#3A66FF;}
+    </style>
+</head>
+
+
+<body>
+<div class="container">
+	
+		<h3 class="center alt">Documentation by &ldquo;on3-step&quot;</h3>
+		
+		<hr>
+		
+		<h1 class="center filename">같은 문장을 모든 템플릿에 반복하지 않도록, 폴더마다 문장을 나눴습니다.</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>Created: 22/01/2026<br>
+By: on3-step<br>
+Email: <a href="mailto:desmonlatandos@gmail.com">desmonlatandos@gmail.com</a><br><br>
+					</strong>
+			  </p>
+</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my file. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://codecanyon.net/user/on3-step">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+  <h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+		  <li><a href="#A">HTML  Structure</a></li>
+		  <li><a href="#B">CSS Files</a></li>
+          <li><a href="#F">Jquery</a></li>
+  </ol>
+		
+<hr>
+		
+  <h3 id="A">A) HTML structure - <a href="#toc">top</a></h3>
+		<p>This file using Bootstrap,  All the information within main content is nested within a div with id-  name "<strong>main-intro</strong>&quot; for the file.  If you need  more information you can read Bootstrap documentation <a href="http://getbootstrap.com/">on this link</a></p>
+<p>&nbsp;</p>
+<h5>1. Sample html structure page</h5>
+<pre>
+<p>  &lt;!-- frame1 --&gt;<br>  &lt;section id=&quot;frame1&quot; <strong>data-frame</strong>=&quot;8000&quot;  aria-label=&quot;frame1&quot;&gt;<br>  &lt;!-- background --&gt;<br>  &lt;div class=&quot;bgintro<strong> anim</strong>fadeIn&quot; <strong>data-time</strong>=&quot;0&quot;&gt;&lt;img alt=&quot;background&quot; src=&quot;img/imgintro1.jpg&quot;&gt;&lt;/div&gt;<br>  &lt;!-- background end --&gt;<br>   &lt;div class=&quot;overlayintro&quot;&gt;&lt;/div&gt;<br>   &lt;!-- container --&gt;<br>   &lt;div class=&quot;container-fluid&quot;&gt;<br>    &lt;div class=&quot;row v-align&quot;&gt;&lt;!-- row --&gt;<br>        &lt;div class=&quot;contentintro&quot;&gt;&lt;!-- content --&gt;<br>           &lt;div class=&quot;col-md-1&quot;&gt;&lt;/div&gt;<br>           &lt;div class=&quot;col-md-4 right&quot;&gt;<br>              &lt;div class=&quot;p-30px <strong>anim</strong>fadeInDown&quot;<strong> data-time</strong>=&quot;1200&quot;&gt;&lt;img alt=&quot;image&quot; class=&quot;img-responsive&quot; src=&quot;img/tal-1.png&quot;&gt;&lt;/div&gt;<br>              &lt;div class=&quot;devider-left<strong> anim</strong>fadeInLeft&quot; <strong>data-time</strong>=&quot;1500&quot;&gt;&lt;/div&gt;<br>           &lt;/div&gt;<br>           &lt;div class=&quot;col-md-6 left p-50px&quot;&gt;<br>              &lt;div class=&quot;devider-right <strong>anim</strong>fadeInRight&quot; <strong>data-time</strong>=&quot;1800&quot; &gt;&lt;/div&gt;<br>              &lt;h1 class=&quot;<strong>anim</strong>bounceInLeft&quot; <strong>data-time</strong>=&quot;600&quot;&gt;&lt;span class=&quot;gray&quot;&gt;AWESOME&lt;/span&gt; YOUR LIFE&lt;/h1&gt;<br>              &lt;h3 class=&quot;<strong>anim</strong>bounceInRight&quot; <strong>data-time</strong>=&quot;900&quot;&gt;the world of adventure challenge&lt;/h3&gt;<br>           &lt;/div&gt;<br>           &lt;div class=&quot;col-md-1&quot;&gt;&lt;/div&gt;<br>        &lt;/div&gt;&lt;!-- content end --&gt;<br>    &lt;/div&gt;&lt;!-- row end --&gt;<br>   &lt;/div&gt;<br>   &lt;!-- container end --&gt;<br>  &lt;/section&gt;<br>  &lt;!-- end frame1 --&gt;</p>
+</pre>
+<p>For add more frame page, copy and paste div tag id="frame1" and rename it to div tag id="frame2", next-step open styleintro.css add more frame also there, final step open intro.js file and go to line5 code var pagenum = number; change the number of frame will use on your file. (example id="frame2" var pagenum =2;)
+</p>
+<p>&nbsp;</p>
+<p>For change animation all element tag, call class animation there (all animation classname, will start with the name &quot;anim&quot;)</p>
+<p>&nbsp;</p>
+<p> <strong>for add delay of time example below:</strong></p>
+<p>&nbsp;</p>
+<p><strong>data-frame=&quot;8000&quot;</strong> this  data for delay of frame  ( 8 second before change for next frame)</p>
+<p> <strong>data-time=&quot;1800&quot;</strong>  this  data for delay of all element tag inside of frame ( 1.8 second before the animation start)</p>
+<hr/>
+<h3 id="B">B) CSS Files - <a href="#toc">top</a></h3>
+
+		<span id="result_box" lang="en">These are css files used in this file:</span>
+		<ol>
+          <li><strong>bootstrap.min.css</strong> - css by Twitter boostrap</li>
+          <li><strong>animatedintro.css</strong><strong> - </strong>used for element animation all of page</li>
+          <li><strong>styleintro.css</strong> -  main css files (you can edit color, font, etc from this css)</li>
+          <li><strong>queriesintro.css</strong> - used for responsive style</li>
+        </ol>
+<p><span id="result_box2" lang="en">You can change almost all styles from <strong>styleintro.css </strong>file. </span></p>
+<pre>/* CSS Document */
+<br>	reset<br>	preloader<br>	container<br>	sound<br>	frame-page<br>	wraper<br>	general<br>	space<br>	devider<br>	padding<br>	margin<br>	color<br>	logo<br>	overlay background <br>
+*/
+</pre>
+<hr>	
+
+<h3 id="F">C) Jquery - <a href="#toc">top</a></h3>
+open intro.js file change your number of frame there
+<pre>
+
+ var pagenum = 4; //change your frame of intro
+
+ // ridirect landing page
+ function directpage() {
+     return window.location.href = 'http://on3-step.com/demolink/tf/expedition-v1/expedition-v2/index.html'; 
+     //change with your url
+ }
+ 
+</pre>
+
+<hr/>
+
+<h3 id="D">D) New Version – Real Estate Intro (v4) - <a href="#toc">top</a></h3>
+
+<p>This version introduces a new Real Estate intro concept with improved sound handling, dynamic frame detection, and a new premium text animation effect.</p>
+
+<hr/>
+
+<h5>1. User Trigger Autoplay Sound (Browser Safe)</h5>
+
+<p>Due to modern browser policies, audio playback now starts only after user interaction.</p>
+
+<p><strong>Features:</strong></p>
+<ul>
+  <li>Sound starts after clicking the Play Intro button</li>
+  <li>No autoplay blocking on Chrome, Firefox, Safari, Edge</li>
+  <li>Smooth fade-in when sound starts</li>
+  <li>Smooth fade-out when intro ends or redirects</li>
+</ul>
+
+<p><strong>Important:</strong> Do not remove the Play Overlay button. Audio playback requires user interaction.</p>
+
+<pre>
+&lt;div id="playIntro" class="play-overlay"&gt;
+  &lt;button id="btnPlay"&gt;Play Intro&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;audio id="playerintro"&gt;
+  &lt;source src="soundintro/musicintro.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+</pre>
+
+<hr/>
+
+<h5>2. Dynamic Frame System (Auto Detect Frames)</h5>
+
+<p>You no longer need to manually change the total frame number.</p>
+
+<p>The system now automatically detects all frames using the frame ID format:</p>
+
+<pre>
+&lt;section id="frame1" class="frame"&gt;...&lt;/section&gt;
+&lt;section id="frame2" class="frame"&gt;...&lt;/section&gt;
+&lt;section id="frame3" class="frame"&gt;...&lt;/section&gt;
+</pre>
+
+<p><strong>JavaScript (intro.js):</strong></p>
+
+<pre>
+var frames = $('[id^="frame"]');
+var pagenum = frames.length;
+</pre>
+
+<p><strong>Benefits:</strong></p>
+<ul>
+  <li>No manual update needed when adding or removing frames</li>
+  <li>More flexible intro system</li>
+  <li>Perfect for creating multiple intro variations</li>
+</ul>
+
+<hr/>
+
+<h5>3. New Fall Text Letter Animation Effect</h5>
+
+<p>A new premium animation effect has been added: letter-by-letter falling text animation.</p>
+
+<p><strong>Usage:</strong></p>
+
+<pre>
+&lt;h1 class="fall-text intro" data-time="600"&gt;Discover Your Dream Home&lt;/h1&gt;
+</pre>
+
+<p><strong>Features:</strong></p>
+<ul>
+  <li>Each character animates individually</li>
+  <li>Smooth cubic-bezier easing</li>
+  <li>Real spaces preserved (no broken spacing)</li>
+  <li>Text stays visible after animation (no fade-out)</li>
+</ul>
+
+<p><strong>JavaScript:</strong></p>
+
+<pre>
+$('.fall-text').each(function () {
+  var text = $(this).text();
+  var html = '';
+  var delay = 0;
+
+  for (var i = 0; i &lt; text.length; i++) {
+    var char = text[i];
+
+    if (char === ' ') {
+      html += ' ';
+    } else {
+      html += '&lt;span style="animation-delay:' + (delay * 0.08) + 's"&gt;' + char + '&lt;/span&gt;';
+      delay++;
+    }
+  }
+
+  $(this).html(html);
+});
+</pre>
+
+<p><strong>CSS:</strong></p>
+
+<pre>
+.fall-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
+.fall-text.intro span {
+  animation: fallIn 0.8s cubic-bezier(.19,1,.22,1) forwards;
+}
+
+@keyframes fallIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</pre>
+
+<hr/>
+
+<h5>4. Recommended Structure for Real Estate Intro Frame</h5>
+
+<pre>
+&lt;section id="frame1" class="frame" data-frame="8000"&gt;
+  &lt;div class="bgintro"&gt;
+    &lt;img src="img/realestate1.jpg" alt="Real Estate"&gt;
+  &lt;/div&gt;
+  &lt;div class="overlayintro"&gt;&lt;/div&gt;
+  &lt;div class="contentintro"&gt;
+    &lt;h1 class="fall-text intro" data-time="600"&gt;Discover Your Dream Home&lt;/h1&gt;
+    &lt;h3 class="animbouncefall" data-time="1200"&gt;Premium Real Estate Collection&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+
+<hr/>
+
+<h5>5. Important Notes</h5>
+
+<ul>
+  <li>Audio playback requires user interaction (Play button)</li>
+  <li>Always use frame ID format: id="frame1", id="frame2", etc.</li>
+  <li>Do not remove the Play Overlay system</li>
+  <li>Use class <strong>fall-text</strong> only for animated headline text</li>
+</ul>
+
+
+		
+<p class="append-bottom alt large"><strong>on3-step</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+</div><!-- end div .container -->
+</body>
+</html>

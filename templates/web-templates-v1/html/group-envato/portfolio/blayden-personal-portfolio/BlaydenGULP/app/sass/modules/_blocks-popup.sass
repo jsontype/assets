@@ -1,0 +1,341 @@
+.popup
+  position: relative
+  background-color: var(--base)
+  border-radius: var(--_radius)
+  padding: 0
+  width: calc( 100% - 4rem )
+  margin: 2rem auto
+  overflow: hidden
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)
+  overscroll-behavior: contain
+  +MQ(M)
+    margin: 3rem auto
+    width: calc( 100% - 10rem )
+  +MQ(XXXL)
+    max-width: 1620px
+
+.popup__container
+
+.project
+
+.project__block
+  padding: 0 2rem
+  &.no-padding
+    padding: 0
+  &.grid-block
+    padding: 0 1rem
+  +MQ(M)
+    padding: 0 5rem
+    &.grid-block
+      padding: 0 3.5rem
+  +MQ(XXXL)
+    &.grid-block
+      padding: 0 2.5rem
+
+.project__block
+  margin-top: 6rem
+  margin-bottom: 5.9rem
+  &.pre-grid-items
+    margin-bottom: 3.9rem
+  &.grid-items
+    margin-top: 3.8rem
+  &.normal-size
+    margin-top: 6rem
+    margin-bottom: 6.8rem
+  &.small-size
+    margin: 2rem 0
+  &.no-margin
+    margin: 0
+  &.no-margin-bottom
+    margin-bottom: 0
+  +MQ(M)
+    margin-top: 8rem
+    margin-bottom: 7.9rem
+    &.pre-grid-items
+      margin-bottom: 4.9rem
+    &.grid-items
+      margin-top: 5rem
+    &.normal-size
+      margin-top: 8rem
+      margin-bottom: 8.8rem
+    &.small-size
+      margin: 5rem 0
+    &.no-margin-bottom
+      margin-bottom: 0
+  +MQ(L)
+    margin-top: 8.7rem
+    margin-bottom: 8.6rem
+    &.pre-grid-items
+      margin-bottom: 5.6rem
+    &.grid-items
+      margin-top: 5.7rem
+    &.normal-size
+      margin-top: 8.7rem
+      margin-bottom: 9.5rem
+    &.no-margin-bottom
+      margin-bottom: 0
+  +MQ(XL)
+    margin-top: 8.2rem
+    margin-bottom: 8.6rem
+    &.pre-grid-items
+      margin-bottom: 5.6rem
+    &.grid-items
+      margin-top: 5.2rem
+    &.normal-size
+      margin-top: 9.5rem
+      margin-bottom: 9.5rem
+    &.no-margin-bottom
+      margin-bottom: 0
+  +MQ(XXL)
+    margin-top: 9.1rem
+    margin-bottom: 9.4rem
+    &.pre-grid-items
+      margin-bottom: 6.5rem
+    &.grid-items
+      margin-top: 6.1rem
+    &.normal-size
+      margin-top: 10.5rem
+      margin-bottom: 10.5rem
+    &.no-margin-bottom
+      margin-bottom: 0
+  +MQ(XXXL)
+    margin-top: 10.4rem
+    margin-bottom: 10.7rem
+    &.pre-grid-items
+      margin-bottom: 5.7rem
+    &.grid-items
+      margin-top: 5.4rem
+    &.normal-size
+      margin-top: 12rem
+      margin-bottom: 12rem
+    &.no-margin-bottom
+      margin-bottom: 0
+
+.project-image-bg
+  position: relative
+  width: 100%
+  background-repeat: no-repeat
+  background-position: top center
+  background-size: cover
+  overflow: hidden
+  +MQ(M)
+    height: auto
+
+@media (orientation: landscape)
+  .project-image-bg__landscape
+    display: block
+  .project-image-bg__portrait
+    display: none
+@media (orientation: portrait)
+  .project-image-bg__portrait
+    display: block
+  .project-image-bg__landscape
+    display: none
+
+.project__title
+  +position(absolute, null null 0 0)
+  width: 100%
+  padding: 2.4rem 2rem
+  +MQ(M)
+    padding: 2.6rem 5rem
+  +MQ(XL)
+    padding: 4rem 5rem 4.6rem 5rem
+
+.project__subtitle
+  margin-bottom: 2.8rem
+  &.image-top-subtitle
+    margin-bottom: 3rem
+  +MQ(M)
+    margin-bottom: 3.4rem
+    &.image-top-subtitle
+      margin-bottom: 4.5rem
+  +MQ(XL)
+    margin-bottom: 0
+    padding-top: 0.4rem
+    &.image-top-subtitle
+      margin-bottom: 0
+      padding-top: 0
+
+.project__illustration,
+.project__illustration-xl
+  position: relative
+  border-radius: var(--_radius)
+  overflow: hidden
+
+.project__data
+  position: relative
+
+.pdata__item
+  +MQ(XXXL)
+    padding-top: 0.4rem
+
+.project__feedback
+  position: relative
+  margin-bottom: 5.9rem
+  +MQ(M)
+    margin-bottom: 8rem
+  +MQ(L)
+    margin-bottom: 8.6rem
+  +MQ(XL)
+    margin-bottom: 8.6rem
+  +MQ(XXL)
+    margin-bottom: 9.5rem
+  +MQ(XXXL)
+    margin-bottom: 10.7rem
+
+.feedback__fauthor
+
+.fauthor__avatar
+  width: 60px
+  min-width: 60px
+  height: 60px
+  margin-right: 2rem
+  border-radius: var(--_radius)
+  overflow: hidden
+  +MQ(M)
+    width: 120px
+    min-width: 120px
+    height: 120px
+    margin-right: 3rem
+
+.fauthor__info
+
+.fauthor__name
+  color: var(--t-bright)
+
+.fauthor__position
+  margin-top: 0.6rem
+  +MQ(XXXL)
+    margin-top: 0.8rem
+
+.fauthor__rating
+  margin-top: 1.3rem
+  i
+    display: block
+    margin-right: 1rem
+    font-size: 1.6rem
+    color: var(--t-bright)
+    &:last-of-type
+      margin-right: 0
+  +MQ(XXL)
+    i
+      font-size: 1.8rem
+  +MQ(XXXL)
+    margin-bottom: 0.4rem
+    i
+      font-size: 2rem
+
+.feedback__descr
+  margin-top: 2.8rem
+  +MQ(M)
+    margin-top: 3.8rem
+  +MQ(XL)
+    margin-top: 3.6rem
+  +MQ(XXL)
+    margin-top: 3.4rem
+
+.project__divider
+  position: relative
+  width: 100%
+  height: 1px
+  background-color: var(--stroke-elements)
+
+.mfp-wrap
+  position: fixed !important
+
+.mfp-fade
+  overflow: hidden
+
+.mfp-fade .mfp-container
+  position: fixed
+  overflow-y: scroll
+
+.mfp-bg
+  opacity: 1
+  background-color: rgba(0,0,0,0.6)
+
+.mfp-container
+  padding: 0
+
+.mfp-close-btn-in
+  .mfp-close
+    width: 4rem
+    height: 4rem
+    border-radius: var(--_radius-s)
+    border: 1px solid var(--t-per-bright-dark)
+    right: 3rem
+    top: 3rem
+    opacity: 1
+    padding: 0
+    font: inherit
+    color: var(--t-per-bright-dark)
+    //z-index: 100000
+    font-size: 1.8rem
+    line-height: 1
+    transition: all 0.3s ease-in-out
+    &::before
+      display: inline-flex
+      font-family: "Phosphor"
+      content: "\eddb"
+      position: absolute
+      +center
+    &.permanent-dark
+      border: 1px solid var(--t-per-bright-dark)
+      background-color: var(--t-per-bright-dark)
+      color: var(--t-per-bright-light)
+    &.permanent-light
+      border: 1px solid var(--t-per-bright-light)
+      background-color: var(--t-per-bright-light)
+      color: var(--t-per-bright-dark)
+  +MQ(XL)
+    .mfp-close
+      &.permanent-dark
+        border: 1px solid var(--t-per-bright-dark)
+        background-color: transparent
+        color: var(--t-per-bright-dark)
+      &.permanent-light
+        border: 1px solid var(--t-per-bright-light)
+        background-color: transparent
+        color: var(--t-per-bright-light)
+      .no-touch &:hover
+        &.permanent-dark
+          border: 1px solid var(--t-per-bright-dark)
+          background-color: var(--t-per-bright-dark)
+          color: var(--neutral-white)
+        &.permanent-light
+          border: 1px solid var(--t-per-bright-light)
+          background-color: var(--t-per-bright-light)
+          color: var(--t-per-bright-dark)
+  +MQ(XXL)
+    .mfp-close
+      width: 5rem
+      height: 5rem
+
+/* overlay at start */
+.mfp-fade.mfp-bg
+  opacity: 0
+  transition: all 0.3s
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready
+  opacity: 1
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing
+  opacity: 0
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content
+  opacity: 0
+  transform: translateY(3rem)
+  transition: all 0.3s var(--_animbezier)
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+  opacity: 1
+  transform: translateY(0)
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+  opacity: 0
+  transform: translateY(3rem)

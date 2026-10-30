@@ -1,0 +1,38 @@
+/* PARTIAL: CITE
+-------------------------------------------- */
+
+.ptf-cite {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	height: px2rem(140px);
+	padding-right: px2rem(100px);
+	font-family: var(--ptf-secondary-font);
+	font-size: px2rem(38px);
+	font-weight: normal;
+	font-style: italic;
+	color: var(--ptf-color-1);
+	white-space: nowrap;
+
+	svg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		color: var(--ptf-color-accent);
+	}
+
+}
+
+.ptf-section {
+
+	.ptf-cite svg {
+		transition: clip-path 1s 1s var(--ptf-transition-easing);
+		clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+	}
+
+	&.active .ptf-cite svg {
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	}
+
+}

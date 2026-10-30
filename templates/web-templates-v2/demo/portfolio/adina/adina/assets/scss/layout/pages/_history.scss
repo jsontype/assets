@@ -1,0 +1,102 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 7.13 history css
+/*----------------------------------------*/
+
+.#{$theme-prifix}-history{
+    &-year{
+        font-weight: 500;
+        font-size: 120px;
+        line-height: 1;
+        @media #{$xs}{
+            font-size: 100px;
+        }
+    }
+    &-title{
+        &-wrap{
+            position: sticky;
+            top: 100px;
+        }
+    }
+    &-title{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1;
+        text-transform: capitalize;
+    }
+    &-wrapper{
+        padding-left: 110px;
+        margin-left: 20px;
+        border-left: 1px solid var(--td-common-line);
+        @media #{$lg,$sm}{
+            padding-left: 50px;
+        }
+        @media #{$xs}{
+            padding-left: 0;
+            margin-left: 0;
+            border: none;
+        }
+    }
+    &-item{
+        background: var(--td-grey-1);
+        padding: 50px 50px 35px 50px;
+        @media #{$xs}{
+            padding: 20px 20px 15px 20px;
+        }
+        & p{
+            line-height: 1.62;
+            color: var(--td-grey-2);
+        }
+    }
+    &-navebar{
+        height: 100%;
+        position: absolute;
+        left: -18px;
+        & ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            & li{
+                list-style: none;
+                height: 25%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &.current{
+                    & span{
+                        height: 100%;
+                        bottom: auto;
+                        top: 0;
+                    }
+                    & a{
+                        background: var(--td-theme-primary);
+                        color: var(--td-common-white);
+                        border: 1px solid  var(--td-theme-primary);
+                    }
+                }
+                & span{
+                    position: absolute;
+                    width: 1px;
+                    height: 0;
+                    background: var(--td-theme-primary);
+                    left: 17px;
+                    bottom: 0;
+                    transition: all .4s ease;
+                }
+                & a{
+                    width: 37px;
+                    height: 36px;
+                    line-height: 36px;
+                    background: var(--td-common-white);
+                    color: var(--td-theme-primary);
+                    position: relative;
+                    text-align: center;
+                    border: 1px solid var(--td-common-line);
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}

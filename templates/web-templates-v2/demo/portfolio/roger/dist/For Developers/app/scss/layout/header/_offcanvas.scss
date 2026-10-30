@@ -1,0 +1,170 @@
+/* HEADER: OFFCANVAS
+-------------------------------------------- */
+
+.ptf-offcanvas-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+	padding: px2rem(40px) px2rem(55px) px2rem(60px) px2rem(70px);
+	flex-direction: column;
+	background-color: var(--ptf-color-3);
+	transform: translate3d(100%, 0, 0);
+	z-index: z('offcanvas-menu');
+
+	@include media-breakpoint-up(sm) {
+		width: px2rem(550px);
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: px2rem(40px) px2rem(40px) px2rem(60px);
+	}
+
+	// menu header
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding-bottom: px2rem(100px);
+		color: var(--ptf-color-1);
+
+		@include media-breakpoint-up(sm) {
+			padding-bottom: px2rem(50px);
+		}
+
+		@media (max-height: 559px) {
+			padding-bottom: px2rem(50px);
+		}
+
+		.ptf-offcanvas-menu__locales {
+			color: var(--ptf-color-1);
+
+			a {
+				font-weight: 600;
+				text-transform: uppercase;
+
+				&.active {
+					color: var(--ptf-color-accent);
+				}
+
+			}
+
+			a + a {
+				margin-left: px2rem(32px);
+			}
+
+		}
+
+	}
+
+	// navigation
+	&__navigation {
+		height: 100%;
+		overflow-y: auto;
+
+		.sf-menu {
+			overflow: hidden;
+
+			li {
+				display: block;
+				float: none;
+			}
+
+			a {
+				display: inline-block;
+			}
+
+			> li {
+				padding: px2rem(10px) 0;
+
+				> a {
+					font-size: px2rem(32px);
+					font-weight: 600;
+					line-height: 1.3;
+					color: var(--ptf-color-1);
+
+					@include media-breakpoint-down(sm) {
+						font-size: px2rem(28px);
+					}
+
+				}
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+
+				&:first-child {
+					padding-top: 0;
+				}
+
+			}
+
+			> li.active > a,
+			> li:hover > a {
+				color: var(--ptf-color-accent);
+			}
+
+		}
+
+	}
+
+	// menu footer
+	&__footer {
+		padding-top: px2rem(100px);
+
+		@include media-breakpoint-up(sm) {
+			padding-top: px2rem(50px);
+		}
+
+		> div {
+			opacity: 0;
+		}
+
+	}
+
+	// contacts
+	&__socials {
+		margin-bottom: px2rem(50px);
+		color: var(--ptf-color-1);
+
+		@media (max-height: 559px) {
+			margin-bottom: 0;
+		}
+
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+
+	}
+
+	// copyright
+	&__copyright {
+		color: var(--ptf-color-1);
+
+		@media (max-height: 559px) {
+			display: none;
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+
+	}
+
+}
+
+// overlay
+.ptf-site-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	background-color: var(--ptf-color-6);
+	opacity: 0;
+	z-index: z('site-overlay');
+}

@@ -1,0 +1,52 @@
+@include ml {
+    :root {
+        --main-container: 1250px;
+    }
+}
+
+@media (min-width: 1560px) {
+    .th-container2 {
+        max-width: 1620px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        .container {
+            --main-container: 1220px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: calc(var(--main-container) + var(--container-gutters));
+        padding-left: calc(var(--container-gutters) / 2);
+        padding-right: calc(var(--container-gutters) / 2);
+        &.px-0 {
+            max-width: var(--main-container);
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .th-container {
+        --main-container: 1720px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .container-fluid.px-0 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+
+        .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+/* Hero Global ---------------------------------- */
+.th-hero-carousel {
+    .icon-btn {
+        width: 58px !important;
+        height: 58px !important;
+        line-height: 58px !important;
+        padding: 0 !important;
+    }
+}
+.hero-title .font-style {
+	font-family: "Lobster Two", cursive !important;
+}
+
+.hero-title .text-theme2 {
+	color: #ff9d2d !important;
+}
+
+.hero-title .text-theme {
+	color: #EB0029 !important;
+}
+
+.hero-1.phone {
+    max-height: 550px !important;
+}
+
+.hero-2.phone {
+    max-height: 700px !important;
+}
+
+@include xxl {
+    .hero-3 {
+        .icon-btn {
+            display: none !important;
+        }
+    }
+}

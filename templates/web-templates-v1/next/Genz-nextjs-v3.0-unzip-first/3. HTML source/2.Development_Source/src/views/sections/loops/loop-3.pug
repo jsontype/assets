@@ -1,0 +1,73 @@
+.box-list-posts.mt-40
+    .row
+        .col-lg-8.m-auto
+            .box-list-posts.mt-30
+                -
+                    const postLists = [
+                        {
+                            title: 'What Are NFTs? Non-Fungible Tokens & Crypto Art Explained',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            title: '5 Resources To Find Diverse Stock Images For Your Website',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            title: 'What if you could spend the lockdown at Hogwarts',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            title: 'Inside 3D Illustration with Elements Author Amrit Pal Singh',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            title: 'Indian digital artists are exploring the latest craze: Cryptoart',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+                        },
+                        {
+                            title: 'How Young Indian Digital Artists See A New Future In NFTs',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+                        },
+                        {
+                            title: 'NFT: The new brush stroke in the Indian art world',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+                        }
+                    ]
+                each post in postLists
+                    .card-list-posts.card-list-posts-small.border-bottom.border-gray-800.pb-30.mb-30.wow.animate__animated.animate__fadeIn
+                        .card-image.hover-up
+                            .box-author.mb-20
+                                img(src="assets/imgs/page/healthy/author.png", alt="Genz")
+                                .author-info
+                                    h6.color-gray-700 Joseph
+                                    span.color-gray-700.text-sm 25 April 2022
+                            a.btn.btn-tag.bg-gray-800.hover-up(href='blog-archive.html')= post.tag
+                        .card-info
+                            a(href= post.link)
+                                h3.mb-20.color-white= post.title
+                            p.color-gray-500= post.description
+                            .row.mt-20
+                                .col-7
+                                    a.color-gray-700.text-sm.mr-15(href="blog-archive.html") # Travel
+                                    a.color-gray-700.text-sm(href="blog-archive.html") # Lifestyle
+                                .col-5.text-end
+                                    span.color-gray-700.text-sm.timeread 3 mins read
+            include ../../elements/pagination.pug

@@ -1,0 +1,242 @@
+
+/** instagram-section **/
+
+.instagram-section{
+  position: relative;
+  padding: 103px 0px 220px 0px;
+}
+
+.instagram-section .content-box{
+  position: relative;
+  display: block;
+  margin-right: -550px;
+}
+
+.instagram-block-one .inner-box{
+  position: relative;
+  display: block;
+}
+
+.instagram-block-one .inner-box .image-box{
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.instagram-block-one .inner-box .image-box img{
+  width: 100%;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.instagram-block-one .inner-box:hover .image-box img{
+  transform: scale(1.05);
+  opacity: 0.2;
+}
+
+.instagram-section .owl-nav{
+  position: absolute;
+  left: -590px;
+  bottom: 52px;
+}
+
+.instagram-section .big-text{
+  position: absolute;
+  top: -250px;
+  left: 0px;
+  font-size: 300px;
+  line-height: 220px;
+  font-family: var(--text-font);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.10);
+}
+
+/** instagram-style-two **/
+
+.instagram-style-two{
+  position: relative;
+  padding: 230px 50px;
+}
+
+.instagram-style-two .title-box{
+  position: relative;
+  display: block;
+  padding-left: 250px;
+  margin-bottom: 94px;
+}
+
+.instagram-style-two .title-box .count-text{
+  position: absolute;
+  left: 0px;
+  top: 16px;
+  font-size: 120px;
+  line-height: 105px;
+  font-family: 'Playfair Display', cursive;
+  color: var(--title-color);
+  font-style: italic;
+}
+
+.instagram-style-two .title-box .upper-text{
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.40);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.instagram-style-two .title-box h2{
+  display: block;
+  font-size: 90px;
+  line-height: 105px;
+  font-family: var(--text-font);
+  font-weight: 500;
+}
+
+.instagram-style-two .title-box h2 a{
+  display: inline-block;
+  font-family: 'Playfair Display', cursive;
+  color: var(--title-color);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.instagram-style-two .title-box h2 a:hover{
+
+}
+
+.instagram-style-two .owl-nav{
+  position: absolute;
+  top: -178px;
+  right: 0px;
+}
+
+/** instagram-style-three **/
+
+.instagram-style-three{
+  position: relative;
+  padding-bottom: 57px;
+  background: #F6F6F6;
+}
+
+.instagram-style-three .outer-container{
+  position: relative;
+  padding: 0px 75px;
+}
+
+.instagram-style-three .title-text h2{
+  position: relative;
+  display: block;
+  font-size: 82px;
+  line-height: 92px;
+  font-family: var(--text-font);
+  font-weight: 700;
+}
+
+.instagram-style-three .title-text h2 span{
+  position: relative;
+  display: inline-block;
+  line-height: 102px;
+  color: transparent;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(0deg, #FF48D7, #787EFF 100%);
+}
+
+.instagram-style-three .inner-container{
+  position: relative;
+  display: block;
+}
+
+.instagram-style-three .image-list{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.instagram-style-three .image-list li{
+  margin-right: -112px;
+}
+
+.instagram-style-three .image-list li .image-box{
+  position: relative;
+  display: inline-block;
+  border: solid;
+  border-width: 35px;
+  border-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.instagram-style-three .image-list li .image-box img{
+  width: 100%;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.instagram-style-three .image-list li .image-box:hover img{
+  transform: scale(1.1);
+}
+
+.instagram-style-three .image-list li .image-box::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255,.2);
+  border-radius: 0%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.instagram-style-three .image-list li .image-box:hover::before {
+  -webkit-animation: circle .95s;
+  animation: circle .95s;
+}
+
+.instagram-style-three .image-list li .image-box a{
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  font-size: 0px;
+  color: #fff;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+.row.mt-70
+    .col-lg-12
+        h2.color-linear.d-inline-block.mb-10.wow.animate__animated.animate__fadeInUp
+            | Recent posts
+        p.text-lg.color-gray-500.wow.animate__animated.animate__fadeInUp
+            | Don't miss the latest trends
+        .box-list-posts.mt-70
+            .row
+                -
+                    const postLists = [
+                        {
+                            image: 'assets/imgs/page/homepage3/img7.jpg',
+                            title: 'How to Grow Your Business on Instagram in 2022',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage3/img8.jpg',
+                            title: 'Helpful Tips for Working from Home as a Freelancer',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage3/img9.jpg',
+                            title: 'The 6 Best Celebration Ideas for Virtual Teams',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage3/img10.jpg',
+                            title: 'Influencer Marketing: Basics and Examples',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage3/img11.jpg',
+                            title: 'How to Create Banner Ads That Stand Out From the Crowd',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+                        },
+                        {
+                            image: 'assets/imgs/page/homepage3/img12.jpg',
+                            title: 'Best Practices for Communication with Your Virtual Team',
+                            description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                            link: 'single-sidebar.html',
+                            tag: 'Working Tips'
+                        }
+                    ]
+                each post in postLists
+                    .col-lg-6
+                        .card-list-posts.card-list-posts-small.wow.animate__animated.animate__fadeIn
+                            .card-image.hover-up
+                                a(href= post.link)
+                                    img(src= post.image, alt="Genz")
+                            .card-info
+                                a(href= post.link)
+                                    h5.mb-15.color-white= post.title
+                                p.color-gray-500= post.description
+                                .row.mt-20
+                                    .col-12
+                                        span.calendar-icon.color-gray-700.text-sm.mr-25 29 May 2022
+                                        span.color-gray-700.text-sm.timeread 3 mins read
+        .text-start.mb-80
+            a.btn.btn-linear.btn-load-more.wow.animate__animated.animate__zoomIn
+                | Show More Posts
+                i.fi-rr-arrow-small-right

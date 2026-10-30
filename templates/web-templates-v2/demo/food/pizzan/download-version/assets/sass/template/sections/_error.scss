@@ -1,0 +1,43 @@
+.error-content {
+    text-align: center;
+	margin: 0 auto;
+}
+.error-img {
+    margin-bottom: 40px;
+	text-align: center;
+}
+.error-title {
+	font-size: 64px;
+	font-family: $style-font;
+    margin-bottom: 14px;
+}
+.error-text {
+    margin-bottom: 30px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+@include md {
+	.error-img {
+		margin-bottom: 20px;
+	}
+	.error-title {
+		font-size: 44px;
+		margin-bottom: 10px;
+	}
+	.error-text {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@include sm {
+	.error-title {
+		font-size: 36px;
+	}
+	.error-text {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.5;
+	}
+}

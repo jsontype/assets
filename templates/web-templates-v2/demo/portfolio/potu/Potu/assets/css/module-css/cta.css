@@ -1,0 +1,349 @@
+
+
+/** cta-section **/
+
+.cta-section{
+  position: relative;
+  padding: 0px 50px;
+}
+
+.cta-section .outer-container{
+  position: relative;
+  padding: 104px 30px 134px 30px;
+  border: 1px solid var(--secondary-color);
+  border-top: none;
+}
+
+.cta-section .content-box{
+  position: relative;
+  display: block;
+}
+
+.cta-section .content-box h2{
+  position: relative;
+  display: block;
+  font-size: 110px;
+  line-height: 120px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.cta-section .content-box a{
+  position: relative;
+  display: inline-block;
+  width: 252px;
+  height: 252px;
+  text-align: center;
+  padding-top: 61px;
+}
+
+.cta-section .content-box a:before{
+  position: absolute;
+  content: '';
+  background-image: url(../../images/shape/shape-36.png);
+  width: 252px;
+  height: 252px;
+  left: 0px;
+  top: 0px;
+  background-repeat: no-repeat;
+}
+
+.cta-section .content-box a span{
+  position: relative;
+  display: block;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+}
+
+.cta-section .content-box a i{
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  color: #fff;
+  transition: all 500ms ease;
+}
+
+.cta-section .content-box a:hover i{
+  transform: rotate(45deg);
+}
+
+.cta-section .pattern-layer .pattern-1{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 523px;
+  height: 523px;
+  background-repeat: no-repeat;
+}
+
+.cta-section .pattern-layer .pattern-2{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 549px;
+  height: 455px;
+  background-repeat: no-repeat;
+}
+
+/** cta-style-two **/
+
+.cta-style-two{
+  position: relative;
+  padding: 0px 30px;
+}
+
+.cta-style-two .outer-container{
+  position: relative;
+  padding: 150px 0px 174px;
+}
+
+.cta-style-two .content-box{
+  position: relative;
+  display: block;
+}
+
+.cta-style-two .content-box h2{
+  position: relative;
+  display: block;
+  font-size: 140px;
+  line-height: 190px;
+  font-family: var(--text-font);
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.cta-style-two .content-box h2 span{
+  position: relative;
+  display: inline-block;
+  background: var(--secondary-color);
+  color: #fff;
+  line-height: 130px;
+}
+
+.cta-style-two .content-box p{
+  font-size: 31px;
+  line-height: 51px;
+  color: var(--title-color);
+  margin-bottom: 53px;
+}
+
+.cta-style-two .content-box .theme-btn-three{
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 500;
+  color: var(--title-color);
+  border: solid;
+  border-width: 1px;
+  border-color: var(--secondary-color);
+  border-radius: 50px;
+  padding: 13px 42px;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.cta-style-two .content-box .theme-btn-three:hover{
+  color: #fff;
+}
+
+/** cta-style-three **/
+
+.cta-style-three{
+  position: relative;
+  padding: 110px 0px;
+  background: #F6F6F6;
+}
+
+.cta-style-three .outer-container{
+  position: relative;
+  padding: 175px 0px 150px 0px;
+}
+
+.cta-style-three .content-box{
+  position: relative;
+  display: block;
+}
+
+.cta-style-three .content-box h2{
+  font-size: 100px;
+  line-height: 100px;
+  font-family: var(--text-font);
+  font-weight: 500;
+  max-width: 890px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+}
+
+.cta-style-three .content-box h2 span{
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(0deg, #FF48D7, #787EFF 100%);
+}
+
+.cta-style-three .content-box p{
+  font-size: 24px;
+  line-height: 52px;
+  color: var(--title-color);
+  margin-bottom: 55px;
+}
+
+.cta-style-three .pattern-layer{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cta-style-three .pattern-layer-2{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+.cta-style-three .content-box .theme-btn-three{
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  padding: 15px 32px;
+  border-radius: 40px;
+}
+
+.cta-style-three .pattern-layer-3{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 1800px;
+  height: 1506px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+.cta-style-three .shape .shape-1{
+  position: absolute;
+  top: 240px;
+  right: 325px;
+  width: 68px;
+  height: 76px;
+  background-repeat: no-repeat;
+}
+
+.cta-style-three .shape .shape-2{
+  position: absolute;
+  top: 240px;
+  right: 325px;
+  width: 68px;
+  height: 76px;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.cta-style-three .shape .shape-3{
+  position: absolute;
+  left: 420px;
+  bottom: 170px;
+  width: 101px;
+  height: 84px;
+  background-repeat: no-repeat;
+}
+
+.cta-style-three .shape .shape-4{
+  position: absolute;
+  left: 420px;
+  bottom: 170px;
+  width: 101px;
+  height: 84px;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+/** cta-style-four **/
+
+.cta-style-four{
+  position: relative;
+  padding: 170px 0px 227px 0px;
+}
+
+.cta-style-four h2{
+  display: block;
+  font-size: 90px;
+  line-height: 100px;
+  font-family: 'Playfire Display', serif;
+  font-weight: 500;
+  margin-bottom: 56px;
+}
+
+.cta-style-four .theme-btn-three{
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 44px;
+  background: #B9916E;
+}
+
+.cta-style-four .theme-btn-three:hover{
+
+}
+
+.cta-style-four .shape-1{
+  position: absolute;
+  right: 208px;
+  bottom: 170px;
+  width: 189px;
+  height: 114px;
+  background-repeat: no-repeat;
+}
+
+.cta-style-four .shape-2{
+  position: absolute;
+  right: 208px;
+  bottom: 170px;
+  width: 189px;
+  height: 114px;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

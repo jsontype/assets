@@ -1,0 +1,10 @@
+Date: 30-07-204
+Version: 1-5-0
+================
+
+- Added RTL Version
+- Improved Responsive Design
+- Fixed Minor CSS issue
+
+
+

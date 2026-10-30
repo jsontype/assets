@@ -1,0 +1,91 @@
+/* brand start ------------------------*/
+.brand-title {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+
+.brand-card {
+    border: 1px solid #DEDFE3;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.brand-sec3 {
+    position: relative;
+    margin: -60px 100px 0 0;
+    clip-path: path("M100 0H1820V200H0L100 0Z");
+    z-index: 2;
+
+    .container {
+        --main-container: 1570px;
+    }
+
+    @media(min-width: 1930px) {
+        clip-path: path("M183.132 0H3333V200H0L183.132 0Z");
+    }
+
+    @include xxl {
+        margin: -60px 0 0 0;
+    }
+
+    @include xl {
+        clip-path: none;
+    }
+}
+
+
+
+
+.brand-item {
+    &.style2 {
+        img {
+            filter: brightness(0.8) invert(0.3);
+        }
+
+        &:hover {
+            img {
+                filter: none;
+            }
+        }
+    }
+}
+
+/* brand-area ---------------*/
+.brand-area {
+    position: relative;
+    background-color: #0C0E13;
+    padding: 64px 0;
+}
+
+.brand-item2 {
+    img {
+        filter: grayscale(100%);
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            filter: none;
+        }
+    }
+
+}
+
+.brandSlider4 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(6, 5, 11, 0.8) 17.32%, rgba(82, 26, 111, 0) 57.93%, rgba(6, 5, 11, 0.8) 83.78%);
+        z-index: 2;
+
+        @include lg {
+            display: none;
+
+        }
+
+    }
+}

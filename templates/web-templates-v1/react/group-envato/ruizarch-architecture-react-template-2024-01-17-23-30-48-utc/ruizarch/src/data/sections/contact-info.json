@@ -1,0 +1,16 @@
+{
+    "button": {
+        "label": "Find a Space",
+        "link": "/contact"
+    },
+    "items": [
+        {
+            "label": "Email address",
+            "value": "projects@ruizarch.com"
+        },
+        {
+            "label": "Free Consultation",
+            "value": "1 800 847 7978"
+        }
+    ]
+}

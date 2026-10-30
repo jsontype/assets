@@ -1,0 +1,132 @@
+
+
+/** process-section **/
+
+.process-section{
+  position: relative;
+  padding-bottom: 310px;
+}
+
+.process-section .outer-container{
+  position: relative;
+  padding: 0px 125px;
+}
+
+.process-section .title-box span{
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.40);
+  margin-bottom: 6px;
+}
+
+.process-section .title-box h2{
+  position: relative;
+  display: block;
+  font-size: 82px;
+  line-height: 92px;
+  font-family: var(--text-font);
+  font-weight: 500;
+}
+
+.process-section .content-box .single-item{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border: solid;
+  border-width: 1px;
+  border-color: var(--secondary-color);
+  border-radius: 300px;
+  padding: 59px 200px 70px 177px;
+}
+
+.process-section .content-box .single-item:first-child{
+  top: 2px;
+}
+
+.process-section .content-box .single-item:nth-child(2){
+  top: 1px;
+}
+
+.process-section .content-box .single-item .icon-box{
+  position: absolute;
+  left: 76px;
+  top: 66px;
+}
+
+.process-section .content-box .single-item .light-icon{
+  position: absolute;
+  left: 76px;
+  top: 66px;
+  display: none;
+}
+
+.process-section .content-box .single-item .count-text{
+  position: absolute;
+  top: 52px;
+  right: 50px;
+  width: 92px;
+  height: 92px;
+  line-height: 92px;
+  text-align: center;
+  background: var(--secondary-color);
+  font-size: 48px;
+  font-weight: 500;
+  font-style: italic;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.process-section .content-box .single-item h2{
+  font-size: 64px;
+  line-height: 77px;
+  font-family: var(--text-font);
+  font-weight: 500;
+}
+
+.process-section.home-7 .content-box .single-item{
+  background: var(--secondary-color);
+  top: 0px !important;
+}
+
+.process-section.home-7 .content-box .single-item h2{
+  color: #fff;
+}
+
+.process-section.home-7 .content-box .single-item .count-text {
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.process-section.home-7{
+  padding-bottom: 152px;
+}
+
+.process-section.pt_200{
+  padding-bottom: 270px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

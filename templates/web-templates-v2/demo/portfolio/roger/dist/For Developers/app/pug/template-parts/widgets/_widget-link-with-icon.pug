@@ -1,0 +1,27 @@
+mixin ptf_link_with_icon(object)
+
+	//- Default
+	- object = object || {}
+	- object.title = object.title || ''
+	- object.link = object.link || '#'
+	- object.icon = object.icon || ''
+	- object.position = object.position || 'left' // right
+
+	//- Element Class
+	- elClass = 'ptf-link-with-icon'
+	- elClass += ' ptf-link-with-icon--' + object.position
+
+	//Link with icon
+	a(class=elClass, href=object.link)
+
+		if object.position == 'left'
+
+			!=object.icon
+
+		if object.title
+
+			=object.title
+
+		if object.position == 'right'
+
+			!=object.icon

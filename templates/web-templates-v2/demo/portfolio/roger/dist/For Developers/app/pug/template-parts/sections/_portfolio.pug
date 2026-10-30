@@ -1,0 +1,60 @@
+include ../../mixins/_global-mixins.pug
+
+- itemTitle = ['Gentleman <br>Givenchy', 'Minimalistic <br>Composition', 'Playstation 5 <br>Dualshock', 'Good Vibes <br>Only', 'Creative <br>Artwork']
+- itemCategory = ['Branding', 'Design', 'Inspiration', 'Photography', 'Design']
+
+
+.ptf-section__vertical-align
+
+	.ptf-section__content
+
+		//Ken Burn Effect
+		.ptf-section__ken-burn-background
+
+			img(src='assets/img/attachment-02.jpg', alt='')
+
+		.ptf-portfolio-marquee.has-stopable
+
+			.ptf-portfolio-marquee__original
+
+				- for(var n = 0; n < 5; n++) {
+
+					.ptf-work
+
+						.ptf-work-thumbnail
+
+							img(src='assets/img/portfolio/work-' + [n + 1] + '.jpg', alt='', loading='lazy')
+
+						.ptf-work-content
+
+							span= itemCategory[n]
+
+							h3.ptf-work-title.h2
+
+								a(href='single-work.html', data-cursor)
+
+									!=itemTitle[n]
+
+				- }
+
+			.ptf-portfolio-marquee__copy
+
+				- for(var n = 0; n < 5; n++) {
+
+					.ptf-work
+
+						.ptf-work-thumbnail
+
+							img(src='assets/img/portfolio/work-' + [n + 1] + '.jpg', alt='', loading='lazy')
+
+						.ptf-work-content
+
+							span= itemCategory[n]
+
+							h3.ptf-work-title.h2
+
+								a(href='single-work.html', data-cursor)
+
+									!=itemTitle[n]
+
+				- }

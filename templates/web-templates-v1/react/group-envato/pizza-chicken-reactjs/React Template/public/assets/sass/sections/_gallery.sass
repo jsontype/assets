@@ -1,0 +1,63 @@
+/*******************************************************/
+/****************** ## Gallery Area ********************/
+/*******************************************************/
+.gallery-area
+    &:before
+        +poLB(0)
+        z-index: -1
+        content: ''
+        +size(100%, 40%)
+        background: $lighter-color
+
+.gallery-item
+    position: relative
+    margin-bottom: 30px
+    .gallery-image
+        img
+            width: 100%
+    .gallery-content
+        opacity: 0
+        transition: 0.5s
+        flex-wrap: wrap
+        +poLB(50%, 50px)
+        background: white
+        padding: 24px 30px 22px
+        width: calc(100% - 90px)
+        transform: translate(-50%)
+        +flexcenter(space-between)
+        +res-bl(md)
+            width: calc(100% - 40px)
+        h5
+            margin-bottom: 0
+    &:hover
+        .gallery-content
+            opacity: 1
+            bottom: 30px
+        
+/* Galery Style Two */
+.gallery-item-two
+    margin-bottom: 30px
+    img
+        +res-bl(xl)
+            width: 100%
+    
+.gallery-order
+    +res-bl(xl)
+        order: 5
+        
+/* Gallery Style Three */
+.gallery-item-three
+    margin-bottom: 60px
+    img
+        width: 100%
+        margin-bottom: 30px
+    h3
+        margin-bottom: 0
+        +res-ab(xl)
+            font-size: 35px
+        
+/* Gallery Style Four */
+.gallery-item-four
+    margin-bottom: 30px
+    img
+        width: 100%

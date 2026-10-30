@@ -1,0 +1,101 @@
+.nav
+  display: block
+  +position(fixed, 0 null null 0)
+  width: 100%
+  min-width: 360px
+  height: 100%
+  overflow-y: auto
+  overflow-x: hidden
+  z-index: 2
+  background-color: $base-color
+  &::after
+    content: ""
+    display: block
+    +position(absolute, 0 null null 0)
+    width: 100%
+    height: 100%
+    background-color: $black
+  +MQ(XL)
+    overflow: hidden
+
+.nav__background
+  +position(absolute, 0 null null 0)
+  width: 100%
+  height: 100%
+  background-repeat: no-repeat
+  background-position: bottom center
+  background-size: 150%
+  background-image: url("https://dummyimage.com/1920x280/1f1f1f/3b3b3b")
+  +MQ(XL)
+    background-size: 100%
+
+.nav__container
+  +position(absolute, 0 null null 0)
+  width: 100%
+  height: 100%
+  min-height: 600px
+  overflow: hidden
+
+.nav__content
+  position: absolute
+  left: 0
+  +center(y)
+  width: 100%
+  padding: 0 3.4rem
+  +MQ(XL)
+    padding: 0 6rem
+  +MQ(XXL)
+    padding: 0 8rem
+
+.navigation
+  display: block
+  overflow: hidden
+  li
+    display: inline-block
+    overflow: hidden
+    font: normal 400 3rem/1.6 $default-font
+    color: $text-light-mute
+    &::after
+      content: "/"
+      display: inline-block
+      font-weight: 300
+    &:last-of-type
+      &::after
+        display: none
+    a
+      display: inline-block
+      position: relative
+      font: normal 400 3rem/1.6 $default-font
+      color: $text-light-mute
+      .link-title
+        display: block
+        position: relative
+        transform: translateY(0)
+        transition: transform .3s cubic-bezier(0.23, 0.65, 0.74, 1.09)
+        color: $text-light-mute
+      .link-hover
+        display: block
+        +position(absolute, 0 null null 0)
+        width: 100%
+        transform: translateY(100%)
+        transition: transform .3s cubic-bezier(0.23, 0.65, 0.74, 1.09)
+        color: $text-light
+      .no-touch &:hover
+        .link-title
+          transform: translateY(-100%)
+        .link-hover
+          transform: translateY(0)
+      &.active-link
+        .link-title,
+        .link-hover
+          color: $text-light
+  +MQ(M)
+    li
+      font-size: 4.4rem
+      a
+        font-size: 4.4rem
+  +MQ(XXL)
+    li
+      font-size: 6rem
+      a
+        font-size: 6rem

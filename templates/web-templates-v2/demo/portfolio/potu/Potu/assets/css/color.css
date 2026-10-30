@@ -1,0 +1,329 @@
+
+
+/* text-color */
+
+.main-menu .navigation > li.current > a,
+.main-menu .navigation > li:hover > a,
+.main-menu .navigation > li > ul > li > a:hover,
+.main-menu .navigation > li > .megamenu li > a:hover,
+.theme-btn:hover,
+.banner-section .content-box h2 .color-text,
+.portfolio-block-one .inner-box .content-box .link a:hover,
+.skills-section .skills-list li button:hover,
+.dark_bg .skills-section .skills-list li button,
+.contact-section .title-box .title-text h2 .color-text,
+.contact-section .info-content .single-item h3 a:hover,
+.contact-section .info-content .map-link p a,
+.service-style-two .text-box a:hover,
+.service-block-one .inner-box .lower-content h3 a:hover,
+.dark_bg .service-style-two .text-box a:hover,
+.portfolio-style-three .title-box a:hover i,
+.portfolio-style-three .title-box a:hover,
+.portfilio-block-one .inner-box a:hover,
+.instagram-style-two .title-box h2 a:hover,
+.footer-style-three .copyright a:hover,
+.footer-style-three .links-widget .links-list li a:hover,
+.header-style-four .menu-right-content .mobile-nav-toggler:hover,
+.banner-style-four h2 span.special-text,
+.banner-style-four .mouse-btn-down:hover,
+.about-style-three .content-box h2 span,
+.portfolio-style-five .count-text,
+.portfolio-style-five .title-text h2 span.color,
+.testimonial-style-four .upper-box .count-text,
+.testimonial-style-four .upper-box a:hover,
+.dark_bg .testimonial-style-four .upper-box a,
+.dark_bg .contact-style-two .content-box a,
+.main-footer.home-4 .footer-bottom .social-links li a:hover,
+.dark_bg .main-footer.home-4 .footer-bottom .social-links li a:hover,
+.banner-style-five .social-links li a:hover,
+.service-block-two .inner-box h3 a:hover,
+.portfolio-style-six .link a:hover,
+.banner-style-six .explore-text a:hover,
+.portfolio-style-seven .title-box  a:hover,
+.portfolio-block-four .inner-box .lower-content h3 a:hover,
+.portfolio-block-four .inner-box .lower-content .link a:hover,
+.banner-style-seven .explore-text a:hover,
+.banner-style-seven .social-links li a:hover,
+.portfolio-style-eight .content-box .list-item li a:hover,
+.portfolio-style-eight .content-box h2 a:hover,
+.covering-area-section .single-item h2 a:hover,
+.events-section .content-one .inner-box h3 a:hover,
+.events-section .content-one .inner-box .link a:hover,
+.events-section .content-two h2 a:hover,
+.pricing-style-two .upper-text a:hover,
+.dark_bg .pricing-style-two .pricing-block .plan-box a:hover,
+.footer-style-six .footer-bottom .social-links li a:hover,
+.banner-style-nine .link-box a:hover,
+.books-section .title-box .text-box a:hover,
+.books-section .inner-container .single-item .lower-content h3 a:hover,
+.events-style-two .single-item .text-box h2 a:hover,
+.events-style-two .single-item .link a:hover,
+.featured-books-section .content-box a:hover,
+.news-block-one .inner-box .lower-content h3 a:hover,
+.follow-section .content-box p a:hover,
+.dark_bg .follow-section .content-box p a,
+.footer-style-seven .footer-menu li a:hover,
+.banner-style-ten .content-box .menu-list li a:hover,
+.banner-style-ten .category-list li a:hover,
+.main-header.home-10 .header-lower .menu-right-content .mobile-nav-toggler:hover,
+.main-header.home-10 .sticky-header .menu-right-content .mobile-nav-toggler:hover,
+.case-block-one .inner-box .text-box h3 a:hover,
+.case-block-one .inner-box .link a:hover,
+.news-block-two .inner-box .content-box h2 a:hover,
+.news-block-two .inner-box .content-box .link a:hover,
+.news-block-three .inner-box h2 a:hover,
+.news-block-three .inner-box .link a:hover,
+.dark_bg .news-block-three .inner-box .link a:hover,
+.dark_bg .news-block-three .inner-box h2 a:hover,
+.contact-style-four .content-box a:hover,
+.about-style-11 .content-box h2 span,
+.portfolio-block-five .inner-box h2 a:hover,
+.service-style-six .title-box a:hover,
+.service-block-four .inner-box h2 a:hover,
+.footer-style-eight .footer-top h2 span,
+.testimonial-style-nine .title-box .link-box a:hover,
+.dark_bg .testimonial-style-nine .title-box .link-box a:hover,
+.dark_bg .contact-style-two .content-box h2 span,
+.work-page-three-section .title-box a:hover,
+.portfolio-block-six .inner-box .lower-content h2 a:hover,
+.dark_bg .portfolio-block-six .inner-box .lower-content h2 a:hover,
+.dark_bg .portfolio-block-six .inner-box .lower-content .link a:hover,
+.featured-image-section .content-box h3 a:hover,
+.main-header.portfolio-5-header .header-lower .menu-right-content .mobile-nav-toggler:hover,
+.portfolio-block-seven .inner-box .content-box h2 a:hover,
+.portfolio-block-eight .inner-box .lower-content h2 a:hover,
+.portfolio-block-nine .inner-box .content-box h2 a:hover,
+.dark_bg .portfolio-block-nine .inner-box .content-box h2 a:hover,
+.service-style-seven .service-block-four .inner-box h2 a:hover,
+.dark_bg .service-block-two .inner-box h3 a:hover,
+.news-block-one .inner-box .lower-content .post-info li a:hover,
+.blog-sidebar .category-widget .category-list li a:hover,
+.dark_bg .blog-sidebar .category-widget .category-list li a:hover,
+.blog-details-content .content-one .post-info li a:hover,
+.blog-details-content .content-one h2 a:hover,
+.blog-details-content .comment-form-area .text-box p a:hover,
+.dark_bg .blog-details-content .comment-form-area .text-box p a:hover,
+.main-header.home-6 .header-lower .main-menu .navigation > li.current > a, 
+.main-header.home-6 .header-lower .main-menu .navigation > li > a:hover,
+.banner-style-three .mouse-btn-down:hover,
+.portfolio-style-nine .sec-title a:hover,
+.work-page-one-section .more-link a:hover,
+.portfolio-block-two .inner-box .content-box h2 a:hover
+
+{
+  color: var(--theme-color);
+}
+
+
+
+/** background **/
+
+.main-menu .navigation > li > ul > li > a:before,
+.main-header .btn-box a:hover,
+.hamburger__hidden,
+.hamburger__hidden::before, .hamburger__hidden::after,
+.theme-btn,
+.banner-section .content-box .lower-box .links-box .social-links li a:hover,
+.demo-switch button,
+.dark_bg .banner-section .content-box .lower-box .links-box .social-links li a:hover,
+.service-section .left-content .inner-box .text,
+.service-section .right-content .single-item .link a:hover,
+.skills-section .skills-list li a:hover,
+.dark_bg .skills-section .skills-list li a:hover,
+.testimonial-section .testimonial-block .image-box .image:before,
+.testimonial-section .nav-style-one .owl-nav button:hover,
+.dark_bg .testimonial-section .nav-style-one .owl-nav button:hover,
+.instagram-block-one .inner-box .image-box,
+.banner-style-four:before,
+.banner-style-four:after,
+.dark_bg .about-style-three .social-style-one li a:hover,
+.dark_bg .portfolio-block-three .link-box a:hover,
+.contact-style-two .content-box a:hover,
+.header-style-four .btn-box a:hover,
+.banner-style-five .message-btn button:hover,
+.about-style-four .content-box .link-box a:hover,
+.service-block-two .inner-box .link a:hover,
+.portfolio-style-six .category-list li a:hover,
+.footer-style-four .contact-widget .form-inner .form-group input:focus + button,
+.footer-style-four .contact-widget .form-inner .form-group button:hover,
+.main-header.home-6 .menu-right-content .mobile-nav-toggler:hover,
+.about-style-five .content-three .video-btn a:hover,
+.service-style-four .tabs-content .content-box .lower-content .link-box a:hover,
+.portfolio-block-four .inner-box .lower-content .category-list li a:hover,
+.testimonial-block-four .inner-box .link-box a:hover,
+.footer-style-five .footer-subscribe .form-inner .form-group input:focus + button,
+.footer-style-five .footer-subscribe .form-inner .form-group button:hover,
+.banner-style-seven .content-box .feature-list li a:hover,
+.contact-style-three .form-inner .message-btn button:hover,
+.main-header.home-8 .mobile-nav-toggler:hover,
+.feature-section .content-three .video-btn a:hover,
+.main-header.home-9 .menu-right-content .mobile-nav-toggler:hover,
+.news-block-one .inner-box .image-box,
+.dark_bg .news-section .title-box a:hover,
+.footer-style-seven .subscribe-widget .form-inner .form-group input:focus + button,
+.footer-style-seven .subscribe-widget .form-inner .form-group button:hover,
+.dark_bg .footer-style-seven .subscribe-widget .form-inner .form-group button[type='submit'],
+.video-section .content-box a:hover,
+.contact-style-four .form-inner .form-group button[type='submit']:hover,
+.portfolio-block-five .inner-box .link a:hover,
+.dark_bg .about-style-11 .content-box .social-style-one li a:hover,
+.service-style-six .title-box a:hover:before,
+.service-block-four .inner-box .lower-content a:hover,
+.main-header.about-5-header .header-lower .mobile-nav-toggler:hover,
+.work-page-one-section .portfolio-block-one .inner-box .content-box .link a:hover,
+.featured-image-section .content-box .lower-box a:hover,
+.portfolio-block-nine .inner-box .content-box .link a:hover,
+.dark_bg .portfolio-block-nine .inner-box .content-box .link a:hover,
+.about-style-13 .content-box a:before,
+.service-sidebar .contact-widget a:before,
+.service-sidebar .contact-widget a:hover,
+.theme-btn-two:before,
+.main-header.blog-1-header .menu-right-content .mobile-nav-toggler:hover,
+.blog-sidebar .search-widget .form-group input[type='search']:focus + button,
+.blog-sidebar .search-widget .form-group button:hover,
+.blog-sidebar .tags-widget .tags-list li a:hover,
+.blog-details-content .post-share-option .post-tags li a:hover,
+.blog-details-content .post-share-option .share-links li a:hover,
+.blog-details-content .comment-box .comment .reply-btn:hover,
+.contact-style-five .form-inner .form-group .theme-btn-three span,
+.dark_bg .skills-section .right-content .inner-box .single-item:before,
+.service-style-three .theme-btn-three span,
+.testimonial-style-five .right-content .theme-btn-three span,
+.faq-section .content-box .theme-btn-three span,
+.cta-style-two .content-box .theme-btn-three span,
+.portfolio-style-eight .title-box .theme-btn-three span,
+.banner-style-eight .content-box .lower-box .btn-box .theme-btn-three span,
+.pricing-style-two .pricing-block .plan-box .theme-btn-three span,
+.cta-style-three .content-box .theme-btn-three span,
+.news-section .title-box .theme-btn-three span,
+.case-section .title-box .theme-btn-three span,
+.news-style-two .title-box .theme-btn-three span,
+.header-style-four .btn-box .theme-btn-three span,
+.work-page-five-section .more-btn .theme-btn-three span,
+.service-details-content .content-two .single-item:hover .icon-box
+
+{
+  background: var(--theme-color);
+}
+
+
+
+
+/** border-color **/
+
+.main-header .btn-box a:hover,
+.hamburger:hover,
+.theme-btn,
+.theme-btn:hover,
+.service-section .right-content .single-item .link a:hover,
+.service-style-two .text-box a:hover,
+.portfolio-style-three .title-box a:hover,
+.portfilio-block-one .inner-box .content-box a:hover,
+.header-style-four .menu-right-content .mobile-nav-toggler:hover,
+.banner-style-four .mouse-btn-down:hover,
+.dark_bg .about-style-three .social-style-one li a:hover,
+.dark_bg .portfolio-block-three .link-box a:hover,
+.testimonial-style-four .upper-box a:hover,
+.dark_bg .testimonial-style-four .upper-box a,
+.dark_bg .contact-style-two .content-box a,
+.header-style-four .btn-box a:hover,
+.service-block-two .inner-box .link a:hover,
+.portfolio-style-six .category-list li a:hover,
+.footer-style-four .contact-widget .form-inner .form-group input:focus,
+.main-header.home-6 .header-lower .main-menu .navigation > li.current > a,
+.main-header.home-6 .header-lower .main-menu .navigation > li > a:hover,
+.banner-style-six .explore-text a:hover,
+.service-style-four .tabs-content .content-box .lower-content .link-box a:hover,
+.portfolio-style-seven .title-box  a:hover,
+.portfolio-block-four .inner-box .lower-content .category-list li a:hover,
+.cta-style-two .content-box a:hover,
+.banner-style-seven .content-box .feature-list li a:hover,
+.banner-style-seven .explore-text a:hover,
+.contact-style-three .form-inner .form-group input:focus,
+.contact-style-three .form-inner .form-group textarea:focus,
+.main-header.home-8 .mobile-nav-toggler:hover,
+.pricing-style-two .pricing-block .plan-box a:hover,
+.main-header.home-9 .menu-right-content .mobile-nav-toggler:hover,
+.dark_bg .news-section .title-box a:hover,
+.footer-style-seven .subscribe-widget .form-inner .form-group input:focus,
+.banner-style-ten .category-list li a:hover,
+.main-header.home-10 .header-lower .menu-right-content .mobile-nav-toggler:hover,
+.main-header.home-10 .sticky-header .menu-right-content .mobile-nav-toggler:hover,
+.case-block-one .inner-box .link a:hover,
+.news-block-two .inner-box .content-box .link a:hover,
+.news-block-three .inner-box .link a:hover,
+.contact-style-four .form-inner .form-group input:focus,
+.contact-style-four .form-inner .form-group textarea:focus,
+.dark_bg .about-style-11 .content-box .social-style-one li a:hover,
+.service-style-six .title-box a:hover:after,
+.service-block-four .inner-box .lower-content a:hover,
+.testimonial-style-nine .title-box .link-box a:hover,
+.work-page-three-section .title-box a:hover,
+.dark_bg .work-page-five-section .more-btn .theme-btn:hover,
+.about-style-13 .content-box a:hover,
+.theme-btn-two:hover,
+.main-header.blog-1-header .menu-right-content .mobile-nav-toggler:hover,
+.blog-sidebar .search-widget .form-group input[type='search']:focus,
+.blog-sidebar .tags-widget .tags-list li a:hover,
+.blog-details-content .post-share-option .post-tags li a:hover,
+.blog-details-content .comment-form-area .form-inner .form-group input:focus,
+.blog-details-content .comment-form-area .form-inner .form-group textarea:focus,
+.contact-style-five .form-inner .form-group input:focus,
+.contact-style-five .form-inner .form-group textarea:focus,
+.contact-style-two .content-box a:hover,
+.banner-style-three .mouse-btn-down:hover,
+.banner-style-five .content-box .theme-btn:hover,
+.portfolio-style-nine .sec-title a:hover,
+.service-block-two .inner-box:hover,
+.work-page-one-section .more-link a:hover,
+.testimonial-block-two .inner-box:hover,
+.service-details-content .content-two .single-item:hover
+
+{
+  border-color: var(--theme-color) !important;
+}
+
+
+.theme-btn:hover{
+  box-shadow: 0px 0px 10px 0px var(--theme-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

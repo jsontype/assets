@@ -1,0 +1,194 @@
+.gt-faq-wrapper {
+
+    .gt-faq-item {
+        .gt-faq-content {
+
+            h4 {
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            .accordion-item {
+                border: 0;
+                background-color: $bg-color-2;
+                 box-shadow: $shadow;
+                 border-radius: 10px;
+        
+                .accordion-header { 
+                    .accordion-button { 
+                        font-weight: 400;
+                        color: $theme-color;
+                        border: 0;
+                        border-radius: 0;
+                        box-shadow: none;
+                        background-color: $bg-color-2;
+                        padding: 25px 30px 0;
+                        text-transform: capitalize;
+                        font-size: 18px;
+                        border: none;
+                        padding: 20px 20px 0;
+                        font-family: $body-font;
+                        border-radius: 10px;
+        
+                        &::after {
+                            content: "\f078";
+                            font-family: $fa;
+                            background: transparent;
+                            font-weight: 500;
+                            transition: all 0.3s ease-in-out !important;
+                            color: $white;
+                        }
+    
+                        &:not(.collapsed)::after {
+                            content: "\f077";
+                            font-family: $fa;
+                            background: transparent;
+                            font-weight: 500;
+                            color: $theme-color;
+                            transform: rotate(0);
+                        }
+        
+                        &.collapsed {
+                            background-color: $bg-color-2;
+                            padding: 25px 20px;
+                            color: $white;
+                        }
+                    }
+                }
+        
+                .accordion-collapse { 
+        
+                    .accordion-body {
+                        padding-right: 30px;
+                        padding-left: 50px;
+                        padding-top: 15px;
+                        color: $text-color;
+                        background-color: $bg-color-2;
+                        font-weight: 500;
+                        padding-bottom: 0;
+                        border-radius: 10px;
+        
+                        @include breakpoint (max-xxl){
+                            padding-right: 30px;
+                        }
+        
+                        @include breakpoint (max-lg){
+                            padding-right: 30px;
+                        }
+
+                        @include breakpoint (max-sm){
+                            padding-left: 23px;
+                        }
+                    }
+
+                    .thumb {
+                        margin-top: 30px;
+
+                        img {
+                            @include imgw;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .gt-contact-bg {
+        position: relative;
+        border-radius: 10px;
+
+        .gt-contact-content {
+            padding: 40px;
+            position: relative;
+
+            @include breakpoint (max-xl) {
+                padding: 30px;
+            }
+
+            h3 {
+                font-size: 32px;
+                color: $white;
+                margin-bottom: 10px;
+
+                @include breakpoint (max-xl) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                border-bottom: 1.2px solid rgba(191, 191, 191, 0.24);
+                padding-bottom: 24px;
+                margin-bottom: 24px;
+                color: $white;
+            }
+
+            .gt-contact-item {
+                @include flex;
+                gap: 12px;
+                margin-bottom: 24px;
+
+                .gt-icon {
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    text-align: center;
+                    border: 1.2px solid rgba(191, 191, 191, 0.24);
+                    color: $theme-color;
+                    font-size: 24px;
+                }
+
+                .gt-list {
+                    li {
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-family: $body-font;
+                        color: $white;
+
+                        @include breakpoint (max-xl) {
+                            font-size: 14px;
+                        }
+
+                        span {
+                            color: $white;
+                        }
+
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.gt-bg-wrapper {
+        position: relative;
+        padding: 120px 0;
+
+        @include breakpoint(max-xl){
+            padding: 100px 0;
+        }
+    
+        @include breakpoint(max-lg){
+            padding: 80px 0;
+        }
+    
+        &::before {
+            @include before;
+            background: rgba(28, 29, 32, 0.85);
+        }
+
+        .gt-faq-item {
+            position: relative;
+            text-align: center;
+
+            @include breakpoint (max-sm) {
+                margin-top: 30px;
+            }
+        }
+    }
+}

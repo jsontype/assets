@@ -1,0 +1,298 @@
+//Button Link
+ 
+
+.theme-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  outline: none !important;
+  background: $theme-color;
+  color: $header-color;
+  font-size: 16px;
+  font-weight: 700;
+  height: 52px;
+  line-height: 52px;
+  padding: 0 30px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  z-index: 99;
+  border-radius: 100px;
+
+  &::before {
+      position: absolute;
+    content: '';
+    background: $white;
+    width: 120%;
+    height: 0;
+    padding-bottom: 120%;
+    top: -110%;
+    left: -10%;
+    border-radius: 50%;
+    -webkit-transform: translate3d(0, 68%, 0) scale3d(0, 0, 0);
+            transform: translate3d(0, 68%, 0) scale3d(0, 0, 0);
+    z-index: -1;
+     border-radius: 100px;
+  }
+
+  &::after {
+      position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: $white;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+    transition: -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+    transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+    transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1), -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+    z-index: -1;
+     border-radius: 100px;
+  }
+
+  &:hover {
+    &::before {
+        -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+        transition: -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+        transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+        transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1), -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+    }
+
+    &::after {
+        -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        -webkit-transition-duration: 0.05s;
+                transition-duration: 0.05s;
+        -webkit-transition-delay: 0.4s;
+                transition-delay: 0.4s;
+        -webkit-transition-timing-function: linear;
+                transition-timing-function: linear;
+    }
+  }
+
+  &.style-2 {
+    border-radius: 0;
+    background: linear-gradient(90deg, #CBFE1C 0%, #5A7501 100%);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  font-size: 17px;
+  font-weight: 700;
+  height: 56px;
+  line-height: 56px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 40px;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%);
+  
+  .left-line {
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background: #0B0E13;
+    margin-right: 8px;
+    position: absolute;
+    left: 4px;
+}
+
+    .line-btn {
+     
+    }
+
+    // &::before,&::after {
+    //   border-radius: 0;
+    // }
+
+
+    
+
+    &:hover {
+        background-position: 100% 0;
+    }
+  }
+}
+
+.view-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 1px; 
+    font-family: "Chakra Petch" , sans-serif;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: 1px solid $theme-color;
+    height: 52px;
+    line-height: 52px;
+    padding: 0 30px;
+
+    span {
+        color: #ABABAB;
+        transition: color 0.4s ease;
+
+        &.active {
+            color: $theme-color;
+        }
+
+        &.space {
+            width: 2.3px;
+        }
+    }
+
+    // Hover Animation
+    &:hover {
+        @for $i from 5 through 14 {
+        span:nth-child(#{$i}) {
+            color: $theme-color;
+            transition-delay: (0.05s * ($i - 5));
+        }
+        }
+    }
+}
+
+.gt-theme-btn {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Chakra Petch";
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: $header-color;
+  display: inline-block;
+  line-height: 60px;
+  height: 60px;
+  text-align: center;
+  min-width: 200px;
+  overflow: hidden;
+  border-radius: 0;
+  padding: 0 32px;
+  background: #ADFF00;
+  transition: 0.5s;
+  clip-path: polygon(24% 0, 88% 0, 100% 0, 100% 77%, 100% 100%, 0 100%, 0 80%, 0 30%, 7% 0) !important;
+
+  &:hover {
+    background-color: $white;
+    color: $header-color;
+  }
+  
+
+  @include breakpoint (max-sm) {
+    padding: 0 30px;
+  }
+
+  &.gt-style-border {
+      border: 1px solid rgba(255, 255, 255, 1);
+      background-image: none;
+      clip-path: polygon(24% 0, 88% 0, 100% 0, 100% 77%, 100% 100%, 0 100%, 0 80%, 0 23%, 8% 0) !important;
+      position: relative;
+      transition: 0.5s;
+      background: transparent;
+      color: $white;
+    
+
+      &::before {
+          position: absolute;
+          top: -26px;
+          left: -18px;
+          right: 0;
+          bottom: 0;
+          content: "";
+          transform: rotate(45deg);
+          height: 115px;
+          width: 1.5px;
+          background-color: $white;
+          clip-path: polygon(24% 0, 88% 0, 100% 0, 100% 62%, 100% 100%, 0 100%, 0 80%, 0 30%, 23% 0) !important;
+          transition: 0.5s;
+      }
+  }
+
+  &:hover {
+    &.gt-style-border {
+      background-color: $theme-color;
+      color: $header-color;
+      border: 1px solid $theme-color;
+
+      &::before {
+        display: none;
+      }
+    }
+  }  
+}
+
+.gt-theme-btn {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Chakra Petch";
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: $header-color;
+  display: inline-block;
+  line-height: 60px;
+  height: 60px;
+  text-align: center;
+  min-width: 200px;
+  overflow: hidden;
+  border-radius: 0;
+  padding: 0 32px;
+  background: #ADFF00;
+  transition: 0.5s;
+  clip-path: polygon(24% 0, 88% 0, 100% 0, 100% 77%, 100% 100%, 0 100%, 0 80%, 0 30%, 7% 0) !important;
+
+  &:hover {
+    background-color: $white;
+    color: $header-color;
+  }
+  
+
+  @include breakpoint (max-sm) {
+    padding: 0 30px;
+  }
+
+  &.gt-style-border {
+      border: 1px solid rgba(255, 255, 255, 1);
+      background-image: none;
+      clip-path: polygon(24% 0, 88% 0, 100% 0, 100% 77%, 100% 100%, 0 100%, 0 80%, 0 23%, 8% 0) !important;
+      position: relative;
+      transition: 0.5s;
+      background: transparent;
+      color: $white;
+    
+
+      &::before {
+          position: absolute;
+          top: -26px;
+          left: -18px;
+          right: 0;
+          bottom: 0;
+          content: "";
+          transform: rotate(45deg);
+          height: 115px;
+          width: 1.5px;
+          background-color: $white;
+          clip-path: polygon(24% 0, 88% 0, 100% 0, 100% 62%, 100% 100%, 0 100%, 0 80%, 0 30%, 23% 0) !important;
+          transition: 0.5s;
+      }
+  }
+
+  &:hover {
+    &.gt-style-border {
+      background-color: $theme-color;
+      color: $header-color;
+      border: 1px solid $theme-color;
+
+      &::before {
+        display: none;
+      }
+    }
+  }  
+}

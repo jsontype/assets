@@ -1,0 +1,42 @@
+.box-sidebar.bg-gray-850.border-gray-800
+    .head-sidebar
+        h5.line-bottom Popular Posts
+    .content-sidebar
+        .list-posts
+            -
+                const postLists2 = [
+                    {
+                        image: 'assets/imgs/page/homepage1/img-post.jpg',
+                        title: 'Creating is a privilege but it’s also a gift',
+                        link: 'single-sidebar.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/img-post2.jpg',
+                        title: 'Being unique is better than being perfect',
+                        link: 'single-sidebar.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/img-post3.jpg',
+                        title: 'Every day, in every city and town across the country',
+                        link: 'single-sidebar.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/homepage1/img-post4.jpg',
+                        title: 'Your voice, your mind, your story, your vision',
+                        link: 'single-sidebar.html'
+                    }
+                ]
+            each post in postLists2
+                .item-post.wow.animate__animated.animate__fadeIn
+                    .image-post
+                        a(href= post.link)
+                            img(src= post.image, alt="Genz")
+                    .info-post.border-gray-800
+                        a(href= post.link)
+                            h6.color-white= post.title
+                        span.color-gray-700 15 mins read
+                        ul.d-inline-block
+                            li.color-gray-700 15 April 2022

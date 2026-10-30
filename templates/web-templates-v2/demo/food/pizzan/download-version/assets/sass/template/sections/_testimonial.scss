@@ -1,0 +1,124 @@
+/* Testimonial 1 ---------------------------------- */
+.testi-box { 
+    overflow: hidden;
+    background-color: $white-color;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 3px 15px rgba(1, 15, 28, 0.08);
+    text-align: left;
+    &_icon {
+        margin-bottom: 21px;
+    }
+    &_img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        pointer-events: none;
+    }
+    &_review {
+        margin-bottom: 23px;
+        i {
+            font-size: 14px;
+            margin-right: 3px;
+            color: $yellow-color;
+        }
+    }
+    &_profile {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    &_avater {
+        width: 60px;
+        border-radius: 99px;
+        overflow: hidden;
+    }
+    &_name {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: 600;
+    }
+    &_desig {
+        font-size: 14px;
+        margin-bottom: -0.3em;
+        display: block;
+    }
+    &_text {
+        margin-bottom: 16px;
+    }
+}
+
+@include xl {
+    .testi-box_img {
+        bottom: -25px;
+        right: -25px;
+    }
+}
+
+@include lg {
+    .testi-box_img {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .testi-box {
+        padding: 40px 20px;
+        border-radius: 15px;
+        &_img {
+            bottom: -25px;
+            right: -25px;
+        }
+    }
+}
+@media (max-width: 350px) {
+    .testi-box {
+        &_img {
+            bottom: 0;
+            right: 0;
+            max-width: 110px;
+        }
+    }
+}
+
+/* Testimonial 2 ---------------------------------- */
+.testi-slide-wrap {
+    max-width: 391px;
+    position: relative;
+    @include lg {
+        max-width: 100%;
+    }
+    .number-dots {
+        ul {
+            position: absolute;
+            top: 47%;
+            left: -120px;
+            transform: rotate(90deg) translateY(-50%);
+            margin-top: 0;
+        }
+        li {
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+@include ml {
+    .testi-slide-wrap {
+        .number-dots {
+            ul {
+                position: relative;
+                top: unset;
+                left: unset;
+                transform: rotate(0);
+                margin-top: 40px;
+            }
+            li {
+                transform: rotate(0);
+            }
+        }
+    }
+}

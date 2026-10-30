@@ -1,0 +1,418 @@
+.main
+  position: relative
+  padding-top: 6rem
+  overflow: hidden
+  +MQ(M)
+    padding-top: 7rem
+  +MQ(XL)
+    padding-top: 0
+
+.main__intro
+  position: relative
+  height: auto
+  margin-bottom: 3.4rem
+  &.intro-95-desktop
+    margin-bottom: 11.5rem
+  &.intro-fullheight-centered
+    margin-bottom: 12rem
+  +MQ(M)
+    margin-bottom: 4.4rem
+    &.intro-95-desktop
+      margin-bottom: 14.5rem
+    &.intro-fullheight-centered
+      margin-bottom: 14.3rem
+  +MQ(XL)
+    height: 100vh
+    margin-bottom: 0
+    &.intro-95-desktop
+      height: 95vh
+      margin-bottom: 0
+      padding-top: 7rem
+    &.intro-fullheight-centered
+      margin-bottom: 0
+      padding-top: 7rem
+  +MQ(XXL)
+    &.intro-95-desktop,
+    &.intro-fullheight-centered
+      padding-top: 8rem
+
+.intro__background
+  +position(absolute, 0 null null 0)
+  width: 100%
+  height: 100%
+  &.intro-bg-01,
+  &.intro-bg-02
+    img
+      display: block
+      width: 100%
+      height: auto
+
+.intro-bg__shadow
+  +position(absolute, 0 null null 0)
+  width: 100%
+  height: 100%
+  background: linear-gradient(to bottom, rgba(var(--base-rgb),0) 78%, rgba(var(--base-rgb),1) 97%)
+
+.intro-bg-01__01,
+.intro-bg-01__02,
+.intro-bg-02__01,
+.intro-bg-02__02,
+.intro-bg-03__01,
+.intro-bg-03__02
+  position: absolute
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+.intro-bg-01__01
+  top: -160px
+  right: -100px
+  width: 320px
+  height: 320px
+  +MQ(M)
+    top: -320px
+    right: -20px
+    width: 500px
+    height: 500px
+  +MQ(L)
+    top: -280px
+  +MQ(XL)
+    top: -160px
+    right: -80px
+    width: 660px
+    height: 660px
+  +MQ(XXL)
+    top: -200px
+    right: 0
+    width: 770px
+    height: 770px
+  +MQ(XXXL)
+    top: -300px
+    right: 0
+    width: 860px
+    height: 860px
+
+.intro-bg-01__02
+  bottom: -80px
+  left: auto
+  right: 0
+  width: 150px
+  height: 150px
+  +MQ(M)
+    bottom: -120px
+    left: auto
+    right: 0
+    width: 240px
+    height: 240px
+  +MQ(XL)
+    bottom: -40px
+    left: -96px
+    width: 300px
+    height: 300px
+  +MQ(XXL)
+    bottom: -10px
+    left: -86px
+    width: 360px
+    height: 360px
+  +MQ(XXXL)
+    bottom: -60px
+    left: -175px
+    width: 500px
+    height: 500px
+
+.intro-bg-02__01
+  top: auto
+  bottom: -60px
+  right: 0
+  width: 160px
+  height: auto
+  +MQ(M)
+    top: auto
+    bottom: -100px
+    right: 0
+    width: 260px
+    height: auto
+  +MQ(L)
+    top: auto
+    bottom: -80px
+    right: 0
+    width: 340px
+    height: auto
+  +MQ(XL)
+    top: auto
+    bottom: 80px
+    right: 0
+    width: 330px
+    height: auto
+  +MQ(XXL)
+    top: auto
+    bottom: 100px
+    right: 0
+    width: 350px
+    height: auto
+  +MQ(XXXL)
+    top: auto
+    bottom: 60px
+    right: 0
+    width: 530px
+    height: auto
+
+.intro-bg-02__02
+  bottom: -160px
+  top: auto
+  left: -30px
+  width: 100px
+  height: auto
+  +MQ(M)
+    bottom: -200px
+    top: auto
+    left: -42px
+    width: 140px
+    height: auto
+  +MQ(L)
+    bottom: -200px
+    top: auto
+    left: -30px
+    width: 140px
+    height: auto
+  +MQ(XL)
+    bottom: auto
+    top: 150px
+    left: -68px
+    width: 200px
+    height: auto
+  +MQ(XXL)
+    bottom: auto
+    top: 210px
+    left: -82px
+    width: 240px
+    height: auto
+  +MQ(XXXL)
+    top: 150px
+    bottom: auto
+    left: -120px
+    width: 350px
+    height: auto
+
+.intro-bg-03__01
+  height: 440px
+  width: auto
+  bottom: -300px
+  right: -40px
+  img
+    display: block
+    height: 100%
+    width: auto
+  +MQ(M)
+    height: 910px
+    width: auto
+    bottom: -150px
+    right: -80px
+  +MQ(L)
+    height: 910px
+    width: auto
+    bottom: -150px
+    right: -60px
+  +MQ(XL)
+    height: 110vh
+    width: auto
+    top: -10vh
+    right: -60px
+  +MQ(XXL)
+    height: 110vh
+    width: auto
+    top: -10vh
+    right: -60px
+  +MQ(XXXL)
+    height: 126vh
+    width: auto
+    top: -16vh
+    right: -80px
+
+.intro-bg-03__02
+  height: 180px
+  width: auto
+  bottom: -220px
+  left: 40px
+  img
+    display: block
+    height: 100%
+    width: auto
+  +MQ(M)
+    height: 350px
+    width: auto
+    bottom: -340px
+    left: 80px
+  +MQ(L)
+    height: 400px
+    width: auto
+    bottom: -340px
+    left: 150px
+  +MQ(XL)
+    height: 420px
+    width: auto
+    bottom: -210px
+    left: auto
+    right: 220px
+  +MQ(XXL)
+    height: 450px
+    width: auto
+    bottom: -245px
+    right: 220px
+  +MQ(XXXL)
+    height: 540px
+    width: auto
+    bottom: -265px
+    right: 320px
+
+.headline
+  position: relative
+  padding: 0 2rem
+  margin-top: 11.2rem
+  &.headline-95-desktop,
+  &.headline-centered
+    margin-top: 9.5rem
+  +MQ(M)
+    padding: 0 5rem
+    margin-top: 14.2rem
+    &.headline-95-desktop,
+    &.headline-centered
+      margin-top: 10.9rem
+  +MQ(XL)
+    +position(absolute, null null 0 0)
+    margin-top: 0
+    &.headline-95-desktop
+      +position(absolute, null null 0 0)
+      padding-bottom: 9rem
+    &.headline-centered
+      bottom: auto
+      left: auto
+      +center(y)
+      width: 100%
+      margin-top: 0
+  +MQ(XXL)
+    &.headline-95-desktop
+      padding-bottom: 9.9rem
+  +MQ(XXXL)
+    &.headline-95-desktop
+      padding-bottom: 11.3rem
+
+.headline__title
+  &.fullwidth
+  +MQ(M)
+    &.fullwidth
+      width: 100%
+      max-width: 1920px
+      margin: 0 auto
+
+.title__line
+  position: relative
+  display: inline-flex
+  em
+    font: normal var(--font-weight-base) 1.8rem/1.4 var(--_font-default)
+    color: var(--t-bright)
+  em,
+  .btn
+    display: none
+  +MQ(M)
+    span
+      white-space: nowrap
+    .btn
+      display: inline-flex
+      margin-left: 3rem
+      margin-top: 0.5rem
+  +MQ(L)
+    padding: 0 3rem
+    .btn
+      margin-left: 4rem
+  +MQ(XL)
+    em
+      display: inline-flex
+      max-width: 260px
+      margin-right: 5rem
+      padding-top: 3.7rem
+      font-size: 1.8rem
+    .btn
+      margin-left: 5rem
+  +MQ(XXL)
+    em
+      max-width: 300px
+      padding-top: 4.3rem
+      font-size: 2rem
+  +MQ(XXXL)
+    padding: 0 5rem
+    em
+      max-width: 370px
+      padding-top: 6rem
+      font-size: 2.4rem
+
+.headline__datamobile
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  text-align: left
+  margin-top: 4.5rem
+  p
+    font: normal var(--font-weight-base) 1.8rem/1.4 var(--_font-default)
+    color: var(--t-bright)
+    margin-bottom: 6rem
+  +MQ(M)
+    margin-top: 5.4rem
+    padding: 0 3rem
+    text-align: center
+    p
+      max-width: 370px
+      margin: 0 auto
+      font-size: 2rem
+    .btn
+      display: none
+  +MQ(L)
+    margin-top: 6.1rem
+  +MQ(XL)
+    display: none
+
+.headline__btn
+  margin-top: 9.7rem
+  +MQ(M)
+    margin-top: 11.9rem
+  +MQ(XL)
+    margin-top: 5.9rem
+    margin-bottom: 4.4rem
+  +MQ(XXL)
+    margin-top: 11rem
+  +MQ(XXXL)
+    margin-top: 10.1rem
+
+.intro__btn
+  position: relative
+  padding: 0 2rem
+  +MQ(M)
+    padding: 0 5rem
+
+.intro__btn-absolute
+  display: none
+  +MQ(XL)
+    display: block
+    +position(absolute, null 5rem 4.4rem null)
+
+.main__media
+  position: relative
+  &.media-grid-bottom
+    padding-bottom: 2.5rem
+  &.media-stack-bottom
+    padding-bottom: 0
+  +MQ(M)
+    &.media-grid-bottom
+      padding-bottom: 3.5rem
+  +MQ(XL)
+    &.media-grid-bottom
+      padding-bottom: 3.7rem
+  +MQ(XXL)
+    &.media-grid-bottom
+      padding-bottom: 4.5rem
+  +MQ(XXXL)
+    &.media-grid-bottom
+      padding-bottom: 5.5rem
+
+.media__fullwidth

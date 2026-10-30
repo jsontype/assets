@@ -1,0 +1,103 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/* 7.3 brands css
+/*----------------------------------------*/
+
+.#{$theme-prifix}-brand{
+  &-slide{
+    & .swiper-slide {
+      width: 262px!important;
+      @media #{$sm,$xs} {
+        width: 150px!important;
+      }
+    }
+    & .swiper-wrapper{
+      padding-bottom: 90px;
+      padding-top: 20px;
+    }
+  }
+  &-single{
+    &-logo{
+      & a{
+        padding: 45px 10px;
+        background: var(--td-common-white);
+        display: inline-block;
+        box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.06);
+        width: 100%;
+        @media #{$sm,$xs} {
+          padding: 25px 15px;
+          & img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &-map{
+    position: absolute;
+    top: 0;
+    left: -47px;
+    opacity: 0.1;
+    z-index: -1;
+    width: 100%;
+  }
+  &-logo{
+    &-wrap{
+      &-2{
+        padding: 135px 20px;
+        height: 100%;
+      }
+      &-space{
+        padding: 92px 20px;
+      }
+    }
+    &-border{
+      border: 1px solid var(--td-common-line);
+      margin-right: -1px;
+      margin-top: -1px;
+    }
+  }
+  &-shape{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 57px;
+    background: var(--td-common-white);
+    z-index: 3;
+    &-position{
+      top: -23px;
+      left: -25px;
+      &-2{
+        top: -23px;
+        right: -25px;
+      }
+      &-3{
+        bottom: -27px;
+        right: -25px;
+      }
+      &-4{
+        bottom: -27px;
+        left: -25px;
+      }
+    }
+    & i{
+      font-size: 30px;
+      color: rgba(102, 102, 102, 0.2);
+    }
+  }
+  &-counter{
+    &-pre{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1;
+      color: var(--td-grey-2);
+    }
+    &-title{
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 1.12;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+//
+// _wave.scss
+//
+
+
+.wave {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 200%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.wave-one {
+    background-size: 50% 80px;
+}
+
+.wave-anim .wave-one {
+    animation: move_wave 30s linear infinite;
+}
+
+.wave-two {
+    background-size: 50% 120px;
+}
+
+.wave-anim .wave-two {
+    animation: move_wave 10s linear infinite;
+}
+
+.wave-three {
+    background-size: 50% 100px;
+}
+
+.wave-anim .wave-three {
+    animation: move_wave 15s linear infinite;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+    }
+
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+}
