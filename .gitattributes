@@ -1,0 +1,4 @@
+templates/web-templates-v2/downloads/riteflow.zip filter=lfs diff=lfs merge=lfs -text
+templates/web-templates-v2/downloads/aior.zip filter=lfs diff=lfs merge=lfs -text
+templates/web-templates-v2/downloads/davies(used).zip filter=lfs diff=lfs merge=lfs -text
+templates/web-templates-v2/downloads/mesio.zip filter=lfs diff=lfs merge=lfs -text
